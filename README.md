@@ -218,7 +218,7 @@ Bootstrap es un framework CSS y Javascript diseñado para la creación de interf
 ## Pîpes
 Los pipes son una herramienta de Angular que nos permite transformar visualmente la información, por ejemplo, cambiar un texto a mayúsculas o minúsculas, o darle formato de fecha y hora. [Leer más](https://www.acontracorrientech.com/pipes-en-angular-guia-completa/)
 - uppercase y lowercase
-- Slice
+- Slice: 1 o 2 parámetros para suprimir caracteres desde o desde - hasta.
 - Decimal
 - Percent
 - Currency
