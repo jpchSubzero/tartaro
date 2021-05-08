@@ -1,0 +1,24 @@
+<h1>Héroes <small>Marvel y DC</small></h1>
+<hr>
+
+<!-- Utilizando ngFor para repetir código html
+<div class="card-columns">
+    <div *ngFor="let heroeData of heroesData; let i = index" class="card animated fadeIn">
+        <img class="card-img-top" [src]="heroeData.img" [alt]="heroeData.nombre">
+        <div class="card-body">
+            <h5 class="card-title">{{heroeData.nombre}}</h5>
+            <p class="card-text">{{heroeData.bio}}</p>
+            <p class="card-text"><small class="text-muted">{{heroeData.aparicion}}</small></p>
+        </div>
+        <div class="card-footer">
+            <button (click)="showHeroe(i)" type="button" class="btn btn-outline-primary btn-block">Ver más...</button>
+            <a [routerLink]="['/heroe', i]" class="btn btn-outline-primary btn-block">Ver más link...</a>
+        </div>
+    </div>
+</div> -->
+
+
+<!-- *ngFor="let heroeData of heroesData; let i = index" -->
+<div class="card-columns">
+    <app-heroe-tarjeta (heroeSeleccionado)="showHeroe($event)" *ngFor="let heroeData of heroesData; let i = index" [heroeData]="heroeData" [index]="i"></app-heroe-tarjeta>
+</div>
