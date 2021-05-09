@@ -64,6 +64,17 @@
                 </tr>
                 <tr>
                     <td>
+                        {{nombre1}}
+                    </td>
+                    <td>
+                        capitalizado
+                    </td>
+                    <td>
+                        {{nombre1 | capitalizado:true}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         {{numeros}}
                     </td>
                     <td>
@@ -128,6 +139,168 @@
                         {{porcentaje | percent:'2.2-2'}}
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        {{salario}}
+                    </td>
+                    <td>
+                        currency
+                    </td>
+                    <td>
+                        {{salario | currency}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{salario}}
+                    </td>
+                    <td>
+                        currency:'EUR'
+                    </td>
+                    <td>
+                        {{salario | currency:'EUR'}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{salario}}
+                    </td>
+                    <td>
+                        currency:'EUR':'symbol-narrow'
+                    </td>
+                    <td>
+                        {{salario | currency:'EUR':'symbol-narrow'}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{salario}}
+                    </td>
+                    <td>
+                        currency:'EUR':'symbol-narrow':'.0-0'
+                    </td>
+                    <td>
+                        {{salario | currency:'EUR':'symbol-narrow':'.0-0'}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{salario}}
+                    </td>
+                    <td>
+                        currency:'EUR':'symbol-narrow':'.0-0'
+                    </td>
+                    <td>
+                        {{salario | currency:'EUR':'symbol-narrow':'.0-0'}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{heroe}}
+                    </td>
+                    <td>
+                        json
+                    </td>
+                    <td>
+                        <pre>
+                        {{heroe | json}}
+                      </pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{valorPromesa}}
+                    </td>
+                    <td>
+                        json
+                    </td>
+                    <td>
+                        {{valorPromesa | json}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{valorPromesa}}
+                    </td>
+                    <td>
+                        async
+                    </td>
+                    <td>
+                        {{valorPromesa | async}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{fecha}}
+                    </td>
+                    <td>
+                        date
+                    </td>
+                    <td>
+                        {{fecha | date}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{fecha}}
+                    </td>
+                    <td>
+                        date:'fullDate'
+                    </td>
+                    <td>
+                        {{fecha | date:'fullDate'}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{fecha}}
+                    </td>
+                    <td>
+                        date:'fullDate':"fr"
+                    </td>
+                    <td>
+                        {{fecha | date:'fullDate':'':'fr'}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{fecha}}
+                    </td>
+                    <td>
+                        date:'fullDate':'{{idioma}}'
+                        <br>
+                        <button (click)='CambiarIdioma("es")' class="mx-1 p-1 btn btn-primary">Español</button>
+                        <button (click)='idioma="en"' class="mx-1 p-1 btn btn-secondary">Inglés</button>
+                        <button (click)='CambiarIdioma("fr")' class="mx-1 p-1 btn btn-success">Francés</button>
+                    </td>
+                    <td>
+                        {{fecha | date:'fullDate':'':idioma}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{fecha}}
+                    </td>
+                    <td>
+                        date:'dd - MM - yyyy'
+                    </td>
+                    <td>
+                        {{fecha | date:'dd - MM - yyyy'}}
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        {{nombre}}
+                    </td>
+                    <td>
+                        password
+                    </td>
+                    <td>
+                        {{nombre | password:activar}}
+                        <br>
+                        <button (click)='activarDesactivarPassword()' class="mx-1 p-1 btn btn-outline-primary">{{activarEtiqueta}}</button>
+                    </td>
+                </tr>
             </tbody>
         </table>
         <h4>Slice</h4>
@@ -136,5 +309,21 @@
                 {{numero}}
             </li>
         </ul>
+        <h3>JSON</h3>
+        <hr>
+        <div class="row mb-5">
+            <div class="col">
+                <pre>
+                {{heroe | json}}
+              </pre>
+            </div>
+        </div>
+        <h3>DOM Seguro</h3>
+        <hr>
+        <div class="row mb-5">
+            <div class="col">
+                <iframe width="560" height="315" [src]="video | domseguro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
 </div>

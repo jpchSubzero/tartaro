@@ -226,3 +226,8 @@ Los pipes son una herramienta de Angular que nos permite transformar visualmente
 - Async
 - Date  
 
+## Localization
+Agregar funciones de localización para traducir nombres, como fechas, al idioma especificado. [Leer más](https://angular.io/guide/i18n)
+
+## DomSanitizer 
+Ayuda a prevenir los errores de seguridad de Cross Site Scripting (XSS)desinfectando los valores para que sean seguros de usar en los diferentes contextos DOM. [Leer más](https://runebook.dev/es/docs/angular/api/platform-browser/domsanitizer)
