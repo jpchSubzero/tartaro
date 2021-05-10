@@ -215,7 +215,7 @@ Angular CLI es la forma más cómoda para empezar a desarrollar aplicaciones web
 ## Bootstrap
 Bootstrap es un framework CSS y Javascript diseñado para la creación de interfaces limpias y con un diseño responsive. Además, ofrece un amplio abanico de herramientas y funciones, de manera que los usuarios pueden crear prácticamente cualquier tipo de sitio web haciendo uso de los mismos. [Leer más](https://axarnet.es/blog/bootstrap)
 
-## Pîpes
+## Pipes
 Los pipes son una herramienta de Angular que nos permite transformar visualmente la información, por ejemplo, cambiar un texto a mayúsculas o minúsculas, o darle formato de fecha y hora. [Leer más](https://www.acontracorrientech.com/pipes-en-angular-guia-completa/)
 - uppercase y lowercase
 - Slice: 1 o 2 parámetros para suprimir caracteres desde o desde - hasta.

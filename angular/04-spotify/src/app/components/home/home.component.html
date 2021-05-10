@@ -1,0 +1,19 @@
+<!-- <ul>
+    <li *ngFor="let pais of paises"> <img class="mx-3" [src]="pais.flag" alt="" width="30px">{{pais.name}} - {{pais.population | number}} habitantes</li>
+</ul> -->
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    <div *ngFor="let release of newReleases" class="col">
+        <div class="card">
+            <img [src]="release.images[0].url" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{release.name}}</h5>
+                <p class="card-text">
+                    <span *ngFor="let artist of release.artists" class="badge rounded-pill bg-primary">
+                        {{artist.name}}
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
