@@ -8,15 +8,24 @@ import { SpotifyService } from '../../services/spotify.service';
 })
 export class SearchComponent implements OnInit {
 
-  constructor(private spotify:SpotifyService) { }
+  constructor(private spotify:SpotifyService) { 
+    this.loading = false;
+  }
 
   artists:any[] = [];
+  loading:boolean;
+
 
   search(artist:string) {
+    this.loading = true;
+
     console.log(artist);
-    this.spotify.getArtist(artist).subscribe((data:any) => {
-      console.log(data.artists.items);
-      this.artists = data.artists.items;
+    console.log(this.loading);
+
+    this.spotify.getArtists(artist).subscribe((data:any) => {
+      console.log(data);
+      this.artists = data;
+      this.loading = false;
     });
   }
 

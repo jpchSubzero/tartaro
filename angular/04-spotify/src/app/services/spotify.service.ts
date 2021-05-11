@@ -1,29 +1,51 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { map } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SpotifyService {
+  token:string = 'Bearer BQBnorEc2-PM_4B6vxB5HUxcCi7nk3LFGHWaFusXEPQ3O2kmna0aXuY35SsYJVaPrunCiPr6J-PWblDLfgA';
 
   constructor(private http: HttpClient) { }
 
-  getNewReleases():any {
-    const headers = new HttpHeaders({
-      'Authorization': 'Bearer BQB6hLOfz3KG2tQeNox0kKpU95xYRyUkFw4-c9Y3EaEHNbf8ZELnyDi4i8n6I9Sqdy4Hp0oe1fvdvSlBydY'
-    });
-    return this.http.get('https://api.spotify.com/v1/browse/new-releases?limit=20', { headers});
+  getQuery(query:string) {
+
     this.getToken().subscribe((data:any) => {
-      console.log(data.access_token);
-      return this.http.get('https://api.spotify.com/v1/browse/new-releases?limit=20', { headers});
+      console.log(`${data.token_type} ${data.access_token}`);
+      this.token = `${data.token_type} ${data.access_token}`;
     });
+
+    const url = `https://api.spotify.com/v1/${query}`;
+    const headers = new HttpHeaders({
+      'Authorization': this.token
+    });
+    return this.http.get(url, { headers});
   }
 
-  getArtist(artist:string) {
-    const headers = new HttpHeaders({
-      'Authorization': 'Bearer BQB6hLOfz3KG2tQeNox0kKpU95xYRyUkFw4-c9Y3EaEHNbf8ZELnyDi4i8n6I9Sqdy4Hp0oe1fvdvSlBydY'
-    });
-    return this.http.get(`https://api.spotify.com/v1/search?q=${artist}&type=artist&limit=20`, { headers});
+  getNewReleases():any {
+    return this.getQuery('browse/new-releases?limit=20')
+      .pipe(map((data:any) => data.albums.items
+    ));
+  }
+
+  getArtists(artist:string) {
+    return this.getQuery(`search?q=${artist}&type=artist&limit=20`)
+      .pipe(map((data:any) => data.artists.items
+    ));
+  }
+
+  getArtistById(id:string) {
+    return this.getQuery(`artists/${id}`)
+      .pipe(map((data:any) => data
+    ));
+  }
+
+  getTopTracks(id:string) {
+    return this.getQuery(`artists/${id}/top-tracks?market=ES`)
+      .pipe(map((data:any) => data.tracks
+    ));
   }
 
   getToken():any {
@@ -35,6 +57,7 @@ export class SpotifyService {
       headers: new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded')
     };    
 
-    return this.http.post('https://accounts.spotify.com/api/token', body.toString(), options);
+    return this.http.post<any[]>('https://accounts.spotify.com/api/token', body.toString(), options);
+
   }
 }
