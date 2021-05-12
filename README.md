@@ -240,6 +240,13 @@ Ionic es una estructura tecnológica (Framework) de código abierto que se utili
 						ionic serve
 ```
 
+- **Crear nueva página**
+```
+						ionic g page <path>
+```
+
 ## Progressive Web Apps (PWA)
 Progressive web apps (PWA) o aplicación web progresiva es una solución basada en la web tradicional que todos conocemos, aunque incorpora algunas particularidades que la hacen parecerse a una app nativa para teléfonos móviles y tabletas. Cada proyecto es independiente y el nivel de adaptación de la web al formato app es progresivo, por lo que puede que visitemos un site con una PWA casi idéntica a una app o quizá sea una web con algunos avances. [Leer más](https://www.iebschool.com/blog/progressive-web-apps-analitica-usabilidad/)
 
+## Ionic Storage
+Storage is an easy way to store key/value pairs and JSON objects. Storage uses a variety of storage engines underneath, picking the best one available depending on the platform. [Leer más](https://ionicframework.com/docs/v3/storage/)
