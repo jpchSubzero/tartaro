@@ -226,11 +226,30 @@ Los pipes son una herramienta de Angular que nos permite transformar visualmente
 - Async
 - Date  
 
+### Pipes impuros
+Un Pipe impuro funciona exactamente igual que uno "normal", solo que son llamados en cada cambio del ciclo de detección, un click, el foco, el cambio del input etc, lo que significa que los datos que se muestren por pantalla van a estar siempre actualizados, cosa que puede no pasar con un Pipe "puro", por defecto todo pipe es puro. [Leer más](https://electroboveda.blogspot.com/2018/11/angular-19-pipes-impuros.html)
+
+- **Sintaxis**
+```
+						@Pipe({
+						  name: 'filtroCompletado',
+						  pure: false
+						})
+```
+
 ## Localization
 Agregar funciones de localización para traducir nombres, como fechas, al idioma especificado. [Leer más](https://angular.io/guide/i18n)
 
 ## DomSanitizer 
 Ayuda a prevenir los errores de seguridad de Cross Site Scripting (XSS)desinfectando los valores para que sean seguros de usar en los diferentes contextos DOM. [Leer más](https://runebook.dev/es/docs/angular/api/platform-browser/domsanitizer)
+
+## Bindeo en dos vias
+Two-way binding gives components in your application a way to share data. Use two-way binding to listen for events and update values simultaneously between parent and child components. [Leer más](https://angular.io/guide/two-way-binding)
+
+- **Sintaxis**
+```
+						[(ngModel)]="<variable>"
+```
 
 ## Ionic
 Ionic es una estructura tecnológica (Framework) de código abierto que se utiliza en el desarrollo de aplicaciones móviles híbridas, es decir, se combinan el HTML5, CSS y JavaScript dando como resultado aplicaciones con una interfaz amigable e intuitiva para el usuario que luego se comercializan o descargan en plataformas como Android o IOs. [Leer más](https://www.qualitydevs.com/2019/05/31/que-es-ionic-desarrollador-web/)

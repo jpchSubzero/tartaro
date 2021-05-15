@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path: '',
     component: Tab2Page,
+  },
+  {
+    path: 'aggregate/:idList',
+    loadChildren: () => import('../aggregate/aggregate.module').then(m => m.AggregatePageModule)
   }
 ];
 

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { WishesService } from '../../services/wishes.service';
-import { List } from '../../models/list.model';
+// import { List } from '../../models/list.model';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 
@@ -19,11 +19,6 @@ export class Tab1Page {
   }
 
   async addList() {
-    // this.router.navigateByUrl('/tabs/tab1/aggregate');
-
-
-   
-
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
       header: 'Nueva Lista',
@@ -49,7 +44,7 @@ export class Tab1Page {
           handler: (data) => {
             console.log('Confirm Ok');
             if (data.title.length > 0) {
-              this.wishesService.addList(data.title);              
+              this.router.navigateByUrl(`/tabs/tab1/aggregate/${this.wishesService.addList(data.title)}`);
             } else {
               const alert1 = this.alertController.create({
                 cssClass: 'my-custom-class',
@@ -65,7 +60,17 @@ export class Tab1Page {
       ]
     });
 
-    await alert.present();    
+    alert.present().then(
+      () => {
+        const firstInput: any = document.querySelector('ion-alert input');
+        firstInput.focus();
+        return;
+      }
+    );    
   }
+
+  // selectedList(list:List) {
+  //   this.router.navigateByUrl(`/tabs/tab1/aggregate/${list.id}`);
+  // }
 
 }
