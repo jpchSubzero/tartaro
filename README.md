@@ -15,12 +15,14 @@
 - https://github.com/angular/angular-cli
 - npm install -g @angular/cli
 ### 5. Ionic (app móviles hibridas)
-http://ionicframework.com/getting-started/
+- http://ionicframework.com/getting-started/
 ### 6. Editores recomendados
 #### - Atom
  - https://atom.io/
 ####  - Visual Studio Code
  - https://code.visualstudio.com/
+ ####  - StackBlitz (editor Online)
+ - https://stackblitz.com/angular
 ### 7. Plugins
 #### Visual Studio Code
 - Angular 2 TypeScript Emmet
@@ -160,6 +162,9 @@ Las directivas estructurales corresponden a elementos en el HTML que permiten a�
 ## Componente
 Un componente en Angular es un bloque de código re-utilizable, que consta básicamente de 3 archivos: un CSS, un HTML (también conocido como plantilla o en inglés, template) y un TypeScript (en adelante, TS). La carpeta app con la que viene Angular por defecto es un componente, aunque un tanto especial. Pero fíjate que tiene esos 3 mismos archivos. [Leer más](https://www.acontracorrientech.com/entendiendo-los-componentes-en-angular/#:~:text=Un%20componente%20en%20Angular%20es,componente%2C%20aunque%20un%20tanto%20especial.)
 
+### Ciclo de Vida (Lifecycle)
+En Angular, cada componente tiene un ciclo de vida, una cantidad de etapas diferentes que atraviesa. [Leer más](https://medium.com/angular-chile/angular-componentes-y-sus-ciclos-de-vida-aa639e13a688)
+
 ## Angular CLI
 Angular CLI es la forma más cómoda para empezar a desarrollar aplicaciones web, móvil con Angular 2, es una herramienta de linea de comandos que facilita la creación, generación, ejecución, testing, deploy. Lo genial es que es parte de los proyectos oficiales de la gente que hace Angular. [Leer más](https://medium.com/@alvareztech/angular-cli-crear-aplicaciones-con-angular-2-fac1d707f196#:~:text=Angular%20CLI%20es%20la%20forma,la%20gente%20que%20hace%20Angular.)
 
@@ -182,7 +187,10 @@ Angular CLI es la forma más cómoda para empezar a desarrollar aplicaciones web
 	- Generar un componente por defecto y lo agrega al app.module.ts
 ```
 						ng g c components/<nombre> //g: generate, c: component 
-						ng g c components/<nombre> -it -is //it: inline template (código HTML dentro del ts), is: inline style (estilo CSS dentro del ts)
+						ng g c components/<nombre> -it -is --flat
+								//it: inline template (código HTML dentro del ts)
+								//is: inline style (estilo CSS dentro del ts)
+								//flat: sin crear carpeta
 ```
 
 - **Crear pipe**
@@ -282,7 +290,7 @@ Las directivas son, esencialmente, instrucciones para manipular el DOM. [Leer m�
 						<some-element [ngStyle]="objExp">...</some-element>
 ```
 
-- **NgClass:** Agrega y quita clases CSS a elementos HTML,
+- **NgClass:** Agrega y quita clases CSS a elementos HTML.
 
 ```
 						<some-element [ngClass]="'first second'">...</some-element>
@@ -291,6 +299,30 @@ Las directivas son, esencialmente, instrucciones para manipular el DOM. [Leer m�
 						<some-element [ngClass]="stringExp|arrayExp|objExp">...</some-element>
 						<some-element [ngClass]="{'class1 class2 class3' : true}">...</some-element>
 ```
+
+- **NgSwitch:** Seleccionar entre varias opciones.
+
+```
+						<span [ngSwitch]="<variable>">
+						<p *ngSwitchCase="<condición 1>">
+
+						</p>
+						<p *ngSwitchCase="<condición 2>">
+
+						</p>
+						
+						.
+						.
+						.
+						
+						<p *ngSwitchDefault>
+
+						</p>
+						</span>
+```
+
+- **Rutas hijas:** Rutas internas en una página [Leer más](https://www.acontracorrientech.com/routing-en-angular-guia-completa-parte-5/#t-1609788239241).
+
 ## Ionic
 Ionic es una estructura tecnológica (Framework) de código abierto que se utiliza en el desarrollo de aplicaciones móviles híbridas, es decir, se combinan el HTML5, CSS y JavaScript dando como resultado aplicaciones con una interfaz amigable e intuitiva para el usuario que luego se comercializan o descargan en plataformas como Android o IOs. [Leer más](https://www.qualitydevs.com/2019/05/31/que-es-ionic-desarrollador-web/)
 

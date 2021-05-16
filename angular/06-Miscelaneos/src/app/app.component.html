@@ -1,27 +1,7 @@
+<app-navbar></app-navbar>
+
 <div class="container main-container">
     <h1>Demos <small>Angular</small></h1>
     <hr>
-    <app-ng-style></app-ng-style>
-    <hr>
-    <app-css></app-css>
-    <p>
-        Texto sin estilo con alcance (scope) de componente
-    </p>
-    <hr>
-    <app-ng-class></app-ng-class>
-
-    <hr>
-
-    <h3>Directivas personalizadas</h3>
-
-    <p appHighlight>Texto con directiva personalizada</p>
-    <p>Texto sin directiva personalizada</p>
-    <p>
-        <strong [appHighlight]="'orange'">Texto con directiva personalizada</strong>
-    </p>
-    <p>
-        <strong>Texto sin directiva personalizada</strong>
-    </p>
-
-    <button appHighlight class="btn btn-primary">Botón</button>
+    <router-outlet></router-outlet>
 </div>
