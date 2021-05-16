@@ -184,6 +184,24 @@ Angular CLI es la forma más cómoda para empezar a desarrollar aplicaciones web
 						ng g c components/<nombre> //g: generate, c: component 
 						ng g c components/<nombre> -it -is //it: inline template (código HTML dentro del ts), is: inline style (estilo CSS dentro del ts)
 ```
+
+- **Crear pipe**
+	- Generar un pipe por defecto y lo agrega al app.module.ts
+```
+						ng g p pipes/<nombre> 
+```
+
+- **Crear directiva**
+	- Generar una directiva por defecto y lo agrega al app.module.ts
+```
+						ng g d directives/<nombre> 
+```
+ 
+- **Crear módulos**
+	- Generar un módulo por defecto y lo agrega al app.module.ts
+```
+						ng g m <nombre> 
+```
  
 ## Estructura proyecto Angular
 - **e2e:** End to end, pruebas unitarias e integración. [Leer más](https://coryrylan.com/blog/introduction-to-e2e-testing-with-the-angular-cli-and-protractor)
@@ -255,12 +273,24 @@ Two-way binding gives components in your application a way to share data. Use tw
 ### Directivas
 Las directivas son, esencialmente, instrucciones para manipular el DOM. [Leer más](https://www.acontracorrientech.com/directives-en-angular-guia-practica/#:~:text=a%20Angular%20antes.-,%C2%BFQu%C3%A9%20son%20las%20directivas%3F,instrucciones%20para%20manipular%20el%20DOM.)
 
+- **Scope:** El alcance de una directiva está limitada al componente.
+
 - **ngStyle:** Actualiza elementos de estilo HTML.
 ```
 						<some-element [ngStyle]="{'font-style': styleExp}">...</some-element>
 						<some-element [ngStyle]="{'max-width.px': widthExp}">...</some-element>
-						<some-element [ngStyle]="objExp">...</some-element>```
+						<some-element [ngStyle]="objExp">...</some-element>
+```
 
+- **NgClass:** Agrega y quita clases CSS a elementos HTML,
+
+```
+						<some-element [ngClass]="'first second'">...</some-element>
+						<some-element [ngClass]="['first', 'second']">...</some-element>
+						<some-element [ngClass]="{'first': true, 'second': true, 'third': false}">...</some-element>
+						<some-element [ngClass]="stringExp|arrayExp|objExp">...</some-element>
+						<some-element [ngClass]="{'class1 class2 class3' : true}">...</some-element>
+```
 ## Ionic
 Ionic es una estructura tecnológica (Framework) de código abierto que se utiliza en el desarrollo de aplicaciones móviles híbridas, es decir, se combinan el HTML5, CSS y JavaScript dando como resultado aplicaciones con una interfaz amigable e intuitiva para el usuario que luego se comercializan o descargan en plataformas como Android o IOs. [Leer más](https://www.qualitydevs.com/2019/05/31/que-es-ionic-desarrollador-web/)
 

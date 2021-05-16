@@ -1,0 +1,14 @@
+<div [ngClass]="alerts[index]" class="alert" role="alert">
+    A simple primary alert—check it out!
+</div>
+<button class="btn btn-primary" (click)="getRandomAlert()">Cambiar color</button>
+<br><br>
+<h3 [ngClass]="{'text-danger': propertiesObject.danger, 'text-info': !propertiesObject.danger}">
+    Condición de ngClass
+</h3>
+<button [ngClass]="{'btn-danger': propertiesObject.danger, 'btn-info': !propertiesObject.danger}" class="btn" (click)="propertiesObject.danger = !propertiesObject.danger">Cambiar clase</button>
+
+<hr>
+
+<h3>Procesos asíncronos</h3>
+<button [disabled]=loading class="btn btn-primary" (click)="execute()"><i class="fa" [ngClass]="{'fa-refresh fa-spin': loading, 'fa-save': !loading}"></i><span *ngIf="!loading">  Guardar cambios</span><span *ngIf="loading">  Por favor espere...</span></button>
