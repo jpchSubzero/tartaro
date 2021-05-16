@@ -181,7 +181,8 @@ Angular CLI es la forma más cómoda para empezar a desarrollar aplicaciones web
 - **Crear component**
 	- Generar un componente por defecto y lo agrega al app.module.ts
 ```
-						ng g c components/footer //g: generate c: component 
+						ng g c components/<nombre> //g: generate, c: component 
+						ng g c components/<nombre> -it -is //it: inline template (código HTML dentro del ts), is: inline style (estilo CSS dentro del ts)
 ```
  
 ## Estructura proyecto Angular
@@ -237,19 +238,28 @@ Un Pipe impuro funciona exactamente igual que uno "normal", solo que son llamado
 						})
 ```
 
-## Localization
+### Localization
 Agregar funciones de localización para traducir nombres, como fechas, al idioma especificado. [Leer más](https://angular.io/guide/i18n)
 
-## DomSanitizer 
+### DomSanitizer 
 Ayuda a prevenir los errores de seguridad de Cross Site Scripting (XSS)desinfectando los valores para que sean seguros de usar en los diferentes contextos DOM. [Leer más](https://runebook.dev/es/docs/angular/api/platform-browser/domsanitizer)
 
-## Bindeo en dos vias
+### Bindeo en dos vias
 Two-way binding gives components in your application a way to share data. Use two-way binding to listen for events and update values simultaneously between parent and child components. [Leer más](https://angular.io/guide/two-way-binding)
 
 - **Sintaxis**
 ```
 						[(ngModel)]="<variable>"
 ```
+
+### Directivas
+Las directivas son, esencialmente, instrucciones para manipular el DOM. [Leer más](https://www.acontracorrientech.com/directives-en-angular-guia-practica/#:~:text=a%20Angular%20antes.-,%C2%BFQu%C3%A9%20son%20las%20directivas%3F,instrucciones%20para%20manipular%20el%20DOM.)
+
+- **ngStyle:** Actualiza elementos de estilo HTML.
+```
+						<some-element [ngStyle]="{'font-style': styleExp}">...</some-element>
+						<some-element [ngStyle]="{'max-width.px': widthExp}">...</some-element>
+						<some-element [ngStyle]="objExp">...</some-element>```
 
 ## Ionic
 Ionic es una estructura tecnológica (Framework) de código abierto que se utiliza en el desarrollo de aplicaciones móviles híbridas, es decir, se combinan el HTML5, CSS y JavaScript dando como resultado aplicaciones con una interfaz amigable e intuitiva para el usuario que luego se comercializan o descargan en plataformas como Android o IOs. [Leer más](https://www.qualitydevs.com/2019/05/31/que-es-ionic-desarrollador-web/)
@@ -269,3 +279,4 @@ Progressive web apps (PWA) o aplicación web progresiva es una solución basada 
 
 ## Ionic Storage
 Storage is an easy way to store key/value pairs and JSON objects. Storage uses a variety of storage engines underneath, picking the best one available depending on the platform. [Leer más](https://ionicframework.com/docs/v3/storage/)
+
