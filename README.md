@@ -196,10 +196,11 @@ Angular CLI es la forma más cómoda para empezar a desarrollar aplicaciones web
 	- Generar un componente por defecto y lo agrega al app.module.ts
 ```
 						ng g c components/<nombre> //g: generate, c: component 
-						ng g c components/<nombre> -it -is --flat
+						ng g c components/<nombre> -it -is --flat --skip-tests
 								//it: inline template (código HTML dentro del ts)
 								//is: inline style (estilo CSS dentro del ts)
 								//flat: sin crear carpeta
+								//skip-tests: omitir archivos spec de pruebas
 ```
 
 - **Crear pipe**
@@ -219,7 +220,18 @@ Angular CLI es la forma más cómoda para empezar a desarrollar aplicaciones web
 ```
 						ng g m <nombre> 
 ```
- 
+
+- **Crear servicio**
+	- Generar un servicio por defecto y lo agrega al app.module.ts
+```
+						ng g s <nombre> 
+```
+
+- **Crear guard**
+	- Generar un guard por defecto y lo agrega al app.module.ts
+```
+						ng g g <nombre> 
+``` 
 ## Estructura proyecto Angular
 - **e2e:** End to end, pruebas unitarias e integración. [Leer más](https://coryrylan.com/blog/introduction-to-e2e-testing-with-the-angular-cli-and-protractor)
 - **node_modules:** Contiene los módulos de los que depende el proyecto únicamente para desarrollo. Depende de package.json.
