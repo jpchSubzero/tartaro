@@ -155,6 +155,19 @@ En resumen, TypeScript se define como una especie de superset de JavaScript, cuy
 	- Con doble llave {{}} para el valor. Ej. alt="{{variable}}"
 	- Con corchete en atributo []. Ej. [alt]="variable"
 
+- **Operador Spread**
+Sirve para propagar los elementos de un arreglo u objeto. [Leer más](https://basarat.gitbook.io/typescript/future-javascript/spread-operator)
+
+	```
+	function foo(x, y, z) { }
+	var args = [0, 1, 2];
+	foo.apply(null, args);
+
+	function foo(x, y, z) { }
+	var args = [0, 1, 2];
+	foo(...args);
+	```	
+
 # Angular 2
 ## ¿Qué son las Directivas Estructurales?
 Las directivas estructurales corresponden a elementos en el HTML que permiten añadir, manipular o eliminar elementos del DOM. Estos elementos, en forma de atributos, se aplican a elementos huéspedes. Al hacer esto, la directiva hace lo que debe hacer sobre el elemento huésped y sus elementos hijos. Estas directivas son fácilmente reconocibles debido a que están antecedidas por un asterisco (*) seguido del nombre de la directiva. [Leer más](https://medium.com/angular-chile/directivas-estructurales-en-angular-33529aa9dd31)
@@ -216,7 +229,7 @@ Angular CLI es la forma más cómoda para empezar a desarrollar aplicaciones web
 ```
  
 - **Crear módulos**
-	- Generar un módulo por defecto y lo agrega al app.module.ts
+	- Generar un módulo por defecto y lo agrega al app.module.ts, se los agrega en los imports del app.module.
 ```
 						ng g m <nombre> 
 ```
@@ -343,6 +356,18 @@ Las directivas son, esencialmente, instrucciones para manipular el DOM. [Leer m�
 ```
 
 - **Rutas hijas:** Rutas internas en una página [Leer más](https://www.acontracorrientech.com/routing-en-angular-guia-completa-parte-5/#t-1609788239241).
+
+### Formularios
+[Leer más](https://mugan86.medium.com/formularios-en-angular-diferencias-template-y-reactive-forms-e37af5e30b81)
+#### Formularios basados ​​en plantillas (Template Forms)
+- Utilizan el “FormsModule”.
+- Son de naturaleza asincrónica.
+- La mayor parte de la lógica se basa en la plantilla (HTML).
+
+#### Formularios reactivos (Reactive Forms)
+- Utilizan “ReactiveFormsModule”.
+- Son de naturaleza sincrónica en su mayoría.
+- La lógica reside principalmente en el componente (TS).
 
 ## Ionic
 Ionic es una estructura tecnológica (Framework) de código abierto que se utiliza en el desarrollo de aplicaciones móviles híbridas, es decir, se combinan el HTML5, CSS y JavaScript dando como resultado aplicaciones con una interfaz amigable e intuitiva para el usuario que luego se comercializan o descargan en plataformas como Android o IOs. [Leer más](https://www.qualitydevs.com/2019/05/31/que-es-ionic-desarrollador-web/)
