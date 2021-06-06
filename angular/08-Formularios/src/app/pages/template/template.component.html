@@ -1,0 +1,94 @@
+<h4>Formularios <small> Formulario por template </small></h4>
+<hr>
+<form autocomplete="off" (ngSubmit)="save(formTemplate)" #formTemplate="ngForm">
+
+    <div>
+
+        <div class="form-group row">
+            <label class="col-2 col-form-label" [class.text-danger]="nombre.invalid && nombre.touched">Nombre</label>
+            <div class="col-8">
+
+                <input class="form-control" type="text" placeholder="Nombre" name="nombre" [class.is-invalid]="nombre.invalid && nombre.touched" [ngModel]="user.nombre" required minlength="5" #nombre="ngModel">
+                <div *ngIf="nombre.valid && nombre.touched" class="valid-feedback">
+                    Correcto!
+                </div>
+                <div *ngIf="nombre.invalid && nombre.touched" class="invalid-feedback">
+                    Por favor ingrese mímino 5 caracteres
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-2 col-form-label" [class.text-danger]="apellido.invalid && apellido.touched">Apellido</label>
+            <div class="col-8">
+
+                <input class="form-control" type="text" placeholder="Apellido" name="apellido" [class.is-invalid]="apellido.invalid && apellido.touched" [ngModel]="user.apellido" required minlength="5" #apellido="ngModel">
+                <div *ngIf="apellido.valid && apellido.touched" class="valid-feedback">
+                    Correcto!
+                </div>
+                <div *ngIf="apellido.invalid && apellido.touched" class="invalid-feedback">
+                    Por favor ingrese un correo válido
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label" [class.text-danger]="correo.invalid && correo.touched">Correo</label>
+        <div class="col-8">
+
+            <input class="form-control" type="email" placeholder="Correo electrónico" name="correo" [class.is-invalid]="correo.invalid && correo.touched" [ngModel]="user.correo" required minlength="5" #correo="ngModel" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+            <div *ngIf="correo.valid && correo.touched" class="valid-feedback">
+                Correcto!
+            </div>
+            <div *ngIf="correo.invalid && correo.touched" class="invalid-feedback">
+                Por favor ingrese un correo válido
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label" [class.text-danger]="country.invalid && country.touched">País</label>
+        <div class="col-8">
+
+            <select name="country" [ngModel]="user.country" class="form-select" required #country="ngModel" [class.is-invalid]="country.invalid && country.touched" [disabled]="countries.length === 0">
+                <option *ngFor="let country of countries" [value]="country.code">{{country.name}}</option>
+            </select>
+            <div *ngIf="country.valid && country.touched" class="valid-feedback">
+                Correcto!
+            </div>
+            <div *ngIf="country.invalid && country.touched" class="invalid-feedback">
+                Por favor seleccione un país
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label" [class.text-danger]="genero.invalid && genero.touched">Género</label>
+        <div class="col-8">
+            <input type="radio" name="genero" class="form-check-input" ngModel value="M" required #genero="ngModel" [class.is-invalid]="genero.invalid && genero.touched" [ngModel]="user.genero">
+            <label class="form-chech-label">Masculino</label>
+            <br>
+
+            <input type="radio" name="genero" class="form-check-input" ngModel value="F" required #genero="ngModel" [class.is-invalid]="genero.invalid && genero.touched" [ngModel]="user.genero">
+            <label class="form-chech-label">Femenino</label>
+            <small *ngIf="genero.valid && genero.touched" class="valid-feedback">
+                    Correcto!
+                </small>
+            <small *ngIf="genero.invalid && genero.touched" class="invalid-feedback">
+                    Por favor seleccione un género
+            </small>
+        </div>
+    </div>
+
+    <div class="form-group row">
+        <label class="col-2 col-form-label">&nbsp;</label>
+        <div class="input-group col-md-8">
+            <button type="submit" class="btn btn-outline-primary btn-block">
+        Guardar
+      </button>
+        </div>
+    </div>
+
+</form>

@@ -348,8 +348,8 @@ Las directivas son, esencialmente, instrucciones para manipular el DOM. [Leer m�
 						.
 						.
 						.
-						
 						<p *ngSwitchDefault>
+						
 
 						</p>
 						</span>
@@ -360,11 +360,40 @@ Las directivas son, esencialmente, instrucciones para manipular el DOM. [Leer m�
 ### Formularios
 [Leer más](https://mugan86.medium.com/formularios-en-angular-diferencias-template-y-reactive-forms-e37af5e30b81)
 #### Formularios basados ​​en plantillas (Template Forms)
+- FormsModule
+- Por convención ubicar primero los tags html y luego angular.
+- Se recomienda para formularios cortos y sin bindeo.
 - Utilizan el “FormsModule”.
 - Son de naturaleza asincrónica.
 - La mayor parte de la lógica se basa en la plantilla (HTML).
+- Para linkar el form HTML con el componente se utiliza: #<nombre>="ngForm" y se envía como parámetro <nombre> al método que va a procesar el formulario.
+- **Propiedades principales:** Cada propiedad permite evaluar o recibir resultados o valores además de generar automáticamente clases en el control de acuerdo a los resultados. [Leer más](https://angular.io/api/forms/NgForm). Ej. ng-untouched, ng-pristine, ng-valid.
+
+```
+<input 
+_ngcontent-ebt-c45="" 
+type="text" 
+placeholder="Nombre" 
+name="nombre" 
+required="" 
+minlength="5" 
+class="form-control ng-untouched ng-pristine ng-valid" 
+ng-reflect-required="" 
+ng-reflect-minlength="5" 
+ng-reflect-name="nombre" 
+ng-reflect-model="Juan Pablo"
+>
+```
+ 	- valid: Cuando el control es válido.
+	- invalid: Cuando el control es inválido.
+	- pending: Cuando el control está pendiente por una acción asíncrona.
+	- pristine: Cuando el control no ha sido editado de ninguna manera.
+	- touched: Cuando el control ha sido accesado.
+	- untouched: Cuando el control no ha sido accesado.
 
 #### Formularios reactivos (Reactive Forms)
+- ReactiveFormsModule
+- Se recomienda para formularios extensos y con bindeo.
 - Utilizan “ReactiveFormsModule”.
 - Son de naturaleza sincrónica en su mayoría.
 - La lógica reside principalmente en el componente (TS).
