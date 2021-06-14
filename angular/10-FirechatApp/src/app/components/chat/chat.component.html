@@ -1,0 +1,35 @@
+<h1>Chat</h1>
+<hr>
+
+<div class="app-mensajes pr-5" id="app-mensajes">
+
+    <!-- Utilizando ngIf
+    <div *ngFor="let chat of chatService.chats">
+        <div *ngIf="chat.uid == chatService.usuario.uid" class="text-end">
+            <span class="badge bg-primary">{{chatService.usuario.nombre}}</span>
+            <p>
+                {{chat.mensaje}}
+            </p>
+        </div>
+        <div *ngIf="chat.uid != chatService.usuario.uid" class="text-start">
+            <span class="badge bg-info">{{chatService.usuario.nombre}}</span>
+            <p>
+                {{chat.mensaje}}
+            </p>
+        </div>
+    </div> -->
+
+    <!-- Utilizando ngClass -->
+    <div *ngFor="let chat of chatService.chats" [ngClass]="{'text-end': chat.uid == chatService.usuario.uid, 'text-start': chat.uid != chatService.usuario.uid}">
+        <span class="badge" [ngClass]="{'bg-primary': chat.uid == chatService.usuario.uid, 'bg-success': chat.uid != chatService.usuario.uid}">{{chat.nombre}}</span>
+        <p>
+            {{chat.mensaje}}
+        </p>
+    </div>
+
+</div>
+
+<div class="input-group mb-3">
+    <input class="form-control" type="text" name="mensaje" [(ngModel)]="mensaje" placeholder="Enviar mensaje" (keyup.enter)="EnviarMensaje()">
+    <button class="btn btn-primary" (click)="EnviarMensaje()" type="button"><i class="fas fa-paper-plane"></i></button>
+</div>
