@@ -1,3 +1,129 @@
+# Laboratorios Angular
+Ejecutar: "npm install" para instalar dependencias.
+## 01-Hola mundo
+- ¿Qué son los componentes?
+- ¿Qué son las directivas estructurales?
+- Uso de plunker para nuestra primera interacción con Angular.
+- Trabajando de forma local un proyecto en Angular.
+- Una breve introducción sobre todos los archivos usados en el QuickStart de Angular.
+- Uso de Bootstrap 4 para nuestros estilos.
+- Crear archivos .HTML para que se encarguen de la estructura visual de - nuestros componentes.
+- Crearemos una aplicación con 3 componentes re-utilizables.
+- *ngFor y el *ngIf
+## 02-spa
+- Crearemos una aplicación de una sola página (Single Page Application)
+- Creación de proyectos de Angular usando el CLI (Command Line Interface)
+- Instalando bootstrap o librerías de terceros usando el Angular-CLI
+- Creación de rutas de nuestra aplicación
+- Uso de RouterLink y RouterLinkActive para movernos de página y colocar clases a los elementos activos.
+- Uso del modulo Router, que nos permite movernos de página mediante código.
+- Obtención de parámetros vía URL.
+- Configuración de nuestro primer servicio en Angular para el manejo de la data.
+- Breve introducción a los Pipes 
+- Uso del buscador del navbar para realizar una consulta a nuestro arreglo de héroes.
+## 03-pipes
+- Pipes uppercase y lowercase
+- Pipe Slice
+- Pipe Decimal
+- Pipe Percent
+- Pipe Currency
+- Pipe Json
+- Pipe Async
+- Pipe Date
+- Pipes personalizados
+	- Capitalizar palabras y nombres
+	- Creación de un pipe, que permite cargar recursos externos de forma segura.
+## 04-spotify
+- Reforzamiento de rutas y parámetros de rutas.
+- Uso de carruseles del Bootstrap 4
+- Uso del HTTP para obtener información
+- Uso de la API de Spotify para obtener información de:
+	- Artistas
+	- Albumes
+	- Audio
+- Trabajo sobre el manejo de data asíncrona.
+- ngModel para enlazar campos de texto a variables del componente.
+- Widgets de Spotify
+- HTML5 audio
+- Observables
+- Maps
+## 05-ToDo
+- Uso del local storage guardar localmente información para nuestras aplicaciones.
+- Introducción a ionic.
+- Uso del framework de ionic.
+- Uso de servicios que afectan el local storage.
+- Uso de ionic DevApp para desplegar nuestra aplicación
+- Aprenderemos a controlar estilos usando Angular.
+- Manejo de la información a través de servicios ( update, delete, insert y select ) al local storage.
+- Aprenderemos a utilizar pipes impuros para realizar filtros.
+## 06-Miscelaneos
+- Cambios en el estilo de algún elemento HTML utilizando variables en los componentes.
+- Comprender y aplicar CSS en un determinado scope, sin afectar los demás componentes. 
+- Adicionar y remover clases según variables o cualquier tipo de condición.
+- Crearemos directivas personalizadas.
+- Uso del ngSwitch.
+- Crearemos una pequeña aplicación para el uso de rutas y rutas hijas.
+- Comprenderemos el ciclo de vida de un componente o directiva.
+## 07-authapp
+- ¿Qué es Auth0 y la documentación basada en Angular 2?
+- Autenticación con Facebook, Twitter, Google, entre otros...
+- Creación de un formulario de captura para la creación de usuarios.
+- Personalización de la caja de login.
+- Uso de servicios para bloquear rutas que no son válidas si el usuario no esta autenticado.
+- Obtener la información del perfil del usuario ingresado.
+- Entre otras cosas útiles para nuestras aplicaciones.
+## 07-manual-LoginApp
+- Validar formularios
+- Tokens
+- LocalStorage
+- Borrar tokens
+- Caducidad de tokens
+- Creación de usuarios
+- Posteos
+- Firebase REST API
+## 08-Formularios
+- Diferentes aproximaciones que tiene angular para trabajar formularios.
+- Profundizaremos en el uso del ngModel.
+- Utilizar las validaciones pre fabricadas.
+- Crear validaciones personalizadas.
+- Crear validaciones asíncronas.
+- Realizar un submit utilizando el ngSubmit.
+- Postear información únicamente cuando el formulario es valido,
+- Crear formularios del lado del componente.
+- Cargar información por defecto a los formularios.
+- Subscribirnos a los cambios de los valores de los formularios.
+- Entre otras cosas bien interesantes.
+## 09-HeroesApp
+- Uso del modulo HTTP.
+- Utilizaremos los servicios restful de Firebase
+- POST.
+- GET.
+- DELETE.
+- PUT.
+- Configuraciones en la consola de Firebase.
+- Entre otras cosas útiles.
+## 10-FirechatApp
+- Uso de AngularFire2 - Librería oficial de angular para conectarse a Firebase.
+- Crear observables para escuchar mediante sockets los cambios en Firebase.
+- Utilizaremos la autenticación de Google y Twitter para nuestro chat.
+- Uso de AngularFire2 para manejar las inserciones.
+- Uso de promesas para poder ejecutar funciones cuando detectamos cambios en la base de datos.
+- Usaremos el local storage para almacenar información del login para mantener las sesión.
+# Laboratorios TypeScript
+Ejecutar: "npm install" para instalar dependencias.
+
+- ¿Qué es TypeScript?
+- ¿Cómo usar TypeScript y utilizar ECMAScript 6?
+- Declaración de variables con "let" y constantes "const"
+- ¿Qué es y para qué sirve el archivo tsconfig.json?
+- Uso de los tipos de datos que ofrece TypeScript.
+- Strings de multilinea.
+- Parámetros obligatorios, por defecto y opcionales.
+- Beneficios de las funciones de flecha.
+- Uso y creación de interfaces.
+- Uso de módulos y ejemplos de los mismos.
+- Decoradores de clase.
+- Entre otros temas importantes para adentrarnos en Angular 2.
 # Angular
 ## Instalaciones necesarias
 ### 1. NodeJS: 
