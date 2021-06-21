@@ -1,3 +1,8 @@
+
+
+https://www.cec-epn.edu.ec/cursos/curso/desarrollo-de-aplicaciones-angular
+
+
 # Laboratorios Angular
 Ejecutar: "npm install" para instalar dependencias.
 ## 01-Hola mundo
@@ -109,6 +114,15 @@ Ejecutar: "npm install" para instalar dependencias.
 - Uso de AngularFire2 para manejar las inserciones.
 - Uso de promesas para poder ejecutar funciones cuando detectamos cambios en la base de datos.
 - Usaremos el local storage para almacenar información del login para mantener las sesión.
+## 10-PeliculasApp
+- Http Get
+- Operadores de RXJS como el Tap y Map
+- Combinar observables
+- Módulos
+- Estructura de un proyecto real
+- Servicios
+- Slideshow
+- Swiper
 # Laboratorios TypeScript
 Ejecutar: "npm install" para instalar dependencias.
 
@@ -167,6 +181,8 @@ Ejecutar: "npm install" para instalar dependencias.
 - TSLint
 - TypeScript Hero
 - TypeScript Importer
+### 8. Herramientas
+- https://quicktype.io/
 #### ATOM
 - Angular 2 Type Script Snippets
 - Atom Bootstrap3
@@ -349,19 +365,19 @@ Angular CLI es la forma más cómoda para empezar a desarrollar aplicaciones web
 ```
 
 - **Crear directiva**
-	- Generar una directiva por defecto y lo agrega al app.module.ts
+	- Generar una directiva por defecto y lo agrega al app.module.ts. 
 ```
 						ng g d directives/<nombre> 
 ```
  
 - **Crear módulos**
-	- Generar un módulo por defecto y lo agrega al app.module.ts, se los agrega en los imports del app.module.
+	- Generar un módulo por defecto y lo agrega al app.module.ts, se los agrega en los imports del app.module. Contiene ngModule (declaraciones y configuración) y CommonModule (operaciones básicas, ngIf, ngFor, etc.). Los módulos sirven para agrupar recursos.
 ```
 						ng g m <nombre> 
 ```
 
 - **Crear servicio**
-	- Generar un servicio por defecto y lo agrega al app.module.ts
+	- Generar un servicio por defecto y lo agrega al app.module.ts. Usualmente globales y singleton.
 ```
 						ng g s <nombre> 
 ```
@@ -523,6 +539,11 @@ ng-reflect-model="Juan Pablo"
 - Utilizan “ReactiveFormsModule”.
 - Son de naturaleza sincrónica en su mayoría.
 - La lógica reside principalmente en el componente (TS).
+
+#### Decoradores
+- **@Input:** Permite a un componente padre actualizar información en un componente hijo.
+- **@Output:** Permite a un componente hijo enviar información a un componente padre.
+- **@HostListener:** Permite escuchar eventos del DOM.
 
 ## Ionic
 Ionic es una estructura tecnológica (Framework) de código abierto que se utiliza en el desarrollo de aplicaciones móviles híbridas, es decir, se combinan el HTML5, CSS y JavaScript dando como resultado aplicaciones con una interfaz amigable e intuitiva para el usuario que luego se comercializan o descargan en plataformas como Android o IOs. [Leer más](https://www.qualitydevs.com/2019/05/31/que-es-ionic-desarrollador-web/)
