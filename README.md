@@ -114,7 +114,7 @@ Ejecutar: "npm install" para instalar dependencias.
 - Uso de AngularFire2 para manejar las inserciones.
 - Uso de promesas para poder ejecutar funciones cuando detectamos cambios en la base de datos.
 - Usaremos el local storage para almacenar información del login para mantener las sesión.
-## 10-PeliculasApp
+## 11-PeliculasApp
 - Http Get
 - Operadores de RXJS como el Tap y Map
 - Combinar observables
@@ -123,6 +123,19 @@ Ejecutar: "npm install" para instalar dependencias.
 - Servicios
 - Slideshow
 - Swiper
+## 12-GoogleMapsApp
+- Uso de Google Maps en un proyecto con Angular
+- Creación del API KEY de Google Maps
+- Uso de Reactive Forms - FormBuilder
+- Creación de marcadores en el mapa
+- Eventos y diversas interacciones con los mapas
+- Edición de marcadores
+- Uso de Angular Material en el proyecto
+	- Dialogs
+	- Snacks
+	- Inputs
+	- Toolbars
+	- Themes
 # Laboratorios TypeScript
 Ejecutar: "npm install" para instalar dependencias.
 
@@ -138,6 +151,7 @@ Ejecutar: "npm install" para instalar dependencias.
 - Uso de módulos y ejemplos de los mismos.
 - Decoradores de clase.
 - Entre otros temas importantes para adentrarnos en Angular 2.
+
 # Angular
 ## Instalaciones necesarias
 ### 1. NodeJS: 
@@ -311,12 +325,27 @@ Sirve para propagar los elementos de un arreglo u objeto. [Leer más](https://ba
 	```	
 
 # Angular 2
+Es un framework para crear aplicaciones web SPA (Single Page Application) basado en JavaScript desarrollado por Google y utiliza como lenguaje TypeScript.
+
+#### Características
+- Separar frontend y backend de la aplicación
+- Simplifica el código
+- Sigue el patrón MVC
+- Está basado en componentes
+- Es de código abierto
+- Desarrollo rápido de aplicaciones
+- Modularización
+- Fácil mantenimiento
+- Multiplataforma
+
 ## ¿Qué son las Directivas Estructurales?
 Las directivas estructurales corresponden a elementos en el HTML que permiten añadir, manipular o eliminar elementos del DOM. Estos elementos, en forma de atributos, se aplican a elementos huéspedes. Al hacer esto, la directiva hace lo que debe hacer sobre el elemento huésped y sus elementos hijos. Estas directivas son fácilmente reconocibles debido a que están antecedidas por un asterisco (*) seguido del nombre de la directiva. [Leer más](https://medium.com/angular-chile/directivas-estructurales-en-angular-33529aa9dd31)
 
 ## Componente
 Un componente en Angular es un bloque de código re-utilizable, que consta básicamente de 3 archivos: un CSS, un HTML (también conocido como plantilla o en inglés, template) y un TypeScript (en adelante, TS). La carpeta app con la que viene Angular por defecto es un componente, aunque un tanto especial. Pero fíjate que tiene esos 3 mismos archivos. [Leer más](https://www.acontracorrientech.com/entendiendo-los-componentes-en-angular/#:~:text=Un%20componente%20en%20Angular%20es,componente%2C%20aunque%20un%20tanto%20especial.)
 
+### Ciclo de Vida (Lifecycle)
+En Angular, cada componente tiene un ciclo de vida, una cantidad de etapas diferentes que atraviesa. [Leer más](https://medium.com/angular-chile/angular-componentes-y-sus-ciclos-de-vida-aa639e13a688)
 - **ngOnChanges:** Este evento se ejecuta cada vez que se cambia un valor de un input control dentro de un componente. Se activa primero cuando se cambia el valor de una propiedad vinculada. Siempre recibe un change data map o mapa de datos de cambio, que contiene el valor actual y anterior de la propiedad vinculada envuelta en un SimpleChange
 - **ngOnInit:** Se ejecuta una vez que Angular ha desplegado los data-bound properties(variables vinculadas a datos) o cuando el componente ha sido inicializado, una vez que ngOnChanges se haya ejecutado. Este evento es utilizado principalmente para inicializar la data en el componente.
 - **ngDoCheck:** Se activa cada vez que se verifican las propiedades de entrada de un componente. Este método nos permite implementar nuestra propia lógica o algoritmo de detección de cambios personalizado para cualquier componente.
@@ -326,8 +355,8 @@ Un componente en Angular es un bloque de código re-utilizable, que consta bási
 - **ngAfterViewChecked:** Se ejecuta después del método ngAfterViewInit y cada vez que la vista del componente verifique cambios. También se ejecuta cuando se ha modificado cualquier enlace de las directivas secundarias. Por lo tanto, es muy útil cuando el componente espera algún valor que proviene de sus componentes secundarios.
 - **ngOnDestroy:** Este método se ejecutará justo antes de que Angular destruya los componentes. Es muy útil para darse de baja de los observables y desconectar los event handlers para evitar memory leaks o fugas de memoria.
 
-### Ciclo de Vida (Lifecycle)
-En Angular, cada componente tiene un ciclo de vida, una cantidad de etapas diferentes que atraviesa. [Leer más](https://medium.com/angular-chile/angular-componentes-y-sus-ciclos-de-vida-aa639e13a688)
+### Interpolación de texto
+Permite incorporar valores dinámicos de texto en la aplicación. [Leer más](https://desarrolloweb.com/articulos/binding-interpolacion-angular.html)
 
 ## Angular CLI
 Angular CLI es la forma más cómoda para empezar a desarrollar aplicaciones web, móvil con Angular 2, es una herramienta de linea de comandos que facilita la creación, generación, ejecución, testing, deploy. Lo genial es que es parte de los proyectos oficiales de la gente que hace Angular. [Leer más](https://medium.com/@alvareztech/angular-cli-crear-aplicaciones-con-angular-2-fac1d707f196#:~:text=Angular%20CLI%20es%20la%20forma,la%20gente%20que%20hace%20Angular.)
@@ -348,14 +377,15 @@ Angular CLI es la forma más cómoda para empezar a desarrollar aplicaciones web
 ```
 
 - **Crear component**
-	- Generar un componente por defecto y lo agrega al app.module.ts
+	- Generar un componente por defecto y lo agrega al app.module.ts, en caso de haber otro módulo en el mismo nivel del app.module.ts se utiliza --module=<módulo>
 ```
 						ng g c components/<nombre> //g: generate, c: component 
 						ng g c components/<nombre> -it -is --flat --skip-tests
-								//it: inline template (código HTML dentro del ts)
-								//is: inline style (estilo CSS dentro del ts)
+								//it ó t: inline template (código HTML dentro del ts)
+								//is ó s: inline style (estilo CSS dentro del ts)
 								//flat: sin crear carpeta
 								//skip-tests: omitir archivos spec de pruebas
+								//--module=<módulo>: agregar componente a un módulo determinado
 ```
 
 - **Crear pipe**
