@@ -136,6 +136,14 @@ Ejecutar: "npm install" para instalar dependencias.
 	- Inputs
 	- Toolbars
 	- Themes
+## 13-YoutubeApp
+- Creación de una API KEY para accesar los servicios de YouTube API v3a
+- Uso de la documentación de YouTube para obtener información de un canal
+- Obtener una lista de reproducción
+- Crear una página en la cual pueda cargar los videos de forma paginada
+- Usar el Token de respuesta de la api de YouTube
+- Trabajar con tipado de datos
+- SweetAlert2
 # Laboratorios TypeScript
 Ejecutar: "npm install" para instalar dependencias.
 
@@ -476,11 +484,35 @@ Agregar funciones de localización para traducir nombres, como fechas, al idioma
 ### DomSanitizer 
 Ayuda a prevenir los errores de seguridad de Cross Site Scripting (XSS)desinfectando los valores para que sean seguros de usar en los diferentes contextos DOM. [Leer más](https://runebook.dev/es/docs/angular/api/platform-browser/domsanitizer)
 
-### Bindeo en dos vias
+### Bindeo de valores (binding)
+Data binding automatically keeps your page up-to-date based on your application's state. You use data binding to specify things such as the source of an image, the state of a button, or data for a particular user. [Leer más](https://angular.io/guide/binding-syntax)
+
+- **Sintaxis**
+```
+						//Bindeo de valores
+						[<value>]="<variable>"
+```
+
+### Bindeo de eventos (binding)
+Event binding allows you to listen for and respond to user actions such as keystrokes, mouse movements, clicks, and touches. [Leer más](https://angular.io/guide/event-binding)
+
+- **Sintaxis**
+```
+						//Bindeo de eventos
+						
+						//Plantilla HTML
+						[<evento>]="<funcion($event)>"
+						
+						//TS
+						<Tipo de elemento HTML(<HTMLInputElement>)>event.target.<propiedad>
+```
+
+### Bindeo en dos vías (binding)
 Two-way binding gives components in your application a way to share data. Use two-way binding to listen for events and update values simultaneously between parent and child components. [Leer más](https://angular.io/guide/two-way-binding)
 
 - **Sintaxis**
 ```
+						//[()] se denomina banana in box (sugar syntax)
 						[(ngModel)]="<variable>"
 ```
 
