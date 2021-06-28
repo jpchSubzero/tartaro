@@ -144,6 +144,16 @@ Ejecutar: "npm install" para instalar dependencias.
 - Usar el Token de respuesta de la api de YouTube
 - Trabajar con tipado de datos
 - SweetAlert2
+## 14-Upload firebase
+- Uso de directivas
+- Detalles del Hostlistener
+- Input y Outputs
+- Storage de Firebase
+- UploadTask de Firebase
+- Evento drop, dragenter, dragleave, dragover
+- Uso de tipo de dato File
+## Tour of heroes
+Ejercicio oficial de angular. [Héroes](https://angular.io/tutorial)
 # Laboratorios TypeScript
 Ejecutar: "npm install" para instalar dependencias.
 
@@ -220,7 +230,7 @@ Ejecutar: "npm install" para instalar dependencias.
 - La versión más extendida es la ECMAScript 2015 o ECMAScript 6 por lo que se recomienda su uso.
 # Qué es TypeScript
 En resumen, TypeScript se define como una especie de superset de JavaScript, cuyo resultado final es un código de JavaScript.
-[Leer más](https://openwebinars.net/blog/que-es-typescript/). [Introducción](https://khru.gitbooks.io/typescript/content/). [TypeScript Online](https://www.typescriptlang.org/play?#code/Q)
+[Leer más](https://openwebinars.net/blog/que-es-typescript/). [Introducción](https://khru.gitbooks.io/typescript/content/). [TypeScript Online](https://www.typescriptlang.org/play?#code/Q) [Types](https://www.typescriptlang.org/docs/handbook/basic-types.html)
 - **Compilar TS:** tsc [nombre del archivo .ts]
 - **Crear un componente básico con función anónima autoinvocada**
 ```
@@ -382,6 +392,7 @@ Angular CLI es la forma más cómoda para empezar a desarrollar aplicaciones web
 - **Ejecutar aplicación**
 ```
 						ng serve -o //-o Para abrir automaticamente el navegador
+						npm start //Cuando hay diferencia con la versión de angular CLI actual
 ```
 
 - **Crear component**
@@ -415,7 +426,7 @@ Angular CLI es la forma más cómoda para empezar a desarrollar aplicaciones web
 ```
 
 - **Crear servicio**
-	- Generar un servicio por defecto y lo agrega al app.module.ts. Usualmente globales y singleton.
+	- Generar un servicio por defecto y lo agrega al app.module.ts dentro de providers. Usualmente globales y singleton.
 ```
 						ng g s <nombre> 
 ```
@@ -516,6 +527,40 @@ Two-way binding gives components in your application a way to share data. Use tw
 						[(ngModel)]="<variable>"
 ```
 
+### Rutas (routes)
+Permite el manejo de la navegación mediante la implementación de rutas virtuales dado que un SPA solo tiene el index.html. [Leer más](https://desarrolloweb.com/articulos/introduccion-sistema-routing-angular.html)
+
+- **Sintaxis**
+```
+						import { Routes, RouterModule } from '@angular/router';
+						import { NgModule } from '@angular/core';
+						import { AppComponent } from './app.component';
+						import { BrowserModule } from '@angular/platform-browser';
+
+						import { <Componentes> } from './components/<componenes>';
+
+						const rutas: Routes = [
+							{ path: '<nombre de la ruta>', component: <componentes> },
+							...
+							{ path: '**', pathMatch: 'full', redirectTo: '/<dirección por defecto>' }
+						];
+
+						@NgModule({
+							declarations: [
+								AppComponent,
+								<componentes>
+							],
+							imports: [
+								BrowserModule,
+								RouterModule.forRoot(rutas)
+							],
+							providers: [],
+							bootstrap: [AppComponent]
+						})
+
+						export class AppRoutingModule { }
+```
+
 ### Directivas
 Las directivas son, esencialmente, instrucciones para manipular el DOM. [Leer más](https://www.acontracorrientech.com/directives-en-angular-guia-practica/#:~:text=a%20Angular%20antes.-,%C2%BFQu%C3%A9%20son%20las%20directivas%3F,instrucciones%20para%20manipular%20el%20DOM.)
 
@@ -606,6 +651,40 @@ ng-reflect-model="Juan Pablo"
 - **@Input:** Permite a un componente padre actualizar información en un componente hijo.
 - **@Output:** Permite a un componente hijo enviar información a un componente padre.
 - **@HostListener:** Permite escuchar eventos del DOM.
+
+#### Despliegue (deploy)
+- **Despliegue para pre-producción:** Genera el dist (distribuible) con funciones de depuración.
+```
+						ng build
+```
+
+- **Despliegue para producción:** Genera el dist (distribuible) sin funciones de depuración. Crea un sufijo (hash) en los archivos JS para evitar que se almacene en caché del navegador.
+```
+						//environment.ts
+						export const environment = {
+						  production: true //Cambiar el valor a true
+						};
+
+						@NgModule({
+						  declarations: [],
+						  imports: [
+							CommonModule,
+							RouterModule.forRoot(ROUTES, { useHash: true}) //agregar useHash para que el host no crea que las rutas son carpetas físicas
+						  ],
+						  exports: [
+							RouterModule
+						  ]
+						})
+						
+						<head>
+							<meta charset="utf-8">
+							<title>PeliculasApp</title>
+							<base href=""> //Quitar el / para que use las rutas relativas
+							<meta name="viewport" content="width=device-width, initial-scale=1">
+						
+
+						ng build --prod
+```
 
 ## Ionic
 Ionic es una estructura tecnológica (Framework) de código abierto que se utiliza en el desarrollo de aplicaciones móviles híbridas, es decir, se combinan el HTML5, CSS y JavaScript dando como resultado aplicaciones con una interfaz amigable e intuitiva para el usuario que luego se comercializan o descargan en plataformas como Android o IOs. [Leer más](https://www.qualitydevs.com/2019/05/31/que-es-ionic-desarrollador-web/)

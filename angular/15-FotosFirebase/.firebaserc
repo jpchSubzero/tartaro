@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "udemyfotos": {
+      "hosting": {
+        "FotosFirebase": [
+          "udemyfotos"
+        ]
+      }
+    }
+  }
+}
