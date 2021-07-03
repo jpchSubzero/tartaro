@@ -564,6 +564,54 @@ Permite el manejo de la navegación mediante la implementación de rutas virtual
 ### Directivas
 Las directivas son, esencialmente, instrucciones para manipular el DOM. [Leer más](https://www.acontracorrientech.com/directives-en-angular-guia-practica/#:~:text=a%20Angular%20antes.-,%C2%BFQu%C3%A9%20son%20las%20directivas%3F,instrucciones%20para%20manipular%20el%20DOM.)
 
+- Tipo componente
+	- Angular
+		- @Component
+		- @Module
+	- Personalizadas (Custom)
+		- Creadas específicamente
+- Tipo estructura
+	- ngIf-else-then
+	- ngFor
+	- ngSwitch
+	- ngPlural
+	- ngTemplate
+	- ngComponentOutlet
+- Tipo atributo
+	- ngClass
+	- ngStyle
+	- ngModel
+
+#### Descripción
+- **NgIf, Then y else:** Seleccionar entre dos opciones. [Leer más](https://ultimatecourses.com/blog/angular-ngif-else-then)
+
+```
+						<ng-container
+						  *ngIf="<condicion>; then <marcador1>; else <marcador2>">
+						</ng-container>
+
+						<ng-template #<marcador1>>
+						  <div>
+							...
+						  </div>
+						</ng-template>
+						<ng-template #<marcador2>>
+						  <div>
+							...
+						  </div>
+						</ng-template>
+```
+
+- **NgFor:** Bucle que se repite n veces. [Leer más](https://angular.io/api/common/NgForOf)
+
+```
+						//index: índice de la lista a recorrer (opcional)
+						//first: primer elemento de la lista (opcional)
+						<li *ngFor="let <elemento> of <lista de elementos>; index as i; first as isFirst">
+						...
+						</li>
+```
+
 - **Scope:** El alcance de una directiva está limitada al componente.
 
 - **ngStyle:** Actualiza elementos de estilo HTML.
@@ -602,6 +650,11 @@ Las directivas son, esencialmente, instrucciones para manipular el DOM. [Leer m�
 
 						</p>
 						</span>
+```
+- **ngModel:** Bindeo en dos vías.
+```
+						//[()] se denomina banana in box (sugar syntax)
+						[(ngModel)]="<variable>"
 ```
 
 - **Rutas hijas:** Rutas internas en una página [Leer más](https://www.acontracorrientech.com/routing-en-angular-guia-completa-parte-5/#t-1609788239241).
