@@ -144,7 +144,7 @@ Ejecutar: "npm install" para instalar dependencias.
 - Usar el Token de respuesta de la api de YouTube
 - Trabajar con tipado de datos
 - SweetAlert2
-## 14-Upload firebase
+## 15-Upload firebase
 - Uso de directivas
 - Detalles del Hostlistener
 - Input y Outputs
@@ -152,6 +152,11 @@ Ejecutar: "npm install" para instalar dependencias.
 - UploadTask de Firebase
 - Evento drop, dragenter, dragleave, dragover
 - Uso de tipo de dato File
+## 16-GraficosApp
+- chart.js y ng2-charts
+## 17-VirtualScroll
+- Drag and Drop de Angular
+- Virtual Scroll
 ## Tour of heroes
 Ejercicio oficial de angular. [Héroes](https://angular.io/tutorial)
 # Laboratorios TypeScript
@@ -758,3 +763,6 @@ Progressive web apps (PWA) o aplicación web progresiva es una solución basada 
 ## Ionic Storage
 Storage is an easy way to store key/value pairs and JSON objects. Storage uses a variety of storage engines underneath, picking the best one available depending on the platform. [Leer más](https://ionicframework.com/docs/v3/storage/)
 
+# Errores
+### npm ERR! Could not resolve dependency: npm ERR! peer jasmine-core@">=3.7.1" from karma-jasmine-html-reporter@1.6.0
+Open the folder you create with ng new and open the package.json file. In devDependencies change the version of "jasmine-core" 3.6.0 to 3.7.1 and "karma-jasmine-html-reporter" from 1.5.0 to 1.6.0 and save it. Then go back to Terminal and go to your project and run npm install. Now it works and you can run ng serve. [Leer más](https://stackoverflow.com/questions/67433893/unable-to-resolve-dependency-tree-error-for-creating-new-angular-project)
