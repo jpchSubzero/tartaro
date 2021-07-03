@@ -155,8 +155,8 @@ Ejecutar: "npm install" para instalar dependencias.
 ## 16-GraficosApp
 - chart.js y ng2-charts
 ## 17-VirtualScroll
-- Drag and Drop de Angular
-- Virtual Scroll
+- [Drag and Drop de Angular](https://material.angular.io/cdk/drag-drop/overview)
+- [Virtual Scroll](https://material.angular.io/cdk/scrolling/overview)
 ## Tour of heroes
 Ejercicio oficial de angular. [Héroes](https://angular.io/tutorial)
 # Laboratorios TypeScript

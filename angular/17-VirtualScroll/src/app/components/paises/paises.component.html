@@ -1,0 +1,9 @@
+<h1>Paises</h1>
+
+<hr>
+
+<ul class="list-group" cdkDropList (cdkDropListDropped)="drop($event)">
+    <li *ngFor="let pais of paises" class="list-group-item" cdkDrag>
+        <img [src]="pais.flag" class="img-fluid img-thumbnail" style="height: 50px; width:auto;" [alt]="pais.name"> {{pais.name}}
+    </li>
+</ul>
