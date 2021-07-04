@@ -157,6 +157,14 @@ Ejecutar: "npm install" para instalar dependencias.
 ## 17-VirtualScroll
 - [Drag and Drop de Angular](https://material.angular.io/cdk/drag-drop/overview)
 - [Virtual Scroll](https://material.angular.io/cdk/scrolling/overview)
+## 18-GameOfTheYearApp
+- Firestore
+- Firebase functions
+- Firebase hosting deploy 
+- Información en tiempo real
+- Posteos
+- Gráficas
+- REST
 ## Tour of heroes
 Ejercicio oficial de angular. [Héroes](https://angular.io/tutorial)
 # Laboratorios TypeScript
@@ -656,10 +664,20 @@ Las directivas son, esencialmente, instrucciones para manipular el DOM. [Leer m�
 						</p>
 						</span>
 ```
+
 - **ngModel:** Bindeo en dos vías.
 ```
 						//[()] se denomina banana in box (sugar syntax)
 						[(ngModel)]="<variable>"
+```
+
+- **<ng-template>:** Permite tener contenido no renderizable por defecto, se utiliza para condicionales.
+```
+						<ng-template>
+						.
+						.
+						.
+						</ng-template>
 ```
 
 - **Rutas hijas:** Rutas internas en una página [Leer más](https://www.acontracorrientech.com/routing-en-angular-guia-completa-parte-5/#t-1609788239241).
