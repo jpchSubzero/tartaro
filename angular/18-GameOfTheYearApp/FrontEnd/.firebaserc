@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "udemygoty": {
+      "hosting": {
+        "GameOfTheYearApp": [
+          "udemygoty"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "udemygoty"
+  }
+}
