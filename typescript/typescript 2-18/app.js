@@ -24,7 +24,7 @@
         smash: function () {
             //Esta función modifica el scope o alcance y no utilizar las variables de la constante
             setTimeout(function () {
-                console.log(this.nombre + " smash!!!!");
+                console.log(this.nombre + " smash!!!!"); //Falla porque function modificó el scope
             }, 1000);
         }
     };

@@ -629,7 +629,7 @@ Las directivas son, esencialmente, instrucciones para manipular el DOM. [Leer m�
 
 - **ngStyle:** Actualiza elementos de estilo HTML.
 ```
-						<some-element [ngStyle]="{'font-style': styleExp}">...</some-element>
+						<some-element [ngStyle]="{'font-style': <valor de estilo> ó <condición simple o ternaria>}">...</some-element>
 						<some-element [ngStyle]="{'max-width.px': widthExp}">...</some-element>
 						<some-element [ngStyle]="objExp">...</some-element>
 ```
@@ -724,9 +724,16 @@ ng-reflect-model="Juan Pablo"
 - La lógica reside principalmente en el componente (TS).
 
 #### Decoradores
-- **@Input:** Permite a un componente padre actualizar información en un componente hijo.
+- **@Input:** Permite a un componente padre actualizar información en un componente hijo. [Leer más](https://angular.io/guide/inputs-outputs)
 - **@Output:** Permite a un componente hijo enviar información a un componente padre.
 - **@HostListener:** Permite escuchar eventos del DOM.
+
+#### Observables
+El patrón observable no es más que un modo de implementación de la programación reactiva, que básicamente pone en funcionamiento diversos actores para producir los efectos deseados, que es reaccionar ante el flujo de los distintos eventos producidos. [Leer más](https://desarrolloweb.com/articulos/introduccion-teorica-observables-angular.html)
+- **Observable:** Es aquello que queremos observar, que será implementado mediante una colección de eventos o valores futuros. Un observable puede ser creado a partir de eventos de usuario derivados del uso de un formulario, una llamada HTTP, un almacén de datos, etc. Mediante el observable nos podemos suscribir a eventos que nos permiten hacer cosas cuando cambia lo que se esté observando.
+- **Observer:** Es el actor que se dedica a observar. Básicamente se implementa mediante una colección de funciones callback que nos permiten escuchar los eventos o valores emitidos por un observable. Las callbacks permitirán especificar código a ejecutar frente a un dato en el flujo, un error o el final del flujo.
+- **Subject:** es el emisor de eventos, que es capaz de crear el flujo de eventos cuando el observable sufre cambios. Esos eventos serán los que se consuman en los observers.
+
 
 #### Despliegue (deploy)
 - **Despliegue para pre-producción:** Genera el dist (distribuible) con funciones de depuración.
