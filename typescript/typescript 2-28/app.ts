@@ -12,5 +12,7 @@
 
     console.log(sumar(5, 6));
 
+    console.log(nombre);
+
     obtenerSalario('Juan Pablo').then(s => console.log(s.toUpperCase()));
 })();
