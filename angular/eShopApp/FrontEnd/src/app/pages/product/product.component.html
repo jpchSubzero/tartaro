@@ -1,0 +1,25 @@
+<div *ngIf="product" class="animate__animated animate__fadeIn animate__faster">
+    <h2>{{product.name}}</h2>
+    <div class="row">
+        <div class="col-4">
+            <img [src]="product.productImage" class="img img-thumbnail" [alt]="product.name">
+        </div>
+        <div class="col-8">
+            <span class="badge rounded-pill bg-success sombra mb-2">{{product.category.name}}</span>
+            <p class="fs-5">{{product.description}}</p>
+            <h1 class="text-danger"><small class="fs-5">Precio: $ </small><strong>{{product.currentPrice | number:'1.2'}}</strong></h1>
+            <div class="col-3">
+                <button class="btn btn-sm btn-warning w-100 rounded-pill p-2" (click)="addProductToCart(product)"><i class="fas fa-cart-plus fa-2x"></i></button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="col m-5" *ngIf="eshopService.getFeatured().length > 0">
+
+    <hr>
+
+    <h1 class="mb-2">Destacados</h1>
+    <app-featured-grid [productsFeatured]="eshopService.getFeatured()"></app-featured-grid>
+</div>

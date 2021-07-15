@@ -1,0 +1,21 @@
+<!-- Slider main container -->
+<div class="swiper-container">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div *ngFor="let product of productsFeatured" class="swiper-slide text-center clickable animate__animated animate__fadeIn animate__faster" (click)="getProductById(product)">
+            <img [src]="product.productImage" [alt]="product.name" class="img-thumbnail mb-2">
+            <span class="badge rounded-pill bg-primary fs-6 w-100 mb-2 sombra">${{product.currentPrice | number:'1.2'}}</span>
+            <h6 class="text-success mb-2">{{product.name | productName}}</h6>
+        </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div (click)="onSlidePrev()" class="swiper-button-prev"></div>
+    <div (click)="onSlideNext()" class="swiper-button-next"></div>
+
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>

@@ -1,0 +1,97 @@
+<h1>Gestión de productos</h1>
+
+<div class="input-group input-group-sm mb-3 animate__animated animate__fadeIn animate__faster">
+    <label class="input-group-text" for="inputGroupSelect01">Productos</label>
+    <select class="form-select" name="products" (change)="selectProduct($event.target)">
+        <option value="" selected disabled>Elija un producto</option>
+      <option [value]="i" *ngFor="let product of products; let i = index;">{{product.name}}</option>
+    </select>
+</div>
+
+<div class="row mb-3 animate__animated animate__fadeIn animate__faster">
+    <div class="col" *ngIf="!selectedProduct">
+        <button type="reset" class="btn btn-outline-primary w-100 p-1" (click)="createNewProduct()"><i class="far fa-file"></i></button>
+    </div>
+    <div class="col" *ngIf="selectedProduct">
+        <button type="submit" class="btn btn-outline-primary w-100 p-1" (click)="saveForm()"><i class="fas fa-save"></i></button>
+    </div>
+    <div class="col" *ngIf="selectedProduct">
+        <button type="reset" class="btn btn-outline-secondary w-100 p-1" (click)="cancelProduct()"><i class="fas fa-window-close"></i></button>
+    </div>
+    <div class="col" *ngIf="selectedProduct">
+        <button type="reset" class="btn btn-outline-danger w-100 p-1" (click)="deleteProduct()"><i class="fas fa-trash-alt"></i></button>
+    </div>
+</div>
+
+<form autocomplete="off" [formGroup]="formReactive" (ngSubmit)="saveForm()" *ngIf="selectedProduct">
+    <div class="row animate__animated animate__fadeIn animate__faster">
+        <div class="col-md-12 col-lg-6">
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Nombre</span>
+                <input class="form-control" type="text" placeholder="Ingrese el nombre del producto" formControlName="name" [class.is-invalid]="invalidName">
+                <small *ngIf="invalidName" class="invalid-feedback">Ingrese mínimo 5 caracteres</small>
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Descripción</span>
+                <textarea class="form-control" rows="5" type="text" placeholder="Ingrese la descripción del producto" formControlName="description" [class.is-invalid]="invalidDescription"></textarea>
+                <small *ngIf="invalidDescription" class="invalid-feedback">Ingrese mínimo 5 caracteres</small>
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Nombre del modelo</span>
+                <input class="form-control" type="text" placeholder="Ingrese el nombre del modelo del producto" formControlName="modelName" [class.is-invalid]="invalidModelName">
+                <small *ngIf="invalidModelName" class="invalid-feedback">Ingrese mínimo 10 caracteres</small>
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Número del modelo</span>
+                <input class="form-control" type="text" placeholder="Ingrese el número del modelo del producto" formControlName="modelNumber" [class.is-invalid]="invalidModelNumber">
+                <small *ngIf="invalidModelNumber" class="invalid-feedback">Ingrese mínimo 10 caracteres</small>
+            </div>
+
+        </div>
+        <div class="col-md-12 col-lg-6">
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Imagen del producto</span>
+                <input class="form-control" type="text" placeholder="Ingrese el link de la imagen del producto" formControlName="productImage" [class.is-invalid]="invalidProductImage">
+                <small *ngIf="invalidProductImage" class="invalid-feedback">Ingrese mínimo 5 caracteres</small>
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Precio por unidad</span>
+                <input class="form-control" type="number" step=".01" placeholder="Ingrese el precio por unidad" formControlName="unitCost" [class.is-invalid]="invalidUnitCost">
+                <small *ngIf="invalidUnitCost" class="invalid-feedback">Ingrese un valor</small>
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Precio de venta</span>
+                <input class="form-control" type="number" step=".01" placeholder="Ingrese el precio de venta" formControlName="currentPrice" [class.is-invalid]="invalidCurrentPrice">
+                <small *ngIf="invalidCurrentPrice" class="invalid-feedback">Ingrese un valor</small>
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-sm">Unidades en stock</span>
+                <input class="form-control" type="number" placeholder="Ingrese las unidades en stock" formControlName="unitInStock" [class.is-invalid]="invalidUnitInStock">
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <input class="form-check-input me-2" type="checkbox" formControlName="isFeatured">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Recomendado
+                </label>
+            </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Categoría</label>
+                <select class="form-select" formControlName="categoryId" [class.is-invalid]="invalidCategoryId" id="categories">
+                    <option value="" selected disabled>Elija una categoría</option>
+                  <option [value]="category.id" *ngFor="let category of categories">{{category.name}}</option>
+                </select>
+                <small *ngIf="invalidCategoryId" class="invalid-feedback">Seleccione una categoría</small>
+            </div>
+
+        </div>
+    </div>
+</form>

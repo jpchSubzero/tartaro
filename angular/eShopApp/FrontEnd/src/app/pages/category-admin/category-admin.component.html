@@ -1,0 +1,47 @@
+<h1>Gestión de categorías</h1>
+
+<div class="input-group input-group-sm mb-3 animate__animated animate__fadeIn animate__faster">
+    <label class="input-group-text" for="inputGroupSelect01">Categorías</label>
+    <select class="form-select" name="categories" (change)="selectCategory($event.target)">
+        <option value="" selected disabled>Elija una categoría</option>
+      <option [value]="i" *ngFor="let category of categories; let i = index;">{{category.name}}</option>
+    </select>
+</div>
+
+
+
+<form autocomplete="off" (ngSubmit)="saveForm(formTemplate)" #formTemplate="ngForm">
+    <div class="row mb-3 animate__animated animate__fadeIn animate__faster">
+        <div class="col">
+            <button type="reset" class="btn btn-outline-primary w-100 p-1" (click)="createNewCategory()"><i class="far fa-file"></i></button>
+        </div>
+        <div class="col" *ngIf="selectedCategoryIndex">
+            <button type="submit" class="btn btn-outline-primary w-100 p-1"><i class="fas fa-save"></i></button>
+        </div>
+        <div class="col" *ngIf="selectedCategoryIndex">
+            <button type="reset" class="btn btn-outline-secondary w-100 p-1" (click)="cancelCategory()"><i class="fas fa-window-close"></i></button>
+        </div>
+        <div class="col" *ngIf="selectedCategoryIndex">
+            <button type="reset" class="btn btn-outline-danger w-100 p-1" (click)="deleteCategory()"><i class="fas fa-trash-alt"></i></button>
+        </div>
+    </div>
+    <div>
+
+        <div class="form-group row" *ngIf="selectedCategoryIndex">
+            <label class="col-2 col-form-label" [class.text-danger]="categoryName.invalid && categoryName.touched">Nombre</label>
+            <div class="col-8">
+
+                <input class="form-control" type="text" placeholder="Nombre" name="categoryName" [class.is-invalid]="categoryName.invalid && categoryName.touched" [ngModel]="selectedCategory.name" required minlength="5" #categoryName="ngModel">
+                <div *ngIf="categoryName.valid && categoryName.touched" class="valid-feedback">
+                    Correcto!
+                </div>
+                <div *ngIf="categoryName.invalid && categoryName.touched" class="invalid-feedback">
+                    Por favor ingrese mímino 5 caracteres
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</form>

@@ -1,0 +1,69 @@
+<div class="row">
+    <div class="col-3">
+        <button class="btn btn-warning btn-sm item-small p-0" type="button" (click)="clearFilters()">Limpiar filtros</button>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item animate__animated animate__fadeIn animate__faster">
+                <h2 class="accordion-header" id="categories">
+                    <button class="btn btn-primary btn-sm item-small p-0" type="button" data-bs-toggle="collapse" data-bs-target="#categoriesCollapse" aria-expanded="true" aria-controls="categoriesCollapse">
+                  Categorías
+                </button>
+                </h2>
+                <div id="categoriesCollapse" class="accordion-collapse collapse show" aria-labelledby="categories" *ngFor="let category of categories">
+                    <div class="form-check form-check ms-2 me-2">
+                        <input class="form-check-input" type="radio" value="{{category.id}}" id="flexCheckDefault" name="categoryRadio" (change)="applyFilter()" [(ngModel)]="filterByCategoryValue">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          {{category.name}}
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item animate__animated animate__fadeIn animate__faster">
+                <h2 class="accordion-header" id="prices">
+                    <button class="btn btn-primary btn-sm item-small p-0" type="button" data-bs-toggle="collapse" data-bs-target="#pricesCollapse" aria-expanded="true" aria-controls="pricesCollapse">
+                  Precios
+                </button>
+                </h2>
+                <div id="pricesCollapse" class="accordion-collapse collapse show" aria-labelledby="prices" *ngFor="let price of prices; let indexOfelement = index;">
+                    <div class="form-check form-check ms-2 me-2">
+                        <input class="form-check-input" type="radio" value="{{indexOfelement}}" id="flexCheckDefault" name="priceRadio" (change)="applyFilter()" [(ngModel)]="filterByPriceValue">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          ${{price.low}} - ${{price.high}}
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-9">
+        <ng-container *ngIf="products.length > 0; then productsExists; else productsNotExists"></ng-container>
+        <ng-template #productsExists>
+            <div class="row animate__animated animate__fadeIn animate__faster" *ngFor="let product of products">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-2">
+                            <img [src]="product.productImage" class="img-thumbnail" [alt]="product.name">
+                        </div>
+                        <div class="col-md-10">
+                            <div class="card-body">
+                                <h5 class="card-title">{{product.name}}</h5>
+                                <div class="row">
+                                    <div class="col">
+                                        <span class="badge rounded-pill bg-success sombra mb-2">{{product.category.name}}</span>
+                                        <span class="text-danger ms-3">Precio: <strong>${{product.currentPrice | number:'1.2'}}</strong></span>
+                                    </div>
+                                </div>
+                                <p class="card-text">{{product.description | productName:100}} <a class="btn-link clickable" (click)="getProductById(product)">Detalles</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+        <ng-template #productsNotExists>
+            <div class="row animate__animated animate__fadeIn animate__faster">
+                <h5 class="card-title">No existen productos con esos criterios de búsqueda</h5>
+            </div>
+        </ng-template>
+
+    </div>
+</div>

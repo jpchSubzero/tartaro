@@ -1,0 +1,7 @@
+.item-small {
+    padding: 0px;
+    margin: 0px;
+    width: 100% !important;
+    flex-wrap: wrap;
+    margin-top: -27px;
+}
