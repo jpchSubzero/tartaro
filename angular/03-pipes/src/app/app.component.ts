@@ -27,7 +27,7 @@ export class AppComponent {
   });
   fecha:Date = new Date('2008/12/24');
   idioma:string = 'en';
-  video:string = 'https://www.youtube.com/embed/Ge1lntbEsPE';
+  video:string = 'https://www.youtube.com/embed/B7DoVitihng';
   activar:boolean = true;
   activarEtiquetaMostrar:string = 'Mostrar';
   activarEtiquetaOcultar:string = 'Ocultar';
@@ -47,3 +47,5 @@ export class AppComponent {
 
   }  
 }
+
+

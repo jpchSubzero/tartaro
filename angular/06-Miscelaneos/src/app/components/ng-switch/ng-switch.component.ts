@@ -9,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 export class NgSwitchComponent implements OnInit {
 
   alert:string = 'danger';
+  condicion:boolean = false;
+  cantidad:number = 9;
 
   constructor() { }
 

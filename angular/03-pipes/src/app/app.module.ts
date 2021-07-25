@@ -22,8 +22,7 @@ registerLocaleData(localFr);
     BrowserModule
   ],
   providers: [
-    {provide: LOCALE_ID,
-    useValue: 'es'}
+    {provide: LOCALE_ID, useValue: 'es'}
   ],
   bootstrap: [AppComponent]
 })

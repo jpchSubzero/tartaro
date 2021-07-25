@@ -4,9 +4,18 @@
 
     const nombre = (): string => 'Hola';
 
+    function permitir():boolean {
+        console.log('Permitir');
+        return false;
+    }
+
     const obtenerSalario = (nombre: string): Promise<string> => {
         return new Promise((resolve, reject) => {
-            resolve(nombre);
+            if (permitir()) {
+                resolve(nombre);
+            } else {
+                reject(nombre);
+            }
         });
     }
 
@@ -14,5 +23,5 @@
 
     console.log(nombre);
 
-    obtenerSalario('Juan Pablo').then(s => console.log(s.toUpperCase()));
+    obtenerSalario('Juan Pablo').then(s => console.log(s.toUpperCase())).catch(x => console.error(x));
 })();

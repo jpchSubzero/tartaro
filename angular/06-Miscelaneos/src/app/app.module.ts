@@ -14,6 +14,7 @@ import { UsuarioNuevoComponent } from './components/usuario/usuario-nuevo.compon
 import { UsuarioEditarComponent } from './components/usuario/usuario-editar.component';
 import { UsuarioDetalleComponent } from './components/usuario/usuario-detalle.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { NgComponentOutletComponent } from './components/ng-component-outlet/ng-component-outlet.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     UsuarioNuevoComponent,
     UsuarioEditarComponent,
     UsuarioDetalleComponent,
-    NavbarComponent
+    NavbarComponent,
+    NgComponentOutletComponent
   ],
   imports: [
     BrowserModule,

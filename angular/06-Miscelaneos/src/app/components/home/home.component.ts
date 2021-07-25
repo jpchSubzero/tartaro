@@ -3,13 +3,30 @@ import { Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentCh
 @Component({
   selector: 'app-home',
   template: `
-    <app-ng-style></app-ng-style>
+    <h2>Estilo CSS</h2>
+
     <hr>
+
     <app-css></app-css>
+
+    <hr>
+
     <p>
         Texto sin estilo con alcance (scope) de componente
     </p>
+
+    <h2>ngStyle</h2>
+
     <hr>
+    
+    <app-ng-style></app-ng-style>
+
+    <hr>
+
+    <h2>ngClass</h2>
+
+    <hr>
+    
     <app-ng-class></app-ng-class>
 
     <hr>

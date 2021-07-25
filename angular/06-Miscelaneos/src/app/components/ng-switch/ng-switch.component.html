@@ -55,3 +55,40 @@
         This is a info alert—check it out!
     </div>
 </div>
+
+<h2>ngIf-else</h2>
+
+<hr>
+
+<ng-container *ngIf="condicion; then opcion1; else opcion2">
+</ng-container>
+
+<ng-template #opcion1>
+    <div>
+        <p>Texto opcion1</p>
+    </div>
+</ng-template>
+<ng-template #opcion2>
+    <div>
+        <p>Texto opcion2</p>
+    </div>
+</ng-template>
+
+<h2>ngPlural</h2>
+
+<hr>
+
+<some-element [ngPlural]="cantidad">
+    <ng-template ngPluralCase="=0">Ninguno</ng-template>
+    <ng-template ngPluralCase="=1">Hay uno</ng-template>
+    <ng-template ngPluralCase="=2">Hay dos</ng-template>
+    <ng-template ngPluralCase="other">Hay varios</ng-template>
+</some-element>
+
+<hr>
+
+<h2>ngComponentOutlet</h2>
+
+<hr>
+
+<app-ng-component-outlet></app-ng-component-outlet>

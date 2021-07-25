@@ -12,7 +12,11 @@ import { UsuarioComponent } from './components/usuario/usuario.component';
 import { APP_USER_ROUTES } from './components/usuario/usuario.routes';
 
 const APP_ROUTES: Routes = [
-    { path: 'home', component: HomeComponent },
+    { 
+        path: 'home', 
+        component: 
+        HomeComponent 
+    },
     {
         path: 'user/:id',
         component: UsuarioComponent,

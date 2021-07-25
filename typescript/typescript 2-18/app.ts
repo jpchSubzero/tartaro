@@ -20,7 +20,7 @@
         return xxx;
     }
 
-    const miFuncion5 = function(a: number, b: number) {
+    const miFuncion5 = (a: number, b: number) {
         return a + b;
     }
 
@@ -47,7 +47,7 @@
     }
 
     console.log(miFuncion('miFuncion'));
-    console.log(miFuncion1('miFuncion1'));
+    console.log(miFuncion1('miFuncion1')); 
     console.log(miFuncion2('miFuncion2'));
     console.log(miFuncion3('miFuncion3'));
     console.log(miFuncion4('miFuncion4'));
