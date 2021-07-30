@@ -15,6 +15,10 @@ export class HomeComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    console.log('Esta autenticado: ' + this.auth.isAutenticated());
+    if (!this.auth.isAutenticated()) {
+      this.salir();      
+    }
   }
 
   salir() {

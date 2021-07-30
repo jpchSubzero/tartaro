@@ -1,0 +1,21 @@
+<h1>Subscribing to multiple Observables in Angular Templates</h1>
+
+<h2>Manual Subscriptions</h2>
+<button (click)="show = !show">Toggle</button>
+<app-manual-subscriptions *ngIf="show"></app-manual-subscriptions>
+
+<hr />
+
+<app-async-pipe></app-async-pipe>
+
+<hr />
+
+<app-async-pipe-object></app-async-pipe-object>
+
+<hr />
+
+<app-fork-join-operator></app-fork-join-operator>
+
+<hr />
+
+<app-combine-latest-operator></app-combine-latest-operator>

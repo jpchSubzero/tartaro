@@ -10,6 +10,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { FormsModule } from '@angular/forms';
 
 import { HttpClientModule } from '@angular/common/http';
+import { UtilsModule } from 'factor-utils';
 
 
 @NgModule({
@@ -23,7 +24,10 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    UtilsModule.forRoot({
+      storage: { encryptionSecret: 'clave-de-encriptacion' } //PARA LA ENCRIPTACION DEL LOCAL STORAGE USANDO EL SERVICIO 'STORAGE-SERVICE'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

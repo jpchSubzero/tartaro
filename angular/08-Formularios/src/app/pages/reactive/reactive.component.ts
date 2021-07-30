@@ -9,7 +9,7 @@ import { ValidatorsService } from 'src/app/services/validators.service';
 })
 export class ReactiveComponent implements OnInit {
 
-  formReactive: FormGroup; //Error de inicialización, cambiar "strictPropertyInitialization": false para superarlo
+  formReactive: FormGroup = undefined!; //Error de inicialización, cambiar "strictPropertyInitialization": false para superarlo
 
   constructor(
     private formBuilder: FormBuilder,

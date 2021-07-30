@@ -59,6 +59,10 @@ export class ChatService {
     switch(proveedor) {
       case 'google': 
         this.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
+        this.auth.authState.subscribe(user => {
+          console.log('estado: ', user);
+        });
+    
         break;
       case 'twitter': 
         this.auth.signInWithPopup(new firebase.auth.TwitterAuthProvider());

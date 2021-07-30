@@ -12,7 +12,7 @@ import { AuthService } from '../../services/auth.service';
 })
 export class RegistroComponent implements OnInit {
 
-  user: UserModel;
+  user: UserModel = new UserModel();;
   rememberMe: boolean = false;
 
   constructor(
@@ -21,7 +21,6 @@ export class RegistroComponent implements OnInit {
   ) { }
 
   ngOnInit() { 
-    this.user = new UserModel();
   }
 
   onSubmit(formRegister:NgForm) {
