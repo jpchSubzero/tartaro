@@ -16,7 +16,7 @@ console.log(letras, numeros);
 // Tarea
 // 1. el primer valor del arr se llamará nombre
 // 2. se llamará setNombre
-const useState = ( valor ) => {
+const usarState = ( valor ) => {
     return [ valor, ()=>{ console.log('Hola Mundo') } ];
 }
 
@@ -24,7 +24,7 @@ const useState = ( valor ) => {
 // console.log(arr[0])
 // arr[1](); //Llamar a la función que está en la posición 1
 
-const [ nombre, setNombre ] = useState( 'Goku' );
+const [ nombre, setNombre ] = usarState( 'Goku' );
 
 console.log( nombre );
 setNombre();
