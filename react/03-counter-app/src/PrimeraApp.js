@@ -78,7 +78,7 @@ const PrimeraApp = ({nombreProps, apellidoProps, edadProps}) => {
     //     </Fragment>
     // );
 
-    // Se puede englobar en <> sin etiqueta para no generar etiquetas innecesarias, código más limpio
+    // Se puede englobar en <> sin etiqueta (al renderizar se convierte en Fragment) para no generar etiquetas innecesarias, código más limpio
     // return ( 
     //     <>
     //         <h1>Hola mundo desde componente</h1>
