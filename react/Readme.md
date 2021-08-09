@@ -145,9 +145,22 @@ Estructura de archivos según react. https://es.reactjs.org/docs/faq-structure.h
 Estructura de archivos según hackernoon: https://hackernoon.com/structuring-projects-and-naming-components-in-react-1261b6e18d76
 
 Publish
-
 Aprender cómo realizar backups a repositorios de Git
 Subir nuestro repositorio a GitHub
 Uso de Github Pages
 Desplegar nuestra aplicación de React
-Generar build de producción de nuestra aplicación
+- Generar build de producción de nuestra aplicación
+- Renonbrar build a docs para que lo maneje git
+- Agregar ./ a los href o src si no esta en la raiz
+
+
+¿Qué veremos en esta sección?
+Seguir el camino de las pruebas
+Pruebas en componentes específicos
+Pruebas en componentes de forma individual
+Pruebas con customHooks
+Esperar cambios en un customHook
+Simular eventos en inputs y formularios
+Simular llamadas a funciones
+Evaluar si existen elementos en el componente
+
