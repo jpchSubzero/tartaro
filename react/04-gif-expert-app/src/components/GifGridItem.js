@@ -3,7 +3,7 @@ import React from 'react';
 // export const GifGridItem = (props) => {
 
 //Para no usar en el componente props.image enviamos destructurado el objeto
-export const GifGridItem = ({id, title, url}) => {
+export const GifGridItem = ({title, url}) => {
 
     console.log(title);
 

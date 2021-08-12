@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas de GifGridItem Mostrar correctamente el componente a través de un snapshot con parámetros 1`] = `
+<div
+  className="card animate__animated animate__fadeIn"
+>
+  <img
+    alt="Título"
+    src="http://urlprueba.com"
+  />
+  <p>
+    Título
+  </p>
+</div>
+`;
+
+exports[`Pruebas de GifGridItem Mostrar correctamente el componente a través de un snapshot sin parámetros 1`] = `
+<div
+  className="card animate__animated animate__fadeIn"
+>
+  <img />
+  <p />
+</div>
+`;

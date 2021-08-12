@@ -9,15 +9,20 @@ export const AddCategory = ({ setCategories }) => {
 
     const handleInputChange = (e) => {
         setInputValue(e.target.value);
+
+        //Agregar para prueba unitaria
+        console.log('Se llamó el método handleInputChange');
     }
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        console.log('Submit');
+        //Agregar para prueba unitaria
+        console.log('Se llamó el método handleSubmit', inputValue);
 
-        if (inputValue.trim()) {
-            setCategories(categs => [inputValue, ...categs]);            
+        if (inputValue.trim().length > 2) {
+            setCategories(categs => [inputValue, ...categs]);   
+            // setCategories(2412341234);            
             setInputValue('');
         }
     }
@@ -25,6 +30,9 @@ export const AddCategory = ({ setCategories }) => {
     return (
         <form onSubmit={ handleSubmit }>
             <h1>{ inputValue }</h1>
+
+{/* Agregamos el <p> por pruebas unitarias */}
+<p>{inputValue }</p>
 
             <input 
                 type="text" 

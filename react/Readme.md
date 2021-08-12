@@ -88,6 +88,8 @@ Watch Usage
  
  import '@testing-library/jest-dom'; Sirve para presentar sugerencias de métodos
  
+Instalar siempre como dependencia de desarrollo (--save-dev) para que no se agregue al build. 
+ 
 Enzyme React v.16 https://enzymejs.github.io/enzyme/
 Aún no tiene soporte para la versión 17 de react
 1. Downgrade del proyecto

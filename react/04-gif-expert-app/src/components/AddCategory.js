@@ -43,8 +43,8 @@ export const AddCategory = ({ setCategories }) => {
         //Invocar la función recibida desde el padre y utilizarla a través del callback porque no tenemos acceso a categories, se puede recibir también las categories pero gracias al callback podemos pedirlas
         // setCategories(categs => [...categs, inputValue]);
 
-        // Agregar validaciones porque acepta vacíos
-        if (inputValue.trim()) {
+        // Agregar validaciones porque acepta vacíos. Mínimo 2 para que no pierda el tiempo con una letra.
+        if (inputValue.trim().length > 2) {
             // Quitar agregar al final para que se vayan agregando al inicio
             // setCategories(categs => [...categs, inputValue]);            
 
