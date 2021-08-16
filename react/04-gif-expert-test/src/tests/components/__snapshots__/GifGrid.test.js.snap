@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas con el archivo GifGrid Debe mostrar items cuando se cargan imágenes con useFetchGifs y no mostrar loading. A través del snapshot 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+    saint seiya
+  </h3>
+  <div
+    className="card-grid"
+  >
+    <GifGridItem
+      id="1"
+      key="1"
+      title="Gif 1"
+      url="http://image1"
+    />
+    <GifGridItem
+      id="2"
+      key="2"
+      title="Gif 2"
+      url="http://image2"
+    />
+    <GifGridItem
+      id="3"
+      key="3"
+      title="Gif 3"
+      url="http://image3"
+    />
+  </div>
+</Fragment>
+`;
+
+exports[`Pruebas con el archivo GifGrid Debe ser igual al snapshot en el arranque del componente 1`] = `
+<Fragment>
+  <h3
+    className="animate__animated animate__fadeIn"
+  >
+    saint seiya
+  </h3>
+  <p
+    className="animate__animated animate__flash"
+  >
+    Cargando...
+  </p>
+  <div
+    className="card-grid"
+  />
+</Fragment>
+`;
