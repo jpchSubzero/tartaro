@@ -166,3 +166,16 @@ Simular eventos en inputs y formularios
 Simular llamadas a funciones
 Evaluar si existen elementos en el componente
 
+
+¿Qué veremos en esta sección?
+Profundizar en el tema de los Hooks
+Crear otros customHooks
+useState
+useCounter - Personalizado
+useEffect y sus precauciones
+useRef
+useFetch - Personalizado + optimizaciones
+useLayoutEffect
+Memo
+useMemo
+useCallback
