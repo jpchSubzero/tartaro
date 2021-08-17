@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react'
+import React, { useCallback } from 'react';
 import { Hijo } from './Hijo';
 import { useState } from 'react';
 
