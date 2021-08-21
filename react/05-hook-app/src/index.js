@@ -15,7 +15,11 @@ import ReactDOM from 'react-dom';
 
 // Tarea final
 // Falta importar en el padre el estilo
-import { Padre } from './components/07-tarea-memo/Padre';
+// import { Padre } from './components/07-tarea-memo/Padre';
+
+// Importaciones común y corriente para empezar a trabajar con reducers
+// import './components/08-useReducer/intro-reducer';
+import { TodoApp } from './components/08-useReducer/TodoApp';
 
 ReactDOM.render(
   // <HookApp />,
@@ -32,7 +36,10 @@ ReactDOM.render(
   // <CallbackHook />,
 
   // Tarea final
-  <Padre />,
+  // <Padre />,
+
+  // Inicio reducers
+  <TodoApp />,
   document.getElementById('root')
 );
 

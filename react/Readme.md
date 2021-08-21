@@ -179,3 +179,48 @@ useLayoutEffect
 Memo
 useMemo
 useCallback
+
+¿Qué veremos en esta sección?
+useReducer
+Reducers
+Teoría de un reducer
+	Un reducer es una función que toma 2 valores y devuelve 1 valor.
+	https://zeroidentidad.gitbook.io/react-puro-19/13-hook-usereducer/que_es_reducer
+	1. Es una función común y corriente
+		```
+		const <nombre> = () => {}
+		```
+	2. Debe ser una función pura
+		2.1 No debe tener efectos secundarios. Todo se debe resolver sin llamar otras funciones. Esas tareas podrían fallar y causar que no funcione correctamente el reducer.
+		2.2 Debe realizar solo tareas síncronas
+		2.3 Debe retornar siempre un nuevo estado. No mutar.
+		2.4 No debe llamar ni localStorage ni sessionStorage. Esto sería un efecto secundario. Estas tareas podrían fallar y causar que no funcione correctamente el reducer.
+		2.5 No debe requerir más que una acción que puede tener un argumento.
+		
+		```
+			// Ejemplo de lista de tareas (TO-DO).
+			
+			const initialTodos = [{
+				id: 1,
+				todo: 'Comprar pan',
+				done: false
+			}];
+			
+			const todoReducer = (state = initialTodos, action) => {
+				return state;
+			}
+			
+			let todos = todoReducer();
+			
+			console.log(todos);
+			
+			// Salida a consola
+			[{...}]
+			0: {id: 1, todo: "Comprar pan", done: false}
+			length: 1
+		```
+	3. Debe retornar un nuevo estado
+	4. Usualmente sólo recibe dos argumentos
+		- El valor inicial (initialState) y la acción a ejecutar
+Aplicación de TODOs
+CRUD local

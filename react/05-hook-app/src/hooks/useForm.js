@@ -1,3 +1,4 @@
+// Este hook sirve para manejar los valores de elementos de formularios
 import { useState } from 'react';
 
 export const useForm = (initialState = {}) => {
@@ -22,6 +23,12 @@ export const useForm = (initialState = {}) => {
         });        
     };
 
+    // Agregar la funcionalidad de reset (limpiar campo) cuando se trabaje con los reducers en el ejercicio de TODO. En este caso no sirve el initialState.
+    // Hay que hacerlo accesible retornándolo junto con values, handleInputChange
+    const handleReset = () => {
+        setValues(initialState);        
+    };
 
-    return [ values, handleInputChange];
+
+    return [values, handleInputChange, handleReset];
 }
