@@ -224,3 +224,12 @@ Teoría de un reducer
 		- El valor inicial (initialState) y la acción a ejecutar
 Aplicación de TODOs
 CRUD local
+
+¿Qué veremos en esta sección?
+Context
+Provider
+useContext
+React Router
+Links y NavLinks
+CreateContext
+SPA ( Single Page Application )

@@ -1,0 +1,2 @@
+D:\Estudio\Ejercicios\tartaro\.net\ScriptRun\obj\Debug\ScriptRun.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudio\Ejercicios\tartaro\.net\ScriptRun\obj\Debug\ScriptRun.csproj.CoreCompileInputs.cache
