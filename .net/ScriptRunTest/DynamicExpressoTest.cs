@@ -153,7 +153,11 @@ namespace ScriptRunTest
 
             var dataFilteredStatic = dataLists.Where(item =>
 
-    true
+item.Date > Convert.ToDateTime("8/22/1921", CultureInfo.InvariantCulture)
+
+
+
+
 
             ).ToList();
 
