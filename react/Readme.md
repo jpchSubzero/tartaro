@@ -253,3 +253,6 @@ SPA ( Single Page Application )
 
 ¿Qué veremos en esta sección?
 Pruebas sobre Hooks y CustomHooks
+Tarea 1
+Preparar el entorno para pruebas con enzyme, enzyme-to-json
+Validar por snapshot el componente HookApp que dejamos en el src

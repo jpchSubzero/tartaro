@@ -7,7 +7,6 @@ export const TodoList = ({todos, handleToggle, handleDelete}) => {
             {
                 todos.length > 0 ?
                     todos.map((todo, idx) => 
-                        // Agregar el key para quitar el warning
                         <TodoListItem key={todo.id} todo={todo} idx={idx} handleToggle={handleToggle} handleDelete={handleDelete}/>
                     )
                 :
