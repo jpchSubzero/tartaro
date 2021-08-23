@@ -5,6 +5,12 @@ Introducción (30min)
 ¿Qué aprenderemos en esta sección?
 ¿Qué es React?
 Conceptos generales
+
+
+Componentes de orden superior
+Un componente de orden superior (HOC por las siglas en inglés de higher-order component) es una técnica avanzada en React para el reuso de la lógica de componentes. Los HOCs no son parte de la API de React. Son un patrón que surge de la naturaleza composicional de React.
+https://es.reactjs.org/docs/higher-order-components.html
+
 Babel
 JSX
 
@@ -228,8 +234,19 @@ CRUD local
 ¿Qué veremos en esta sección?
 Context
 Provider
+Context.Provider
+https://es.reactjs.org/docs/context.html#contextprovider
+
 useContext
+Acepta un objeto de contexto (el valor devuelto de React.createContext) y devuelve el valor de contexto actual. El valor actual del contexto es determinado por la propiedad value del <MyContext.Provider> ascendentemente más cercano en el árbol al componente que hace la llamada.
+https://es.reactjs.org/docs/hooks-reference.html#usecontext
+
 React Router
+	- https://reactrouter.com/web/guides/quick-start
+	- Si presenta vulnerabilidades se pueden corregir utilizando:
+		- npm audit fix
+	- Si presenta error: unable to resolve dependency tree, utilizar:
+		- npm audit fix	--force
 Links y NavLinks
 CreateContext
 SPA ( Single Page Application )

@@ -19,7 +19,9 @@ import ReactDOM from 'react-dom';
 
 // Importaciones común y corriente para empezar a trabajar con reducers
 // import './components/08-useReducer/intro-reducer';
-import { TodoApp } from './components/08-useReducer/TodoApp';
+// import { TodoApp } from './components/08-useReducer/TodoApp';
+
+import { MainApp } from './components/09-useContext/MainApp';
 
 ReactDOM.render(
   // <HookApp />,
@@ -39,7 +41,10 @@ ReactDOM.render(
   // <Padre />,
 
   // Inicio reducers
-  <TodoApp />,
+  // <TodoApp />,
+
+  // Inicio useContext
+  <MainApp />,
   document.getElementById('root')
 );
 
