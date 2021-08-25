@@ -20,6 +20,7 @@ export const useFetch = ( url ) => {
 
         fetch(url)
             .then(response => response.json())
+            // Quitar el ; y agregar el catch para probar el error
             .then(data => {
                 setTimeout(() => {
                     if (isMounted.current) {
@@ -30,7 +31,13 @@ export const useFetch = ( url ) => {
                         });                        
                     }
                 }, 2000);
-
+            })
+            .catch(error => {
+                setState({
+                    loading: false,
+                    error: 'Error al llamar al API: ' + error,
+                    data: null                    
+                });
             });
     }, [url]);
 

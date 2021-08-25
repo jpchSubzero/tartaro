@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Prueba de RealExampleRef Debe mostrarse correctamente 1`] = `
+<Fragment>
+  <h1>
+    RealExampleRef
+  </h1>
+  <hr />
+  <button
+    className="btn btn-primary"
+    onClick={[Function]}
+  >
+    Mostrar/ocultar
+  </button>
+</Fragment>
+`;

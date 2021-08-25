@@ -12,6 +12,7 @@ export const MultipleCustomHooks = () => {
         <>
             <h1>Breaking Bad Quotes</h1>
             <hr />
+            <h3>{ counter }</h3>
 
             {
                 loading ? (
@@ -21,7 +22,7 @@ export const MultipleCustomHooks = () => {
                 ) : (
                     <figure className="text-end">
                         <blockquote className="blockquote">
-                            <p>{ quote }</p>
+                            <p className="mb-0">{ quote }</p>
                         </blockquote>
                         <figcaption className="blockquote-footer">
                             { author }

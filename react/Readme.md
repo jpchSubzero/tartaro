@@ -82,6 +82,50 @@ Perdida de tiempo (no porque dan más seguridad y confianza)
 Hay que probar todo (No probar cosas que no son responsabilidad del desarrollador como librerías de terceros)
 
 npm run test
+
+PS D:\Estudio\Ejercicios\tartaro\react\05-hook-test> npm run test
+
+> hook-app@0.1.0 test
+> react-scripts test
+
+node:internal/modules/cjs/loader:936
+  throw err;
+  ^
+
+Error: Cannot find module 'slash'
+Require stack:
+- D:\Estudio\Ejercicios\tartaro\react\05-hook-test\node_modules\jest-runtime\build\ScriptTransformer.js
+- D:\Estudio\Ejercicios\tartaro\react\05-hook-test\node_modules\jest-runtime\build\index.js      
+- D:\Estudio\Ejercicios\tartaro\react\05-hook-test\node_modules\jest-cli\build\cli\runCLI.js     
+- D:\Estudio\Ejercicios\tartaro\react\05-hook-test\node_modules\jest-cli\build\cli\index.js      
+- D:\Estudio\Ejercicios\tartaro\react\05-hook-test\node_modules\jest-cli\build\jest.js
+- D:\Estudio\Ejercicios\tartaro\react\05-hook-test\node_modules\jest\build\jest.js
+- D:\Estudio\Ejercicios\tartaro\react\05-hook-test\node_modules\react-scripts\scripts\test.js    
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:94:18)
+    at Object.<anonymous> (D:\Estudio\Ejercicios\tartaro\react\05-hook-test\node_modules\jest-runtime\build\ScriptTransformer.js:25:15)
+    at Module._compile (node:internal/modules/cjs/loader:1101:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1153:10)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'D:\\Estudio\\Ejercicios\\tartaro\\react\\05-hook-test\\node_modules\\jest-runtime\\build\\ScriptTransformer.js',
+    'D:\\Estudio\\Ejercicios\\tartaro\\react\\05-hook-test\\node_modules\\jest-runtime\\build\\index.js',
+    'D:\\Estudio\\Ejercicios\\tartaro\\react\\05-hook-test\\node_modules\\jest-cli\\build\\cli\\runCLI.js',
+    'D:\\Estudio\\Ejercicios\\tartaro\\react\\05-hook-test\\node_modules\\jest-cli\\build\\cli\\index.js',
+    'D:\\Estudio\\Ejercicios\\tartaro\\react\\05-hook-test\\node_modules\\jest-cli\\build\\jest.js',
+    'D:\\Estudio\\Ejercicios\\tartaro\\react\\05-hook-test\\node_modules\\jest\\build\\jest.js', 
+    'D:\\Estudio\\Ejercicios\\tartaro\\react\\05-hook-test\\node_modules\\react-scripts\\scripts\\test.js'
+  ]
+}
+
+Ejecutar npm audit fix (--force)
+
+
+
 Ejecuta todos los archivos .test.js
 Por defecto se instala Jest para las pruebas
 Watch Usage
@@ -101,7 +145,7 @@ Aún no tiene soporte para la versión 17 de react
 1. Downgrade del proyecto
 2. Versión Beta. https://github.com/wojtekmaj/enzyme-adapter-react-17
 
-setupTests.js
+src/setupTests.js
 import Enzyme from 'enzyme';
 //Para utilizar enzyme con React v.16
 // import Adapter from 'enzyme-adapter-react-16';
@@ -113,7 +157,7 @@ Enzyme.configure({ adapter: new Adapter() });
 EnzymeToJSON
 npm install --save-dev enzyme-to-json
 
-setupTests.js
+src/setupTests.js
 import {createSerializer} from 'enzyme-to-json';
 expect.addSnapshotSerializer(createSerializer({mode: 'deep'}));
 
