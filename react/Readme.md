@@ -300,3 +300,19 @@ Pruebas sobre Hooks y CustomHooks
 Tarea 1
 Preparar el entorno para pruebas con enzyme, enzyme-to-json
 Validar por snapshot el componente HookApp que dejamos en el src
+
+Se deben probar los componentes desde el más bajo nivel, en caso de 08-useReducer sería:
+1. todoReducer
+2. TodoListItem
+3. TodoList
+4. TodoAdd
+5. TodoApp
+
+09-useContext
+No validar todos porque o ya se hizo o no es necesario. Como tarea puede ser el test de NavBar con snapshot
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en NavBar Debe presentar correctamente 1`] = `
+<nav
+  className="navbar navbar-expand-sm navbar-dark bg-dark"
+>
+  <div
+    className="container-fluid"
+  >
+    <NavLink
+      activeClassName="active"
+      className="navbar-brand"
+      to="/"
+    >
+      useContextApp
+    </NavLink>
+    <button
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      className="navbar-toggler"
+      data-bs-target="#navbarNavAltMarkup"
+      data-bs-toggle="collapse"
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      className="collapse navbar-collapse"
+      id="navbarNavAltMarkup"
+    >
+      <div
+        className="navbar-nav"
+      >
+        <NavLink
+          activeClassName="active"
+          className="nav-link"
+          exact={true}
+          to="/"
+        >
+          Home
+        </NavLink>
+        <NavLink
+          activeClassName="active"
+          className="nav-link"
+          exact={true}
+          to="/login"
+        >
+          Login
+        </NavLink>
+        <NavLink
+          activeClassName="active"
+          className="nav-link"
+          exact={true}
+          to="/about"
+        >
+          About
+        </NavLink>
+      </div>
+    </div>
+  </div>
+</nav>
+`;
