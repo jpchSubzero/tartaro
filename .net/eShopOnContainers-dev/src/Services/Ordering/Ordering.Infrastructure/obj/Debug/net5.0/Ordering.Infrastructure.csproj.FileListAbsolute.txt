@@ -1,0 +1,15 @@
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\Services\Ordering\Ordering.Infrastructure\bin\Debug\net5.0\Ordering.Infrastructure.deps.json
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\Services\Ordering\Ordering.Infrastructure\bin\Debug\net5.0\Ordering.Infrastructure.dll
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\Services\Ordering\Ordering.Infrastructure\bin\Debug\net5.0\ref\Ordering.Infrastructure.dll
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\Services\Ordering\Ordering.Infrastructure\bin\Debug\net5.0\Ordering.Infrastructure.pdb
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\Services\Ordering\Ordering.Infrastructure\bin\Debug\net5.0\Ordering.Domain.dll
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\Services\Ordering\Ordering.Infrastructure\bin\Debug\net5.0\Ordering.Domain.pdb
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\Services\Ordering\Ordering.Infrastructure\obj\Debug\net5.0\Ordering.Infrastructure.csproj.AssemblyReference.cache
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\Services\Ordering\Ordering.Infrastructure\obj\Debug\net5.0\Ordering.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\Services\Ordering\Ordering.Infrastructure\obj\Debug\net5.0\Ordering.Infrastructure.AssemblyInfoInputs.cache
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\Services\Ordering\Ordering.Infrastructure\obj\Debug\net5.0\Ordering.Infrastructure.AssemblyInfo.cs
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\Services\Ordering\Ordering.Infrastructure\obj\Debug\net5.0\Ordering.Infrastructure.csproj.CoreCompileInputs.cache
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\Services\Ordering\Ordering.Infrastructure\obj\Debug\net5.0\Ordering.Infrastructure.csproj.CopyComplete
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\Services\Ordering\Ordering.Infrastructure\obj\Debug\net5.0\Ordering.Infrastructure.dll
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\Services\Ordering\Ordering.Infrastructure\obj\Debug\net5.0\ref\Ordering.Infrastructure.dll
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\Services\Ordering\Ordering.Infrastructure\obj\Debug\net5.0\Ordering.Infrastructure.pdb
