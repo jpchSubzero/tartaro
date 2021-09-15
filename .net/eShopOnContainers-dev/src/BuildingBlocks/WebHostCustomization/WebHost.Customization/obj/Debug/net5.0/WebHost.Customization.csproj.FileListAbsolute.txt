@@ -1,0 +1,15 @@
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\WebHostCustomization\WebHost.Customization\bin\Debug\net5.0\WebHost.Customization.deps.json
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\WebHostCustomization\WebHost.Customization\bin\Debug\net5.0\WebHost.Customization.runtimeconfig.json
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\WebHostCustomization\WebHost.Customization\bin\Debug\net5.0\WebHost.Customization.runtimeconfig.dev.json
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\WebHostCustomization\WebHost.Customization\bin\Debug\net5.0\WebHost.Customization.dll
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\WebHostCustomization\WebHost.Customization\bin\Debug\net5.0\ref\WebHost.Customization.dll
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\WebHostCustomization\WebHost.Customization\bin\Debug\net5.0\WebHost.Customization.pdb
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\WebHostCustomization\WebHost.Customization\obj\Debug\net5.0\WebHost.Customization.csproj.AssemblyReference.cache
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\WebHostCustomization\WebHost.Customization\obj\Debug\net5.0\WebHost.Customization.GeneratedMSBuildEditorConfig.editorconfig
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\WebHostCustomization\WebHost.Customization\obj\Debug\net5.0\WebHost.Customization.AssemblyInfoInputs.cache
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\WebHostCustomization\WebHost.Customization\obj\Debug\net5.0\WebHost.Customization.AssemblyInfo.cs
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\WebHostCustomization\WebHost.Customization\obj\Debug\net5.0\WebHost.Customization.csproj.CoreCompileInputs.cache
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\WebHostCustomization\WebHost.Customization\obj\Debug\net5.0\WebHost.Customization.dll
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\WebHostCustomization\WebHost.Customization\obj\Debug\net5.0\ref\WebHost.Customization.dll
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\WebHostCustomization\WebHost.Customization\obj\Debug\net5.0\WebHost.Customization.pdb
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\WebHostCustomization\WebHost.Customization\obj\Debug\net5.0\WebHost.Customization.genruntimeconfig.cache

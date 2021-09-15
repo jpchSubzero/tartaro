@@ -1,0 +1,12 @@
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\Devspaces.Support\bin\Debug\net5.0\Devspaces.Support.deps.json
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\Devspaces.Support\bin\Debug\net5.0\Devspaces.Support.dll
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\Devspaces.Support\bin\Debug\net5.0\ref\Devspaces.Support.dll
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\Devspaces.Support\bin\Debug\net5.0\Devspaces.Support.pdb
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\Devspaces.Support\obj\Debug\net5.0\Devspaces.Support.csproj.AssemblyReference.cache
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\Devspaces.Support\obj\Debug\net5.0\Devspaces.Support.GeneratedMSBuildEditorConfig.editorconfig
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\Devspaces.Support\obj\Debug\net5.0\Devspaces.Support.AssemblyInfoInputs.cache
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\Devspaces.Support\obj\Debug\net5.0\Devspaces.Support.AssemblyInfo.cs
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\Devspaces.Support\obj\Debug\net5.0\Devspaces.Support.csproj.CoreCompileInputs.cache
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\Devspaces.Support\obj\Debug\net5.0\Devspaces.Support.dll
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\Devspaces.Support\obj\Debug\net5.0\ref\Devspaces.Support.dll
+d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\BuildingBlocks\Devspaces.Support\obj\Debug\net5.0\Devspaces.Support.pdb
