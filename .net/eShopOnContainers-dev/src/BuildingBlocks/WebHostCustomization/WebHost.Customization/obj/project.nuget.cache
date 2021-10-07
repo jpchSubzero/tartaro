@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A1TRwWiIKf2EfI7p1g4Za87OQ2EIiV389bO/cGHJrADkxCJxISy/lYbusWs3pghhidkn76IDsN6ZUIKfgpCg+A==",
+  "dgSpecHash": "LCfgUNnggJTR0CA4e7OAN6H3Ik1vA7rZecGA8TvD0x4R6sX05pOB6BUcRcXCMBqThiMZ4t9XiSamnRtundv6pg==",
   "success": true,
-  "projectFilePath": "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\WebHostCustomization\\WebHost.Customization\\WebHost.Customization.csproj",
+  "projectFilePath": "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\WebHostCustomization\\WebHost.Customization\\WebHost.Customization.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jpch_\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\jpch_\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

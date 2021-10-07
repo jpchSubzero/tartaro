@@ -11,15 +11,15 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Catalog.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Catalog\\Cat" +
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Catalog.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Catalog\\Cat" +
     "alog.API", "Catalog.API.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EventBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EventBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
     "Bus\\EventBus", "EventBus.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EventBusRabbitMQ, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EventBusRabbitMQ, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
     "Bus\\EventBusRabbitMQ", "EventBusRabbitMQ.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EventBusServiceBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EventBusServiceBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
     "Bus\\EventBusServiceBus", "EventBusServiceBus.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("IntegrationEventLogEF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("IntegrationEventLogEF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
     "Bus\\IntegrationEventLogEF", "IntegrationEventLogEF.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Catalog.FunctionalTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]

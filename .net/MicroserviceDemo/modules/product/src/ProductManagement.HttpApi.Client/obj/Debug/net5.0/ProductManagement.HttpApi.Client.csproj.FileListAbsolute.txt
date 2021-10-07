@@ -1,0 +1,17 @@
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.HttpApi.Client\bin\Debug\net5.0\ProductManagement.HttpApi.Client.deps.json
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.HttpApi.Client\bin\Debug\net5.0\ProductManagement.HttpApi.Client.dll
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.HttpApi.Client\bin\Debug\net5.0\ref\ProductManagement.HttpApi.Client.dll
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.HttpApi.Client\bin\Debug\net5.0\ProductManagement.HttpApi.Client.pdb
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.HttpApi.Client\bin\Debug\net5.0\ProductManagement.Application.Contracts.dll
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.HttpApi.Client\bin\Debug\net5.0\ProductManagement.Domain.Shared.dll
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.HttpApi.Client\bin\Debug\net5.0\ProductManagement.Application.Contracts.pdb
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.HttpApi.Client\bin\Debug\net5.0\ProductManagement.Domain.Shared.pdb
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.HttpApi.Client\obj\Debug\net5.0\ProductManagement.HttpApi.Client.csproj.AssemblyReference.cache
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.HttpApi.Client\obj\Debug\net5.0\ProductManagement.HttpApi.Client.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.HttpApi.Client\obj\Debug\net5.0\ProductManagement.HttpApi.Client.AssemblyInfoInputs.cache
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.HttpApi.Client\obj\Debug\net5.0\ProductManagement.HttpApi.Client.AssemblyInfo.cs
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.HttpApi.Client\obj\Debug\net5.0\ProductManagement.HttpApi.Client.csproj.CoreCompileInputs.cache
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.HttpApi.Client\obj\Debug\net5.0\ProductManagement.HttpApi.Client.csproj.CopyComplete
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.HttpApi.Client\obj\Debug\net5.0\ProductManagement.HttpApi.Client.dll
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.HttpApi.Client\obj\Debug\net5.0\ref\ProductManagement.HttpApi.Client.dll
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.HttpApi.Client\obj\Debug\net5.0\ProductManagement.HttpApi.Client.pdb

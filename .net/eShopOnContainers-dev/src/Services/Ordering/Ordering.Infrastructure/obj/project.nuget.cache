@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MJ87vxeI9EbaQXTx/E4GihTkhu56iv6qwDOWRsOttNyUBWJh1CKOs/zCPWcWQfZzzz3KgbLNSu/2Pf/Wn87FPw==",
+  "dgSpecHash": "m4QS0I8R2dR63fFMz5NVhtF64eY4M+ruea8Ol3Z+IQv9/crn8TSIAsJsmmpe3XsXS/1p5Yw8CA5+Wp2Qq6nj9A==",
   "success": true,
-  "projectFilePath": "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
+  "projectFilePath": "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jpch_\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\jpch_\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",

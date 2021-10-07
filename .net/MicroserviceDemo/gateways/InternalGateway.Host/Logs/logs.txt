@@ -1,0 +1,302 @@
+2021-09-26 16:12:36.146 -05:00 [INF] Starting IdentityService.Host.
+2021-09-26 16:12:39.300 -05:00 [INF] Loaded ABP modules:
+2021-09-26 16:12:39.301 -05:00 [INF] - InternalGateway.Host.InternalGatewayHostModule
+2021-09-26 16:12:39.301 -05:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-09-26 16:12:39.301 -05:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-09-26 16:12:39.301 -05:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-09-26 16:12:39.301 -05:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-09-26 16:12:39.301 -05:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-09-26 16:12:39.301 -05:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-09-26 16:12:39.301 -05:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2021-09-26 16:12:39.301 -05:00 [INF]           - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-09-26 16:12:39.301 -05:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2021-09-26 16:12:39.301 -05:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-09-26 16:12:39.301 -05:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2021-09-26 16:12:39.301 -05:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-09-26 16:12:39.301 -05:00 [INF]               - Volo.Abp.Security.AbpSecurityModule
+2021-09-26 16:12:39.301 -05:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-09-26 16:12:39.301 -05:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2021-09-26 16:12:39.301 -05:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-09-26 16:12:39.301 -05:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-09-26 16:12:39.301 -05:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-09-26 16:12:39.301 -05:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2021-09-26 16:12:39.301 -05:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-09-26 16:12:39.301 -05:00 [INF]       - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-09-26 16:12:39.301 -05:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-09-26 16:12:39.301 -05:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-09-26 16:12:39.301 -05:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2021-09-26 16:12:39.301 -05:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2021-09-26 16:12:39.301 -05:00 [INF]           - Volo.Abp.Auditing.AbpAuditingModule
+2021-09-26 16:12:39.301 -05:00 [INF]             - Volo.Abp.Json.AbpJsonModule
+2021-09-26 16:12:39.301 -05:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2021-09-26 16:12:39.301 -05:00 [INF]             - Volo.Abp.Threading.AbpThreadingModule
+2021-09-26 16:12:39.301 -05:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2021-09-26 16:12:39.301 -05:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-09-26 16:12:39.302 -05:00 [INF]           - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-09-26 16:12:39.302 -05:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-09-26 16:12:39.302 -05:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-09-26 16:12:39.302 -05:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-09-26 16:12:39.302 -05:00 [INF]         - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-09-26 16:12:39.302 -05:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-09-26 16:12:39.302 -05:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-09-26 16:12:39.302 -05:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-09-26 16:12:39.302 -05:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-09-26 16:12:39.302 -05:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2021-09-26 16:12:39.302 -05:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2021-09-26 16:12:39.302 -05:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-09-26 16:12:39.302 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-09-26 16:12:39.302 -05:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-09-26 16:12:39.302 -05:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2021-09-26 16:12:39.302 -05:00 [INF]   - Volo.Blogging.BloggingHttpApiModule
+2021-09-26 16:12:39.302 -05:00 [INF]     - Volo.Blogging.BloggingApplicationContractsModule
+2021-09-26 16:12:39.302 -05:00 [INF]       - Volo.Blogging.BloggingApplicationContractsSharedModule
+2021-09-26 16:12:39.302 -05:00 [INF]         - Volo.Blogging.BloggingDomainSharedModule
+2021-09-26 16:12:39.302 -05:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2021-09-26 16:12:39.302 -05:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2021-09-26 16:12:39.302 -05:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2021-09-26 16:12:39.302 -05:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-09-26 16:12:39.302 -05:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-09-26 16:12:39.302 -05:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-09-26 16:12:39.302 -05:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-09-26 16:12:39.302 -05:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-09-26 16:12:39.302 -05:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-09-26 16:12:39.302 -05:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-09-26 16:12:39.302 -05:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-09-26 16:12:39.302 -05:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-09-26 16:12:39.302 -05:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2021-09-26 16:12:39.302 -05:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2021-09-26 16:12:39.302 -05:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2021-09-26 16:12:39.302 -05:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2021-09-26 16:12:39.302 -05:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2021-09-26 16:12:39.302 -05:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2021-09-26 16:12:39.302 -05:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-09-26 16:12:39.949 -05:00 [INF] Initialized all ABP modules.
+2021-09-26 16:12:39.951 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-26 16:12:39.951 -05:00 [INF] Hosting environment: Development
+2021-09-26 16:12:39.951 -05:00 [INF] Content root path: d:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\gateways\InternalGateway.Host
+2021-09-26 16:12:39.963 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44329/ - -
+2021-09-26 16:12:39.995 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:12:40.031 -05:00 [DBG] requestId: 8000001e-0004-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:12:40.033 -05:00 [DBG] requestId: 8000001e-0004-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: Upstream url path is /
+2021-09-26 16:12:40.036 -05:00 [WRN] requestId: 8000001e-0004-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2021-09-26 16:12:40.037 -05:00 [WRN] requestId: 8000001e-0004-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2021-09-26 16:12:40.037 -05:00 [DBG] requestId: 8000001e-0004-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:12:40.047 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44329/ - - - 404 - - 85.0064ms
+2021-09-26 16:12:48.332 -05:00 [INF] Application is shutting down...
+2021-09-26 16:21:57.623 -05:00 [INF] Starting IdentityService.Host.
+2021-09-26 16:21:58.239 -05:00 [INF] Loaded ABP modules:
+2021-09-26 16:21:58.240 -05:00 [INF] - InternalGateway.Host.InternalGatewayHostModule
+2021-09-26 16:21:58.240 -05:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-09-26 16:21:58.240 -05:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-09-26 16:21:58.240 -05:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-09-26 16:21:58.240 -05:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-09-26 16:21:58.240 -05:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-09-26 16:21:58.240 -05:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-09-26 16:21:58.240 -05:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2021-09-26 16:21:58.240 -05:00 [INF]           - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-09-26 16:21:58.240 -05:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2021-09-26 16:21:58.240 -05:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-09-26 16:21:58.240 -05:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2021-09-26 16:21:58.240 -05:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-09-26 16:21:58.240 -05:00 [INF]               - Volo.Abp.Security.AbpSecurityModule
+2021-09-26 16:21:58.240 -05:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-09-26 16:21:58.240 -05:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2021-09-26 16:21:58.240 -05:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-09-26 16:21:58.240 -05:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-09-26 16:21:58.240 -05:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-09-26 16:21:58.240 -05:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2021-09-26 16:21:58.240 -05:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-09-26 16:21:58.240 -05:00 [INF]       - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-09-26 16:21:58.240 -05:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-09-26 16:21:58.240 -05:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-09-26 16:21:58.240 -05:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2021-09-26 16:21:58.240 -05:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2021-09-26 16:21:58.240 -05:00 [INF]           - Volo.Abp.Auditing.AbpAuditingModule
+2021-09-26 16:21:58.240 -05:00 [INF]             - Volo.Abp.Json.AbpJsonModule
+2021-09-26 16:21:58.240 -05:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2021-09-26 16:21:58.240 -05:00 [INF]             - Volo.Abp.Threading.AbpThreadingModule
+2021-09-26 16:21:58.240 -05:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2021-09-26 16:21:58.240 -05:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-09-26 16:21:58.240 -05:00 [INF]           - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-09-26 16:21:58.240 -05:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-09-26 16:21:58.240 -05:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-09-26 16:21:58.240 -05:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-09-26 16:21:58.240 -05:00 [INF]         - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-09-26 16:21:58.240 -05:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-09-26 16:21:58.240 -05:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-09-26 16:21:58.240 -05:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-09-26 16:21:58.240 -05:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-09-26 16:21:58.240 -05:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2021-09-26 16:21:58.240 -05:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2021-09-26 16:21:58.240 -05:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-09-26 16:21:58.240 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-09-26 16:21:58.240 -05:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-09-26 16:21:58.240 -05:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2021-09-26 16:21:58.240 -05:00 [INF]   - Volo.Blogging.BloggingHttpApiModule
+2021-09-26 16:21:58.240 -05:00 [INF]     - Volo.Blogging.BloggingApplicationContractsModule
+2021-09-26 16:21:58.240 -05:00 [INF]       - Volo.Blogging.BloggingApplicationContractsSharedModule
+2021-09-26 16:21:58.240 -05:00 [INF]         - Volo.Blogging.BloggingDomainSharedModule
+2021-09-26 16:21:58.240 -05:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2021-09-26 16:21:58.240 -05:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2021-09-26 16:21:58.240 -05:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2021-09-26 16:21:58.240 -05:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-09-26 16:21:58.240 -05:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-09-26 16:21:58.240 -05:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-09-26 16:21:58.240 -05:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-09-26 16:21:58.240 -05:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-09-26 16:21:58.240 -05:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-09-26 16:21:58.240 -05:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-09-26 16:21:58.240 -05:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-09-26 16:21:58.240 -05:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-09-26 16:21:58.240 -05:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2021-09-26 16:21:58.240 -05:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2021-09-26 16:21:58.240 -05:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2021-09-26 16:21:58.240 -05:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2021-09-26 16:21:58.240 -05:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2021-09-26 16:21:58.240 -05:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2021-09-26 16:21:58.240 -05:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-09-26 16:21:58.531 -05:00 [INF] Initialized all ABP modules.
+2021-09-26 16:21:58.574 -05:00 [INF] Now listening on: https://localhost:44329
+2021-09-26 16:21:58.574 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-26 16:21:58.574 -05:00 [INF] Hosting environment: Development
+2021-09-26 16:21:58.574 -05:00 [INF] Content root path: d:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\gateways\InternalGateway.Host
+2021-09-26 16:21:58.864 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44329/ - -
+2021-09-26 16:21:58.890 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:21:58.922 -05:00 [DBG] requestId: 0HMC16EM8HCM7:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:21:58.924 -05:00 [DBG] requestId: 0HMC16EM8HCM7:00000001, previousRequestId: no previous request id, message: Upstream url path is /
+2021-09-26 16:21:58.927 -05:00 [WRN] requestId: 0HMC16EM8HCM7:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2021-09-26 16:21:58.928 -05:00 [WRN] requestId: 0HMC16EM8HCM7:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2021-09-26 16:21:58.929 -05:00 [DBG] requestId: 0HMC16EM8HCM7:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:21:58.934 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44329/ - - - 404 0 - 70.6740ms
+2021-09-26 16:22:04.591 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44329/ - -
+2021-09-26 16:22:04.592 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:22:04.593 -05:00 [DBG] requestId: 0HMC16EM8HCM7:00000003, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:22:04.593 -05:00 [DBG] requestId: 0HMC16EM8HCM7:00000003, previousRequestId: no previous request id, message: Upstream url path is /
+2021-09-26 16:22:04.593 -05:00 [WRN] requestId: 0HMC16EM8HCM7:00000003, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2021-09-26 16:22:04.593 -05:00 [WRN] requestId: 0HMC16EM8HCM7:00000003, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2021-09-26 16:22:04.593 -05:00 [DBG] requestId: 0HMC16EM8HCM7:00000003, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:22:04.594 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44329/ - - - 404 0 - 2.3583ms
+2021-09-26 16:22:05.573 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44329/ - -
+2021-09-26 16:22:05.573 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:22:05.574 -05:00 [DBG] requestId: 0HMC16EM8HCM7:00000005, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:22:05.574 -05:00 [DBG] requestId: 0HMC16EM8HCM7:00000005, previousRequestId: no previous request id, message: Upstream url path is /
+2021-09-26 16:22:05.574 -05:00 [WRN] requestId: 0HMC16EM8HCM7:00000005, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2021-09-26 16:22:05.574 -05:00 [WRN] requestId: 0HMC16EM8HCM7:00000005, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2021-09-26 16:22:05.574 -05:00 [DBG] requestId: 0HMC16EM8HCM7:00000005, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:22:05.574 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44329/ - - - 404 0 - 1.8005ms
+2021-09-26 16:22:05.921 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44329/ - -
+2021-09-26 16:22:05.921 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:22:05.922 -05:00 [DBG] requestId: 0HMC16EM8HCM7:00000007, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:22:05.922 -05:00 [DBG] requestId: 0HMC16EM8HCM7:00000007, previousRequestId: no previous request id, message: Upstream url path is /
+2021-09-26 16:22:05.922 -05:00 [WRN] requestId: 0HMC16EM8HCM7:00000007, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2021-09-26 16:22:05.922 -05:00 [WRN] requestId: 0HMC16EM8HCM7:00000007, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2021-09-26 16:22:05.922 -05:00 [DBG] requestId: 0HMC16EM8HCM7:00000007, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:22:05.922 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44329/ - - - 404 0 - 1.5080ms
+2021-09-26 16:22:06.481 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44329/ - -
+2021-09-26 16:22:06.481 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:22:06.482 -05:00 [DBG] requestId: 0HMC16EM8HCM7:00000009, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:22:06.482 -05:00 [DBG] requestId: 0HMC16EM8HCM7:00000009, previousRequestId: no previous request id, message: Upstream url path is /
+2021-09-26 16:22:06.482 -05:00 [WRN] requestId: 0HMC16EM8HCM7:00000009, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2021-09-26 16:22:06.482 -05:00 [WRN] requestId: 0HMC16EM8HCM7:00000009, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2021-09-26 16:22:06.482 -05:00 [DBG] requestId: 0HMC16EM8HCM7:00000009, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:22:06.482 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44329/ - - - 404 0 - 1.2386ms
+2021-09-26 16:24:18.247 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44329/api/abp/api-definition - -
+2021-09-26 16:24:18.247 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:24:18.265 -05:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc)'
+2021-09-26 16:24:18.304 -05:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApiDefinition", page = ""}. Executing controller action with signature Volo.Abp.Http.Modeling.ApplicationApiDescriptionModel Get(Volo.Abp.Http.Modeling.ApplicationApiDescriptionModelRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController (Volo.Abp.AspNetCore.Mvc).
+2021-09-26 16:24:18.339 -05:00 [INF] Executing action method Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc) - Validation state: "Valid"
+2021-09-26 16:24:18.366 -05:00 [DBG] ActionApiDescriptionModel.Create: FileConfiguration.Get
+2021-09-26 16:24:18.370 -05:00 [DBG] ActionApiDescriptionModel.Create: FileConfiguration.PostByFileConfiguration
+2021-09-26 16:24:18.372 -05:00 [DBG] ActionApiDescriptionModel.Create: OutputCache.DeleteByRegion
+2021-09-26 16:24:18.373 -05:00 [DBG] ActionApiDescriptionModel.Create: Products.GetListPagedAsyncByInput
+2021-09-26 16:24:18.373 -05:00 [DBG] ActionApiDescriptionModel.Create: Products.GetListAsync
+2021-09-26 16:24:18.373 -05:00 [DBG] ActionApiDescriptionModel.Create: Products.GetAsyncById
+2021-09-26 16:24:18.373 -05:00 [DBG] ActionApiDescriptionModel.Create: Products.CreateAsyncByInput
+2021-09-26 16:24:18.373 -05:00 [DBG] ActionApiDescriptionModel.Create: Products.UpdateAsyncByIdAndInput
+2021-09-26 16:24:18.374 -05:00 [DBG] ActionApiDescriptionModel.Create: Products.DeleteAsyncById
+2021-09-26 16:24:18.374 -05:00 [DBG] ActionApiDescriptionModel.Create: PublicProducts.GetListAsync
+2021-09-26 16:24:18.374 -05:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByNameAsyncByName
+2021-09-26 16:24:18.374 -05:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByIdAsyncById
+2021-09-26 16:24:18.374 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.GetAllListAsync
+2021-09-26 16:24:18.374 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.GetListAsyncByInput
+2021-09-26 16:24:18.374 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.GetAsyncById
+2021-09-26 16:24:18.374 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.CreateAsyncByInput
+2021-09-26 16:24:18.374 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.UpdateAsyncByIdAndInput
+2021-09-26 16:24:18.375 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.DeleteAsyncById
+2021-09-26 16:24:18.375 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.GetAsyncById
+2021-09-26 16:24:18.375 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.GetListAsyncByInput
+2021-09-26 16:24:18.375 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.CreateAsyncByInput
+2021-09-26 16:24:18.375 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.UpdateAsyncByIdAndInput
+2021-09-26 16:24:18.375 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.DeleteAsyncById
+2021-09-26 16:24:18.375 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.GetRolesAsyncById
+2021-09-26 16:24:18.375 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.GetAssignableRolesAsync
+2021-09-26 16:24:18.375 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.UpdateRolesAsyncByIdAndInput
+2021-09-26 16:24:18.375 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.FindByUsernameAsyncByUserName
+2021-09-26 16:24:18.375 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.FindByEmailAsyncByEmail
+2021-09-26 16:24:18.375 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUserLookup.FindByIdAsyncById
+2021-09-26 16:24:18.376 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUserLookup.FindByUserNameAsyncByUserName
+2021-09-26 16:24:18.376 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUserLookup.SearchAsyncByInput
+2021-09-26 16:24:18.376 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUserLookup.GetCountAsyncByInput
+2021-09-26 16:24:18.376 -05:00 [DBG] ActionApiDescriptionModel.Create: Profile.GetAsync
+2021-09-26 16:24:18.376 -05:00 [DBG] ActionApiDescriptionModel.Create: Profile.UpdateAsyncByInput
+2021-09-26 16:24:18.376 -05:00 [DBG] ActionApiDescriptionModel.Create: Profile.ChangePasswordAsyncByInput
+2021-09-26 16:24:18.376 -05:00 [DBG] ActionApiDescriptionModel.Create: Tenant.GetAsyncById
+2021-09-26 16:24:18.376 -05:00 [DBG] ActionApiDescriptionModel.Create: Tenant.GetListAsyncByInput
+2021-09-26 16:24:18.376 -05:00 [DBG] ActionApiDescriptionModel.Create: Tenant.CreateAsyncByInput
+2021-09-26 16:24:18.376 -05:00 [DBG] ActionApiDescriptionModel.Create: Tenant.UpdateAsyncByIdAndInput
+2021-09-26 16:24:18.376 -05:00 [DBG] ActionApiDescriptionModel.Create: Tenant.DeleteAsyncById
+2021-09-26 16:24:18.377 -05:00 [DBG] ActionApiDescriptionModel.Create: Tenant.GetDefaultConnectionStringAsyncById
+2021-09-26 16:24:18.377 -05:00 [DBG] ActionApiDescriptionModel.Create: Tenant.UpdateDefaultConnectionStringAsyncByIdAndDefaultConnectionString
+2021-09-26 16:24:18.377 -05:00 [DBG] ActionApiDescriptionModel.Create: Tenant.DeleteDefaultConnectionStringAsyncById
+2021-09-26 16:24:18.377 -05:00 [DBG] ActionApiDescriptionModel.Create: Features.GetAsyncByProviderNameAndProviderKey
+2021-09-26 16:24:18.377 -05:00 [DBG] ActionApiDescriptionModel.Create: Features.UpdateAsyncByProviderNameAndProviderKeyAndInput
+2021-09-26 16:24:18.377 -05:00 [DBG] ActionApiDescriptionModel.Create: BlogFiles.GetAsyncByName
+2021-09-26 16:24:18.377 -05:00 [DBG] ActionApiDescriptionModel.Create: BlogFiles.GetForWebAsyncByName
+2021-09-26 16:24:18.377 -05:00 [DBG] ActionApiDescriptionModel.Create: BlogFiles.CreateAsyncByInput
+2021-09-26 16:24:18.377 -05:00 [DBG] ActionApiDescriptionModel.Create: BlogFiles.UploadImageByFile
+2021-09-26 16:24:18.377 -05:00 [DBG] ActionApiDescriptionModel.Create: Blogs.GetListAsync
+2021-09-26 16:24:18.378 -05:00 [DBG] ActionApiDescriptionModel.Create: Blogs.GetByShortNameAsyncByShortName
+2021-09-26 16:24:18.378 -05:00 [DBG] ActionApiDescriptionModel.Create: Blogs.GetAsyncById
+2021-09-26 16:24:18.378 -05:00 [DBG] ActionApiDescriptionModel.Create: Comments.GetHierarchicalListOfPostAsyncByPostId
+2021-09-26 16:24:18.378 -05:00 [DBG] ActionApiDescriptionModel.Create: Comments.CreateAsyncByInput
+2021-09-26 16:24:18.378 -05:00 [DBG] ActionApiDescriptionModel.Create: Comments.UpdateAsyncByIdAndInput
+2021-09-26 16:24:18.378 -05:00 [DBG] ActionApiDescriptionModel.Create: Comments.DeleteAsyncById
+2021-09-26 16:24:18.378 -05:00 [DBG] ActionApiDescriptionModel.Create: Posts.GetListByBlogIdAndTagNameByBlogIdAndTagName
+2021-09-26 16:24:18.378 -05:00 [DBG] ActionApiDescriptionModel.Create: Posts.GetTimeOrderedListAsyncByBlogId
+2021-09-26 16:24:18.378 -05:00 [DBG] ActionApiDescriptionModel.Create: Posts.GetForReadingAsyncByInput
+2021-09-26 16:24:18.378 -05:00 [DBG] ActionApiDescriptionModel.Create: Posts.GetAsyncById
+2021-09-26 16:24:18.378 -05:00 [DBG] ActionApiDescriptionModel.Create: Posts.CreateAsyncByInput
+2021-09-26 16:24:18.378 -05:00 [DBG] ActionApiDescriptionModel.Create: Posts.UpdateAsyncByIdAndInput
+2021-09-26 16:24:18.378 -05:00 [DBG] ActionApiDescriptionModel.Create: Posts.DeleteAsyncById
+2021-09-26 16:24:18.379 -05:00 [DBG] ActionApiDescriptionModel.Create: Tags.GetPopularTagsByBlogIdAndInput
+2021-09-26 16:24:18.379 -05:00 [DBG] ActionApiDescriptionModel.Create: AbpApplicationConfiguration.GetAsync
+2021-09-26 16:24:18.379 -05:00 [DBG] ActionApiDescriptionModel.Create: AbpApiDefinition.GetByModel
+2021-09-26 16:24:18.382 -05:00 [INF] Executed action method Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 38.9219ms.
+2021-09-26 16:24:18.390 -05:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.Modeling.ApplicationApiDescriptionModel'.
+2021-09-26 16:24:18.425 -05:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc) in 118.422ms
+2021-09-26 16:24:18.425 -05:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc)'
+2021-09-26 16:24:18.425 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44329/api/abp/api-definition - - - 200 - application/json;+charset=utf-8 178.4922ms
+2021-09-26 16:24:18.751 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44329/api/identity/users/lookup/9c0bf9f1-62a5-fafa-9403-39ff361fa14f?api-version=1.0 - -
+2021-09-26 16:24:19.174 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:24:19.175 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:24:19.177 -05:00 [DBG] requestId: 0HMC16EM8HCM8:00000003, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:24:19.177 -05:00 [DBG] requestId: 0HMC16EM8HCM8:00000003, previousRequestId: no previous request id, message: Upstream url path is /api/identity/users/lookup/9c0bf9f1-62a5-fafa-9403-39ff361fa14f
+2021-09-26 16:24:19.184 -05:00 [DBG] requestId: 0HMC16EM8HCM8:00000003, previousRequestId: no previous request id, message: downstream templates are /api/identity/{everything}
+2021-09-26 16:24:19.203 -05:00 [INF] requestId: 0HMC16EM8HCM8:00000003, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/identity/{everything}
+2021-09-26 16:24:19.205 -05:00 [INF] requestId: 0HMC16EM8HCM8:00000003, previousRequestId: no previous request id, message: No authentication needed for /api/identity/users/lookup/9c0bf9f1-62a5-fafa-9403-39ff361fa14f
+2021-09-26 16:24:19.206 -05:00 [INF] requestId: 0HMC16EM8HCM8:00000003, previousRequestId: no previous request id, message: /api/identity/{everything} route does not require user to be authorized
+2021-09-26 16:24:19.213 -05:00 [DBG] requestId: 0HMC16EM8HCM8:00000003, previousRequestId: no previous request id, message: Downstream url is https://localhost:44368/api/identity/users/lookup/9c0bf9f1-62a5-fafa-9403-39ff361fa14f?api-version=1.0
+2021-09-26 16:24:20.269 -05:00 [INF] requestId: 0HMC16EM8HCM8:00000003, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:44368/api/identity/users/lookup/9c0bf9f1-62a5-fafa-9403-39ff361fa14f?api-version=1.0
+2021-09-26 16:24:20.269 -05:00 [DBG] requestId: 0HMC16EM8HCM8:00000003, previousRequestId: no previous request id, message: setting http response message
+2021-09-26 16:24:20.278 -05:00 [DBG] requestId: 0HMC16EM8HCM8:00000003, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-09-26 16:24:20.281 -05:00 [DBG] requestId: 0HMC16EM8HCM8:00000003, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:24:20.283 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44329/api/identity/users/lookup/9c0bf9f1-62a5-fafa-9403-39ff361fa14f?api-version=1.0 - - - 200 204 application/json;+charset=utf-8 1531.4360ms
+2021-09-26 16:30:40.306 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44329/ - -
+2021-09-26 16:30:40.306 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:30:40.307 -05:00 [DBG] requestId: 0HMC16EM8HCM9:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:30:40.307 -05:00 [DBG] requestId: 0HMC16EM8HCM9:00000001, previousRequestId: no previous request id, message: Upstream url path is /
+2021-09-26 16:30:40.307 -05:00 [WRN] requestId: 0HMC16EM8HCM9:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2021-09-26 16:30:40.307 -05:00 [WRN] requestId: 0HMC16EM8HCM9:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2021-09-26 16:30:40.307 -05:00 [DBG] requestId: 0HMC16EM8HCM9:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:30:40.307 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44329/ - - - 404 0 - 1.6077ms
+2021-09-26 16:32:43.745 -05:00 [INF] Application is shutting down...

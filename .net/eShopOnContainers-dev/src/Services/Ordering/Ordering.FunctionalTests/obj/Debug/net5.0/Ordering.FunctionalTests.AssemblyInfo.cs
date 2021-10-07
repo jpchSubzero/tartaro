@@ -11,25 +11,25 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Devspaces.Support, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Devsp" +
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Devspaces.Support, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Devsp" +
     "aces.Support", "Devspaces.Support.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EventBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EventBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
     "Bus\\EventBus", "EventBus.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EventBusRabbitMQ, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EventBusRabbitMQ, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
     "Bus\\EventBusRabbitMQ", "EventBusRabbitMQ.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EventBusServiceBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EventBusServiceBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
     "Bus\\EventBusServiceBus", "EventBusServiceBus.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("IntegrationEventLogEF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("IntegrationEventLogEF, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
     "Bus\\IntegrationEventLogEF", "IntegrationEventLogEF.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Ordering.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Ordering\\Or" +
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Ordering.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Ordering\\Or" +
     "dering.API", "Ordering.API.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Ordering.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Ordering\\Or" +
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Ordering.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Ordering\\Or" +
     "dering.Domain", "Ordering.Domain.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Ordering.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Ordering\\Or" +
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Ordering.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Ordering\\Or" +
     "dering.Infrastructure", "Ordering.Infrastructure.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("WebHost.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\WebHo" +
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("WebHost.Customization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\WebHo" +
     "stCustomization\\WebHost.Customization", "WebHost.Customization.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("WebMVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Web\\WebMVC", "WebMVC.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("WebMVC, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Web\\WebMVC", "WebMVC.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ordering.FunctionalTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

@@ -1,0 +1,447 @@
+2021-09-26 16:12:10.338 -05:00 [INF] Starting BloggingService.Host.
+2021-09-26 16:12:13.674 -05:00 [INF] Loaded ABP modules:
+2021-09-26 16:12:13.675 -05:00 [INF] - BloggingService.Host.BloggingServiceHostModule
+2021-09-26 16:12:13.675 -05:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-09-26 16:12:13.675 -05:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-09-26 16:12:13.675 -05:00 [INF]   - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-09-26 16:12:13.675 -05:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-09-26 16:12:13.675 -05:00 [INF]       - Volo.Abp.Auditing.AbpAuditingModule
+2021-09-26 16:12:13.675 -05:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2021-09-26 16:12:13.675 -05:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-09-26 16:12:13.675 -05:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-09-26 16:12:13.675 -05:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-09-26 16:12:13.675 -05:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-09-26 16:12:13.675 -05:00 [INF]           - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-09-26 16:12:13.676 -05:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2021-09-26 16:12:13.676 -05:00 [INF]           - Volo.Abp.Timing.AbpTimingModule
+2021-09-26 16:12:13.676 -05:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2021-09-26 16:12:13.676 -05:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-09-26 16:12:13.676 -05:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2021-09-26 16:12:13.676 -05:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2021-09-26 16:12:13.676 -05:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-09-26 16:12:13.676 -05:00 [INF]         - Volo.Abp.Threading.AbpThreadingModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2021-09-26 16:12:13.676 -05:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-09-26 16:12:13.676 -05:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-09-26 16:12:13.676 -05:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-09-26 16:12:13.676 -05:00 [INF]     - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-09-26 16:12:13.676 -05:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-09-26 16:12:13.676 -05:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2021-09-26 16:12:13.676 -05:00 [INF]     - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-09-26 16:12:13.676 -05:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2021-09-26 16:12:13.676 -05:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-09-26 16:12:13.676 -05:00 [INF]         - Volo.Abp.Guids.AbpGuidsModule
+2021-09-26 16:12:13.676 -05:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-09-26 16:12:13.676 -05:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2021-09-26 16:12:13.676 -05:00 [INF]   - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2021-09-26 16:12:13.676 -05:00 [INF]     - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2021-09-26 16:12:13.676 -05:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-09-26 16:12:13.676 -05:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-09-26 16:12:13.676 -05:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2021-09-26 16:12:13.676 -05:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2021-09-26 16:12:13.676 -05:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-09-26 16:12:13.676 -05:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-09-26 16:12:13.676 -05:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-09-26 16:12:13.676 -05:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-09-26 16:12:13.676 -05:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-09-26 16:12:13.676 -05:00 [INF]   - Volo.Blogging.BloggingHttpApiModule
+2021-09-26 16:12:13.676 -05:00 [INF]     - Volo.Blogging.BloggingApplicationContractsModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Blogging.BloggingApplicationContractsSharedModule
+2021-09-26 16:12:13.676 -05:00 [INF]         - Volo.Blogging.BloggingDomainSharedModule
+2021-09-26 16:12:13.676 -05:00 [INF]   - Volo.Blogging.MongoDB.BloggingMongoDbModule
+2021-09-26 16:12:13.676 -05:00 [INF]     - Volo.Blogging.BloggingDomainModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-09-26 16:12:13.676 -05:00 [INF]     - Volo.Abp.MongoDB.AbpMongoDbModule
+2021-09-26 16:12:13.676 -05:00 [INF]     - Volo.Abp.Users.MongoDB.AbpUsersMongoDbModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Abp.Users.AbpUsersDomainModule
+2021-09-26 16:12:13.676 -05:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-09-26 16:12:13.676 -05:00 [INF]         - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-09-26 16:12:13.676 -05:00 [INF]   - Volo.Blogging.BloggingApplicationModule
+2021-09-26 16:12:13.676 -05:00 [INF]     - Volo.Abp.BlobStoring.AbpBlobStoringModule
+2021-09-26 16:12:13.676 -05:00 [INF]   - Volo.Abp.Http.Client.IdentityModel.Web.AbpHttpClientIdentityModelWebModule
+2021-09-26 16:12:13.676 -05:00 [INF]     - Volo.Abp.Http.Client.IdentityModel.AbpHttpClientIdentityModelModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Abp.Http.Client.AbpHttpClientModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Abp.IdentityModel.AbpIdentityModelModule
+2021-09-26 16:12:13.676 -05:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiClientModule
+2021-09-26 16:12:13.676 -05:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-09-26 16:12:13.676 -05:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-09-26 16:12:13.676 -05:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2021-09-26 16:12:13.676 -05:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2021-09-26 16:12:13.676 -05:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2021-09-26 16:12:16.596 -05:00 [INF] Initialized all ABP modules.
+2021-09-26 16:12:16.603 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-26 16:12:16.603 -05:00 [INF] Hosting environment: Development
+2021-09-26 16:12:16.604 -05:00 [INF] Content root path: d:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\microservices\BloggingService.Host
+2021-09-26 16:12:16.613 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44357/ - -
+2021-09-26 16:12:16.647 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:12:16.900 -05:00 [INF] Executing endpoint 'BloggingService.Host.Controllers.HomeController.Index (BloggingService.Host)'
+2021-09-26 16:12:16.925 -05:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller BloggingService.Host.Controllers.HomeController (BloggingService.Host).
+2021-09-26 16:12:16.940 -05:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2021-09-26 16:12:16.943 -05:00 [INF] Executed action BloggingService.Host.Controllers.HomeController.Index (BloggingService.Host) in 15.1188ms
+2021-09-26 16:12:16.944 -05:00 [INF] Executed endpoint 'BloggingService.Host.Controllers.HomeController.Index (BloggingService.Host)'
+2021-09-26 16:12:17.166 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:12:17.166 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:12:17.176 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger - -
+2021-09-26 16:12:17.177 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:12:17.179 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44357/ - - - 302 - - 565.9388ms
+2021-09-26 16:12:17.179 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger - - - 301 - - 2.6930ms
+2021-09-26 16:12:17.182 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/index.html - -
+2021-09-26 16:12:17.183 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:12:17.218 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/index.html - - - 200 - text/html;charset=utf-8 35.9477ms
+2021-09-26 16:12:17.221 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/swagger-ui.css - -
+2021-09-26 16:12:17.222 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/swagger-ui-bundle.js - -
+2021-09-26 16:12:17.222 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/swagger-ui-standalone-preset.js - -
+2021-09-26 16:12:17.222 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:12:17.222 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:12:17.222 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:12:17.232 -05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-09-26 16:12:17.232 -05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-09-26 16:12:17.232 -05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-09-26 16:12:17.233 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/swagger-ui.css - - - 200 143212 text/css 12.0017ms
+2021-09-26 16:12:17.236 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/swagger-ui-standalone-preset.js - - - 200 332952 application/javascript 14.2990ms
+2021-09-26 16:12:17.244 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/swagger-ui-bundle.js - - - 200 1061588 application/javascript 22.4970ms
+2021-09-26 16:12:17.253 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44357/_framework/aspnetcore-browser-refresh.js - -
+2021-09-26 16:12:17.254 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44357/_framework/aspnetcore-browser-refresh.js - - - 200 3095 application/javascript;+charset=utf-8 0.9916ms
+2021-09-26 16:12:17.395 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/v1/swagger.json - -
+2021-09-26 16:12:17.395 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:12:17.411 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/favicon-32x32.png - -
+2021-09-26 16:12:17.411 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:12:17.413 -05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-09-26 16:12:17.413 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/favicon-32x32.png - - - 200 628 image/png 1.6886ms
+2021-09-26 16:12:17.482 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 87.2170ms
+2021-09-26 16:12:19.508 -05:00 [DBG] Disposed channel pool with no channels in the pool.
+2021-09-26 16:12:19.517 -05:00 [INF] Application is shutting down...
+2021-09-26 16:21:24.094 -05:00 [INF] Starting BloggingService.Host.
+2021-09-26 16:21:24.853 -05:00 [INF] Loaded ABP modules:
+2021-09-26 16:21:24.854 -05:00 [INF] - BloggingService.Host.BloggingServiceHostModule
+2021-09-26 16:21:24.854 -05:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-09-26 16:21:24.854 -05:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-09-26 16:21:24.854 -05:00 [INF]   - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-09-26 16:21:24.854 -05:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-09-26 16:21:24.854 -05:00 [INF]       - Volo.Abp.Auditing.AbpAuditingModule
+2021-09-26 16:21:24.854 -05:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2021-09-26 16:21:24.854 -05:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-09-26 16:21:24.854 -05:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-09-26 16:21:24.854 -05:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-09-26 16:21:24.854 -05:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-09-26 16:21:24.854 -05:00 [INF]           - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-09-26 16:21:24.854 -05:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2021-09-26 16:21:24.854 -05:00 [INF]           - Volo.Abp.Timing.AbpTimingModule
+2021-09-26 16:21:24.854 -05:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2021-09-26 16:21:24.854 -05:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-09-26 16:21:24.854 -05:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2021-09-26 16:21:24.854 -05:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2021-09-26 16:21:24.854 -05:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-09-26 16:21:24.854 -05:00 [INF]         - Volo.Abp.Threading.AbpThreadingModule
+2021-09-26 16:21:24.854 -05:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2021-09-26 16:21:24.854 -05:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-09-26 16:21:24.854 -05:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2021-09-26 16:21:24.854 -05:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-09-26 16:21:24.854 -05:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-09-26 16:21:24.854 -05:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2021-09-26 16:21:24.854 -05:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-09-26 16:21:24.854 -05:00 [INF]     - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-09-26 16:21:24.854 -05:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-09-26 16:21:24.854 -05:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-09-26 16:21:24.854 -05:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-09-26 16:21:24.854 -05:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2021-09-26 16:21:24.854 -05:00 [INF]     - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-09-26 16:21:24.854 -05:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2021-09-26 16:21:24.854 -05:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2021-09-26 16:21:24.854 -05:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-09-26 16:21:24.854 -05:00 [INF]         - Volo.Abp.Guids.AbpGuidsModule
+2021-09-26 16:21:24.854 -05:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-09-26 16:21:24.854 -05:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-09-26 16:21:24.854 -05:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2021-09-26 16:21:24.854 -05:00 [INF]   - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2021-09-26 16:21:24.854 -05:00 [INF]     - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2021-09-26 16:21:24.854 -05:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-09-26 16:21:24.854 -05:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-09-26 16:21:24.854 -05:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2021-09-26 16:21:24.854 -05:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2021-09-26 16:21:24.854 -05:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2021-09-26 16:21:24.854 -05:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-09-26 16:21:24.854 -05:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-09-26 16:21:24.854 -05:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-09-26 16:21:24.854 -05:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-09-26 16:21:24.854 -05:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-09-26 16:21:24.854 -05:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-09-26 16:21:24.854 -05:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-09-26 16:21:24.854 -05:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-09-26 16:21:24.854 -05:00 [INF]   - Volo.Blogging.BloggingHttpApiModule
+2021-09-26 16:21:24.854 -05:00 [INF]     - Volo.Blogging.BloggingApplicationContractsModule
+2021-09-26 16:21:24.854 -05:00 [INF]       - Volo.Blogging.BloggingApplicationContractsSharedModule
+2021-09-26 16:21:24.854 -05:00 [INF]         - Volo.Blogging.BloggingDomainSharedModule
+2021-09-26 16:21:24.855 -05:00 [INF]   - Volo.Blogging.MongoDB.BloggingMongoDbModule
+2021-09-26 16:21:24.855 -05:00 [INF]     - Volo.Blogging.BloggingDomainModule
+2021-09-26 16:21:24.855 -05:00 [INF]       - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-09-26 16:21:24.855 -05:00 [INF]     - Volo.Abp.MongoDB.AbpMongoDbModule
+2021-09-26 16:21:24.855 -05:00 [INF]     - Volo.Abp.Users.MongoDB.AbpUsersMongoDbModule
+2021-09-26 16:21:24.855 -05:00 [INF]       - Volo.Abp.Users.AbpUsersDomainModule
+2021-09-26 16:21:24.855 -05:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-09-26 16:21:24.855 -05:00 [INF]         - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-09-26 16:21:24.855 -05:00 [INF]   - Volo.Blogging.BloggingApplicationModule
+2021-09-26 16:21:24.855 -05:00 [INF]     - Volo.Abp.BlobStoring.AbpBlobStoringModule
+2021-09-26 16:21:24.855 -05:00 [INF]   - Volo.Abp.Http.Client.IdentityModel.Web.AbpHttpClientIdentityModelWebModule
+2021-09-26 16:21:24.855 -05:00 [INF]     - Volo.Abp.Http.Client.IdentityModel.AbpHttpClientIdentityModelModule
+2021-09-26 16:21:24.855 -05:00 [INF]       - Volo.Abp.Http.Client.AbpHttpClientModule
+2021-09-26 16:21:24.855 -05:00 [INF]       - Volo.Abp.IdentityModel.AbpIdentityModelModule
+2021-09-26 16:21:24.855 -05:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiClientModule
+2021-09-26 16:21:24.855 -05:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-09-26 16:21:24.855 -05:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-09-26 16:21:24.855 -05:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-09-26 16:21:24.855 -05:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-09-26 16:21:24.855 -05:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2021-09-26 16:21:24.855 -05:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2021-09-26 16:21:24.855 -05:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2021-09-26 16:21:26.721 -05:00 [INF] Initialized all ABP modules.
+2021-09-26 16:21:26.769 -05:00 [INF] Now listening on: https://localhost:44357
+2021-09-26 16:21:26.770 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-26 16:21:26.770 -05:00 [INF] Hosting environment: Development
+2021-09-26 16:21:26.770 -05:00 [INF] Content root path: d:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\microservices\BloggingService.Host
+2021-09-26 16:21:26.883 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44357/ - -
+2021-09-26 16:21:26.918 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:21:27.180 -05:00 [INF] Executing endpoint 'BloggingService.Host.Controllers.HomeController.Index (BloggingService.Host)'
+2021-09-26 16:21:27.205 -05:00 [INF] Route matched with {action = "Index", controller = "Home", area = "", page = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller BloggingService.Host.Controllers.HomeController (BloggingService.Host).
+2021-09-26 16:21:27.219 -05:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2021-09-26 16:21:27.222 -05:00 [INF] Executed action BloggingService.Host.Controllers.HomeController.Index (BloggingService.Host) in 13.9596ms
+2021-09-26 16:21:27.222 -05:00 [INF] Executed endpoint 'BloggingService.Host.Controllers.HomeController.Index (BloggingService.Host)'
+2021-09-26 16:21:27.511 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:21:27.511 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:21:27.522 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44357/ - - - 302 0 - 639.5496ms
+2021-09-26 16:21:27.526 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/index.html - -
+2021-09-26 16:21:27.528 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:21:27.562 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/index.html - - - 200 - text/html;charset=utf-8 35.7491ms
+2021-09-26 16:21:27.593 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44357/_framework/aspnetcore-browser-refresh.js - -
+2021-09-26 16:21:27.594 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44357/_framework/aspnetcore-browser-refresh.js - - - 200 3095 application/javascript;+charset=utf-8 1.1718ms
+2021-09-26 16:21:27.752 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/v1/swagger.json - -
+2021-09-26 16:21:27.753 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:21:27.862 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 110.0843ms
+2021-09-26 16:23:57.058 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44357/api/blogging/blogs/by-shortname/abp?api-version=1.0 - 0
+2021-09-26 16:23:57.058 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:23:57.061 -05:00 [INF] Executing endpoint 'Volo.Blogging.BlogsController.GetByShortNameAsync (Volo.Blogging.HttpApi)'
+2021-09-26 16:23:57.069 -05:00 [INF] Route matched with {area = "blogging", action = "GetByShortName", controller = "Blogs", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Blogging.Blogs.Dtos.BlogDto] GetByShortNameAsync(System.String) on controller Volo.Blogging.BlogsController (Volo.Blogging.HttpApi).
+2021-09-26 16:23:57.196 -05:00 [INF] Executing ObjectResult, writing value of type 'Volo.Blogging.Blogs.Dtos.BlogDto'.
+2021-09-26 16:23:57.208 -05:00 [INF] Executed action Volo.Blogging.BlogsController.GetByShortNameAsync (Volo.Blogging.HttpApi) in 138.6421ms
+2021-09-26 16:23:57.208 -05:00 [INF] Executed endpoint 'Volo.Blogging.BlogsController.GetByShortNameAsync (Volo.Blogging.HttpApi)'
+2021-09-26 16:23:57.244 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:23:57.244 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:23:57.245 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44357/api/blogging/blogs/by-shortname/abp?api-version=1.0 - 0 - 200 - application/json;+charset=utf-8 186.6545ms
+2021-09-26 16:23:57.250 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44357/api/blogging/posts/ab353058-022c-fd4d-57fe-39ff362064b6/all?api-version=1.0 - 0
+2021-09-26 16:23:57.251 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:23:57.253 -05:00 [INF] Executing endpoint 'Volo.Blogging.PostsController.GetListByBlogIdAndTagName (Volo.Blogging.HttpApi)'
+2021-09-26 16:23:57.256 -05:00 [INF] Route matched with {area = "blogging", action = "GetListByBlogIdAndTagName", controller = "Posts", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.ListResultDto`1[Volo.Blogging.Posts.PostWithDetailsDto]] GetListByBlogIdAndTagName(System.Guid, System.String) on controller Volo.Blogging.PostsController (Volo.Blogging.HttpApi).
+2021-09-26 16:23:57.444 -05:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.ListResultDto`1[[Volo.Blogging.Posts.PostWithDetailsDto, Volo.Blogging.Application.Contracts, Version=4.3.3.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-26 16:23:57.450 -05:00 [INF] Executed action Volo.Blogging.PostsController.GetListByBlogIdAndTagName (Volo.Blogging.HttpApi) in 194.4398ms
+2021-09-26 16:23:57.450 -05:00 [INF] Executed endpoint 'Volo.Blogging.PostsController.GetListByBlogIdAndTagName (Volo.Blogging.HttpApi)'
+2021-09-26 16:23:57.462 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:23:57.462 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:23:57.462 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44357/api/blogging/posts/ab353058-022c-fd4d-57fe-39ff362064b6/all?api-version=1.0 - 0 - 200 - application/json;+charset=utf-8 212.0937ms
+2021-09-26 16:23:57.469 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44357/api/blogging/tags/popular/ab353058-022c-fd4d-57fe-39ff362064b6?ResultCount=10&MinimumPostCount=2&api-version=1.0 - 0
+2021-09-26 16:23:57.469 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:23:57.471 -05:00 [INF] Executing endpoint 'Volo.Blogging.TagsController.GetPopularTags (Volo.Blogging.HttpApi)'
+2021-09-26 16:23:57.473 -05:00 [INF] Route matched with {area = "blogging", action = "GetPopularTags", controller = "Tags", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Volo.Blogging.Tagging.Dtos.TagDto]] GetPopularTags(System.Guid, Volo.Blogging.Tagging.Dtos.GetPopularTagsInput) on controller Volo.Blogging.TagsController (Volo.Blogging.HttpApi).
+2021-09-26 16:23:57.496 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Volo.Blogging.Tagging.Dtos.TagDto, Volo.Blogging.Application.Contracts, Version=4.3.3.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-26 16:23:57.496 -05:00 [INF] Executed action Volo.Blogging.TagsController.GetPopularTags (Volo.Blogging.HttpApi) in 22.3936ms
+2021-09-26 16:23:57.496 -05:00 [INF] Executed endpoint 'Volo.Blogging.TagsController.GetPopularTags (Volo.Blogging.HttpApi)'
+2021-09-26 16:23:57.507 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:23:57.507 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:23:57.507 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44357/api/blogging/tags/popular/ab353058-022c-fd4d-57fe-39ff362064b6?ResultCount=10&MinimumPostCount=2&api-version=1.0 - 0 - 200 - application/json;+charset=utf-8 38.0435ms
+2021-09-26 16:23:57.710 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44357/api/blogging/files/100d4c0445cbf55f687339ec8e656abb.jpg?api-version=1.0 - 0
+2021-09-26 16:23:57.713 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:23:57.715 -05:00 [INF] Executing endpoint 'Volo.Blogging.BlogFilesController.GetAsync (Volo.Blogging.HttpApi)'
+2021-09-26 16:23:57.720 -05:00 [INF] Route matched with {area = "blogging", action = "Get", controller = "BlogFiles", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Blogging.Files.RawFileDto] GetAsync(System.String) on controller Volo.Blogging.BlogFilesController (Volo.Blogging.HttpApi).
+2021-09-26 16:23:57.754 -05:00 [ERR] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": null,
+  "message": "An internal error occurred during your request!",
+  "details": null,
+  "data": {
+    "ActivatorChain": "Volo.Blogging.BlogFilesController -\u003E Volo.Blogging.Files.FileAppService -\u003E Volo.Abp.BlobStoring.BlobContainer\u00601[[Volo.Blogging.BloggingFileContainer, Volo.Blogging.Application, Version=4.3.3.0, Culture=neutral, PublicKeyToken=null]]"
+  },
+  "validationErrors": null
+}
+
+2021-09-26 16:23:57.754 -05:00 [ERR] An exception was thrown while activating Volo.Blogging.BlogFilesController -> Volo.Blogging.Files.FileAppService -> Volo.Abp.BlobStoring.BlobContainer`1[[Volo.Blogging.BloggingFileContainer, Volo.Blogging.Application, Version=4.3.3.0, Culture=neutral, PublicKeyToken=null]].
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Blogging.BlogFilesController -> Volo.Blogging.Files.FileAppService -> Volo.Abp.BlobStoring.BlobContainer`1[[Volo.Blogging.BloggingFileContainer, Volo.Blogging.Application, Version=4.3.3.0, Culture=neutral, PublicKeyToken=null]].
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while invoking the constructor 'Void .ctor(Volo.Abp.BlobStoring.IBlobContainerFactory)' on type 'BlobContainer`1'.
+ ---> Volo.Abp.AbpException: No BLOB Storage provider was registered! At least one provider must be registered to be able to use the Blog Storing System.
+   at Volo.Abp.BlobStoring.DefaultBlobProviderSelector.Get(String containerName)
+   at Volo.Abp.BlobStoring.BlobContainerFactory.Create(String name)
+   at lambda_method1533(Closure , Object[] )
+   at Autofac.Core.Activators.Reflection.BoundConstructor.Instantiate()
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Activators.Reflection.BoundConstructor.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.<ConfigurePipeline>b__11_0(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Builder.RegistrationBuilder`3.<>c__DisplayClass41_0.<PropertiesAutowired>b__0(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DelegateMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.Middleware.RegistrationPipelineInvokeMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Pipeline.ResolvePipeline.Invoke(ResolveRequestContext ctxt)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.Execute(ResolveRequest request)
+   at Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType, IEnumerable`1 parameters)
+   at Autofac.ResolutionExtensions.Resolve(IComponentContext context, Type serviceType)
+   at Autofac.Extensions.DependencyInjection.AutofacServiceProvider.GetRequiredService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2021-09-26 16:23:57.768 -05:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Blogging.BlogFilesController -> Volo.Blogging.Files.FileAppService -> Volo.Abp.BlobStoring.BlobContainer`1[[Volo.Blogging.BloggingFileContainer, Volo.Blogging.Application, Version=4.3.3.0, Culture=neutral, PublicKeyToken=null]]
+
+2021-09-26 16:23:57.770 -05:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2021-09-26 16:23:57.772 -05:00 [INF] Executed action Volo.Blogging.BlogFilesController.GetAsync (Volo.Blogging.HttpApi) in 51.6174ms
+2021-09-26 16:23:57.772 -05:00 [INF] Executed endpoint 'Volo.Blogging.BlogFilesController.GetAsync (Volo.Blogging.HttpApi)'
+2021-09-26 16:23:57.782 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:23:57.782 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:23:57.782 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44357/api/blogging/files/100d4c0445cbf55f687339ec8e656abb.jpg?api-version=1.0 - 0 - 500 - application/json;+charset=utf-8 71.5651ms
+2021-09-26 16:24:18.235 -05:00 [INF] Start processing HTTP request GET "https://localhost:44329/api/abp/api-definition"
+2021-09-26 16:24:18.235 -05:00 [INF] Sending HTTP request GET "https://localhost:44329/api/abp/api-definition"
+2021-09-26 16:24:18.424 -05:00 [INF] Received HTTP response headers after 186.846ms - 200
+2021-09-26 16:24:18.425 -05:00 [INF] End processing HTTP request after 190.7779ms - 200
+2021-09-26 16:24:18.458 -05:00 [INF] Start processing HTTP request GET "https://localhost:44399/.well-known/openid-configuration"
+2021-09-26 16:24:18.458 -05:00 [INF] Sending HTTP request GET "https://localhost:44399/.well-known/openid-configuration"
+2021-09-26 16:24:18.472 -05:00 [INF] Received HTTP response headers after 14.0179ms - 200
+2021-09-26 16:24:18.472 -05:00 [INF] End processing HTTP request after 14.2057ms - 200
+2021-09-26 16:24:18.479 -05:00 [INF] Start processing HTTP request GET "https://localhost:44399/.well-known/openid-configuration/jwks"
+2021-09-26 16:24:18.479 -05:00 [INF] Sending HTTP request GET "https://localhost:44399/.well-known/openid-configuration/jwks"
+2021-09-26 16:24:18.484 -05:00 [INF] Received HTTP response headers after 5.3953ms - 200
+2021-09-26 16:24:18.484 -05:00 [INF] End processing HTTP request after 5.5256ms - 200
+2021-09-26 16:24:18.502 -05:00 [INF] Start processing HTTP request POST "https://localhost:44399/connect/token"
+2021-09-26 16:24:18.502 -05:00 [INF] Sending HTTP request POST "https://localhost:44399/connect/token"
+2021-09-26 16:24:18.746 -05:00 [INF] Received HTTP response headers after 243.7985ms - 200
+2021-09-26 16:24:18.746 -05:00 [INF] End processing HTTP request after 243.9677ms - 200
+2021-09-26 16:24:18.751 -05:00 [INF] Start processing HTTP request GET "https://localhost:44329/api/identity/users/lookup/9c0bf9f1-62a5-fafa-9403-39ff361fa14f?api-version=1.0"
+2021-09-26 16:24:18.751 -05:00 [INF] Sending HTTP request GET "https://localhost:44329/api/identity/users/lookup/9c0bf9f1-62a5-fafa-9403-39ff361fa14f?api-version=1.0"
+2021-09-26 16:24:20.280 -05:00 [INF] Received HTTP response headers after 1529.5465ms - 200
+2021-09-26 16:24:20.280 -05:00 [INF] End processing HTTP request after 1529.7449ms - 200
+2021-09-26 16:26:27.923 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44357/api/blogging/blogs/by-shortname/abp?api-version=1.0 - 0
+2021-09-26 16:26:28.293 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:26:28.294 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:26:28.297 -05:00 [INF] Executing endpoint 'Volo.Blogging.BlogsController.GetByShortNameAsync (Volo.Blogging.HttpApi)'
+2021-09-26 16:26:28.297 -05:00 [INF] Route matched with {area = "blogging", action = "GetByShortName", controller = "Blogs", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Blogging.Blogs.Dtos.BlogDto] GetByShortNameAsync(System.String) on controller Volo.Blogging.BlogsController (Volo.Blogging.HttpApi).
+2021-09-26 16:26:28.302 -05:00 [INF] Executing ObjectResult, writing value of type 'Volo.Blogging.Blogs.Dtos.BlogDto'.
+2021-09-26 16:26:28.303 -05:00 [INF] Executed action Volo.Blogging.BlogsController.GetByShortNameAsync (Volo.Blogging.HttpApi) in 5.7395ms
+2021-09-26 16:26:28.303 -05:00 [INF] Executed endpoint 'Volo.Blogging.BlogsController.GetByShortNameAsync (Volo.Blogging.HttpApi)'
+2021-09-26 16:26:28.318 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:26:28.318 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:26:28.318 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44357/api/blogging/blogs/by-shortname/abp?api-version=1.0 - 0 - 200 - application/json;+charset=utf-8 395.5967ms
+2021-09-26 16:26:28.322 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44357/api/blogging/posts/ab353058-022c-fd4d-57fe-39ff362064b6/all?api-version=1.0 - 0
+2021-09-26 16:26:28.323 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:26:28.323 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:26:28.324 -05:00 [INF] Executing endpoint 'Volo.Blogging.PostsController.GetListByBlogIdAndTagName (Volo.Blogging.HttpApi)'
+2021-09-26 16:26:28.324 -05:00 [INF] Route matched with {area = "blogging", action = "GetListByBlogIdAndTagName", controller = "Posts", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.ListResultDto`1[Volo.Blogging.Posts.PostWithDetailsDto]] GetListByBlogIdAndTagName(System.Guid, System.String) on controller Volo.Blogging.PostsController (Volo.Blogging.HttpApi).
+2021-09-26 16:26:28.332 -05:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.ListResultDto`1[[Volo.Blogging.Posts.PostWithDetailsDto, Volo.Blogging.Application.Contracts, Version=4.3.3.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-26 16:26:28.333 -05:00 [INF] Executed action Volo.Blogging.PostsController.GetListByBlogIdAndTagName (Volo.Blogging.HttpApi) in 8.7774ms
+2021-09-26 16:26:28.333 -05:00 [INF] Executed endpoint 'Volo.Blogging.PostsController.GetListByBlogIdAndTagName (Volo.Blogging.HttpApi)'
+2021-09-26 16:26:28.342 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:26:28.342 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:26:28.342 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44357/api/blogging/posts/ab353058-022c-fd4d-57fe-39ff362064b6/all?api-version=1.0 - 0 - 200 - application/json;+charset=utf-8 19.4271ms
+2021-09-26 16:26:28.347 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44357/api/blogging/tags/popular/ab353058-022c-fd4d-57fe-39ff362064b6?ResultCount=10&MinimumPostCount=2&api-version=1.0 - 0
+2021-09-26 16:26:28.348 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:26:28.348 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:26:28.348 -05:00 [INF] Executing endpoint 'Volo.Blogging.TagsController.GetPopularTags (Volo.Blogging.HttpApi)'
+2021-09-26 16:26:28.349 -05:00 [INF] Route matched with {area = "blogging", action = "GetPopularTags", controller = "Tags", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[System.Collections.Generic.List`1[Volo.Blogging.Tagging.Dtos.TagDto]] GetPopularTags(System.Guid, Volo.Blogging.Tagging.Dtos.GetPopularTagsInput) on controller Volo.Blogging.TagsController (Volo.Blogging.HttpApi).
+2021-09-26 16:26:28.352 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Volo.Blogging.Tagging.Dtos.TagDto, Volo.Blogging.Application.Contracts, Version=4.3.3.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-26 16:26:28.352 -05:00 [INF] Executed action Volo.Blogging.TagsController.GetPopularTags (Volo.Blogging.HttpApi) in 3.746ms
+2021-09-26 16:26:28.352 -05:00 [INF] Executed endpoint 'Volo.Blogging.TagsController.GetPopularTags (Volo.Blogging.HttpApi)'
+2021-09-26 16:26:28.361 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:26:28.361 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:26:28.362 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44357/api/blogging/tags/popular/ab353058-022c-fd4d-57fe-39ff362064b6?ResultCount=10&MinimumPostCount=2&api-version=1.0 - 0 - 200 - application/json;+charset=utf-8 14.3052ms
+2021-09-26 16:26:28.406 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44357/api/blogging/files/100d4c0445cbf55f687339ec8e656abb.jpg?api-version=1.0 - 0
+2021-09-26 16:26:28.407 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:26:28.407 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:26:28.408 -05:00 [INF] Executing endpoint 'Volo.Blogging.BlogFilesController.GetAsync (Volo.Blogging.HttpApi)'
+2021-09-26 16:26:28.408 -05:00 [INF] Route matched with {area = "blogging", action = "Get", controller = "BlogFiles", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Blogging.Files.RawFileDto] GetAsync(System.String) on controller Volo.Blogging.BlogFilesController (Volo.Blogging.HttpApi).
+2021-09-26 16:26:28.409 -05:00 [ERR] ---------- RemoteServiceErrorInfo ----------
+{
+  "code": null,
+  "message": "An internal error occurred during your request!",
+  "details": null,
+  "data": {
+    "ActivatorChain": "Volo.Blogging.BlogFilesController -\u003E Volo.Blogging.Files.FileAppService -\u003E Volo.Abp.BlobStoring.BlobContainer\u00601[[Volo.Blogging.BloggingFileContainer, Volo.Blogging.Application, Version=4.3.3.0, Culture=neutral, PublicKeyToken=null]]"
+  },
+  "validationErrors": null
+}
+
+2021-09-26 16:26:28.409 -05:00 [ERR] An exception was thrown while activating Volo.Blogging.BlogFilesController -> Volo.Blogging.Files.FileAppService -> Volo.Abp.BlobStoring.BlobContainer`1[[Volo.Blogging.BloggingFileContainer, Volo.Blogging.Application, Version=4.3.3.0, Culture=neutral, PublicKeyToken=null]].
+Autofac.Core.DependencyResolutionException: An exception was thrown while activating Volo.Blogging.BlogFilesController -> Volo.Blogging.Files.FileAppService -> Volo.Abp.BlobStoring.BlobContainer`1[[Volo.Blogging.BloggingFileContainer, Volo.Blogging.Application, Version=4.3.3.0, Culture=neutral, PublicKeyToken=null]].
+ ---> Autofac.Core.DependencyResolutionException: An exception was thrown while invoking the constructor 'Void .ctor(Volo.Abp.BlobStoring.IBlobContainerFactory)' on type 'BlobContainer`1'.
+ ---> Volo.Abp.AbpException: No BLOB Storage provider was registered! At least one provider must be registered to be able to use the Blog Storing System.
+   at Volo.Abp.BlobStoring.DefaultBlobProviderSelector.Get(String containerName)
+   at Volo.Abp.BlobStoring.BlobContainerFactory.Create(String name)
+   at lambda_method1533(Closure , Object[] )
+   at Autofac.Core.Activators.Reflection.BoundConstructor.Instantiate()
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Activators.Reflection.BoundConstructor.Instantiate()
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.ActivateInstance(IComponentContext context, IEnumerable`1 parameters)
+   at Autofac.Core.Activators.Reflection.ReflectionActivator.<ConfigurePipeline>b__11_0(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.DisposalTrackingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Builder.RegistrationBuilder`3.<>c__DisplayClass41_0.<PropertiesAutowired>b__0(ResolveRequestContext ctxt, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   --- End of inner exception stack trace ---
+   at Autofac.Core.Resolving.Middleware.ActivatorErrorHandlingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.SharingMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.Middleware.CircularDependencyDetectorMiddleware.Execute(ResolveRequestContext context, Action`1 next)
+   at Autofac.Core.Resolving.ResolveOperation.GetOrCreateInstance(ISharingLifetimeScope currentOperationScope, ResolveRequest request)
+   at Autofac.Core.Resolving.ResolveOperation.ExecuteOperation(ResolveRequest request)
+   at Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance)
+   at Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters)
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2021-09-26 16:26:28.410 -05:00 [ERR] ---------- Exception Data ----------
+ActivatorChain = Volo.Blogging.BlogFilesController -> Volo.Blogging.Files.FileAppService -> Volo.Abp.BlobStoring.BlobContainer`1[[Volo.Blogging.BloggingFileContainer, Volo.Blogging.Application, Version=4.3.3.0, Culture=neutral, PublicKeyToken=null]]
+
+2021-09-26 16:26:28.410 -05:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.RemoteServiceErrorResponse'.
+2021-09-26 16:26:28.410 -05:00 [INF] Executed action Volo.Blogging.BlogFilesController.GetAsync (Volo.Blogging.HttpApi) in 2.2011ms
+2021-09-26 16:26:28.410 -05:00 [INF] Executed endpoint 'Volo.Blogging.BlogFilesController.GetAsync (Volo.Blogging.HttpApi)'
+2021-09-26 16:26:28.417 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:26:28.418 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:26:28.418 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44357/api/blogging/files/100d4c0445cbf55f687339ec8e656abb.jpg?api-version=1.0 - 0 - 500 - application/json;+charset=utf-8 12.0730ms
+2021-09-26 16:30:38.379 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/index.html - -
+2021-09-26 16:30:38.379 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:30:38.381 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/index.html - - - 200 - text/html;charset=utf-8 2.0044ms
+2021-09-26 16:30:38.397 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44357/_framework/aspnetcore-browser-refresh.js - -
+2021-09-26 16:30:38.397 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44357/_framework/aspnetcore-browser-refresh.js - - - 200 3095 application/javascript;+charset=utf-8 0.1931ms
+2021-09-26 16:30:38.548 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/v1/swagger.json - -
+2021-09-26 16:30:38.549 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:30:38.552 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44357/swagger/favicon-32x32.png - -
+2021-09-26 16:30:38.552 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:30:38.555 -05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-09-26 16:30:38.555 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/favicon-32x32.png - - - 200 628 image/png 3.5997ms
+2021-09-26 16:30:38.571 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44357/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 22.5379ms
+2021-09-26 16:32:41.213 -05:00 [DBG] Disposed channel pool with no channels in the pool.
+2021-09-26 16:32:41.221 -05:00 [INF] Application is shutting down...

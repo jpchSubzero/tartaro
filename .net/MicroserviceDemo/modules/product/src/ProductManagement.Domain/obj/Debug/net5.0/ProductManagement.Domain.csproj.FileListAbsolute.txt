@@ -1,0 +1,15 @@
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Domain\bin\Debug\net5.0\ProductManagement.Domain.deps.json
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Domain\bin\Debug\net5.0\ProductManagement.Domain.dll
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Domain\bin\Debug\net5.0\ref\ProductManagement.Domain.dll
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Domain\bin\Debug\net5.0\ProductManagement.Domain.pdb
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Domain\bin\Debug\net5.0\ProductManagement.Domain.Shared.dll
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Domain\bin\Debug\net5.0\ProductManagement.Domain.Shared.pdb
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Domain\obj\Debug\net5.0\ProductManagement.Domain.csproj.AssemblyReference.cache
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Domain\obj\Debug\net5.0\ProductManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Domain\obj\Debug\net5.0\ProductManagement.Domain.AssemblyInfoInputs.cache
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Domain\obj\Debug\net5.0\ProductManagement.Domain.AssemblyInfo.cs
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Domain\obj\Debug\net5.0\ProductManagement.Domain.csproj.CoreCompileInputs.cache
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Domain\obj\Debug\net5.0\ProductManagement.Domain.csproj.CopyComplete
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Domain\obj\Debug\net5.0\ProductManagement.Domain.dll
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Domain\obj\Debug\net5.0\ref\ProductManagement.Domain.dll
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Domain\obj\Debug\net5.0\ProductManagement.Domain.pdb

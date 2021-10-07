@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QB4xacDgD5mhnqbX6+avFS9fRJRdhyCJZOHYAbsTZRBO2cqZM0YM7G2qOWedWAw3oQeByO2SQCUO/7lFYzOJ1w==",
+  "dgSpecHash": "SGsmNUiJdtzwojVbJpxdZY2/opAA9O9xZqWpK8fOwm7o1r9TU0ESaL9CmDoxgEjvayVZyRUz8tXfV9ErNLsV1g==",
   "success": true,
-  "projectFilePath": "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Payment\\Payment.API\\Payment.API.csproj",
+  "projectFilePath": "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Payment\\Payment.API\\Payment.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jpch_\\.nuget\\packages\\aspnetcore.healthchecks.azureservicebus\\5.0.1\\aspnetcore.healthchecks.azureservicebus.5.0.1.nupkg.sha512",
     "C:\\Users\\jpch_\\.nuget\\packages\\aspnetcore.healthchecks.rabbitmq\\5.0.1\\aspnetcore.healthchecks.rabbitmq.5.0.1.nupkg.sha512",

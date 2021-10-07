@@ -1,0 +1,310 @@
+2021-09-26 16:12:21.017 -05:00 [INF] Starting IdentityService.Host.
+2021-09-26 16:12:21.676 -05:00 [INF] Loaded ABP modules:
+2021-09-26 16:12:21.677 -05:00 [INF] - ProductService.Host.ProductServiceHostModule
+2021-09-26 16:12:21.678 -05:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-09-26 16:12:21.678 -05:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-09-26 16:12:21.678 -05:00 [INF]   - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-09-26 16:12:21.678 -05:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-09-26 16:12:21.678 -05:00 [INF]       - Volo.Abp.Auditing.AbpAuditingModule
+2021-09-26 16:12:21.678 -05:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2021-09-26 16:12:21.678 -05:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-09-26 16:12:21.678 -05:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-09-26 16:12:21.678 -05:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-09-26 16:12:21.678 -05:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-09-26 16:12:21.678 -05:00 [INF]           - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-09-26 16:12:21.678 -05:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2021-09-26 16:12:21.678 -05:00 [INF]           - Volo.Abp.Timing.AbpTimingModule
+2021-09-26 16:12:21.678 -05:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2021-09-26 16:12:21.678 -05:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-09-26 16:12:21.678 -05:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2021-09-26 16:12:21.678 -05:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2021-09-26 16:12:21.678 -05:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-09-26 16:12:21.678 -05:00 [INF]         - Volo.Abp.Threading.AbpThreadingModule
+2021-09-26 16:12:21.678 -05:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2021-09-26 16:12:21.678 -05:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-09-26 16:12:21.678 -05:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2021-09-26 16:12:21.678 -05:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-09-26 16:12:21.678 -05:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-09-26 16:12:21.678 -05:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2021-09-26 16:12:21.678 -05:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-09-26 16:12:21.678 -05:00 [INF]     - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-09-26 16:12:21.678 -05:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-09-26 16:12:21.678 -05:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-09-26 16:12:21.678 -05:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-09-26 16:12:21.678 -05:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2021-09-26 16:12:21.678 -05:00 [INF]     - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-09-26 16:12:21.678 -05:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2021-09-26 16:12:21.678 -05:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2021-09-26 16:12:21.678 -05:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-09-26 16:12:21.678 -05:00 [INF]         - Volo.Abp.Guids.AbpGuidsModule
+2021-09-26 16:12:21.678 -05:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-09-26 16:12:21.678 -05:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-09-26 16:12:21.678 -05:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2021-09-26 16:12:21.678 -05:00 [INF]   - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2021-09-26 16:12:21.678 -05:00 [INF]     - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2021-09-26 16:12:21.678 -05:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-09-26 16:12:21.678 -05:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-09-26 16:12:21.678 -05:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2021-09-26 16:12:21.678 -05:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2021-09-26 16:12:21.678 -05:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2021-09-26 16:12:21.678 -05:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-09-26 16:12:21.678 -05:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-09-26 16:12:21.678 -05:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-09-26 16:12:21.678 -05:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-09-26 16:12:21.678 -05:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-09-26 16:12:21.678 -05:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-09-26 16:12:21.678 -05:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-09-26 16:12:21.678 -05:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-09-26 16:12:21.678 -05:00 [INF]   - ProductManagement.ProductManagementApplicationModule
+2021-09-26 16:12:21.678 -05:00 [INF]     - ProductManagement.ProductManagementDomainModule
+2021-09-26 16:12:21.678 -05:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2021-09-26 16:12:21.678 -05:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2021-09-26 16:12:21.678 -05:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-09-26 16:12:21.678 -05:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2021-09-26 16:12:21.678 -05:00 [INF]   - ProductManagement.EntityFrameworkCore.ProductManagementEntityFrameworkCoreModule
+2021-09-26 16:12:21.678 -05:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-09-26 16:12:21.678 -05:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2021-09-26 16:12:21.678 -05:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2021-09-26 16:12:21.678 -05:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2021-09-26 16:12:23.633 -05:00 [INF] Initialized all ABP modules.
+2021-09-26 16:12:23.642 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-26 16:12:23.642 -05:00 [INF] Hosting environment: Development
+2021-09-26 16:12:23.642 -05:00 [INF] Content root path: d:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\microservices\ProductService.Host
+2021-09-26 16:12:23.652 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44344/ - -
+2021-09-26 16:12:23.687 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:12:23.930 -05:00 [INF] Executing endpoint 'ProductService.Host.Controllers.HomeController.Index (ProductService.Host)'
+2021-09-26 16:12:23.964 -05:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller ProductService.Host.Controllers.HomeController (ProductService.Host).
+2021-09-26 16:12:23.982 -05:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2021-09-26 16:12:23.986 -05:00 [INF] Executed action ProductService.Host.Controllers.HomeController.Index (ProductService.Host) in 18.1127ms
+2021-09-26 16:12:23.987 -05:00 [INF] Executed endpoint 'ProductService.Host.Controllers.HomeController.Index (ProductService.Host)'
+2021-09-26 16:12:24.237 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:12:24.237 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:12:24.250 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger - -
+2021-09-26 16:12:24.251 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:12:24.252 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44344/ - - - 302 - - 600.7981ms
+2021-09-26 16:12:24.253 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger - - - 301 - - 3.4860ms
+2021-09-26 16:12:24.256 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/index.html - -
+2021-09-26 16:12:24.258 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:12:24.299 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/index.html - - - 200 - text/html;charset=utf-8 43.3133ms
+2021-09-26 16:12:24.385 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - -
+2021-09-26 16:12:24.386 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:12:24.387 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - -
+2021-09-26 16:12:24.388 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:12:24.398 -05:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2021-09-26 16:12:24.398 -05:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2021-09-26 16:12:24.399 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui.css - - - 200 143212 text/css 13.5895ms
+2021-09-26 16:12:24.411 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-bundle.js - - - 200 1061588 application/javascript 23.5369ms
+2021-09-26 16:12:24.816 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - -
+2021-09-26 16:12:24.816 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - -
+2021-09-26 16:12:24.816 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:12:24.817 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - - - 200 3094 application/javascript;+charset=utf-8 1.1591ms
+2021-09-26 16:12:24.820 -05:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2021-09-26 16:12:24.824 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/swagger-ui-standalone-preset.js - - - 200 332952 application/javascript 7.8170ms
+2021-09-26 16:12:25.718 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/favicon-32x32.png - -
+2021-09-26 16:12:25.718 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - -
+2021-09-26 16:12:25.718 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:12:25.718 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:12:25.720 -05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-09-26 16:12:25.720 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/favicon-32x32.png - - - 200 628 image/png 1.8457ms
+2021-09-26 16:12:25.793 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 75.5407ms
+2021-09-26 16:12:34.763 -05:00 [DBG] Disposed channel pool with no channels in the pool.
+2021-09-26 16:12:34.773 -05:00 [INF] Application is shutting down...
+2021-09-26 16:21:40.896 -05:00 [INF] Starting IdentityService.Host.
+2021-09-26 16:21:41.492 -05:00 [INF] Loaded ABP modules:
+2021-09-26 16:21:41.493 -05:00 [INF] - ProductService.Host.ProductServiceHostModule
+2021-09-26 16:21:41.493 -05:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-09-26 16:21:41.493 -05:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-09-26 16:21:41.493 -05:00 [INF]   - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-09-26 16:21:41.493 -05:00 [INF]     - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-09-26 16:21:41.493 -05:00 [INF]       - Volo.Abp.Auditing.AbpAuditingModule
+2021-09-26 16:21:41.493 -05:00 [INF]         - Volo.Abp.Data.AbpDataModule
+2021-09-26 16:21:41.493 -05:00 [INF]           - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-09-26 16:21:41.493 -05:00 [INF]             - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-09-26 16:21:41.493 -05:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-09-26 16:21:41.493 -05:00 [INF]           - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-09-26 16:21:41.493 -05:00 [INF]           - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-09-26 16:21:41.493 -05:00 [INF]         - Volo.Abp.Json.AbpJsonModule
+2021-09-26 16:21:41.493 -05:00 [INF]           - Volo.Abp.Timing.AbpTimingModule
+2021-09-26 16:21:41.493 -05:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2021-09-26 16:21:41.493 -05:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-09-26 16:21:41.493 -05:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2021-09-26 16:21:41.493 -05:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2021-09-26 16:21:41.493 -05:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-09-26 16:21:41.493 -05:00 [INF]         - Volo.Abp.Threading.AbpThreadingModule
+2021-09-26 16:21:41.493 -05:00 [INF]       - Volo.Abp.Http.AbpHttpModule
+2021-09-26 16:21:41.493 -05:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-09-26 16:21:41.493 -05:00 [INF]         - Volo.Abp.Minify.AbpMinifyModule
+2021-09-26 16:21:41.493 -05:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-09-26 16:21:41.493 -05:00 [INF]         - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-09-26 16:21:41.493 -05:00 [INF]       - Volo.Abp.Validation.AbpValidationModule
+2021-09-26 16:21:41.493 -05:00 [INF]       - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-09-26 16:21:41.493 -05:00 [INF]     - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-09-26 16:21:41.493 -05:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-09-26 16:21:41.493 -05:00 [INF]       - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-09-26 16:21:41.493 -05:00 [INF]     - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-09-26 16:21:41.494 -05:00 [INF]       - Volo.Abp.UI.AbpUiModule
+2021-09-26 16:21:41.494 -05:00 [INF]     - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-09-26 16:21:41.494 -05:00 [INF]     - Volo.Abp.Application.AbpDddApplicationModule
+2021-09-26 16:21:41.494 -05:00 [INF]       - Volo.Abp.Domain.AbpDddDomainModule
+2021-09-26 16:21:41.494 -05:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-09-26 16:21:41.494 -05:00 [INF]         - Volo.Abp.Guids.AbpGuidsModule
+2021-09-26 16:21:41.494 -05:00 [INF]         - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-09-26 16:21:41.494 -05:00 [INF]         - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-09-26 16:21:41.494 -05:00 [INF]       - Volo.Abp.Features.AbpFeaturesModule
+2021-09-26 16:21:41.494 -05:00 [INF]   - Volo.Abp.EventBus.RabbitMq.AbpEventBusRabbitMqModule
+2021-09-26 16:21:41.494 -05:00 [INF]     - Volo.Abp.RabbitMQ.AbpRabbitMqModule
+2021-09-26 16:21:41.494 -05:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-09-26 16:21:41.494 -05:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-09-26 16:21:41.494 -05:00 [INF]   - Volo.Abp.AuditLogging.EntityFrameworkCore.AbpAuditLoggingEntityFrameworkCoreModule
+2021-09-26 16:21:41.494 -05:00 [INF]     - Volo.Abp.AuditLogging.AbpAuditLoggingDomainModule
+2021-09-26 16:21:41.494 -05:00 [INF]       - Volo.Abp.AuditLogging.AbpAuditLoggingDomainSharedModule
+2021-09-26 16:21:41.494 -05:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-09-26 16:21:41.494 -05:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-09-26 16:21:41.494 -05:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-09-26 16:21:41.494 -05:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-09-26 16:21:41.494 -05:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-09-26 16:21:41.494 -05:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-09-26 16:21:41.494 -05:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-09-26 16:21:41.494 -05:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-09-26 16:21:41.494 -05:00 [INF]   - ProductManagement.ProductManagementApplicationModule
+2021-09-26 16:21:41.494 -05:00 [INF]     - ProductManagement.ProductManagementDomainModule
+2021-09-26 16:21:41.494 -05:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2021-09-26 16:21:41.494 -05:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2021-09-26 16:21:41.494 -05:00 [INF]     - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-09-26 16:21:41.494 -05:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2021-09-26 16:21:41.494 -05:00 [INF]   - ProductManagement.EntityFrameworkCore.ProductManagementEntityFrameworkCoreModule
+2021-09-26 16:21:41.494 -05:00 [INF]   - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-09-26 16:21:41.494 -05:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2021-09-26 16:21:41.494 -05:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2021-09-26 16:21:41.494 -05:00 [INF]       - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2021-09-26 16:21:42.721 -05:00 [INF] Initialized all ABP modules.
+2021-09-26 16:21:42.772 -05:00 [INF] Now listening on: https://localhost:44344
+2021-09-26 16:21:42.773 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-26 16:21:42.773 -05:00 [INF] Hosting environment: Development
+2021-09-26 16:21:42.773 -05:00 [INF] Content root path: d:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\microservices\ProductService.Host
+2021-09-26 16:21:43.025 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44344/ - -
+2021-09-26 16:21:43.062 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:21:43.350 -05:00 [INF] Executing endpoint 'ProductService.Host.Controllers.HomeController.Index (ProductService.Host)'
+2021-09-26 16:21:43.378 -05:00 [INF] Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller ProductService.Host.Controllers.HomeController (ProductService.Host).
+2021-09-26 16:21:43.392 -05:00 [INF] Executing RedirectResult, redirecting to /swagger.
+2021-09-26 16:21:43.395 -05:00 [INF] Executed action ProductService.Host.Controllers.HomeController.Index (ProductService.Host) in 13.6909ms
+2021-09-26 16:21:43.395 -05:00 [INF] Executed endpoint 'ProductService.Host.Controllers.HomeController.Index (ProductService.Host)'
+2021-09-26 16:21:43.696 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:21:43.696 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:21:43.707 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44344/ - - - 302 0 - 682.9686ms
+2021-09-26 16:21:43.710 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/index.html - -
+2021-09-26 16:21:43.712 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:21:43.745 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/index.html - - - 200 - text/html;charset=utf-8 34.7239ms
+2021-09-26 16:21:43.776 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - -
+2021-09-26 16:21:43.777 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - - - 200 3094 application/javascript;+charset=utf-8 0.9650ms
+2021-09-26 16:21:43.957 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - -
+2021-09-26 16:21:43.958 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:21:44.035 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 77.6212ms
+2021-09-26 16:23:49.133 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44344/api/productManagement/public/products?api-version=1.0 - 0
+2021-09-26 16:23:49.133 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:23:49.135 -05:00 [INF] Executing endpoint 'ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi)'
+2021-09-26 16:23:49.138 -05:00 [INF] Route matched with {area = "productManagement", action = "GetList", controller = "PublicProducts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.ListResultDto`1[ProductManagement.ProductDto]] GetListAsync() on controller ProductManagement.PublicProductsController (ProductManagement.HttpApi).
+2021-09-26 16:23:49.205 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:23:49.211 -05:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.ListResultDto`1[[ProductManagement.ProductDto, ProductManagement.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-26 16:23:49.225 -05:00 [INF] Executed action ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi) in 87.4237ms
+2021-09-26 16:23:49.226 -05:00 [INF] Executed endpoint 'ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi)'
+2021-09-26 16:23:49.246 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:23:49.246 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:23:49.246 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44344/api/productManagement/public/products?api-version=1.0 - 0 - 200 - application/json;+charset=utf-8 113.5394ms
+2021-09-26 16:23:55.597 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44344/api/productManagement/public/products?api-version=1.0 - 0
+2021-09-26 16:23:55.598 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:23:55.599 -05:00 [INF] Executing endpoint 'ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi)'
+2021-09-26 16:23:55.599 -05:00 [INF] Route matched with {area = "productManagement", action = "GetList", controller = "PublicProducts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.ListResultDto`1[ProductManagement.ProductDto]] GetListAsync() on controller ProductManagement.PublicProductsController (ProductManagement.HttpApi).
+2021-09-26 16:23:55.605 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:23:55.605 -05:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.ListResultDto`1[[ProductManagement.ProductDto, ProductManagement.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-26 16:23:55.605 -05:00 [INF] Executed action ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi) in 5.5951ms
+2021-09-26 16:23:55.605 -05:00 [INF] Executed endpoint 'ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi)'
+2021-09-26 16:23:55.616 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:23:55.616 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:23:55.616 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44344/api/productManagement/public/products?api-version=1.0 - 0 - 200 - application/json;+charset=utf-8 19.5431ms
+2021-09-26 16:26:12.013 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44344/api/productManagement/public/products?api-version=1.0 - 0
+2021-09-26 16:26:12.423 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:26:12.424 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:26:12.426 -05:00 [INF] Executing endpoint 'ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi)'
+2021-09-26 16:26:12.426 -05:00 [INF] Route matched with {area = "productManagement", action = "GetList", controller = "PublicProducts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.ListResultDto`1[ProductManagement.ProductDto]] GetListAsync() on controller ProductManagement.PublicProductsController (ProductManagement.HttpApi).
+2021-09-26 16:26:12.431 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:26:12.431 -05:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.ListResultDto`1[[ProductManagement.ProductDto, ProductManagement.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-26 16:26:12.432 -05:00 [INF] Executed action ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi) in 5.4502ms
+2021-09-26 16:26:12.432 -05:00 [INF] Executed endpoint 'ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi)'
+2021-09-26 16:26:12.442 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:26:12.442 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:26:12.442 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44344/api/productManagement/public/products?api-version=1.0 - 0 - 200 - application/json;+charset=utf-8 429.5265ms
+2021-09-26 16:26:21.047 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44344/api/productManagement/public/products?api-version=1.0 - 0
+2021-09-26 16:26:21.048 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:26:21.048 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:26:21.049 -05:00 [INF] Executing endpoint 'ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi)'
+2021-09-26 16:26:21.050 -05:00 [INF] Route matched with {area = "productManagement", action = "GetList", controller = "PublicProducts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.ListResultDto`1[ProductManagement.ProductDto]] GetListAsync() on controller ProductManagement.PublicProductsController (ProductManagement.HttpApi).
+2021-09-26 16:26:21.055 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:26:21.056 -05:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.ListResultDto`1[[ProductManagement.ProductDto, ProductManagement.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-26 16:26:21.056 -05:00 [INF] Executed action ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi) in 6.6017ms
+2021-09-26 16:26:21.056 -05:00 [INF] Executed endpoint 'ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi)'
+2021-09-26 16:26:21.067 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:26:21.067 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:26:21.067 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44344/api/productManagement/public/products?api-version=1.0 - 0 - 200 - application/json;+charset=utf-8 20.4018ms
+2021-09-26 16:26:35.962 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44344/api/productManagement/public/products?api-version=1.0 - 0
+2021-09-26 16:26:35.963 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:26:35.963 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:26:35.965 -05:00 [INF] Executing endpoint 'ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi)'
+2021-09-26 16:26:35.965 -05:00 [INF] Route matched with {area = "productManagement", action = "GetList", controller = "PublicProducts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.ListResultDto`1[ProductManagement.ProductDto]] GetListAsync() on controller ProductManagement.PublicProductsController (ProductManagement.HttpApi).
+2021-09-26 16:26:35.969 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:26:35.970 -05:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.ListResultDto`1[[ProductManagement.ProductDto, ProductManagement.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-26 16:26:35.970 -05:00 [INF] Executed action ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi) in 4.6514ms
+2021-09-26 16:26:35.970 -05:00 [INF] Executed endpoint 'ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi)'
+2021-09-26 16:26:35.982 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:26:35.982 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:26:35.982 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44344/api/productManagement/public/products?api-version=1.0 - 0 - 200 - application/json;+charset=utf-8 20.2286ms
+2021-09-26 16:29:15.442 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44344/api/productManagement/public/products?api-version=1.0 - 0
+2021-09-26 16:29:15.443 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:29:15.443 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:29:15.444 -05:00 [INF] Executing endpoint 'ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi)'
+2021-09-26 16:29:15.444 -05:00 [INF] Route matched with {area = "productManagement", action = "GetList", controller = "PublicProducts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.ListResultDto`1[ProductManagement.ProductDto]] GetListAsync() on controller ProductManagement.PublicProductsController (ProductManagement.HttpApi).
+2021-09-26 16:29:15.448 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:29:15.448 -05:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.ListResultDto`1[[ProductManagement.ProductDto, ProductManagement.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-26 16:29:15.449 -05:00 [INF] Executed action ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi) in 4.436ms
+2021-09-26 16:29:15.449 -05:00 [INF] Executed endpoint 'ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi)'
+2021-09-26 16:29:15.458 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:29:15.458 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:29:15.458 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44344/api/productManagement/public/products?api-version=1.0 - 0 - 200 - application/json;+charset=utf-8 15.7335ms
+2021-09-26 16:30:37.120 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/index.html - -
+2021-09-26 16:30:37.121 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:30:37.123 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/index.html - - - 200 - text/html;charset=utf-8 2.3206ms
+2021-09-26 16:30:37.136 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - -
+2021-09-26 16:30:37.136 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44344/_framework/aspnetcore-browser-refresh.js - - - 200 3094 application/javascript;+charset=utf-8 0.1816ms
+2021-09-26 16:30:37.287 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - -
+2021-09-26 16:30:37.288 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:30:37.291 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44344/swagger/favicon-32x32.png - -
+2021-09-26 16:30:37.292 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:30:37.295 -05:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2021-09-26 16:30:37.295 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/favicon-32x32.png - - - 200 628 image/png 3.5459ms
+2021-09-26 16:30:37.303 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44344/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 15.4542ms
+2021-09-26 16:30:42.469 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44344/api/productManagement/public/products?api-version=1.0 - 0
+2021-09-26 16:30:42.470 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:30:42.470 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:30:42.471 -05:00 [INF] Executing endpoint 'ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi)'
+2021-09-26 16:30:42.471 -05:00 [INF] Route matched with {area = "productManagement", action = "GetList", controller = "PublicProducts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.ListResultDto`1[ProductManagement.ProductDto]] GetListAsync() on controller ProductManagement.PublicProductsController (ProductManagement.HttpApi).
+2021-09-26 16:30:42.475 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:30:42.475 -05:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.ListResultDto`1[[ProductManagement.ProductDto, ProductManagement.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-26 16:30:42.476 -05:00 [INF] Executed action ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi) in 4.7962ms
+2021-09-26 16:30:42.476 -05:00 [INF] Executed endpoint 'ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi)'
+2021-09-26 16:30:42.486 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:30:42.486 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:30:42.487 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44344/api/productManagement/public/products?api-version=1.0 - 0 - 200 - application/json;+charset=utf-8 17.4762ms
+2021-09-26 16:30:46.041 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44344/api/productManagement/public/products?api-version=1.0 - 0
+2021-09-26 16:30:46.042 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:30:46.042 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:30:46.043 -05:00 [INF] Executing endpoint 'ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi)'
+2021-09-26 16:30:46.043 -05:00 [INF] Route matched with {area = "productManagement", action = "GetList", controller = "PublicProducts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.Application.Dtos.ListResultDto`1[ProductManagement.ProductDto]] GetListAsync() on controller ProductManagement.PublicProductsController (ProductManagement.HttpApi).
+2021-09-26 16:30:46.048 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:30:46.048 -05:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Application.Dtos.ListResultDto`1[[ProductManagement.ProductDto, ProductManagement.Application.Contracts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-26 16:30:46.048 -05:00 [INF] Executed action ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi) in 4.742ms
+2021-09-26 16:30:46.048 -05:00 [INF] Executed endpoint 'ProductManagement.PublicProductsController.GetListAsync (ProductManagement.HttpApi)'
+2021-09-26 16:30:46.061 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:30:46.061 -05:00 [DBG] Added 0 entity changes to the current audit log
+2021-09-26 16:30:46.061 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44344/api/productManagement/public/products?api-version=1.0 - 0 - 200 - application/json;+charset=utf-8 19.4664ms
+2021-09-26 16:32:41.706 -05:00 [DBG] Disposed channel pool with no channels in the pool.
+2021-09-26 16:32:41.715 -05:00 [INF] Application is shutting down...

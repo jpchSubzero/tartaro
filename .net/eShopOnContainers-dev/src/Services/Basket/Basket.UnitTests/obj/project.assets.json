@@ -14314,11 +14314,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Basket\\Basket.UnitTests\\Basket.UnitTests.csproj",
+      "projectUniqueName": "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Basket\\Basket.UnitTests\\Basket.UnitTests.csproj",
       "projectName": "Basket.UnitTests",
-      "projectPath": "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Basket\\Basket.UnitTests\\Basket.UnitTests.csproj",
+      "projectPath": "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Basket\\Basket.UnitTests\\Basket.UnitTests.csproj",
       "packagesPath": "C:\\Users\\jpch_\\.nuget\\packages\\",
-      "outputPath": "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Basket\\Basket.UnitTests\\obj\\",
+      "outputPath": "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Basket\\Basket.UnitTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -14344,11 +14344,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Basket\\Basket.API\\Basket.API.csproj": {
-              "projectPath": "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Basket\\Basket.API\\Basket.API.csproj"
+            "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Basket\\Basket.API\\Basket.API.csproj": {
+              "projectPath": "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Basket\\Basket.API\\Basket.API.csproj"
             },
-            "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Web\\WebMVC\\WebMVC.csproj": {
-              "projectPath": "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Web\\WebMVC\\WebMVC.csproj"
+            "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Web\\WebMVC\\WebMVC.csproj": {
+              "projectPath": "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Web\\WebMVC\\WebMVC.csproj"
             }
           }
         }
@@ -14413,7 +14413,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

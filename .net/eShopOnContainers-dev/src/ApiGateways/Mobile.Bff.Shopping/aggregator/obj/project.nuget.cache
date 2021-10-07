@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uG38U1g/ZVKItRElaPS3O/gUozEafRBaeF4nykBZrW2lkRh82X3YbFB7jCvDU+hFGCx5Uh+lsYsojkA68vtHoA==",
+  "dgSpecHash": "HUVndTTf/FXRsy0Rc7Ags0Aw73ysXkPePN7D+mNoIhNMfPdFlTC6AezlHAqlBrjc3akxEEklRajHm4wk7G+lBw==",
   "success": true,
-  "projectFilePath": "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\ApiGateways\\Mobile.Bff.Shopping\\aggregator\\Mobile.Shopping.HttpAggregator.csproj",
+  "projectFilePath": "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\ApiGateways\\Mobile.Bff.Shopping\\aggregator\\Mobile.Shopping.HttpAggregator.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jpch_\\.nuget\\packages\\aspnetcore.healthchecks.ui.client\\5.0.1\\aspnetcore.healthchecks.ui.client.5.0.1.nupkg.sha512",
     "C:\\Users\\jpch_\\.nuget\\packages\\aspnetcore.healthchecks.ui.core\\5.0.1\\aspnetcore.healthchecks.ui.core.5.0.1.nupkg.sha512",

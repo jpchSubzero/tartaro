@@ -11,13 +11,13 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Basket.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Basket\\Bask" +
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("Basket.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Basket\\Bask" +
     "et.API", "Basket.API.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EventBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EventBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
     "Bus\\EventBus", "EventBus.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EventBusRabbitMQ, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EventBusRabbitMQ, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
     "Bus\\EventBusRabbitMQ", "EventBusRabbitMQ.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EventBusServiceBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("EventBusServiceBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Event" +
     "Bus\\EventBusServiceBus", "EventBusServiceBus.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Basket.FunctionalTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]

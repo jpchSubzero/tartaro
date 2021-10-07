@@ -1,0 +1,13 @@
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.AssemblyInfoInputs.cache
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.AssemblyInfo.cs
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.csproj.CoreCompileInputs.cache
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.dll
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.pdb
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\bin\Debug\netstandard2.0\ProductManagement.Application.Contracts.deps.json
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\bin\Debug\netstandard2.0\ProductManagement.Application.Contracts.dll
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\bin\Debug\netstandard2.0\ProductManagement.Application.Contracts.pdb
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\bin\Debug\netstandard2.0\ProductManagement.Domain.Shared.dll
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\bin\Debug\netstandard2.0\ProductManagement.Domain.Shared.pdb
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.csproj.CopyComplete
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\modules\product\src\ProductManagement.Application.Contracts\obj\Debug\netstandard2.0\ProductManagement.Application.Contracts.csproj.AssemblyReference.cache

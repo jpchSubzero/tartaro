@@ -1,0 +1,434 @@
+2021-09-26 15:43:06.759 -05:00 [INF] Starting BackendAdminAppGateway.Host.
+2021-09-26 15:43:19.984 -05:00 [FTL] BackendAdminAppGateway.Host terminated unexpectedly!
+Volo.Abp.AbpInitializationException: An error occurred during ConfigureServices phase of the module BackendAdminAppGateway.Host.BackendAdminAppGatewayHostModule, BackendAdminAppGateway.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null. See the inner exception for details.
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). UnableToConnect on localhost:6379/Interactive, Initializing/NotStarted, last: NONE, origin: BeginConnectAsync, outstanding: 0, last-read: 2s ago, last-write: 2s ago, keep-alive: 60s, state: Connecting, mgr: 10 of 10 available, last-heartbeat: never, global: 7s ago, v: 2.0.593.37019
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(Object configuration, TextWriter log) in C:\projects\stackexchange-redis\src\StackExchange.Redis\ConnectionMultiplexer.cs:line 941
+   at StackExchange.Redis.ConnectionMultiplexer.Connect(String configuration, TextWriter log) in C:\projects\stackexchange-redis\src\StackExchange.Redis\ConnectionMultiplexer.cs:line 903
+   at BackendAdminAppGateway.Host.BackendAdminAppGatewayHostModule.ConfigureServices(ServiceConfigurationContext context) in D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\gateways\BackendAdminAppGateway.Host\BackendAdminAppGatewayHostModule.cs:line 101
+   at Volo.Abp.AbpApplicationBase.ConfigureServices()
+   --- End of inner exception stack trace ---
+   at Volo.Abp.AbpApplicationBase.ConfigureServices()
+   at Volo.Abp.AbpApplicationBase..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationWithExternalServiceProvider..ctor(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.Create(Type startupModuleType, IServiceCollection services, Action`1 optionsAction)
+   at Volo.Abp.AbpApplicationFactory.Create[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionApplicationExtensions.AddApplication[TStartupModule](IServiceCollection services, Action`1 optionsAction)
+   at BackendAdminAppGateway.Host.Startup.ConfigureServices(IServiceCollection services) in D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\gateways\BackendAdminAppGateway.Host\Startup.cs:line 14
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.InvokeCore(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.<>c__DisplayClass9_0.<Invoke>g__Startup|0(IServiceCollection serviceCollection)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.Invoke(Object instance, IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.ConfigureServicesBuilder.<>c__DisplayClass8_0.<Build>b__0(IServiceCollection services)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.UseStartup(Type startupType, HostBuilderContext context, IServiceCollection services, Object instance)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass13_0.<UseStartup>b__0(HostBuilderContext context, IServiceCollection services)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at BackendAdminAppGateway.Host.Program.Main(String[] args) in D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\gateways\BackendAdminAppGateway.Host\Program.cs:line 42
+2021-09-26 16:12:50.128 -05:00 [INF] Starting BackendAdminAppGateway.Host.
+2021-09-26 16:12:50.955 -05:00 [INF] Loaded ABP modules:
+2021-09-26 16:12:50.956 -05:00 [INF] - BackendAdminAppGateway.Host.BackendAdminAppGatewayHostModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-09-26 16:12:50.957 -05:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-09-26 16:12:50.957 -05:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-09-26 16:12:50.957 -05:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-09-26 16:12:50.957 -05:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-09-26 16:12:50.957 -05:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2021-09-26 16:12:50.957 -05:00 [INF]           - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-09-26 16:12:50.957 -05:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2021-09-26 16:12:50.957 -05:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-09-26 16:12:50.957 -05:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2021-09-26 16:12:50.957 -05:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-09-26 16:12:50.957 -05:00 [INF]               - Volo.Abp.Security.AbpSecurityModule
+2021-09-26 16:12:50.957 -05:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-09-26 16:12:50.957 -05:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2021-09-26 16:12:50.957 -05:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-09-26 16:12:50.957 -05:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-09-26 16:12:50.957 -05:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-09-26 16:12:50.957 -05:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2021-09-26 16:12:50.957 -05:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-09-26 16:12:50.957 -05:00 [INF]       - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-09-26 16:12:50.957 -05:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-09-26 16:12:50.957 -05:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-09-26 16:12:50.957 -05:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2021-09-26 16:12:50.957 -05:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2021-09-26 16:12:50.957 -05:00 [INF]           - Volo.Abp.Auditing.AbpAuditingModule
+2021-09-26 16:12:50.957 -05:00 [INF]             - Volo.Abp.Json.AbpJsonModule
+2021-09-26 16:12:50.957 -05:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2021-09-26 16:12:50.957 -05:00 [INF]             - Volo.Abp.Threading.AbpThreadingModule
+2021-09-26 16:12:50.957 -05:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2021-09-26 16:12:50.957 -05:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-09-26 16:12:50.957 -05:00 [INF]           - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-09-26 16:12:50.957 -05:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-09-26 16:12:50.957 -05:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-09-26 16:12:50.957 -05:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-09-26 16:12:50.957 -05:00 [INF]         - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-09-26 16:12:50.957 -05:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-09-26 16:12:50.957 -05:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-09-26 16:12:50.957 -05:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-09-26 16:12:50.957 -05:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-09-26 16:12:50.957 -05:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2021-09-26 16:12:50.957 -05:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2021-09-26 16:12:50.957 -05:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-09-26 16:12:50.957 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-09-26 16:12:50.957 -05:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-09-26 16:12:50.957 -05:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiClientModule
+2021-09-26 16:12:50.957 -05:00 [INF]     - Volo.Abp.Http.Client.AbpHttpClientModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2021-09-26 16:12:50.957 -05:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2021-09-26 16:12:50.957 -05:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-09-26 16:12:50.957 -05:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-09-26 16:12:50.957 -05:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-09-26 16:12:50.957 -05:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-09-26 16:12:50.957 -05:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-09-26 16:12:50.957 -05:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-09-26 16:12:50.957 -05:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - Volo.Blogging.BloggingApplicationContractsModule
+2021-09-26 16:12:50.957 -05:00 [INF]     - Volo.Blogging.BloggingApplicationContractsSharedModule
+2021-09-26 16:12:50.957 -05:00 [INF]       - Volo.Blogging.BloggingDomainSharedModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2021-09-26 16:12:50.957 -05:00 [INF]     - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - Volo.Abp.Http.Client.IdentityModel.Web.AbpHttpClientIdentityModelWebModule
+2021-09-26 16:12:50.957 -05:00 [INF]     - Volo.Abp.Http.Client.IdentityModel.AbpHttpClientIdentityModelModule
+2021-09-26 16:12:50.957 -05:00 [INF]       - Volo.Abp.IdentityModel.AbpIdentityModelModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2021-09-26 16:12:50.957 -05:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2021-09-26 16:12:50.957 -05:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2021-09-26 16:12:50.957 -05:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2021-09-26 16:12:50.957 -05:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiClientModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2021-09-26 16:12:50.957 -05:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2021-09-26 16:12:50.957 -05:00 [INF]       - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2021-09-26 16:12:50.957 -05:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2021-09-26 16:12:50.957 -05:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2021-09-26 16:12:50.957 -05:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2021-09-26 16:12:50.957 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2021-09-26 16:12:50.957 -05:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2021-09-26 16:12:50.957 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2021-09-26 16:12:50.957 -05:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2021-09-26 16:12:50.957 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2021-09-26 16:12:50.957 -05:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2021-09-26 16:12:50.957 -05:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-09-26 16:12:51.587 -05:00 [INF] Initialized all ABP modules.
+2021-09-26 16:12:51.589 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-26 16:12:51.589 -05:00 [INF] Hosting environment: Development
+2021-09-26 16:12:51.589 -05:00 [INF] Content root path: d:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\gateways\BackendAdminAppGateway.Host
+2021-09-26 16:12:51.600 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44315/ - -
+2021-09-26 16:12:51.631 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:12:51.954 -05:00 [DBG] requestId: 80000008-000e-fb00-b63f-84710c7967bb, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:12:51.956 -05:00 [DBG] requestId: 80000008-000e-fb00-b63f-84710c7967bb, previousRequestId: no previous request id, message: Upstream url path is /
+2021-09-26 16:12:51.959 -05:00 [WRN] requestId: 80000008-000e-fb00-b63f-84710c7967bb, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2021-09-26 16:12:51.960 -05:00 [WRN] requestId: 80000008-000e-fb00-b63f-84710c7967bb, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2021-09-26 16:12:51.960 -05:00 [DBG] requestId: 80000008-000e-fb00-b63f-84710c7967bb, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:12:51.970 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44315/ - - - 404 - - 369.9538ms
+2021-09-26 16:13:01.649 -05:00 [INF] Application is shutting down...
+2021-09-26 16:13:15.070 -05:00 [INF] Starting BackendAdminAppGateway.Host.
+2021-09-26 16:13:15.964 -05:00 [INF] Loaded ABP modules:
+2021-09-26 16:13:15.965 -05:00 [INF] - BackendAdminAppGateway.Host.BackendAdminAppGatewayHostModule
+2021-09-26 16:13:15.965 -05:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-09-26 16:13:15.965 -05:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-09-26 16:13:15.965 -05:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-09-26 16:13:15.965 -05:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-09-26 16:13:15.965 -05:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-09-26 16:13:15.965 -05:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-09-26 16:13:15.965 -05:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2021-09-26 16:13:15.965 -05:00 [INF]           - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-09-26 16:13:15.965 -05:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2021-09-26 16:13:15.965 -05:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-09-26 16:13:15.965 -05:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2021-09-26 16:13:15.965 -05:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-09-26 16:13:15.965 -05:00 [INF]               - Volo.Abp.Security.AbpSecurityModule
+2021-09-26 16:13:15.965 -05:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-09-26 16:13:15.965 -05:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2021-09-26 16:13:15.965 -05:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-09-26 16:13:15.965 -05:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-09-26 16:13:15.965 -05:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-09-26 16:13:15.965 -05:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2021-09-26 16:13:15.965 -05:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-09-26 16:13:15.965 -05:00 [INF]       - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-09-26 16:13:15.965 -05:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-09-26 16:13:15.965 -05:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-09-26 16:13:15.965 -05:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2021-09-26 16:13:15.965 -05:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2021-09-26 16:13:15.965 -05:00 [INF]           - Volo.Abp.Auditing.AbpAuditingModule
+2021-09-26 16:13:15.965 -05:00 [INF]             - Volo.Abp.Json.AbpJsonModule
+2021-09-26 16:13:15.965 -05:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2021-09-26 16:13:15.965 -05:00 [INF]             - Volo.Abp.Threading.AbpThreadingModule
+2021-09-26 16:13:15.965 -05:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2021-09-26 16:13:15.965 -05:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-09-26 16:13:15.965 -05:00 [INF]           - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-09-26 16:13:15.965 -05:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-09-26 16:13:15.965 -05:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-09-26 16:13:15.965 -05:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-09-26 16:13:15.965 -05:00 [INF]         - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-09-26 16:13:15.965 -05:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-09-26 16:13:15.965 -05:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-09-26 16:13:15.965 -05:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-09-26 16:13:15.965 -05:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-09-26 16:13:15.965 -05:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2021-09-26 16:13:15.965 -05:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2021-09-26 16:13:15.965 -05:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-09-26 16:13:15.965 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-09-26 16:13:15.965 -05:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-09-26 16:13:15.965 -05:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2021-09-26 16:13:15.965 -05:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiClientModule
+2021-09-26 16:13:15.965 -05:00 [INF]     - Volo.Abp.Http.Client.AbpHttpClientModule
+2021-09-26 16:13:15.965 -05:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2021-09-26 16:13:15.965 -05:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2021-09-26 16:13:15.965 -05:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2021-09-26 16:13:15.965 -05:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-09-26 16:13:15.965 -05:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-09-26 16:13:15.965 -05:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-09-26 16:13:15.965 -05:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-09-26 16:13:15.965 -05:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-09-26 16:13:15.965 -05:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-09-26 16:13:15.965 -05:00 [INF]   - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2021-09-26 16:13:15.965 -05:00 [INF]   - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2021-09-26 16:13:15.965 -05:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-09-26 16:13:15.965 -05:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-09-26 16:13:15.965 -05:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-09-26 16:13:15.966 -05:00 [INF]   - Volo.Blogging.BloggingApplicationContractsModule
+2021-09-26 16:13:15.966 -05:00 [INF]     - Volo.Blogging.BloggingApplicationContractsSharedModule
+2021-09-26 16:13:15.966 -05:00 [INF]       - Volo.Blogging.BloggingDomainSharedModule
+2021-09-26 16:13:15.966 -05:00 [INF]   - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2021-09-26 16:13:15.966 -05:00 [INF]   - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2021-09-26 16:13:15.966 -05:00 [INF]     - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2021-09-26 16:13:15.966 -05:00 [INF]   - Volo.Abp.Http.Client.IdentityModel.Web.AbpHttpClientIdentityModelWebModule
+2021-09-26 16:13:15.966 -05:00 [INF]     - Volo.Abp.Http.Client.IdentityModel.AbpHttpClientIdentityModelModule
+2021-09-26 16:13:15.966 -05:00 [INF]       - Volo.Abp.IdentityModel.AbpIdentityModelModule
+2021-09-26 16:13:15.966 -05:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2021-09-26 16:13:15.966 -05:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2021-09-26 16:13:15.966 -05:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2021-09-26 16:13:15.966 -05:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2021-09-26 16:13:15.966 -05:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2021-09-26 16:13:15.966 -05:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2021-09-26 16:13:15.966 -05:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiClientModule
+2021-09-26 16:13:15.966 -05:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2021-09-26 16:13:15.966 -05:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2021-09-26 16:13:15.966 -05:00 [INF]       - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-09-26 16:13:15.966 -05:00 [INF]   - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2021-09-26 16:13:15.966 -05:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2021-09-26 16:13:15.966 -05:00 [INF]   - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2021-09-26 16:13:15.966 -05:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2021-09-26 16:13:15.966 -05:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2021-09-26 16:13:15.966 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2021-09-26 16:13:15.966 -05:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2021-09-26 16:13:15.966 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2021-09-26 16:13:15.966 -05:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2021-09-26 16:13:15.966 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2021-09-26 16:13:15.966 -05:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2021-09-26 16:13:15.966 -05:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-09-26 16:13:16.290 -05:00 [INF] Initialized all ABP modules.
+2021-09-26 16:13:16.292 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-26 16:13:16.292 -05:00 [INF] Hosting environment: Development
+2021-09-26 16:13:16.292 -05:00 [INF] Content root path: d:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\gateways\BackendAdminAppGateway.Host
+2021-09-26 16:13:16.303 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44315/ - -
+2021-09-26 16:13:16.329 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:13:16.510 -05:00 [DBG] requestId: 80000032-000a-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:13:16.512 -05:00 [DBG] requestId: 80000032-000a-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: Upstream url path is /
+2021-09-26 16:13:16.515 -05:00 [WRN] requestId: 80000032-000a-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2021-09-26 16:13:16.516 -05:00 [WRN] requestId: 80000032-000a-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2021-09-26 16:13:16.517 -05:00 [DBG] requestId: 80000032-000a-ff00-b63f-84710c7967bb, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:13:16.527 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44315/ - - - 404 - - 224.1241ms
+2021-09-26 16:13:22.510 -05:00 [INF] Application is shutting down...
+2021-09-26 16:22:22.097 -05:00 [INF] Starting BackendAdminAppGateway.Host.
+2021-09-26 16:22:22.839 -05:00 [INF] Loaded ABP modules:
+2021-09-26 16:22:22.840 -05:00 [INF] - BackendAdminAppGateway.Host.BackendAdminAppGatewayHostModule
+2021-09-26 16:22:22.840 -05:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-09-26 16:22:22.840 -05:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-09-26 16:22:22.840 -05:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiModule
+2021-09-26 16:22:22.840 -05:00 [INF]     - Volo.Abp.Identity.AbpIdentityApplicationContractsModule
+2021-09-26 16:22:22.840 -05:00 [INF]       - Volo.Abp.Identity.AbpIdentityDomainSharedModule
+2021-09-26 16:22:22.840 -05:00 [INF]         - Volo.Abp.Users.AbpUsersDomainSharedModule
+2021-09-26 16:22:22.840 -05:00 [INF]         - Volo.Abp.Validation.AbpValidationModule
+2021-09-26 16:22:22.840 -05:00 [INF]           - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-09-26 16:22:22.840 -05:00 [INF]           - Volo.Abp.Localization.AbpLocalizationModule
+2021-09-26 16:22:22.840 -05:00 [INF]             - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-09-26 16:22:22.840 -05:00 [INF]             - Volo.Abp.Settings.AbpSettingsModule
+2021-09-26 16:22:22.840 -05:00 [INF]               - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-09-26 16:22:22.840 -05:00 [INF]               - Volo.Abp.Security.AbpSecurityModule
+2021-09-26 16:22:22.840 -05:00 [INF]               - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-09-26 16:22:22.840 -05:00 [INF]                 - Volo.Abp.Data.AbpDataModule
+2021-09-26 16:22:22.840 -05:00 [INF]                   - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-09-26 16:22:22.840 -05:00 [INF]                   - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-09-26 16:22:22.840 -05:00 [INF]                   - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-09-26 16:22:22.840 -05:00 [INF]         - Volo.Abp.Features.AbpFeaturesModule
+2021-09-26 16:22:22.840 -05:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-09-26 16:22:22.840 -05:00 [INF]       - Volo.Abp.Users.AbpUsersAbstractionModule
+2021-09-26 16:22:22.840 -05:00 [INF]         - Volo.Abp.EventBus.AbpEventBusModule
+2021-09-26 16:22:22.840 -05:00 [INF]       - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-09-26 16:22:22.840 -05:00 [INF]       - Volo.Abp.Application.AbpDddApplicationModule
+2021-09-26 16:22:22.840 -05:00 [INF]         - Volo.Abp.Domain.AbpDddDomainModule
+2021-09-26 16:22:22.840 -05:00 [INF]           - Volo.Abp.Auditing.AbpAuditingModule
+2021-09-26 16:22:22.840 -05:00 [INF]             - Volo.Abp.Json.AbpJsonModule
+2021-09-26 16:22:22.840 -05:00 [INF]               - Volo.Abp.Timing.AbpTimingModule
+2021-09-26 16:22:22.840 -05:00 [INF]             - Volo.Abp.Threading.AbpThreadingModule
+2021-09-26 16:22:22.840 -05:00 [INF]           - Volo.Abp.Guids.AbpGuidsModule
+2021-09-26 16:22:22.840 -05:00 [INF]           - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-09-26 16:22:22.840 -05:00 [INF]           - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-09-26 16:22:22.840 -05:00 [INF]           - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-09-26 16:22:22.840 -05:00 [INF]         - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-09-26 16:22:22.840 -05:00 [INF]         - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-09-26 16:22:22.840 -05:00 [INF]         - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-09-26 16:22:22.840 -05:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationContractsModule
+2021-09-26 16:22:22.840 -05:00 [INF]         - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-09-26 16:22:22.840 -05:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-09-26 16:22:22.840 -05:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-09-26 16:22:22.840 -05:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2021-09-26 16:22:22.840 -05:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2021-09-26 16:22:22.840 -05:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-09-26 16:22:22.840 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-09-26 16:22:22.840 -05:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-09-26 16:22:22.840 -05:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2021-09-26 16:22:22.840 -05:00 [INF]   - Volo.Abp.Identity.AbpIdentityHttpApiClientModule
+2021-09-26 16:22:22.840 -05:00 [INF]     - Volo.Abp.Http.Client.AbpHttpClientModule
+2021-09-26 16:22:22.840 -05:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2021-09-26 16:22:22.840 -05:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2021-09-26 16:22:22.840 -05:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2021-09-26 16:22:22.840 -05:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-09-26 16:22:22.840 -05:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-09-26 16:22:22.840 -05:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-09-26 16:22:22.840 -05:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-09-26 16:22:22.840 -05:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-09-26 16:22:22.840 -05:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-09-26 16:22:22.840 -05:00 [INF]   - Volo.Abp.PermissionManagement.AbpPermissionManagementApplicationModule
+2021-09-26 16:22:22.841 -05:00 [INF]   - Volo.Abp.PermissionManagement.HttpApi.AbpPermissionManagementHttpApiModule
+2021-09-26 16:22:22.841 -05:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-09-26 16:22:22.841 -05:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-09-26 16:22:22.841 -05:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-09-26 16:22:22.841 -05:00 [INF]   - Volo.Blogging.BloggingApplicationContractsModule
+2021-09-26 16:22:22.841 -05:00 [INF]     - Volo.Blogging.BloggingApplicationContractsSharedModule
+2021-09-26 16:22:22.841 -05:00 [INF]       - Volo.Blogging.BloggingDomainSharedModule
+2021-09-26 16:22:22.841 -05:00 [INF]   - Volo.Abp.PermissionManagement.Identity.AbpPermissionManagementDomainIdentityModule
+2021-09-26 16:22:22.841 -05:00 [INF]   - Volo.Abp.PermissionManagement.IdentityServer.AbpPermissionManagementDomainIdentityServerModule
+2021-09-26 16:22:22.841 -05:00 [INF]     - Volo.Abp.IdentityServer.AbpIdentityServerDomainSharedModule
+2021-09-26 16:22:22.841 -05:00 [INF]   - Volo.Abp.Http.Client.IdentityModel.Web.AbpHttpClientIdentityModelWebModule
+2021-09-26 16:22:22.841 -05:00 [INF]     - Volo.Abp.Http.Client.IdentityModel.AbpHttpClientIdentityModelModule
+2021-09-26 16:22:22.841 -05:00 [INF]       - Volo.Abp.IdentityModel.AbpIdentityModelModule
+2021-09-26 16:22:22.841 -05:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementApplicationContractsModule
+2021-09-26 16:22:22.841 -05:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainSharedModule
+2021-09-26 16:22:22.841 -05:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiModule
+2021-09-26 16:22:22.841 -05:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementHttpApiModule
+2021-09-26 16:22:22.841 -05:00 [INF]       - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationContractsModule
+2021-09-26 16:22:22.841 -05:00 [INF]         - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainSharedModule
+2021-09-26 16:22:22.841 -05:00 [INF]   - Volo.Abp.TenantManagement.AbpTenantManagementHttpApiClientModule
+2021-09-26 16:22:22.841 -05:00 [INF]   - Volo.Abp.TenantManagement.EntityFrameworkCore.AbpTenantManagementEntityFrameworkCoreModule
+2021-09-26 16:22:22.841 -05:00 [INF]     - Volo.Abp.TenantManagement.AbpTenantManagementDomainModule
+2021-09-26 16:22:22.841 -05:00 [INF]       - Volo.Abp.AutoMapper.AbpAutoMapperModule
+2021-09-26 16:22:22.841 -05:00 [INF]   - Volo.Abp.FeatureManagement.EntityFrameworkCore.AbpFeatureManagementEntityFrameworkCoreModule
+2021-09-26 16:22:22.841 -05:00 [INF]     - Volo.Abp.FeatureManagement.AbpFeatureManagementDomainModule
+2021-09-26 16:22:22.841 -05:00 [INF]   - Volo.Abp.FeatureManagement.AbpFeatureManagementApplicationModule
+2021-09-26 16:22:22.841 -05:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2021-09-26 16:22:22.841 -05:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2021-09-26 16:22:22.841 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2021-09-26 16:22:22.841 -05:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2021-09-26 16:22:22.841 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2021-09-26 16:22:22.841 -05:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2021-09-26 16:22:22.841 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2021-09-26 16:22:22.841 -05:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2021-09-26 16:22:22.841 -05:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-09-26 16:22:23.139 -05:00 [INF] Initialized all ABP modules.
+2021-09-26 16:22:23.184 -05:00 [INF] Now listening on: https://localhost:44315
+2021-09-26 16:22:23.185 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-26 16:22:23.185 -05:00 [INF] Hosting environment: Development
+2021-09-26 16:22:23.185 -05:00 [INF] Content root path: d:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\gateways\BackendAdminAppGateway.Host
+2021-09-26 16:22:23.826 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44315/ - -
+2021-09-26 16:22:23.854 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:22:24.039 -05:00 [DBG] requestId: 0HMC16ETMD61H:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:22:24.041 -05:00 [DBG] requestId: 0HMC16ETMD61H:00000001, previousRequestId: no previous request id, message: Upstream url path is /
+2021-09-26 16:22:24.044 -05:00 [WRN] requestId: 0HMC16ETMD61H:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2021-09-26 16:22:24.045 -05:00 [WRN] requestId: 0HMC16ETMD61H:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2021-09-26 16:22:24.046 -05:00 [DBG] requestId: 0HMC16ETMD61H:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:22:24.051 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44315/ - - - 404 0 - 225.1325ms
+2021-09-26 16:23:05.462 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44315/api/abp/api-definition - -
+2021-09-26 16:23:05.462 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:23:05.482 -05:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc)'
+2021-09-26 16:23:05.512 -05:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApiDefinition", page = ""}. Executing controller action with signature Volo.Abp.Http.Modeling.ApplicationApiDescriptionModel Get(Volo.Abp.Http.Modeling.ApplicationApiDescriptionModelRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController (Volo.Abp.AspNetCore.Mvc).
+2021-09-26 16:23:05.544 -05:00 [INF] Executing action method Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc) - Validation state: "Valid"
+2021-09-26 16:23:05.566 -05:00 [DBG] ActionApiDescriptionModel.Create: FileConfiguration.Get
+2021-09-26 16:23:05.570 -05:00 [DBG] ActionApiDescriptionModel.Create: FileConfiguration.PostByFileConfiguration
+2021-09-26 16:23:05.572 -05:00 [DBG] ActionApiDescriptionModel.Create: OutputCache.DeleteByRegion
+2021-09-26 16:23:05.573 -05:00 [DBG] ActionApiDescriptionModel.Create: Products.GetListPagedAsyncByInput
+2021-09-26 16:23:05.573 -05:00 [DBG] ActionApiDescriptionModel.Create: Products.GetListAsync
+2021-09-26 16:23:05.573 -05:00 [DBG] ActionApiDescriptionModel.Create: Products.GetAsyncById
+2021-09-26 16:23:05.573 -05:00 [DBG] ActionApiDescriptionModel.Create: Products.CreateAsyncByInput
+2021-09-26 16:23:05.573 -05:00 [DBG] ActionApiDescriptionModel.Create: Products.UpdateAsyncByIdAndInput
+2021-09-26 16:23:05.573 -05:00 [DBG] ActionApiDescriptionModel.Create: Products.DeleteAsyncById
+2021-09-26 16:23:05.573 -05:00 [DBG] ActionApiDescriptionModel.Create: PublicProducts.GetListAsync
+2021-09-26 16:23:05.574 -05:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByNameAsyncByName
+2021-09-26 16:23:05.574 -05:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByIdAsyncById
+2021-09-26 16:23:05.574 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.GetAllListAsync
+2021-09-26 16:23:05.574 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.GetListAsyncByInput
+2021-09-26 16:23:05.574 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.GetAsyncById
+2021-09-26 16:23:05.574 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.CreateAsyncByInput
+2021-09-26 16:23:05.574 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.UpdateAsyncByIdAndInput
+2021-09-26 16:23:05.574 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityRole.DeleteAsyncById
+2021-09-26 16:23:05.574 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.GetAsyncById
+2021-09-26 16:23:05.574 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.GetListAsyncByInput
+2021-09-26 16:23:05.575 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.CreateAsyncByInput
+2021-09-26 16:23:05.575 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.UpdateAsyncByIdAndInput
+2021-09-26 16:23:05.575 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.DeleteAsyncById
+2021-09-26 16:23:05.575 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.GetRolesAsyncById
+2021-09-26 16:23:05.575 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.GetAssignableRolesAsync
+2021-09-26 16:23:05.575 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.UpdateRolesAsyncByIdAndInput
+2021-09-26 16:23:05.575 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.FindByUsernameAsyncByUserName
+2021-09-26 16:23:05.575 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUser.FindByEmailAsyncByEmail
+2021-09-26 16:23:05.575 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUserLookup.FindByIdAsyncById
+2021-09-26 16:23:05.575 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUserLookup.FindByUserNameAsyncByUserName
+2021-09-26 16:23:05.575 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUserLookup.SearchAsyncByInput
+2021-09-26 16:23:05.576 -05:00 [DBG] ActionApiDescriptionModel.Create: IdentityUserLookup.GetCountAsyncByInput
+2021-09-26 16:23:05.576 -05:00 [DBG] ActionApiDescriptionModel.Create: Profile.GetAsync
+2021-09-26 16:23:05.576 -05:00 [DBG] ActionApiDescriptionModel.Create: Profile.UpdateAsyncByInput
+2021-09-26 16:23:05.576 -05:00 [DBG] ActionApiDescriptionModel.Create: Profile.ChangePasswordAsyncByInput
+2021-09-26 16:23:05.576 -05:00 [DBG] ActionApiDescriptionModel.Create: Permissions.GetAsyncByProviderNameAndProviderKey
+2021-09-26 16:23:05.576 -05:00 [DBG] ActionApiDescriptionModel.Create: Permissions.UpdateAsyncByProviderNameAndProviderKeyAndInput
+2021-09-26 16:23:05.576 -05:00 [DBG] ActionApiDescriptionModel.Create: Tenant.GetAsyncById
+2021-09-26 16:23:05.576 -05:00 [DBG] ActionApiDescriptionModel.Create: Tenant.GetListAsyncByInput
+2021-09-26 16:23:05.576 -05:00 [DBG] ActionApiDescriptionModel.Create: Tenant.CreateAsyncByInput
+2021-09-26 16:23:05.576 -05:00 [DBG] ActionApiDescriptionModel.Create: Tenant.UpdateAsyncByIdAndInput
+2021-09-26 16:23:05.576 -05:00 [DBG] ActionApiDescriptionModel.Create: Tenant.DeleteAsyncById
+2021-09-26 16:23:05.576 -05:00 [DBG] ActionApiDescriptionModel.Create: Tenant.GetDefaultConnectionStringAsyncById
+2021-09-26 16:23:05.577 -05:00 [DBG] ActionApiDescriptionModel.Create: Tenant.UpdateDefaultConnectionStringAsyncByIdAndDefaultConnectionString
+2021-09-26 16:23:05.577 -05:00 [DBG] ActionApiDescriptionModel.Create: Tenant.DeleteDefaultConnectionStringAsyncById
+2021-09-26 16:23:05.577 -05:00 [DBG] ActionApiDescriptionModel.Create: Features.GetAsyncByProviderNameAndProviderKey
+2021-09-26 16:23:05.577 -05:00 [DBG] ActionApiDescriptionModel.Create: Features.UpdateAsyncByProviderNameAndProviderKeyAndInput
+2021-09-26 16:23:05.577 -05:00 [DBG] ActionApiDescriptionModel.Create: AbpApplicationConfiguration.GetAsync
+2021-09-26 16:23:05.577 -05:00 [DBG] ActionApiDescriptionModel.Create: AbpApiDefinition.GetByModel
+2021-09-26 16:23:05.580 -05:00 [INF] Executed action method Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 32.1282ms.
+2021-09-26 16:23:05.590 -05:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.Modeling.ApplicationApiDescriptionModel'.
+2021-09-26 16:23:05.626 -05:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc) in 110.8818ms
+2021-09-26 16:23:05.626 -05:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc)'
+2021-09-26 16:23:05.626 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44315/api/abp/api-definition - - - 200 - application/json;+charset=utf-8 164.3235ms
+2021-09-26 16:23:05.656 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44315/api/abp/application-configuration?api-version=1.0 - -
+2021-09-26 16:23:05.656 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:23:05.659 -05:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2021-09-26 16:23:05.664 -05:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2021-09-26 16:23:05.675 -05:00 [INF] Executing action method Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) - Validation state: "Valid"
+2021-09-26 16:23:05.700 -05:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2021-09-26 16:23:07.127 -05:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2021-09-26 16:23:07.129 -05:00 [INF] Executed action method Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1454.6541ms.
+2021-09-26 16:23:07.169 -05:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2021-09-26 16:23:07.182 -05:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 1517.9543ms
+2021-09-26 16:23:07.183 -05:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2021-09-26 16:23:07.185 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44315/api/abp/application-configuration?api-version=1.0 - - - 200 - application/json;+charset=utf-8 1529.2139ms
+2021-09-26 16:30:40.661 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44315/ - -
+2021-09-26 16:30:40.661 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:30:40.663 -05:00 [DBG] requestId: 0HMC16ETMD61J:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:30:40.663 -05:00 [DBG] requestId: 0HMC16ETMD61J:00000001, previousRequestId: no previous request id, message: Upstream url path is /
+2021-09-26 16:30:40.663 -05:00 [WRN] requestId: 0HMC16ETMD61J:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2021-09-26 16:30:40.663 -05:00 [WRN] requestId: 0HMC16ETMD61J:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2021-09-26 16:30:40.663 -05:00 [DBG] requestId: 0HMC16ETMD61J:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:30:40.663 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44315/ - - - 404 0 - 2.2572ms
+2021-09-26 16:32:45.353 -05:00 [INF] Application is shutting down...

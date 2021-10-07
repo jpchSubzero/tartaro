@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JR4fgHiKPGolTynOV14wlUR6m9NOLXK6MwEeWLe6sZf3yr6i5ZmLYetv8/GWtQjGoj3TpEQuwsFLUjHARiGKoQ==",
+  "dgSpecHash": "vR69Z6H3batP66u8j7DYy3Eebgc00san9qjaoorO92TzeADOGidEyO3wSx7Rm0/wZHHWckjl3Vx2iDN5n2ZLbg==",
   "success": true,
-  "projectFilePath": "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\EventBus\\EventBusServiceBus\\EventBusServiceBus.csproj",
+  "projectFilePath": "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\EventBus\\EventBusServiceBus\\EventBusServiceBus.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jpch_\\.nuget\\packages\\autofac\\6.1.0\\autofac.6.1.0.nupkg.sha512",
     "C:\\Users\\jpch_\\.nuget\\packages\\microsoft.azure.amqp\\2.4.8\\microsoft.azure.amqp.2.4.8.nupkg.sha512",

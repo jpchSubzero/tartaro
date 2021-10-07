@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dNHlmcRImB3IQ2awJqTX9+c1AoHFKCFeIr7EAKQqFrke+psgK+oRfFMnx9pw+CC3G7RNoW55QmlYG7WTSknDRA==",
+  "dgSpecHash": "dpW1bjOBJrfvy6n5AEYprDGeCS0jAwhOXySTj2+RYVnDTDV39YBMO+ivcJDARRUTZd2MZGfS0Bx8bED9JuK78Q==",
   "success": true,
-  "projectFilePath": "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
+  "projectFilePath": "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Catalog\\Catalog.UnitTests\\Catalog.UnitTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jpch_\\.nuget\\packages\\aspnetcore.healthchecks.azureservicebus\\5.0.1\\aspnetcore.healthchecks.azureservicebus.5.0.1.nupkg.sha512",
     "C:\\Users\\jpch_\\.nuget\\packages\\aspnetcore.healthchecks.azurestorage\\5.0.1\\aspnetcore.healthchecks.azurestorage.5.0.1.nupkg.sha512",

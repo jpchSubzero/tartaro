@@ -1,7 +1,7 @@
 services:
   basket-api:
     build:
-      context: d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
+      context: D:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
       dockerfile: Services/Basket/Basket.API/Dockerfile
     depends_on:
       basketdata:
@@ -41,7 +41,7 @@ services:
     - eshop-basketdata:/data:rw
   catalog-api:
     build:
-      context: d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
+      context: D:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
       dockerfile: Services/Catalog/Catalog.API/Dockerfile
     depends_on:
       rabbitmq:
@@ -74,7 +74,7 @@ services:
       target: 81
   identity-api:
     build:
-      context: d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
+      context: D:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
       dockerfile: Services/Identity/Identity.API/Dockerfile
     depends_on:
       sqldata:
@@ -102,7 +102,7 @@ services:
       target: 80
   mobileshoppingagg:
     build:
-      context: d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
+      context: D:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
       dockerfile: ApiGateways/Mobile.Bff.Shopping/aggregator/Dockerfile
     depends_on:
       basket-api:
@@ -146,7 +146,7 @@ services:
     - published: 15200
       target: 8001
     volumes:
-    - d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\ApiGateways\Envoy\config\mobileshopping:/etc/envoy:rw
+    - D:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\ApiGateways\Envoy\config\mobileshopping:/etc/envoy:rw
   nosqldata:
     image: mongo
     ports:
@@ -156,7 +156,7 @@ services:
     - eshop-nosqldata:/data/db:rw
   ordering-api:
     build:
-      context: d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
+      context: D:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
       dockerfile: Services/Ordering/Ordering.API/Dockerfile
     depends_on:
       rabbitmq:
@@ -192,7 +192,7 @@ services:
       target: 81
   ordering-backgroundtasks:
     build:
-      context: d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
+      context: D:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
       dockerfile: Services/Ordering/Ordering.BackgroundTasks/Dockerfile
     depends_on:
       rabbitmq:
@@ -221,7 +221,7 @@ services:
       target: 80
   ordering-signalrhub:
     build:
-      context: d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
+      context: D:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
       dockerfile: Services/Ordering/Ordering.SignalrHub/Dockerfile
     depends_on:
       basket-api:
@@ -254,7 +254,7 @@ services:
       target: 80
   payment-api:
     build:
-      context: d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
+      context: D:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
       dockerfile: Services/Payment/Payment.API/Dockerfile
     depends_on:
       rabbitmq:
@@ -300,7 +300,7 @@ services:
     - eshop-sqldata:/var/opt/mssql:rw
   webhooks-api:
     build:
-      context: d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
+      context: D:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
       dockerfile: Services/Webhooks/Webhooks.API/Dockerfile
     depends_on:
       sqldata:
@@ -321,7 +321,7 @@ services:
       target: 80
   webhooks-client:
     build:
-      context: d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
+      context: D:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
       dockerfile: Web/WebhookClient/Dockerfile
     depends_on:
       webhooks-api:
@@ -339,7 +339,7 @@ services:
       target: 80
   webmvc:
     build:
-      context: d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
+      context: D:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
       dockerfile: Web/WebMVC/Dockerfile
     depends_on:
       webshoppingagg:
@@ -363,7 +363,7 @@ services:
       target: 80
   webshoppingagg:
     build:
-      context: d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
+      context: D:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
       dockerfile: ApiGateways/Web.Bff.Shopping/aggregator/Dockerfile
     depends_on:
       basket-api:
@@ -407,12 +407,12 @@ services:
     - published: 15202
       target: 8001
     volumes:
-    - d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\ApiGateways\Envoy\config\webshopping:/etc/envoy:rw
+    - D:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src\ApiGateways\Envoy\config\webshopping:/etc/envoy:rw
   webspa:
     build:
       args:
         NODE_IMAGE: node:12.0
-      context: d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
+      context: D:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
       dockerfile: Web/WebSPA/Dockerfile
     depends_on:
       webshoppingagg:
@@ -435,7 +435,7 @@ services:
       target: 80
   webstatus:
     build:
-      context: d:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
+      context: D:\Estudio\Ejercicios\tartaro\.net\eShopOnContainers-dev\src
       dockerfile: Web/WebStatus/Dockerfile
     environment:
       ASPNETCORE_ENVIRONMENT: Development

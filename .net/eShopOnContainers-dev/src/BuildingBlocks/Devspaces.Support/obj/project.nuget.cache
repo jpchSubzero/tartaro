@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Hiq7dn/q7MnpdFQT/zuqzOdNdUq8F4WCv6YwvUfmR3celUoShEmGHrp/u2kZqe8YNLWrB93nMtX4Pwc540UBSQ==",
+  "dgSpecHash": "VqEC2s0nUupvO1/gpvBBVMl1z6Zwcp66abl6a4AQzX7HEPT6f3REsMmC+6DZLsYEIgsJUECYQ7Kp8gzDSyxX8w==",
   "success": true,
-  "projectFilePath": "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Devspaces.Support\\Devspaces.Support.csproj",
+  "projectFilePath": "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Devspaces.Support\\Devspaces.Support.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",

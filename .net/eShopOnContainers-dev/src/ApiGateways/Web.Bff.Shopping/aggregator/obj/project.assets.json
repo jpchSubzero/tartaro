@@ -5244,11 +5244,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\ApiGateways\\Web.Bff.Shopping\\aggregator\\Web.Shopping.HttpAggregator.csproj",
+      "projectUniqueName": "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\ApiGateways\\Web.Bff.Shopping\\aggregator\\Web.Shopping.HttpAggregator.csproj",
       "projectName": "Web.Shopping.HttpAggregator",
-      "projectPath": "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\ApiGateways\\Web.Bff.Shopping\\aggregator\\Web.Shopping.HttpAggregator.csproj",
+      "projectPath": "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\ApiGateways\\Web.Bff.Shopping\\aggregator\\Web.Shopping.HttpAggregator.csproj",
       "packagesPath": "C:\\Users\\jpch_\\.nuget\\packages\\",
-      "outputPath": "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\ApiGateways\\Web.Bff.Shopping\\aggregator\\obj\\",
+      "outputPath": "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\ApiGateways\\Web.Bff.Shopping\\aggregator\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -5274,8 +5274,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Devspaces.Support\\Devspaces.Support.csproj": {
-              "projectPath": "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Devspaces.Support\\Devspaces.Support.csproj"
+            "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Devspaces.Support\\Devspaces.Support.csproj": {
+              "projectPath": "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\Devspaces.Support\\Devspaces.Support.csproj"
             }
           }
         }
@@ -5366,7 +5366,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

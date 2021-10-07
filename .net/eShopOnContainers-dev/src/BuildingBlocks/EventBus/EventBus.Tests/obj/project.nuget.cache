@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8/yQZMn6QTjHMOsq2sWWTDQN2HjZSNKJXfs1yeSpuDM9C5AzGSW4oHw4StwJM4PDw5LPunk6jARllfbUhU1PSg==",
+  "dgSpecHash": "VGVD3NhiqfDrIiTNWjMbaASZHlP2rl4M5z8Y0XfXwuUGhwjEPvAtkACBa0KVWF+la//RGnd2LxrX8E8diC+eJQ==",
   "success": true,
-  "projectFilePath": "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\EventBus\\EventBus.Tests\\EventBus.Tests.csproj",
+  "projectFilePath": "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\BuildingBlocks\\EventBus\\EventBus.Tests\\EventBus.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jpch_\\.nuget\\packages\\autofac\\6.1.0\\autofac.6.1.0.nupkg.sha512",
     "C:\\Users\\jpch_\\.nuget\\packages\\microsoft.codecoverage\\16.8.3\\microsoft.codecoverage.16.8.3.nupkg.sha512",

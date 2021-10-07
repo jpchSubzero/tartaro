@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sN6j7fJ4AgReenYv2FsqumYktNRTX7e2GS7At6Lb8VCpq8lybQCByx0c1S4pW028B8qvN6Z6Yk+N2sGJiuss9w==",
+  "dgSpecHash": "0EHRUQbeI4dCeI780781z/4rMMRNonhDokl1jN4ROZjQFJavX75ZOx8Am7cLEhPbdf3/a8Mz+zKVkBCTpQNIKg==",
   "success": true,
-  "projectFilePath": "d:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Basket\\Basket.API\\Basket.API.csproj",
+  "projectFilePath": "D:\\Estudio\\Ejercicios\\tartaro\\.net\\eShopOnContainers-dev\\src\\Services\\Basket\\Basket.API\\Basket.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jpch_\\.nuget\\packages\\aspnetcore.healthchecks.azureservicebus\\5.0.1\\aspnetcore.healthchecks.azureservicebus.5.0.1.nupkg.sha512",
     "C:\\Users\\jpch_\\.nuget\\packages\\aspnetcore.healthchecks.rabbitmq\\5.0.1\\aspnetcore.healthchecks.rabbitmq.5.0.1.nupkg.sha512",

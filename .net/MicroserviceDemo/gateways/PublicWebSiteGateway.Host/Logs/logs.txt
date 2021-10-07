@@ -1,0 +1,471 @@
+2021-09-26 16:13:03.031 -05:00 [INF] Starting IdentityService.Host.
+2021-09-26 16:13:06.147 -05:00 [INF] Loaded ABP modules:
+2021-09-26 16:13:06.148 -05:00 [INF] - PublicWebSiteGateway.Host.PublicWebSiteGatewayHostModule
+2021-09-26 16:13:06.148 -05:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-09-26 16:13:06.148 -05:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-09-26 16:13:06.148 -05:00 [INF]   - Volo.Blogging.BloggingHttpApiModule
+2021-09-26 16:13:06.148 -05:00 [INF]     - Volo.Blogging.BloggingApplicationContractsModule
+2021-09-26 16:13:06.148 -05:00 [INF]       - Volo.Blogging.BloggingApplicationContractsSharedModule
+2021-09-26 16:13:06.148 -05:00 [INF]         - Volo.Blogging.BloggingDomainSharedModule
+2021-09-26 16:13:06.149 -05:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2021-09-26 16:13:06.149 -05:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-09-26 16:13:06.149 -05:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2021-09-26 16:13:06.149 -05:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-09-26 16:13:06.149 -05:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2021-09-26 16:13:06.149 -05:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-09-26 16:13:06.149 -05:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2021-09-26 16:13:06.149 -05:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-09-26 16:13:06.149 -05:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2021-09-26 16:13:06.149 -05:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-09-26 16:13:06.149 -05:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-09-26 16:13:06.149 -05:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-09-26 16:13:06.149 -05:00 [INF]         - Volo.Abp.Application.AbpDddApplicationModule
+2021-09-26 16:13:06.149 -05:00 [INF]           - Volo.Abp.Domain.AbpDddDomainModule
+2021-09-26 16:13:06.149 -05:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2021-09-26 16:13:06.149 -05:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2021-09-26 16:13:06.149 -05:00 [INF]                 - Volo.Abp.Timing.AbpTimingModule
+2021-09-26 16:13:06.149 -05:00 [INF]               - Volo.Abp.Threading.AbpThreadingModule
+2021-09-26 16:13:06.149 -05:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2021-09-26 16:13:06.149 -05:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2021-09-26 16:13:06.149 -05:00 [INF]             - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-09-26 16:13:06.149 -05:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-09-26 16:13:06.149 -05:00 [INF]             - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-09-26 16:13:06.149 -05:00 [INF]           - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-09-26 16:13:06.149 -05:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-09-26 16:13:06.149 -05:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-09-26 16:13:06.149 -05:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-09-26 16:13:06.149 -05:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2021-09-26 16:13:06.149 -05:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-09-26 16:13:06.149 -05:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-09-26 16:13:06.149 -05:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-09-26 16:13:06.149 -05:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2021-09-26 16:13:06.149 -05:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2021-09-26 16:13:06.149 -05:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-09-26 16:13:06.149 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-09-26 16:13:06.149 -05:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-09-26 16:13:06.149 -05:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2021-09-26 16:13:06.149 -05:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2021-09-26 16:13:06.149 -05:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2021-09-26 16:13:06.149 -05:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2021-09-26 16:13:06.149 -05:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-09-26 16:13:06.149 -05:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-09-26 16:13:06.149 -05:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-09-26 16:13:06.149 -05:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-09-26 16:13:06.149 -05:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-09-26 16:13:06.149 -05:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-09-26 16:13:06.149 -05:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-09-26 16:13:06.149 -05:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-09-26 16:13:06.149 -05:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-09-26 16:13:06.149 -05:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-09-26 16:13:06.149 -05:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2021-09-26 16:13:06.149 -05:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2021-09-26 16:13:06.149 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2021-09-26 16:13:06.149 -05:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2021-09-26 16:13:06.150 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2021-09-26 16:13:06.150 -05:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2021-09-26 16:13:06.150 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2021-09-26 16:13:06.150 -05:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2021-09-26 16:13:06.150 -05:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-09-26 16:13:06.782 -05:00 [INF] Initialized all ABP modules.
+2021-09-26 16:13:06.784 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-26 16:13:06.784 -05:00 [INF] Hosting environment: Development
+2021-09-26 16:13:06.784 -05:00 [INF] Content root path: d:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\gateways\PublicWebSiteGateway.Host
+2021-09-26 16:13:06.795 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44397/ - -
+2021-09-26 16:13:06.821 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:13:06.851 -05:00 [DBG] requestId: 80000020-0004-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:13:06.853 -05:00 [DBG] requestId: 80000020-0004-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: Upstream url path is /
+2021-09-26 16:13:06.856 -05:00 [WRN] requestId: 80000020-0004-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2021-09-26 16:13:06.856 -05:00 [WRN] requestId: 80000020-0004-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2021-09-26 16:13:06.857 -05:00 [DBG] requestId: 80000020-0004-fc00-b63f-84710c7967bb, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:13:06.866 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44397/ - - - 404 - - 71.9141ms
+2021-09-26 16:13:22.510 -05:00 [INF] Application is shutting down...
+2021-09-26 16:22:40.767 -05:00 [INF] Starting IdentityService.Host.
+2021-09-26 16:22:41.434 -05:00 [INF] Loaded ABP modules:
+2021-09-26 16:22:41.435 -05:00 [INF] - PublicWebSiteGateway.Host.PublicWebSiteGatewayHostModule
+2021-09-26 16:22:41.435 -05:00 [INF]   - Volo.Abp.Autofac.AbpAutofacModule
+2021-09-26 16:22:41.435 -05:00 [INF]     - Volo.Abp.Castle.AbpCastleCoreModule
+2021-09-26 16:22:41.435 -05:00 [INF]   - Volo.Blogging.BloggingHttpApiModule
+2021-09-26 16:22:41.435 -05:00 [INF]     - Volo.Blogging.BloggingApplicationContractsModule
+2021-09-26 16:22:41.435 -05:00 [INF]       - Volo.Blogging.BloggingApplicationContractsSharedModule
+2021-09-26 16:22:41.435 -05:00 [INF]         - Volo.Blogging.BloggingDomainSharedModule
+2021-09-26 16:22:41.435 -05:00 [INF]           - Volo.Abp.Validation.AbpValidationModule
+2021-09-26 16:22:41.435 -05:00 [INF]             - Volo.Abp.Validation.AbpValidationAbstractionsModule
+2021-09-26 16:22:41.435 -05:00 [INF]             - Volo.Abp.Localization.AbpLocalizationModule
+2021-09-26 16:22:41.435 -05:00 [INF]               - Volo.Abp.VirtualFileSystem.AbpVirtualFileSystemModule
+2021-09-26 16:22:41.435 -05:00 [INF]               - Volo.Abp.Settings.AbpSettingsModule
+2021-09-26 16:22:41.435 -05:00 [INF]                 - Volo.Abp.Localization.AbpLocalizationAbstractionsModule
+2021-09-26 16:22:41.435 -05:00 [INF]                 - Volo.Abp.Security.AbpSecurityModule
+2021-09-26 16:22:41.435 -05:00 [INF]                 - Volo.Abp.MultiTenancy.AbpMultiTenancyModule
+2021-09-26 16:22:41.435 -05:00 [INF]                   - Volo.Abp.Data.AbpDataModule
+2021-09-26 16:22:41.435 -05:00 [INF]                     - Volo.Abp.ObjectExtending.AbpObjectExtendingModule
+2021-09-26 16:22:41.435 -05:00 [INF]                     - Volo.Abp.Uow.AbpUnitOfWorkModule
+2021-09-26 16:22:41.435 -05:00 [INF]                     - Volo.Abp.EventBus.Abstractions.AbpEventBusAbstractionsModule
+2021-09-26 16:22:41.435 -05:00 [INF]         - Volo.Abp.Application.AbpDddApplicationModule
+2021-09-26 16:22:41.435 -05:00 [INF]           - Volo.Abp.Domain.AbpDddDomainModule
+2021-09-26 16:22:41.435 -05:00 [INF]             - Volo.Abp.Auditing.AbpAuditingModule
+2021-09-26 16:22:41.435 -05:00 [INF]               - Volo.Abp.Json.AbpJsonModule
+2021-09-26 16:22:41.435 -05:00 [INF]                 - Volo.Abp.Timing.AbpTimingModule
+2021-09-26 16:22:41.435 -05:00 [INF]               - Volo.Abp.Threading.AbpThreadingModule
+2021-09-26 16:22:41.435 -05:00 [INF]             - Volo.Abp.EventBus.AbpEventBusModule
+2021-09-26 16:22:41.435 -05:00 [INF]             - Volo.Abp.Guids.AbpGuidsModule
+2021-09-26 16:22:41.435 -05:00 [INF]             - Volo.Abp.ObjectMapping.AbpObjectMappingModule
+2021-09-26 16:22:41.435 -05:00 [INF]             - Volo.Abp.ExceptionHandling.AbpExceptionHandlingModule
+2021-09-26 16:22:41.435 -05:00 [INF]             - Volo.Abp.Specifications.AbpSpecificationsModule
+2021-09-26 16:22:41.435 -05:00 [INF]           - Volo.Abp.Application.AbpDddApplicationContractsModule
+2021-09-26 16:22:41.435 -05:00 [INF]           - Volo.Abp.Authorization.AbpAuthorizationModule
+2021-09-26 16:22:41.435 -05:00 [INF]             - Volo.Abp.Authorization.AbpAuthorizationAbstractionsModule
+2021-09-26 16:22:41.435 -05:00 [INF]           - Volo.Abp.Http.AbpHttpAbstractionsModule
+2021-09-26 16:22:41.435 -05:00 [INF]           - Volo.Abp.Features.AbpFeaturesModule
+2021-09-26 16:22:41.435 -05:00 [INF]           - Volo.Abp.GlobalFeatures.AbpGlobalFeaturesModule
+2021-09-26 16:22:41.435 -05:00 [INF]     - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcModule
+2021-09-26 16:22:41.435 -05:00 [INF]       - Volo.Abp.AspNetCore.AbpAspNetCoreModule
+2021-09-26 16:22:41.435 -05:00 [INF]         - Volo.Abp.Http.AbpHttpModule
+2021-09-26 16:22:41.435 -05:00 [INF]           - Volo.Abp.Minify.AbpMinifyModule
+2021-09-26 16:22:41.435 -05:00 [INF]       - Volo.Abp.ApiVersioning.AbpApiVersioningAbstractionsModule
+2021-09-26 16:22:41.435 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.AbpAspNetCoreMvcContractsModule
+2021-09-26 16:22:41.435 -05:00 [INF]       - Volo.Abp.UI.Navigation.AbpUiNavigationModule
+2021-09-26 16:22:41.435 -05:00 [INF]         - Volo.Abp.UI.AbpUiModule
+2021-09-26 16:22:41.435 -05:00 [INF]   - ProductManagement.ProductManagementHttpApiModule
+2021-09-26 16:22:41.435 -05:00 [INF]     - ProductManagement.ProductManagementApplicationContractsModule
+2021-09-26 16:22:41.435 -05:00 [INF]       - ProductManagement.ProductManagementDomainSharedModule
+2021-09-26 16:22:41.435 -05:00 [INF]   - Volo.Abp.EntityFrameworkCore.SqlServer.AbpEntityFrameworkCoreSqlServerModule
+2021-09-26 16:22:41.435 -05:00 [INF]     - Volo.Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule
+2021-09-26 16:22:41.435 -05:00 [INF]   - Volo.Abp.PermissionManagement.EntityFrameworkCore.AbpPermissionManagementEntityFrameworkCoreModule
+2021-09-26 16:22:41.435 -05:00 [INF]     - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainModule
+2021-09-26 16:22:41.435 -05:00 [INF]       - Volo.Abp.PermissionManagement.AbpPermissionManagementDomainSharedModule
+2021-09-26 16:22:41.435 -05:00 [INF]       - Volo.Abp.Caching.AbpCachingModule
+2021-09-26 16:22:41.435 -05:00 [INF]         - Volo.Abp.Serialization.AbpSerializationModule
+2021-09-26 16:22:41.435 -05:00 [INF]   - Volo.Abp.SettingManagement.EntityFrameworkCore.AbpSettingManagementEntityFrameworkCoreModule
+2021-09-26 16:22:41.435 -05:00 [INF]     - Volo.Abp.SettingManagement.AbpSettingManagementDomainModule
+2021-09-26 16:22:41.435 -05:00 [INF]       - Volo.Abp.SettingManagement.AbpSettingManagementDomainSharedModule
+2021-09-26 16:22:41.435 -05:00 [INF]   - Volo.Abp.AspNetCore.Mvc.UI.MultiTenancy.AbpAspNetCoreMvcUiMultiTenancyModule
+2021-09-26 16:22:41.435 -05:00 [INF]     - Volo.Abp.AspNetCore.Mvc.UI.Theme.Shared.AbpAspNetCoreMvcUiThemeSharedModule
+2021-09-26 16:22:41.435 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Bootstrap.AbpAspNetCoreMvcUiBootstrapModule
+2021-09-26 16:22:41.435 -05:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.AbpAspNetCoreMvcUiModule
+2021-09-26 16:22:41.435 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Packages.AbpAspNetCoreMvcUiPackagesModule
+2021-09-26 16:22:41.435 -05:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingAbstractionsModule
+2021-09-26 16:22:41.435 -05:00 [INF]       - Volo.Abp.AspNetCore.Mvc.UI.Widgets.AbpAspNetCoreMvcUiWidgetsModule
+2021-09-26 16:22:41.435 -05:00 [INF]         - Volo.Abp.AspNetCore.Mvc.UI.Bundling.AbpAspNetCoreMvcUiBundlingModule
+2021-09-26 16:22:41.435 -05:00 [INF]     - Volo.Abp.AspNetCore.MultiTenancy.AbpAspNetCoreMultiTenancyModule
+2021-09-26 16:22:41.709 -05:00 [INF] Initialized all ABP modules.
+2021-09-26 16:22:41.751 -05:00 [INF] Now listening on: https://localhost:44397
+2021-09-26 16:22:41.751 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-26 16:22:41.751 -05:00 [INF] Hosting environment: Development
+2021-09-26 16:22:41.751 -05:00 [INF] Content root path: d:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\gateways\PublicWebSiteGateway.Host
+2021-09-26 16:22:42.037 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44397/ - -
+2021-09-26 16:22:42.063 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:22:42.096 -05:00 [DBG] requestId: 0HMC16F341983:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:22:42.098 -05:00 [DBG] requestId: 0HMC16F341983:00000001, previousRequestId: no previous request id, message: Upstream url path is /
+2021-09-26 16:22:42.101 -05:00 [WRN] requestId: 0HMC16F341983:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2021-09-26 16:22:42.102 -05:00 [WRN] requestId: 0HMC16F341983:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2021-09-26 16:22:42.102 -05:00 [DBG] requestId: 0HMC16F341983:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:22:42.108 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44397/ - - - 404 0 - 71.3788ms
+2021-09-26 16:23:48.899 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44397/api/abp/api-definition - -
+2021-09-26 16:23:48.900 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:23:48.916 -05:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc)'
+2021-09-26 16:23:48.949 -05:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApiDefinition", page = ""}. Executing controller action with signature Volo.Abp.Http.Modeling.ApplicationApiDescriptionModel Get(Volo.Abp.Http.Modeling.ApplicationApiDescriptionModelRequestDto) on controller Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController (Volo.Abp.AspNetCore.Mvc).
+2021-09-26 16:23:48.982 -05:00 [INF] Executing action method Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc) - Validation state: "Valid"
+2021-09-26 16:23:49.001 -05:00 [DBG] ActionApiDescriptionModel.Create: FileConfiguration.Get
+2021-09-26 16:23:49.005 -05:00 [DBG] ActionApiDescriptionModel.Create: FileConfiguration.PostByFileConfiguration
+2021-09-26 16:23:49.007 -05:00 [DBG] ActionApiDescriptionModel.Create: OutputCache.DeleteByRegion
+2021-09-26 16:23:49.008 -05:00 [DBG] ActionApiDescriptionModel.Create: Products.GetListPagedAsyncByInput
+2021-09-26 16:23:49.008 -05:00 [DBG] ActionApiDescriptionModel.Create: Products.GetListAsync
+2021-09-26 16:23:49.008 -05:00 [DBG] ActionApiDescriptionModel.Create: Products.GetAsyncById
+2021-09-26 16:23:49.008 -05:00 [DBG] ActionApiDescriptionModel.Create: Products.CreateAsyncByInput
+2021-09-26 16:23:49.008 -05:00 [DBG] ActionApiDescriptionModel.Create: Products.UpdateAsyncByIdAndInput
+2021-09-26 16:23:49.008 -05:00 [DBG] ActionApiDescriptionModel.Create: Products.DeleteAsyncById
+2021-09-26 16:23:49.008 -05:00 [DBG] ActionApiDescriptionModel.Create: PublicProducts.GetListAsync
+2021-09-26 16:23:49.008 -05:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByNameAsyncByName
+2021-09-26 16:23:49.008 -05:00 [DBG] ActionApiDescriptionModel.Create: AbpTenant.FindTenantByIdAsyncById
+2021-09-26 16:23:49.009 -05:00 [DBG] ActionApiDescriptionModel.Create: BlogFiles.GetAsyncByName
+2021-09-26 16:23:49.009 -05:00 [DBG] ActionApiDescriptionModel.Create: BlogFiles.GetForWebAsyncByName
+2021-09-26 16:23:49.009 -05:00 [DBG] ActionApiDescriptionModel.Create: BlogFiles.CreateAsyncByInput
+2021-09-26 16:23:49.009 -05:00 [DBG] ActionApiDescriptionModel.Create: BlogFiles.UploadImageByFile
+2021-09-26 16:23:49.009 -05:00 [DBG] ActionApiDescriptionModel.Create: Blogs.GetListAsync
+2021-09-26 16:23:49.009 -05:00 [DBG] ActionApiDescriptionModel.Create: Blogs.GetByShortNameAsyncByShortName
+2021-09-26 16:23:49.009 -05:00 [DBG] ActionApiDescriptionModel.Create: Blogs.GetAsyncById
+2021-09-26 16:23:49.009 -05:00 [DBG] ActionApiDescriptionModel.Create: Comments.GetHierarchicalListOfPostAsyncByPostId
+2021-09-26 16:23:49.009 -05:00 [DBG] ActionApiDescriptionModel.Create: Comments.CreateAsyncByInput
+2021-09-26 16:23:49.009 -05:00 [DBG] ActionApiDescriptionModel.Create: Comments.UpdateAsyncByIdAndInput
+2021-09-26 16:23:49.009 -05:00 [DBG] ActionApiDescriptionModel.Create: Comments.DeleteAsyncById
+2021-09-26 16:23:49.009 -05:00 [DBG] ActionApiDescriptionModel.Create: Posts.GetListByBlogIdAndTagNameByBlogIdAndTagName
+2021-09-26 16:23:49.010 -05:00 [DBG] ActionApiDescriptionModel.Create: Posts.GetTimeOrderedListAsyncByBlogId
+2021-09-26 16:23:49.010 -05:00 [DBG] ActionApiDescriptionModel.Create: Posts.GetForReadingAsyncByInput
+2021-09-26 16:23:49.010 -05:00 [DBG] ActionApiDescriptionModel.Create: Posts.GetAsyncById
+2021-09-26 16:23:49.010 -05:00 [DBG] ActionApiDescriptionModel.Create: Posts.CreateAsyncByInput
+2021-09-26 16:23:49.010 -05:00 [DBG] ActionApiDescriptionModel.Create: Posts.UpdateAsyncByIdAndInput
+2021-09-26 16:23:49.010 -05:00 [DBG] ActionApiDescriptionModel.Create: Posts.DeleteAsyncById
+2021-09-26 16:23:49.010 -05:00 [DBG] ActionApiDescriptionModel.Create: Tags.GetPopularTagsByBlogIdAndInput
+2021-09-26 16:23:49.010 -05:00 [DBG] ActionApiDescriptionModel.Create: AbpApplicationConfiguration.GetAsync
+2021-09-26 16:23:49.010 -05:00 [DBG] ActionApiDescriptionModel.Create: AbpApiDefinition.GetByModel
+2021-09-26 16:23:49.013 -05:00 [INF] Executed action method Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 28.0524ms.
+2021-09-26 16:23:49.022 -05:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.Http.Modeling.ApplicationApiDescriptionModel'.
+2021-09-26 16:23:49.055 -05:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc) in 102.8071ms
+2021-09-26 16:23:49.055 -05:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApiExploring.AbpApiDefinitionController.Get (Volo.Abp.AspNetCore.Mvc)'
+2021-09-26 16:23:49.055 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44397/api/abp/api-definition - - - 200 - application/json;+charset=utf-8 156.1558ms
+2021-09-26 16:23:49.080 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44397/api/productManagement/public/products?api-version=1.0 - -
+2021-09-26 16:23:49.080 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:23:49.081 -05:00 [DBG] requestId: 0HMC16F341984:00000003, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:23:49.081 -05:00 [DBG] requestId: 0HMC16F341984:00000003, previousRequestId: no previous request id, message: Upstream url path is /api/productManagement/public/products
+2021-09-26 16:23:49.085 -05:00 [DBG] requestId: 0HMC16F341984:00000003, previousRequestId: no previous request id, message: downstream templates are /api/productManagement/{everything}
+2021-09-26 16:23:49.106 -05:00 [INF] requestId: 0HMC16F341984:00000003, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/productManagement/{everything}
+2021-09-26 16:23:49.108 -05:00 [INF] requestId: 0HMC16F341984:00000003, previousRequestId: no previous request id, message: No authentication needed for /api/productManagement/public/products
+2021-09-26 16:23:49.109 -05:00 [INF] requestId: 0HMC16F341984:00000003, previousRequestId: no previous request id, message: /api/productManagement/{everything} route does not require user to be authorized
+2021-09-26 16:23:49.116 -05:00 [DBG] requestId: 0HMC16F341984:00000003, previousRequestId: no previous request id, message: Downstream url is https://localhost:44344/api/productManagement/public/products?api-version=1.0
+2021-09-26 16:23:49.248 -05:00 [INF] requestId: 0HMC16F341984:00000003, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:44344/api/productManagement/public/products?api-version=1.0
+2021-09-26 16:23:49.248 -05:00 [DBG] requestId: 0HMC16F341984:00000003, previousRequestId: no previous request id, message: setting http response message
+2021-09-26 16:23:49.256 -05:00 [DBG] requestId: 0HMC16F341984:00000003, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-09-26 16:23:49.260 -05:00 [DBG] requestId: 0HMC16F341984:00000003, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:23:49.262 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44397/api/productManagement/public/products?api-version=1.0 - - - 200 2475 application/json;+charset=utf-8 182.5160ms
+2021-09-26 16:23:55.595 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44397/api/productManagement/public/products?api-version=1.0 - -
+2021-09-26 16:23:55.595 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:23:55.596 -05:00 [DBG] requestId: 0HMC16F341984:00000004, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:23:55.596 -05:00 [DBG] requestId: 0HMC16F341984:00000004, previousRequestId: no previous request id, message: Upstream url path is /api/productManagement/public/products
+2021-09-26 16:23:55.596 -05:00 [DBG] requestId: 0HMC16F341984:00000004, previousRequestId: no previous request id, message: downstream templates are /api/productManagement/{everything}
+2021-09-26 16:23:55.596 -05:00 [INF] requestId: 0HMC16F341984:00000004, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/productManagement/{everything}
+2021-09-26 16:23:55.596 -05:00 [INF] requestId: 0HMC16F341984:00000004, previousRequestId: no previous request id, message: No authentication needed for /api/productManagement/public/products
+2021-09-26 16:23:55.596 -05:00 [INF] requestId: 0HMC16F341984:00000004, previousRequestId: no previous request id, message: /api/productManagement/{everything} route does not require user to be authorized
+2021-09-26 16:23:55.596 -05:00 [DBG] requestId: 0HMC16F341984:00000004, previousRequestId: no previous request id, message: Downstream url is https://localhost:44344/api/productManagement/public/products?api-version=1.0
+2021-09-26 16:23:55.617 -05:00 [INF] requestId: 0HMC16F341984:00000004, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:44344/api/productManagement/public/products?api-version=1.0
+2021-09-26 16:23:55.617 -05:00 [DBG] requestId: 0HMC16F341984:00000004, previousRequestId: no previous request id, message: setting http response message
+2021-09-26 16:23:55.617 -05:00 [DBG] requestId: 0HMC16F341984:00000004, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-09-26 16:23:55.617 -05:00 [DBG] requestId: 0HMC16F341984:00000004, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:23:55.618 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44397/api/productManagement/public/products?api-version=1.0 - - - 200 2475 application/json;+charset=utf-8 22.9019ms
+2021-09-26 16:23:57.048 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44397/api/blogging/blogs/by-shortname/abp?api-version=1.0 - -
+2021-09-26 16:23:57.048 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:23:57.049 -05:00 [DBG] requestId: 0HMC16F341985:00000002, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:23:57.049 -05:00 [DBG] requestId: 0HMC16F341985:00000002, previousRequestId: no previous request id, message: Upstream url path is /api/blogging/blogs/by-shortname/abp
+2021-09-26 16:23:57.049 -05:00 [DBG] requestId: 0HMC16F341985:00000002, previousRequestId: no previous request id, message: downstream templates are /api/blogging/{everything}
+2021-09-26 16:23:57.049 -05:00 [INF] requestId: 0HMC16F341985:00000002, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/blogging/{everything}
+2021-09-26 16:23:57.049 -05:00 [INF] requestId: 0HMC16F341985:00000002, previousRequestId: no previous request id, message: No authentication needed for /api/blogging/blogs/by-shortname/abp
+2021-09-26 16:23:57.049 -05:00 [INF] requestId: 0HMC16F341985:00000002, previousRequestId: no previous request id, message: /api/blogging/{everything} route does not require user to be authorized
+2021-09-26 16:23:57.049 -05:00 [DBG] requestId: 0HMC16F341985:00000002, previousRequestId: no previous request id, message: Downstream url is https://localhost:44357/api/blogging/blogs/by-shortname/abp?api-version=1.0
+2021-09-26 16:23:57.245 -05:00 [INF] requestId: 0HMC16F341985:00000002, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:44357/api/blogging/blogs/by-shortname/abp?api-version=1.0
+2021-09-26 16:23:57.245 -05:00 [DBG] requestId: 0HMC16F341985:00000002, previousRequestId: no previous request id, message: setting http response message
+2021-09-26 16:23:57.245 -05:00 [DBG] requestId: 0HMC16F341985:00000002, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-09-26 16:23:57.245 -05:00 [DBG] requestId: 0HMC16F341985:00000002, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:23:57.245 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44397/api/blogging/blogs/by-shortname/abp?api-version=1.0 - - - 200 259 application/json;+charset=utf-8 197.3189ms
+2021-09-26 16:23:57.249 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44397/api/blogging/posts/ab353058-022c-fd4d-57fe-39ff362064b6/all?api-version=1.0 - -
+2021-09-26 16:23:57.249 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:23:57.249 -05:00 [DBG] requestId: 0HMC16F341985:00000003, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:23:57.249 -05:00 [DBG] requestId: 0HMC16F341985:00000003, previousRequestId: no previous request id, message: Upstream url path is /api/blogging/posts/ab353058-022c-fd4d-57fe-39ff362064b6/all
+2021-09-26 16:23:57.249 -05:00 [DBG] requestId: 0HMC16F341985:00000003, previousRequestId: no previous request id, message: downstream templates are /api/blogging/{everything}
+2021-09-26 16:23:57.250 -05:00 [INF] requestId: 0HMC16F341985:00000003, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/blogging/{everything}
+2021-09-26 16:23:57.250 -05:00 [INF] requestId: 0HMC16F341985:00000003, previousRequestId: no previous request id, message: No authentication needed for /api/blogging/posts/ab353058-022c-fd4d-57fe-39ff362064b6/all
+2021-09-26 16:23:57.250 -05:00 [INF] requestId: 0HMC16F341985:00000003, previousRequestId: no previous request id, message: /api/blogging/{everything} route does not require user to be authorized
+2021-09-26 16:23:57.250 -05:00 [DBG] requestId: 0HMC16F341985:00000003, previousRequestId: no previous request id, message: Downstream url is https://localhost:44357/api/blogging/posts/ab353058-022c-fd4d-57fe-39ff362064b6/all?api-version=1.0
+2021-09-26 16:23:57.462 -05:00 [INF] requestId: 0HMC16F341985:00000003, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:44357/api/blogging/posts/ab353058-022c-fd4d-57fe-39ff362064b6/all?api-version=1.0
+2021-09-26 16:23:57.462 -05:00 [DBG] requestId: 0HMC16F341985:00000003, previousRequestId: no previous request id, message: setting http response message
+2021-09-26 16:23:57.462 -05:00 [DBG] requestId: 0HMC16F341985:00000003, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-09-26 16:23:57.463 -05:00 [DBG] requestId: 0HMC16F341985:00000003, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:23:57.463 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44397/api/blogging/posts/ab353058-022c-fd4d-57fe-39ff362064b6/all?api-version=1.0 - - - 200 10904 application/json;+charset=utf-8 214.0274ms
+2021-09-26 16:23:57.468 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44397/api/blogging/tags/popular/ab353058-022c-fd4d-57fe-39ff362064b6?ResultCount=10&MinimumPostCount=2&api-version=1.0 - -
+2021-09-26 16:23:57.468 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:23:57.468 -05:00 [DBG] requestId: 0HMC16F341985:00000004, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:23:57.469 -05:00 [DBG] requestId: 0HMC16F341985:00000004, previousRequestId: no previous request id, message: Upstream url path is /api/blogging/tags/popular/ab353058-022c-fd4d-57fe-39ff362064b6
+2021-09-26 16:23:57.469 -05:00 [DBG] requestId: 0HMC16F341985:00000004, previousRequestId: no previous request id, message: downstream templates are /api/blogging/{everything}
+2021-09-26 16:23:57.469 -05:00 [INF] requestId: 0HMC16F341985:00000004, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/blogging/{everything}
+2021-09-26 16:23:57.469 -05:00 [INF] requestId: 0HMC16F341985:00000004, previousRequestId: no previous request id, message: No authentication needed for /api/blogging/tags/popular/ab353058-022c-fd4d-57fe-39ff362064b6
+2021-09-26 16:23:57.469 -05:00 [INF] requestId: 0HMC16F341985:00000004, previousRequestId: no previous request id, message: /api/blogging/{everything} route does not require user to be authorized
+2021-09-26 16:23:57.469 -05:00 [DBG] requestId: 0HMC16F341985:00000004, previousRequestId: no previous request id, message: Downstream url is https://localhost:44357/api/blogging/tags/popular/ab353058-022c-fd4d-57fe-39ff362064b6?ResultCount=10&MinimumPostCount=2&api-version=1.0
+2021-09-26 16:23:57.507 -05:00 [INF] requestId: 0HMC16F341985:00000004, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:44357/api/blogging/tags/popular/ab353058-022c-fd4d-57fe-39ff362064b6?ResultCount=10&MinimumPostCount=2&api-version=1.0
+2021-09-26 16:23:57.507 -05:00 [DBG] requestId: 0HMC16F341985:00000004, previousRequestId: no previous request id, message: setting http response message
+2021-09-26 16:23:57.507 -05:00 [DBG] requestId: 0HMC16F341985:00000004, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-09-26 16:23:57.508 -05:00 [DBG] requestId: 0HMC16F341985:00000004, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:23:57.508 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44397/api/blogging/tags/popular/ab353058-022c-fd4d-57fe-39ff362064b6?ResultCount=10&MinimumPostCount=2&api-version=1.0 - - - 200 2 application/json;+charset=utf-8 39.9531ms
+2021-09-26 16:23:57.705 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44397/api/blogging/files/100d4c0445cbf55f687339ec8e656abb.jpg?api-version=1.0 - -
+2021-09-26 16:23:57.707 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:23:57.708 -05:00 [DBG] requestId: 0HMC16F341985:00000005, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:23:57.708 -05:00 [DBG] requestId: 0HMC16F341985:00000005, previousRequestId: no previous request id, message: Upstream url path is /api/blogging/files/100d4c0445cbf55f687339ec8e656abb.jpg
+2021-09-26 16:23:57.708 -05:00 [DBG] requestId: 0HMC16F341985:00000005, previousRequestId: no previous request id, message: downstream templates are /api/blogging/{everything}
+2021-09-26 16:23:57.708 -05:00 [INF] requestId: 0HMC16F341985:00000005, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/blogging/{everything}
+2021-09-26 16:23:57.708 -05:00 [INF] requestId: 0HMC16F341985:00000005, previousRequestId: no previous request id, message: No authentication needed for /api/blogging/files/100d4c0445cbf55f687339ec8e656abb.jpg
+2021-09-26 16:23:57.708 -05:00 [INF] requestId: 0HMC16F341985:00000005, previousRequestId: no previous request id, message: /api/blogging/{everything} route does not require user to be authorized
+2021-09-26 16:23:57.708 -05:00 [DBG] requestId: 0HMC16F341985:00000005, previousRequestId: no previous request id, message: Downstream url is https://localhost:44357/api/blogging/files/100d4c0445cbf55f687339ec8e656abb.jpg?api-version=1.0
+2021-09-26 16:23:57.782 -05:00 [WRN] requestId: 0HMC16F341985:00000005, previousRequestId: no previous request id, message: 500 (Internal Server Error) status code, request uri: https://localhost:44357/api/blogging/files/100d4c0445cbf55f687339ec8e656abb.jpg?api-version=1.0
+2021-09-26 16:23:57.782 -05:00 [DBG] requestId: 0HMC16F341985:00000005, previousRequestId: no previous request id, message: setting http response message
+2021-09-26 16:23:57.782 -05:00 [DBG] requestId: 0HMC16F341985:00000005, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-09-26 16:23:57.782 -05:00 [DBG] requestId: 0HMC16F341985:00000005, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:23:57.782 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44397/api/blogging/files/100d4c0445cbf55f687339ec8e656abb.jpg?api-version=1.0 - - - 500 383 application/json;+charset=utf-8 76.9777ms
+2021-09-26 16:26:02.162 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44397/api/abp/application-configuration?api-version=1.0 - -
+2021-09-26 16:26:02.590 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:26:02.591 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:26:02.595 -05:00 [INF] Executing endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2021-09-26 16:26:02.600 -05:00 [INF] Route matched with {area = "abp", action = "Get", controller = "AbpApplicationConfiguration", page = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto] GetAsync() on controller Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController (Volo.Abp.AspNetCore.Mvc).
+2021-09-26 16:26:02.620 -05:00 [INF] Executing action method Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) - Validation state: "Valid"
+2021-09-26 16:26:02.644 -05:00 [DBG] Executing AbpApplicationConfigurationAppService.GetAsync()...
+2021-09-26 16:26:02.827 -05:00 [DBG] PermissionStore.GetCacheItemAsync: pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Blog,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Blog.Management,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Blog.Update,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Blog.Delete,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Blog.Create,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Blog.ClearCache,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Post,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Post.Update,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Post.Delete,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Post.Create,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Tag,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Tag.Update,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Tag.Delete,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Tag.Create,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Comment,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Comment.Update,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Comment.Delete,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Comment.Create,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:ProductManagement.Product,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:ProductManagement.Product.Update,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:ProductManagement.Product.Delete,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:ProductManagement.Product.Create
+2021-09-26 16:26:02.868 -05:00 [DBG] Not found in the cache: pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Blog,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Blog.Management,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Blog.Update,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Blog.Delete,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Blog.Create,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Blog.ClearCache,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Post,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Post.Update,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Post.Delete,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Post.Create,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Tag,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Tag.Update,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Tag.Delete,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Tag.Create,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Comment,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Comment.Update,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Comment.Delete,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:Blogging.Comment.Create,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:ProductManagement.Product,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:ProductManagement.Product.Update,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:ProductManagement.Product.Delete,pn:U,pk:9c0bf9f1-62a5-fafa-9403-39ff361fa14f,n:ProductManagement.Product.Create
+2021-09-26 16:26:02.874 -05:00 [DBG] Getting not cache granted permissions from the repository for this provider name,key: U,9c0bf9f1-62a5-fafa-9403-39ff361fa14f
+2021-09-26 16:26:03.872 -05:00 [DBG] Setting the cache items. Count: 22
+2021-09-26 16:26:03.908 -05:00 [DBG] Finished setting the cache items. Count: 22
+2021-09-26 16:26:03.916 -05:00 [DBG] PermissionStore.GetCacheItemAsync: pn:R,pk:admin,n:Blogging.Blog,pn:R,pk:admin,n:Blogging.Blog.Management,pn:R,pk:admin,n:Blogging.Blog.Update,pn:R,pk:admin,n:Blogging.Blog.Delete,pn:R,pk:admin,n:Blogging.Blog.Create,pn:R,pk:admin,n:Blogging.Blog.ClearCache,pn:R,pk:admin,n:Blogging.Post,pn:R,pk:admin,n:Blogging.Post.Update,pn:R,pk:admin,n:Blogging.Post.Delete,pn:R,pk:admin,n:Blogging.Post.Create,pn:R,pk:admin,n:Blogging.Tag,pn:R,pk:admin,n:Blogging.Tag.Update,pn:R,pk:admin,n:Blogging.Tag.Delete,pn:R,pk:admin,n:Blogging.Tag.Create,pn:R,pk:admin,n:Blogging.Comment,pn:R,pk:admin,n:Blogging.Comment.Update,pn:R,pk:admin,n:Blogging.Comment.Delete,pn:R,pk:admin,n:Blogging.Comment.Create,pn:R,pk:admin,n:ProductManagement.Product,pn:R,pk:admin,n:ProductManagement.Product.Update,pn:R,pk:admin,n:ProductManagement.Product.Delete,pn:R,pk:admin,n:ProductManagement.Product.Create
+2021-09-26 16:26:03.930 -05:00 [DBG] Not found in the cache: pn:R,pk:admin,n:Blogging.Blog,pn:R,pk:admin,n:Blogging.Blog.Management,pn:R,pk:admin,n:Blogging.Blog.Update,pn:R,pk:admin,n:Blogging.Blog.Delete,pn:R,pk:admin,n:Blogging.Blog.Create,pn:R,pk:admin,n:Blogging.Blog.ClearCache,pn:R,pk:admin,n:Blogging.Post,pn:R,pk:admin,n:Blogging.Post.Update,pn:R,pk:admin,n:Blogging.Post.Delete,pn:R,pk:admin,n:Blogging.Post.Create,pn:R,pk:admin,n:Blogging.Tag,pn:R,pk:admin,n:Blogging.Tag.Update,pn:R,pk:admin,n:Blogging.Tag.Delete,pn:R,pk:admin,n:Blogging.Tag.Create,pn:R,pk:admin,n:Blogging.Comment,pn:R,pk:admin,n:Blogging.Comment.Update,pn:R,pk:admin,n:Blogging.Comment.Delete,pn:R,pk:admin,n:Blogging.Comment.Create,pn:R,pk:admin,n:ProductManagement.Product,pn:R,pk:admin,n:ProductManagement.Product.Update,pn:R,pk:admin,n:ProductManagement.Product.Delete,pn:R,pk:admin,n:ProductManagement.Product.Create
+2021-09-26 16:26:03.930 -05:00 [DBG] Getting not cache granted permissions from the repository for this provider name,key: R,admin
+2021-09-26 16:26:03.969 -05:00 [DBG] Setting the cache items. Count: 22
+2021-09-26 16:26:03.990 -05:00 [DBG] Finished setting the cache items. Count: 22
+2021-09-26 16:26:04.275 -05:00 [DBG] Executed AbpApplicationConfigurationAppService.GetAsync().
+2021-09-26 16:26:04.278 -05:00 [INF] Executed action method Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1657.5575ms.
+2021-09-26 16:26:04.317 -05:00 [INF] Executing ObjectResult, writing value of type 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.ApplicationConfigurationDto'.
+2021-09-26 16:26:04.330 -05:00 [INF] Executed action Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc) in 1730.1929ms
+2021-09-26 16:26:04.330 -05:00 [INF] Executed endpoint 'Volo.Abp.AspNetCore.Mvc.ApplicationConfigurations.AbpApplicationConfigurationController.GetAsync (Volo.Abp.AspNetCore.Mvc)'
+2021-09-26 16:26:04.331 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44397/api/abp/application-configuration?api-version=1.0 - - - 200 - application/json;+charset=utf-8 2168.9840ms
+2021-09-26 16:26:12.005 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44397/api/productManagement/public/products?api-version=1.0 - -
+2021-09-26 16:26:12.006 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:26:12.006 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:26:12.006 -05:00 [DBG] requestId: 0HMC16F341987:00000002, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:26:12.006 -05:00 [DBG] requestId: 0HMC16F341987:00000002, previousRequestId: no previous request id, message: Upstream url path is /api/productManagement/public/products
+2021-09-26 16:26:12.007 -05:00 [DBG] requestId: 0HMC16F341987:00000002, previousRequestId: no previous request id, message: downstream templates are /api/productManagement/{everything}
+2021-09-26 16:26:12.007 -05:00 [INF] requestId: 0HMC16F341987:00000002, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/productManagement/{everything}
+2021-09-26 16:26:12.007 -05:00 [INF] requestId: 0HMC16F341987:00000002, previousRequestId: no previous request id, message: No authentication needed for /api/productManagement/public/products
+2021-09-26 16:26:12.007 -05:00 [INF] requestId: 0HMC16F341987:00000002, previousRequestId: no previous request id, message: /api/productManagement/{everything} route does not require user to be authorized
+2021-09-26 16:26:12.007 -05:00 [DBG] requestId: 0HMC16F341987:00000002, previousRequestId: no previous request id, message: Downstream url is https://localhost:44344/api/productManagement/public/products?api-version=1.0
+2021-09-26 16:26:12.443 -05:00 [INF] requestId: 0HMC16F341987:00000002, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:44344/api/productManagement/public/products?api-version=1.0
+2021-09-26 16:26:12.443 -05:00 [DBG] requestId: 0HMC16F341987:00000002, previousRequestId: no previous request id, message: setting http response message
+2021-09-26 16:26:12.443 -05:00 [DBG] requestId: 0HMC16F341987:00000002, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-09-26 16:26:12.443 -05:00 [DBG] requestId: 0HMC16F341987:00000002, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:26:12.443 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44397/api/productManagement/public/products?api-version=1.0 - - - 200 2475 application/json;+charset=utf-8 438.6424ms
+2021-09-26 16:26:21.045 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44397/api/productManagement/public/products?api-version=1.0 - -
+2021-09-26 16:26:21.045 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:26:21.046 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:26:21.046 -05:00 [DBG] requestId: 0HMC16F341987:00000003, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:26:21.046 -05:00 [DBG] requestId: 0HMC16F341987:00000003, previousRequestId: no previous request id, message: Upstream url path is /api/productManagement/public/products
+2021-09-26 16:26:21.046 -05:00 [DBG] requestId: 0HMC16F341987:00000003, previousRequestId: no previous request id, message: downstream templates are /api/productManagement/{everything}
+2021-09-26 16:26:21.046 -05:00 [INF] requestId: 0HMC16F341987:00000003, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/productManagement/{everything}
+2021-09-26 16:26:21.046 -05:00 [INF] requestId: 0HMC16F341987:00000003, previousRequestId: no previous request id, message: No authentication needed for /api/productManagement/public/products
+2021-09-26 16:26:21.046 -05:00 [INF] requestId: 0HMC16F341987:00000003, previousRequestId: no previous request id, message: /api/productManagement/{everything} route does not require user to be authorized
+2021-09-26 16:26:21.046 -05:00 [DBG] requestId: 0HMC16F341987:00000003, previousRequestId: no previous request id, message: Downstream url is https://localhost:44344/api/productManagement/public/products?api-version=1.0
+2021-09-26 16:26:21.067 -05:00 [INF] requestId: 0HMC16F341987:00000003, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:44344/api/productManagement/public/products?api-version=1.0
+2021-09-26 16:26:21.068 -05:00 [DBG] requestId: 0HMC16F341987:00000003, previousRequestId: no previous request id, message: setting http response message
+2021-09-26 16:26:21.068 -05:00 [DBG] requestId: 0HMC16F341987:00000003, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-09-26 16:26:21.068 -05:00 [DBG] requestId: 0HMC16F341987:00000003, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:26:21.068 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44397/api/productManagement/public/products?api-version=1.0 - - - 200 2475 application/json;+charset=utf-8 22.9434ms
+2021-09-26 16:26:27.916 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44397/api/blogging/blogs/by-shortname/abp?api-version=1.0 - -
+2021-09-26 16:26:27.916 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:26:27.916 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:26:27.917 -05:00 [DBG] requestId: 0HMC16F341988:00000002, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:26:27.917 -05:00 [DBG] requestId: 0HMC16F341988:00000002, previousRequestId: no previous request id, message: Upstream url path is /api/blogging/blogs/by-shortname/abp
+2021-09-26 16:26:27.917 -05:00 [DBG] requestId: 0HMC16F341988:00000002, previousRequestId: no previous request id, message: downstream templates are /api/blogging/{everything}
+2021-09-26 16:26:27.917 -05:00 [INF] requestId: 0HMC16F341988:00000002, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/blogging/{everything}
+2021-09-26 16:26:27.917 -05:00 [INF] requestId: 0HMC16F341988:00000002, previousRequestId: no previous request id, message: No authentication needed for /api/blogging/blogs/by-shortname/abp
+2021-09-26 16:26:27.917 -05:00 [INF] requestId: 0HMC16F341988:00000002, previousRequestId: no previous request id, message: /api/blogging/{everything} route does not require user to be authorized
+2021-09-26 16:26:27.917 -05:00 [DBG] requestId: 0HMC16F341988:00000002, previousRequestId: no previous request id, message: Downstream url is https://localhost:44357/api/blogging/blogs/by-shortname/abp?api-version=1.0
+2021-09-26 16:26:28.318 -05:00 [INF] requestId: 0HMC16F341988:00000002, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:44357/api/blogging/blogs/by-shortname/abp?api-version=1.0
+2021-09-26 16:26:28.318 -05:00 [DBG] requestId: 0HMC16F341988:00000002, previousRequestId: no previous request id, message: setting http response message
+2021-09-26 16:26:28.319 -05:00 [DBG] requestId: 0HMC16F341988:00000002, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-09-26 16:26:28.319 -05:00 [DBG] requestId: 0HMC16F341988:00000002, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:26:28.319 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44397/api/blogging/blogs/by-shortname/abp?api-version=1.0 - - - 200 259 application/json;+charset=utf-8 403.0727ms
+2021-09-26 16:26:28.321 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44397/api/blogging/posts/ab353058-022c-fd4d-57fe-39ff362064b6/all?api-version=1.0 - -
+2021-09-26 16:26:28.321 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:26:28.321 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:26:28.322 -05:00 [DBG] requestId: 0HMC16F341988:00000003, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:26:28.322 -05:00 [DBG] requestId: 0HMC16F341988:00000003, previousRequestId: no previous request id, message: Upstream url path is /api/blogging/posts/ab353058-022c-fd4d-57fe-39ff362064b6/all
+2021-09-26 16:26:28.322 -05:00 [DBG] requestId: 0HMC16F341988:00000003, previousRequestId: no previous request id, message: downstream templates are /api/blogging/{everything}
+2021-09-26 16:26:28.322 -05:00 [INF] requestId: 0HMC16F341988:00000003, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/blogging/{everything}
+2021-09-26 16:26:28.322 -05:00 [INF] requestId: 0HMC16F341988:00000003, previousRequestId: no previous request id, message: No authentication needed for /api/blogging/posts/ab353058-022c-fd4d-57fe-39ff362064b6/all
+2021-09-26 16:26:28.322 -05:00 [INF] requestId: 0HMC16F341988:00000003, previousRequestId: no previous request id, message: /api/blogging/{everything} route does not require user to be authorized
+2021-09-26 16:26:28.322 -05:00 [DBG] requestId: 0HMC16F341988:00000003, previousRequestId: no previous request id, message: Downstream url is https://localhost:44357/api/blogging/posts/ab353058-022c-fd4d-57fe-39ff362064b6/all?api-version=1.0
+2021-09-26 16:26:28.342 -05:00 [INF] requestId: 0HMC16F341988:00000003, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:44357/api/blogging/posts/ab353058-022c-fd4d-57fe-39ff362064b6/all?api-version=1.0
+2021-09-26 16:26:28.342 -05:00 [DBG] requestId: 0HMC16F341988:00000003, previousRequestId: no previous request id, message: setting http response message
+2021-09-26 16:26:28.342 -05:00 [DBG] requestId: 0HMC16F341988:00000003, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-09-26 16:26:28.342 -05:00 [DBG] requestId: 0HMC16F341988:00000003, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:26:28.342 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44397/api/blogging/posts/ab353058-022c-fd4d-57fe-39ff362064b6/all?api-version=1.0 - - - 200 10904 application/json;+charset=utf-8 21.4359ms
+2021-09-26 16:26:28.346 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44397/api/blogging/tags/popular/ab353058-022c-fd4d-57fe-39ff362064b6?ResultCount=10&MinimumPostCount=2&api-version=1.0 - -
+2021-09-26 16:26:28.346 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:26:28.346 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:26:28.347 -05:00 [DBG] requestId: 0HMC16F341988:00000004, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:26:28.347 -05:00 [DBG] requestId: 0HMC16F341988:00000004, previousRequestId: no previous request id, message: Upstream url path is /api/blogging/tags/popular/ab353058-022c-fd4d-57fe-39ff362064b6
+2021-09-26 16:26:28.347 -05:00 [DBG] requestId: 0HMC16F341988:00000004, previousRequestId: no previous request id, message: downstream templates are /api/blogging/{everything}
+2021-09-26 16:26:28.347 -05:00 [INF] requestId: 0HMC16F341988:00000004, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/blogging/{everything}
+2021-09-26 16:26:28.347 -05:00 [INF] requestId: 0HMC16F341988:00000004, previousRequestId: no previous request id, message: No authentication needed for /api/blogging/tags/popular/ab353058-022c-fd4d-57fe-39ff362064b6
+2021-09-26 16:26:28.347 -05:00 [INF] requestId: 0HMC16F341988:00000004, previousRequestId: no previous request id, message: /api/blogging/{everything} route does not require user to be authorized
+2021-09-26 16:26:28.347 -05:00 [DBG] requestId: 0HMC16F341988:00000004, previousRequestId: no previous request id, message: Downstream url is https://localhost:44357/api/blogging/tags/popular/ab353058-022c-fd4d-57fe-39ff362064b6?ResultCount=10&MinimumPostCount=2&api-version=1.0
+2021-09-26 16:26:28.362 -05:00 [INF] requestId: 0HMC16F341988:00000004, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:44357/api/blogging/tags/popular/ab353058-022c-fd4d-57fe-39ff362064b6?ResultCount=10&MinimumPostCount=2&api-version=1.0
+2021-09-26 16:26:28.362 -05:00 [DBG] requestId: 0HMC16F341988:00000004, previousRequestId: no previous request id, message: setting http response message
+2021-09-26 16:26:28.362 -05:00 [DBG] requestId: 0HMC16F341988:00000004, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-09-26 16:26:28.362 -05:00 [DBG] requestId: 0HMC16F341988:00000004, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:26:28.362 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44397/api/blogging/tags/popular/ab353058-022c-fd4d-57fe-39ff362064b6?ResultCount=10&MinimumPostCount=2&api-version=1.0 - - - 200 2 application/json;+charset=utf-8 16.3168ms
+2021-09-26 16:26:28.404 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44397/api/blogging/files/100d4c0445cbf55f687339ec8e656abb.jpg?api-version=1.0 - -
+2021-09-26 16:26:28.405 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:26:28.405 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:26:28.405 -05:00 [DBG] requestId: 0HMC16F341988:00000005, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:26:28.405 -05:00 [DBG] requestId: 0HMC16F341988:00000005, previousRequestId: no previous request id, message: Upstream url path is /api/blogging/files/100d4c0445cbf55f687339ec8e656abb.jpg
+2021-09-26 16:26:28.405 -05:00 [DBG] requestId: 0HMC16F341988:00000005, previousRequestId: no previous request id, message: downstream templates are /api/blogging/{everything}
+2021-09-26 16:26:28.405 -05:00 [INF] requestId: 0HMC16F341988:00000005, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/blogging/{everything}
+2021-09-26 16:26:28.405 -05:00 [INF] requestId: 0HMC16F341988:00000005, previousRequestId: no previous request id, message: No authentication needed for /api/blogging/files/100d4c0445cbf55f687339ec8e656abb.jpg
+2021-09-26 16:26:28.405 -05:00 [INF] requestId: 0HMC16F341988:00000005, previousRequestId: no previous request id, message: /api/blogging/{everything} route does not require user to be authorized
+2021-09-26 16:26:28.405 -05:00 [DBG] requestId: 0HMC16F341988:00000005, previousRequestId: no previous request id, message: Downstream url is https://localhost:44357/api/blogging/files/100d4c0445cbf55f687339ec8e656abb.jpg?api-version=1.0
+2021-09-26 16:26:28.418 -05:00 [WRN] requestId: 0HMC16F341988:00000005, previousRequestId: no previous request id, message: 500 (Internal Server Error) status code, request uri: https://localhost:44357/api/blogging/files/100d4c0445cbf55f687339ec8e656abb.jpg?api-version=1.0
+2021-09-26 16:26:28.418 -05:00 [DBG] requestId: 0HMC16F341988:00000005, previousRequestId: no previous request id, message: setting http response message
+2021-09-26 16:26:28.418 -05:00 [DBG] requestId: 0HMC16F341988:00000005, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-09-26 16:26:28.418 -05:00 [DBG] requestId: 0HMC16F341988:00000005, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:26:28.419 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44397/api/blogging/files/100d4c0445cbf55f687339ec8e656abb.jpg?api-version=1.0 - - - 500 383 application/json;+charset=utf-8 14.6546ms
+2021-09-26 16:26:35.960 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44397/api/productManagement/public/products?api-version=1.0 - -
+2021-09-26 16:26:35.961 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:26:35.961 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:26:35.961 -05:00 [DBG] requestId: 0HMC16F341987:00000004, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:26:35.961 -05:00 [DBG] requestId: 0HMC16F341987:00000004, previousRequestId: no previous request id, message: Upstream url path is /api/productManagement/public/products
+2021-09-26 16:26:35.961 -05:00 [DBG] requestId: 0HMC16F341987:00000004, previousRequestId: no previous request id, message: downstream templates are /api/productManagement/{everything}
+2021-09-26 16:26:35.962 -05:00 [INF] requestId: 0HMC16F341987:00000004, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/productManagement/{everything}
+2021-09-26 16:26:35.962 -05:00 [INF] requestId: 0HMC16F341987:00000004, previousRequestId: no previous request id, message: No authentication needed for /api/productManagement/public/products
+2021-09-26 16:26:35.962 -05:00 [INF] requestId: 0HMC16F341987:00000004, previousRequestId: no previous request id, message: /api/productManagement/{everything} route does not require user to be authorized
+2021-09-26 16:26:35.962 -05:00 [DBG] requestId: 0HMC16F341987:00000004, previousRequestId: no previous request id, message: Downstream url is https://localhost:44344/api/productManagement/public/products?api-version=1.0
+2021-09-26 16:26:35.982 -05:00 [INF] requestId: 0HMC16F341987:00000004, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:44344/api/productManagement/public/products?api-version=1.0
+2021-09-26 16:26:35.982 -05:00 [DBG] requestId: 0HMC16F341987:00000004, previousRequestId: no previous request id, message: setting http response message
+2021-09-26 16:26:35.983 -05:00 [DBG] requestId: 0HMC16F341987:00000004, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-09-26 16:26:35.983 -05:00 [DBG] requestId: 0HMC16F341987:00000004, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:26:35.983 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44397/api/productManagement/public/products?api-version=1.0 - - - 200 2475 application/json;+charset=utf-8 22.7925ms
+2021-09-26 16:29:15.435 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44397/api/productManagement/public/products?api-version=1.0 - -
+2021-09-26 16:29:15.435 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:29:15.436 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:29:15.436 -05:00 [DBG] requestId: 0HMC16F341989:00000002, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:29:15.436 -05:00 [DBG] requestId: 0HMC16F341989:00000002, previousRequestId: no previous request id, message: Upstream url path is /api/productManagement/public/products
+2021-09-26 16:29:15.436 -05:00 [DBG] requestId: 0HMC16F341989:00000002, previousRequestId: no previous request id, message: downstream templates are /api/productManagement/{everything}
+2021-09-26 16:29:15.436 -05:00 [INF] requestId: 0HMC16F341989:00000002, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/productManagement/{everything}
+2021-09-26 16:29:15.436 -05:00 [INF] requestId: 0HMC16F341989:00000002, previousRequestId: no previous request id, message: No authentication needed for /api/productManagement/public/products
+2021-09-26 16:29:15.436 -05:00 [INF] requestId: 0HMC16F341989:00000002, previousRequestId: no previous request id, message: /api/productManagement/{everything} route does not require user to be authorized
+2021-09-26 16:29:15.437 -05:00 [DBG] requestId: 0HMC16F341989:00000002, previousRequestId: no previous request id, message: Downstream url is https://localhost:44344/api/productManagement/public/products?api-version=1.0
+2021-09-26 16:29:15.458 -05:00 [INF] requestId: 0HMC16F341989:00000002, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:44344/api/productManagement/public/products?api-version=1.0
+2021-09-26 16:29:15.458 -05:00 [DBG] requestId: 0HMC16F341989:00000002, previousRequestId: no previous request id, message: setting http response message
+2021-09-26 16:29:15.458 -05:00 [DBG] requestId: 0HMC16F341989:00000002, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-09-26 16:29:15.459 -05:00 [DBG] requestId: 0HMC16F341989:00000002, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:29:15.459 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44397/api/productManagement/public/products?api-version=1.0 - - - 200 2475 application/json;+charset=utf-8 23.7312ms
+2021-09-26 16:30:41.026 -05:00 [INF] Request starting HTTP/2 GET https://localhost:44397/ - -
+2021-09-26 16:30:41.027 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2021-09-26 16:30:41.028 -05:00 [DBG] requestId: 0HMC16F34198A:00000001, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:30:41.028 -05:00 [DBG] requestId: 0HMC16F34198A:00000001, previousRequestId: no previous request id, message: Upstream url path is /
+2021-09-26 16:30:41.028 -05:00 [WRN] requestId: 0HMC16F34198A:00000001, previousRequestId: no previous request id, message: DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.
+2021-09-26 16:30:41.028 -05:00 [WRN] requestId: 0HMC16F34198A:00000001, previousRequestId: no previous request id, message: Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET
+2021-09-26 16:30:41.028 -05:00 [DBG] requestId: 0HMC16F34198A:00000001, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:30:41.028 -05:00 [INF] Request finished HTTP/2 GET https://localhost:44397/ - - - 404 0 - 1.6771ms
+2021-09-26 16:30:42.468 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44397/api/productManagement/public/products?api-version=1.0 - -
+2021-09-26 16:30:42.468 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:30:42.468 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:30:42.469 -05:00 [DBG] requestId: 0HMC16F341989:00000003, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:30:42.469 -05:00 [DBG] requestId: 0HMC16F341989:00000003, previousRequestId: no previous request id, message: Upstream url path is /api/productManagement/public/products
+2021-09-26 16:30:42.469 -05:00 [DBG] requestId: 0HMC16F341989:00000003, previousRequestId: no previous request id, message: downstream templates are /api/productManagement/{everything}
+2021-09-26 16:30:42.469 -05:00 [INF] requestId: 0HMC16F341989:00000003, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/productManagement/{everything}
+2021-09-26 16:30:42.469 -05:00 [INF] requestId: 0HMC16F341989:00000003, previousRequestId: no previous request id, message: No authentication needed for /api/productManagement/public/products
+2021-09-26 16:30:42.469 -05:00 [INF] requestId: 0HMC16F341989:00000003, previousRequestId: no previous request id, message: /api/productManagement/{everything} route does not require user to be authorized
+2021-09-26 16:30:42.469 -05:00 [DBG] requestId: 0HMC16F341989:00000003, previousRequestId: no previous request id, message: Downstream url is https://localhost:44344/api/productManagement/public/products?api-version=1.0
+2021-09-26 16:30:42.487 -05:00 [INF] requestId: 0HMC16F341989:00000003, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:44344/api/productManagement/public/products?api-version=1.0
+2021-09-26 16:30:42.487 -05:00 [DBG] requestId: 0HMC16F341989:00000003, previousRequestId: no previous request id, message: setting http response message
+2021-09-26 16:30:42.487 -05:00 [DBG] requestId: 0HMC16F341989:00000003, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-09-26 16:30:42.487 -05:00 [DBG] requestId: 0HMC16F341989:00000003, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:30:42.487 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44397/api/productManagement/public/products?api-version=1.0 - - - 200 2475 application/json;+charset=utf-8 19.5755ms
+2021-09-26 16:30:46.040 -05:00 [INF] Request starting HTTP/1.1 GET https://localhost:44397/api/productManagement/public/products?api-version=1.0 - -
+2021-09-26 16:30:46.040 -05:00 [INF] Successfully validated the token.
+2021-09-26 16:30:46.040 -05:00 [DBG] AuthenticationScheme: Bearer was successfully authenticated.
+2021-09-26 16:30:46.041 -05:00 [DBG] requestId: 0HMC16F341989:00000004, previousRequestId: no previous request id, message: ocelot pipeline started
+2021-09-26 16:30:46.041 -05:00 [DBG] requestId: 0HMC16F341989:00000004, previousRequestId: no previous request id, message: Upstream url path is /api/productManagement/public/products
+2021-09-26 16:30:46.041 -05:00 [DBG] requestId: 0HMC16F341989:00000004, previousRequestId: no previous request id, message: downstream templates are /api/productManagement/{everything}
+2021-09-26 16:30:46.041 -05:00 [INF] requestId: 0HMC16F341989:00000004, previousRequestId: no previous request id, message: EndpointRateLimiting is not enabled for /api/productManagement/{everything}
+2021-09-26 16:30:46.041 -05:00 [INF] requestId: 0HMC16F341989:00000004, previousRequestId: no previous request id, message: No authentication needed for /api/productManagement/public/products
+2021-09-26 16:30:46.041 -05:00 [INF] requestId: 0HMC16F341989:00000004, previousRequestId: no previous request id, message: /api/productManagement/{everything} route does not require user to be authorized
+2021-09-26 16:30:46.041 -05:00 [DBG] requestId: 0HMC16F341989:00000004, previousRequestId: no previous request id, message: Downstream url is https://localhost:44344/api/productManagement/public/products?api-version=1.0
+2021-09-26 16:30:46.061 -05:00 [INF] requestId: 0HMC16F341989:00000004, previousRequestId: no previous request id, message: 200 (OK) status code, request uri: https://localhost:44344/api/productManagement/public/products?api-version=1.0
+2021-09-26 16:30:46.061 -05:00 [DBG] requestId: 0HMC16F341989:00000004, previousRequestId: no previous request id, message: setting http response message
+2021-09-26 16:30:46.061 -05:00 [DBG] requestId: 0HMC16F341989:00000004, previousRequestId: no previous request id, message: no pipeline errors, setting and returning completed response
+2021-09-26 16:30:46.061 -05:00 [DBG] requestId: 0HMC16F341989:00000004, previousRequestId: no previous request id, message: ocelot pipeline finished
+2021-09-26 16:30:46.061 -05:00 [INF] Request finished HTTP/1.1 GET https://localhost:44397/api/productManagement/public/products?api-version=1.0 - - - 200 2475 application/json;+charset=utf-8 21.4848ms
+2021-09-26 16:32:46.274 -05:00 [INF] Application is shutting down...

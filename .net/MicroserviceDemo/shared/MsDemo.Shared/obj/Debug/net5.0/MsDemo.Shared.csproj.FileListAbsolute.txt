@@ -1,0 +1,12 @@
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net5.0\MsDemo.Shared.csproj.AssemblyReference.cache
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net5.0\MsDemo.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net5.0\MsDemo.Shared.AssemblyInfoInputs.cache
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net5.0\MsDemo.Shared.AssemblyInfo.cs
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net5.0\MsDemo.Shared.csproj.CoreCompileInputs.cache
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net5.0\MsDemo.Shared.dll
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net5.0\MsDemo.Shared.pdb
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\shared\MsDemo.Shared\obj\Debug\net5.0\ref\MsDemo.Shared.dll
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\shared\MsDemo.Shared\bin\Debug\net5.0\MsDemo.Shared.deps.json
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\shared\MsDemo.Shared\bin\Debug\net5.0\MsDemo.Shared.dll
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\shared\MsDemo.Shared\bin\Debug\net5.0\ref\MsDemo.Shared.dll
+D:\Estudio\Ejercicios\tartaro\.net\MicroserviceDemo\shared\MsDemo.Shared\bin\Debug\net5.0\MsDemo.Shared.pdb

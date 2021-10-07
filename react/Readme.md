@@ -11,6 +11,8 @@ Componentes de orden superior
 Un componente de orden superior (HOC por las siglas en inglés de higher-order component) es una técnica avanzada en React para el reuso de la lógica de componentes. Los HOCs no son parte de la API de React. Son un patrón que surge de la naturaleza composicional de React.
 https://es.reactjs.org/docs/higher-order-components.html
 
+Para que vs code ayude con la importación a veces es necesario tener abierto el archivo que queremos importar
+
 Babel
 JSX
 
@@ -310,9 +312,38 @@ Se deben probar los componentes desde el más bajo nivel, en caso de 08-useReduc
 
 09-useContext
 No validar todos porque o ya se hizo o no es necesario. Como tarea puede ser el test de NavBar con snapshot
+1. HomeScreen
+2. LoginScreen
+
+¿Qué veremos en esta sección?
+
+Subir código a nuestro repositorio
+
+Tener un listado de customHooks y código que podemos reutilizar
+
+Una idea para mantener tu repositorio ordenado con ejemplos
+
+1. Crear una cuenta en github.com
+2. Crear un repositorio (New o Start a project)
+3. Crear una carpeta local con los hooks
+4. Inicializar el repositorio local
+	- Entrar en la carpeta
+	- git init
+	- git add .
+	- git commit -m "Inicializar repositorio"
+5. Conectar el repositorio local con el de github
+	- git remote add origin https://github.com/jpchSubzero/ReactHooks.git
+	- git push -u origin master
+6. Aceptar el pull request	
 
 
-
-
-
+¿Qué veremos en esta sección?
+SPA ( Single Page Application ) a profundidad
+Diferentes temas en la misma aplicación aplicados a diferentes rutas
+Multiples Routers
+-	El nombre AppRouter por convención significa que es el principal
+Push y Replace en el History
+Leer argumentos por URL
+QueryParams
+Aplicar filtros utilizando QueryStrings
 
