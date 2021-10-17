@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'https://localhost:44322/',
+  // baseUrl: 'https://localhost:44322/',
+  baseUrl: 'https://atomicos.azurewebsites.net/',
   api: 'api/',
   account: 'account',
   categories: 'categories',
