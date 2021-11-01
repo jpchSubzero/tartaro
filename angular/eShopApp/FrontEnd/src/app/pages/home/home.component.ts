@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { LocalStorageService } from 'src/app/services/local-storage.service';
 import { environment } from 'src/environments/environment';
 import { CartService } from 'src/app/services/cart.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-home',
@@ -22,8 +23,18 @@ export class HomeComponent implements OnInit {
     private cart:CartService
   ) { 
     if (!this.eshopService.products || this.eshopService.products.length == 0) {
+      Swal.fire({
+        icon: 'info',
+        title: 'Cargando productos...',
+        text: 'Por favor espere',
+        allowOutsideClick: false
+      });
+
+      Swal.showLoading();
+
       this.eshopService.getProducts().subscribe((response:ProductResponse[]) => {
         this.eshopService.products = response.sort((a,b) => 0 - (a > b ? -1 : 1));
+        Swal.close();
       });        
     }
     try {

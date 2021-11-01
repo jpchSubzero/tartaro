@@ -43,6 +43,7 @@ export class PeliculaComponent implements OnInit {
         return;
       }
       this.creditos = creditos;
+      console.log(creditos);
 
     });
 

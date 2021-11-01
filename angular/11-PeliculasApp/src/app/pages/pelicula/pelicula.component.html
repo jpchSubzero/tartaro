@@ -27,6 +27,6 @@
 
 <div class="row mt-5" *ngIf="creditos">
     <div class="col">
-        <app-cast-slideshow [cast]="creditos"></app-cast-slideshow>
+        <app-cast-slideshow *ngIf="creditos.length > 0" [cast]="creditos"></app-cast-slideshow>
     </div>
 </div>

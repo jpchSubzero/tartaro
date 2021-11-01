@@ -1,0 +1,42 @@
+<nb-card-header>
+    <h1>{{title}}</h1>
+  </nb-card-header>
+  
+  <nb-card-body *ngIf="!loading">
+  
+    <nb-accordion>
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          Acciones
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+  
+          <nb-layout-column>
+            <input #search class="me" nbInput type="text" placeholder="Ingrese criterio" (keydown.enter)="onSearch(search.value)" [(ngModel)]="query">
+            <button nbButton class="me" shape="rectangle" status="primary" (click)="onSearch(search.value)">Buscar</button>
+            <button nbButton class="me" shape="rectangle" status="info"  (click)="reset()">Reiniciar</button>
+          </nb-layout-column>
+          
+          <nb-layout-column>
+            <span>Mostrando</span>
+            <nb-select size="medium" class="ms me" status="primary" placeholder="Items por página" [(selected)]="selectedItem" (selectedChange)="onPaging()">
+              <nb-option value="5">5</nb-option>
+              <nb-option value="10">10</nb-option>
+              <nb-option value="15">15</nb-option>
+              <nb-option value="20">20</nb-option>
+            </nb-select>
+            <span *ngIf="!loading">elementos de {{source.count()}}</span>
+          </nb-layout-column>
+  
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+  
+    </nb-accordion>
+  
+    <br />
+  
+    <ng2-smart-table [settings]="settings" [source]="source" (deleteConfirm)="onRoleDelete($event)" class="responsive"></ng2-smart-table>
+  
+  </nb-card-body>
+  
+  

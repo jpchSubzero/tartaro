@@ -5,6 +5,7 @@ import { CarteleraResponse, Movie } from '../interfaces/cartelera-response';
 import { catchError, map, tap } from 'rxjs/operators';
 import { MovieResponse } from '../interfaces/movie-response';
 import { CreditsResponse, Cast } from '../interfaces/credits-response';
+import { environment } from 'src/environments/environment';
 
 
 @Injectable({
@@ -12,7 +13,8 @@ import { CreditsResponse, Cast } from '../interfaces/credits-response';
 })
 export class PeliculasService {
 
-  private baseUrl: string = 'https://api.themoviedb.org/3';
+  // private baseUrl: string = 'https://api.themoviedb.org/3';
+  private baseUrl: string = environment.url;
   private carteleraPage: number = 1;
   public cargando: boolean = false;
   
@@ -23,7 +25,8 @@ export class PeliculasService {
 
   get params() {
     return {
-      api_key: 'a587cc29b53bb0322a0301ef205f47d1',
+      // api_key: 'a587cc29b53bb0322a0301ef205f47d1',
+      api_key: environment.apiKey,
       language: 'es-ES',
       page: this.carteleraPage.toString(),
       query: ''

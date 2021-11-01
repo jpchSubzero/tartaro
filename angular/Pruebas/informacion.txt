@@ -1,0 +1,135 @@
+angular
+completa con paginacion
+crud
+busqueda
+con que controles se puede trabajar (librerias)
+
+listado
+filtro
+busqueda
+ordenamiento
+crear
+editar
+borrar
+dashboard
+
+porque paginar en el cliente y en el servidor
+
+
+
+=============================================================================================================
+
+SABADO
+
+Smart Table
+https://github.com/akveo/ng2-smart-table
+https://akveo.github.io/ng2-smart-table/#/
+https://akveo.github.io/ng2-smart-table/#/examples/using-filters
+yarn add ng2-smart-table
+Se instala pero no arranca porque falta ng2-completer
+
+yarn add ng2-completer
+
+https://akveo.github.io/nebular/docs/guides/install-nebular#manually
+ng add @nebular/theme
+
+yarn add eva-icons @nebular/eva-icons
+
+https://stackoverflow.com/questions/57908446/custom-icons-on-smart-table-component-angular
+yarn add nebular-icons
+
+yarn add @nebular/security
+
+yarn add @nebular/auth
+
+yarn add bootstrap
+
+=============================================================================================================
+
+
+DOMINGO
+Crear app routing, css
+npm install --save @nebular/theme @angular/cdk @angular/animations
+npm install --save eva-icons @nebular/eva-icons 
+
+AppModule.ts
+import { NbThemeModule } from '@nebular/theme';
+
+...
+
+@NgModule({
+  imports: [
+    ...
+    // this will enable the default theme, you can change this by passing `{ name: 'dark' }` to enable the dark theme
+    NbThemeModule.forRoot(),
+  ]
+})
+export class AppModule {
+
+angular.json
+"styles": [
+  "node_modules/@nebular/theme/styles/prebuilt/default.css", // or dark.css
+],
+
+
+https://akveo.github.io/nebular/docs/guides/create-nebular-page#create-nebular-page
+AppModule.ts
+import { NbThemeModule, NbSidebarModule, NbLayoutModule, NbButtonModule, NbThemeService, NbSidebarService, NbCardModule } from '@nebular/theme';
+
+  imports: [
+    NbLayoutModule,
+    NbSidebarModule, // NbSidebarModule.forRoot(), //if this is your app.module
+    NbButtonModule,    
+    NbCardModule
+  ],
+
+https://akveo.github.io/ng2-smart-table/#/documentation
+yarn add ng2-smart-table
+
+yarn add ng2-completer
+
+https://akveo.github.io/nebular/docs/guides/register-icon-pack#register-icon-pack
+https://akveo.github.io/eva-icons/#/
+yarn add eva-icons @nebular/eva-icons
+
+angular.json
+"styles": [
+  "node_modules/nebular-icons/scss/nebular-icons.scss",
+],
+
+npm install --save angular5-csv
+
+
+https://stackoverflow.com/questions/52232701/how-to-update-placeholder-text-in-ng2-smart-table
+
+
+REST API
+https://gorest.co.in/
+
+
+Custom filter column
+https://github.com/akveo/ng2-smart-table/issues/354
+
+Error icons
+https://stackoverflow.com/questions/65472862/how-to-fix-the-error-error-default-pack-is-not-registered-in-nebular
+
+=============================================================================================================
+
+
+
+https://github.com/angular/angular-cli/issues/16873
+import '@angular/compiler';
+Agregar en main.ts
+
+NO FUNCIONA
+npm install --save ng2-smart-table
+No se instala por problemas de dependencias
+
+
+
+
+NO VALE
+https://github.com/akveo/ngx-admin/issues/1675
+
+https://github.com/felixrieseberg/windows-build-tools/issues/179
+npm install --global windows-build-tools@4.0.0

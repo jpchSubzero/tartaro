@@ -11,7 +11,7 @@ export class YoutubeService {
 
   API_KEY:string = 'AIzaSyCDWnmvyzYxO4emawDfArfU8JlXS19k4fk';
   CHANNERL_ID:string = 'UCeyPVK1HTNjwurYn1_cfhJw';
-  UPLOADS:string = 'UUeyPVK1HTNjwurYn1_cfhJw';
+  UPLOADS:string = '0000UUeyPVK1HTNjwurYn1_cfhJw';
   URL_BASE:string = 'https://www.googleapis.com/youtube/v3/';
   nextPageToken:string = '';
 

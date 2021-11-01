@@ -1,0 +1,16 @@
+D:\Estudio\Ejercicios\tartaro\.net\xUnit\StringCalculator\bin\Debug\net5.0\StringCalculator.exe
+D:\Estudio\Ejercicios\tartaro\.net\xUnit\StringCalculator\bin\Debug\net5.0\StringCalculator.deps.json
+D:\Estudio\Ejercicios\tartaro\.net\xUnit\StringCalculator\bin\Debug\net5.0\StringCalculator.runtimeconfig.json
+D:\Estudio\Ejercicios\tartaro\.net\xUnit\StringCalculator\bin\Debug\net5.0\StringCalculator.runtimeconfig.dev.json
+D:\Estudio\Ejercicios\tartaro\.net\xUnit\StringCalculator\bin\Debug\net5.0\StringCalculator.dll
+D:\Estudio\Ejercicios\tartaro\.net\xUnit\StringCalculator\bin\Debug\net5.0\ref\StringCalculator.dll
+D:\Estudio\Ejercicios\tartaro\.net\xUnit\StringCalculator\bin\Debug\net5.0\StringCalculator.pdb
+D:\Estudio\Ejercicios\tartaro\.net\xUnit\StringCalculator\obj\Debug\net5.0\StringCalculator.csproj.AssemblyReference.cache
+D:\Estudio\Ejercicios\tartaro\.net\xUnit\StringCalculator\obj\Debug\net5.0\StringCalculator.GeneratedMSBuildEditorConfig.editorconfig
+D:\Estudio\Ejercicios\tartaro\.net\xUnit\StringCalculator\obj\Debug\net5.0\StringCalculator.AssemblyInfoInputs.cache
+D:\Estudio\Ejercicios\tartaro\.net\xUnit\StringCalculator\obj\Debug\net5.0\StringCalculator.AssemblyInfo.cs
+D:\Estudio\Ejercicios\tartaro\.net\xUnit\StringCalculator\obj\Debug\net5.0\StringCalculator.csproj.CoreCompileInputs.cache
+D:\Estudio\Ejercicios\tartaro\.net\xUnit\StringCalculator\obj\Debug\net5.0\StringCalculator.dll
+D:\Estudio\Ejercicios\tartaro\.net\xUnit\StringCalculator\obj\Debug\net5.0\ref\StringCalculator.dll
+D:\Estudio\Ejercicios\tartaro\.net\xUnit\StringCalculator\obj\Debug\net5.0\StringCalculator.pdb
+D:\Estudio\Ejercicios\tartaro\.net\xUnit\StringCalculator\obj\Debug\net5.0\StringCalculator.genruntimeconfig.cache

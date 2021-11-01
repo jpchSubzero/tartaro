@@ -3,6 +3,7 @@ import { YoutubePlayListResponse } from 'src/app/models/youtube-playlist-respons
 import { YoutubeService } from '../../services/youtube.service';
 import { Video } from '../../models/youtube-playlist-response';
 import Swal from 'sweetalert2'
+import { ErrorResponse } from 'src/app/interfaces/error-http.interface';
 
 @Component({
   selector: 'app-home',
@@ -12,6 +13,7 @@ import Swal from 'sweetalert2'
 export class HomeComponent implements OnInit {
 
   videos:Video[] = [];
+  error:ErrorResponse = undefined!;
 
   constructor(private youtubeService:YoutubeService) { }
 
@@ -23,7 +25,20 @@ export class HomeComponent implements OnInit {
     this.youtubeService.obtenerListaVideos().subscribe((response:Video[]) => {
       // console.log(response);
       this.videos.push(...response);
-    });
+    },
+    
+    (error:ErrorResponse) => { 
+        this.error = error; 
+        Swal.fire({
+          title: `Error ${error.status}`,
+          icon: 'error',
+          html: `<p>${error.error.error.message}</p>`,
+          showCloseButton: true,
+          confirmButtonText:
+            'Cerrar'
+        });
+      }    
+    );
   }
 
   mostrarVideo(video:Video) {
