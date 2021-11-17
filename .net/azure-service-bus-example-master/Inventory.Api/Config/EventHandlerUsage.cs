@@ -21,7 +21,7 @@ namespace Inventory.Api.Config
             // Handlers
             var productStockEventHandler = app.ApplicationServices.GetService<IHandler<IEnumerable<ProductStockEvent>>>();
 
-            Register(receiver, "INVENTORY-STOCK", productStockEventHandler);
+            Register(receiver, "queue1", productStockEventHandler);
         }
 
         private static void Register<T>(
