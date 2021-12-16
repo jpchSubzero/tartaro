@@ -51,6 +51,7 @@ namespace Inventory.Api
 
             // Run handlers
             app.UseEventHandler();
+
         }
     }
 }
