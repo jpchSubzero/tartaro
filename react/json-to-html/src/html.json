@@ -1,0 +1,335 @@
+{
+    "nodeType": "Document",
+    "tag": null,
+    "text": null,
+    "attr": {
+
+    },
+    "children": [{
+        "nodeType": "Element",
+        "tag": "html",
+        "text": null,
+        "attr": {
+
+        },
+        "children": [{
+                "nodeType": "Element",
+                "tag": "head",
+                "text": null,
+                "attr": {
+
+                },
+                "children": [
+
+                ]
+            },
+            {
+                "nodeType": "Element",
+                "tag": "body",
+                "text": null,
+                "attr": {
+
+                },
+                "children": [{
+                        "nodeType": "Element",
+                        "tag": "p",
+                        "text": "Recibe un auto sustituto por 10 d\u00EDas en p\u00E9rdidas parciales y 20 d\u00EDas en p\u00E9rdidas totales, cuando el valor del siniestro sea mayor a $1.000 y la reparaci\u00F3n de tu auto supere los 3 d\u00EDas. La gama del auto sustituto depender\u00E1 del valor asegurado de tu veh\u00EDculo:",
+                        "attr": {
+
+                        },
+                        "children": [
+
+                        ]
+                    },
+                    {
+                        "nodeType": "Element",
+                        "tag": "ul",
+                        "text": null,
+                        "attr": {
+
+                        },
+                        "children": [{
+                                "nodeType": "Element",
+                                "tag": "li",
+                                "text": "Veh\u00EDculos con un valor asegurado de $0 a $20.000: Gama baja.",
+                                "attr": {
+
+                                },
+                                "children": [
+
+                                ]
+                            },
+                            {
+                                "nodeType": "Element",
+                                "tag": "li",
+                                "text": "Veh\u00EDculos con un valor asegurado de $20.001 a $40.000: Gama media.",
+                                "attr": {
+
+                                },
+                                "children": [
+
+                                ]
+                            },
+                            {
+                                "nodeType": "Element",
+                                "tag": "li",
+                                "text": "Veh\u00EDculos con un valor asegurado de $40.001 en adelante: Gama alta.",
+                                "attr": {
+
+                                },
+                                "children": [
+
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "nodeType": "Element",
+                        "tag": "h4",
+                        "text": "Tabla de Responsabilidad Civil",
+                        "attr": {
+
+                        },
+                        "children": [
+
+                        ]
+                    },
+                    {
+                        "nodeType": "Element",
+                        "tag": "table",
+                        "text": null,
+                        "attr": {
+
+                        },
+                        "children": [{
+                            "nodeType": "Element",
+                            "tag": "tbody",
+                            "text": null,
+                            "attr": {
+
+                            },
+                            "children": [{
+                                    "nodeType": "Element",
+                                    "tag": "tr",
+                                    "text": null,
+                                    "attr": {
+
+                                    },
+                                    "children": [{
+                                            "nodeType": "Element",
+                                            "tag": "td",
+                                            "text": "Valor asegurado del veh\u00EDculo",
+                                            "attr": {
+
+                                            },
+                                            "children": [
+
+                                            ]
+                                        },
+                                        {
+                                            "nodeType": "Element",
+                                            "tag": "td",
+                                            "text": "L\u00EDmite Responsabilidad Civil",
+                                            "attr": {
+
+                                            },
+                                            "children": [
+
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeType": "Element",
+                                    "tag": "tr",
+                                    "text": null,
+                                    "attr": {
+
+                                    },
+                                    "children": [{
+                                            "nodeType": "Element",
+                                            "tag": "td",
+                                            "text": "Menor o igual a $15000",
+                                            "attr": {
+
+                                            },
+                                            "children": [
+
+                                            ]
+                                        },
+                                        {
+                                            "nodeType": "Element",
+                                            "tag": "td",
+                                            "text": "Hasta $15000",
+                                            "attr": {
+
+                                            },
+                                            "children": [
+
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeType": "Element",
+                                    "tag": "tr",
+                                    "text": null,
+                                    "attr": {
+
+                                    },
+                                    "children": [{
+                                            "nodeType": "Element",
+                                            "tag": "td",
+                                            "text": "Entre $15001 y $20000",
+                                            "attr": {
+
+                                            },
+                                            "children": [
+
+                                            ]
+                                        },
+                                        {
+                                            "nodeType": "Element",
+                                            "tag": "td",
+                                            "text": "Hasta $20000",
+                                            "attr": {
+
+                                            },
+                                            "children": [
+
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeType": "Element",
+                                    "tag": "tr",
+                                    "text": null,
+                                    "attr": {
+
+                                    },
+                                    "children": [{
+                                            "nodeType": "Element",
+                                            "tag": "td",
+                                            "text": "Entre $15001 y $20000",
+                                            "attr": {
+
+                                            },
+                                            "children": [
+
+                                            ]
+                                        },
+                                        {
+                                            "nodeType": "Element",
+                                            "tag": "td",
+                                            "text": "Hasta $20000",
+                                            "attr": {
+
+                                            },
+                                            "children": [
+
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeType": "Element",
+                                    "tag": "tr",
+                                    "text": null,
+                                    "attr": {
+
+                                    },
+                                    "children": [{
+                                            "nodeType": "Element",
+                                            "tag": "td",
+                                            "text": "Entre $15001 y $20000",
+                                            "attr": {
+
+                                            },
+                                            "children": [
+
+                                            ]
+                                        },
+                                        {
+                                            "nodeType": "Element",
+                                            "tag": "td",
+                                            "text": "Hasta $20000",
+                                            "attr": {
+
+                                            },
+                                            "children": [
+
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeType": "Element",
+                                    "tag": "tr",
+                                    "text": null,
+                                    "attr": {
+
+                                    },
+                                    "children": [{
+                                            "nodeType": "Element",
+                                            "tag": "td",
+                                            "text": "Entre $15001 y $20000",
+                                            "attr": {
+
+                                            },
+                                            "children": [
+
+                                            ]
+                                        },
+                                        {
+                                            "nodeType": "Element",
+                                            "tag": "td",
+                                            "text": "Hasta $20000",
+                                            "attr": {
+
+                                            },
+                                            "children": [
+
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeType": "Element",
+                                    "tag": "tr",
+                                    "text": null,
+                                    "attr": {
+
+                                    },
+                                    "children": [{
+                                            "nodeType": "Element",
+                                            "tag": "td",
+                                            "text": "Entre $15001 y $20000",
+                                            "attr": {
+
+                                            },
+                                            "children": [
+
+                                            ]
+                                        },
+                                        {
+                                            "nodeType": "Element",
+                                            "tag": "td",
+                                            "text": "Hasta $20000",
+                                            "attr": {
+
+                                            },
+                                            "children": [
+
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }]
+                    }
+                ]
+            }
+        ]
+    }]
+}
