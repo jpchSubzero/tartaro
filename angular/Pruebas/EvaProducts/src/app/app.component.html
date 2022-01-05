@@ -1,0 +1,41 @@
+<h2>JSON</h2>
+
+<hr>
+
+<div><pre [innerHTML]="product | json"></pre></div>
+
+<h2>HTML</h2>
+
+<hr>
+
+<div [innerHTML]="htmlConverted"></div>
+
+<h2>TEXT</h2>
+
+<hr>
+
+<div [innerHTML]="textConverted"></div>
+
+<h2>COVERAGES</h2>
+
+<hr>
+
+<div *ngFor="let result of coveragesArray" [innerHTML]="result"></div>
+
+<h2>DEDUCTIBLES</h2>
+
+<hr>
+
+<div *ngFor="let result of deductiblesArray" [innerHTML]="result"></div>
+
+<h2>EXCLUSIONS</h2>
+
+<hr>
+
+<div *ngFor="let result of exclusionsArray" [innerHTML]="result"></div>
+
+<h2>ASSISTANCES</h2>
+
+<hr>
+
+<div *ngFor="let result of assistancesArray" [innerHTML]="result"></div>
