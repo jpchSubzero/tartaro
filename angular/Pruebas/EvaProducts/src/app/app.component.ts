@@ -11,7 +11,7 @@ import { productResponse } from './products';
 })
 export class AppComponent {
   title = 'EvaProducts';
-  productIndex:number = 1;
+  productIndex:number = 0;
 
   product:JSONFromHTML = undefined!;
   evaResponse:ProductResponse = productResponse;
@@ -25,30 +25,30 @@ export class AppComponent {
 
   constructor(httpClient: HttpClient) {
       console.log(this.evaResponse);
-      this.product = JSON.parse(this.evaResponse.result.$values[0].coverages.$values[this.productIndex].description);
+      // this.product = JSON.parse(this.evaResponse.result.$values[0].coverages.$values[this.productIndex].description);
   
       this.evaResponse.result.$values[this.productIndex].coverages.$values.forEach((x:CoveragesValue) => {
         // console.log(x.code);
         // console.log(x.description);
-        this.coveragesArray.push(this.parseJsonStructureToHtml(JSON.parse(x.description)));
+        this.coveragesArray.push(this.parseJsonStructureToHtml(JSON.parse(x.description)[0]));
       });
 
       this.evaResponse.result.$values[this.productIndex].exclusions.$values.forEach((x:DeductiblesValue) => {
         // console.log(x.code);
         // console.log(x.description);
-        this.exclusionsArray.push(this.parseJsonStructureToHtml(JSON.parse(x.description)));
+        this.exclusionsArray.push(this.parseJsonStructureToHtml(JSON.parse(x.description)[0]));
       });
 
       this.evaResponse.result.$values[this.productIndex].deductibles.$values.forEach((x:DeductiblesValue) => {
         // console.log(x.code);
         // console.log(x.description);
-        this.deductiblesArray.push(this.parseJsonStructureToHtml(JSON.parse(x.description)));
+        this.deductiblesArray.push(this.parseJsonStructureToHtml(JSON.parse(x.description)[0]));
       });
 
       this.evaResponse.result.$values[this.productIndex].assistances.$values.forEach((x:AssistancesValue) => {
         // console.log(x.code);
         // console.log(x.description);
-        this.assistancesArray.push(this.parseJsonStructureToHtml(JSON.parse(x.description)));
+        this.assistancesArray.push(this.parseJsonStructureToHtml(JSON.parse(x.description)[0]));
       });
 
     // httpClient.get<ProductResponse>('https://des-api-eva.novaecuador.com/product/api/product?withDetails=false', this.getHeadersRequest()).subscribe((response:ProductResponse) => {

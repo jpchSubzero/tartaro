@@ -1,19 +1,41 @@
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Threading.Tasks;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace MetadataConvertion
 {
     public class MetadataConverter
     {
-        [Fact]
-        public async Task xxx()
-        {
+		private readonly ITestOutputHelper output;
 
-            Convert(GetInput());
+		public MetadataConverter(ITestOutputHelper output)
+		{
+			this.output = output;
+		}
+
+		[Fact]
+        public void TranformContract()
+        {
+			var input = GetInput();
+			var response = Convert(input);
+			Assert.NotNull(response);
+			Assert.Equal(input.FirstOrDefault(x => x.Key.Equals("ValidDays")).Value.ToString(), response.ValidDays.ToString());
+			Assert.Equal(input.FirstOrDefault(x => x.Key.Equals("State")).Value.ToString(), response.State.ToString());
+			Assert.Equal(input.FirstOrDefault(x => x.Key.Equals("PartialPrice")).Value.ToString(), response.PartialPrice.ToString());
+			Assert.Equal(input.FirstOrDefault(x => x.Key.Equals("Tax")).Value.ToString(), response.Tax.ToString());
+			Assert.Equal(input.FirstOrDefault(x => x.Key.Equals("FinalPrice")).Value.ToString(), response.FinalPrice.ToString());
+			Assert.Equal(input.FirstOrDefault(x => x.Key.Equals("ProductId")).Value.ToString(), response.ProductId.ToString());
+			Assert.Equal(input.FirstOrDefault(x => x.Key.Equals("PlanId")).Value.ToString(), response.PlanId.ToString());
+			Assert.Equal(input.FirstOrDefault(x => x.Key.Equals("CurrencyId")).Value.ToString(), response.CurrencyId.ToString());
+			Assert.Equal(input.FirstOrDefault(x => x.Key.Equals("PeriodId")).Value.ToString(), response.PeriodId.ToString());
+			Assert.Equal(input.FirstOrDefault(x => x.Key.Equals("WayId")).Value.ToString(), response.WayId.ToString());
+			Assert.Equal(input.FirstOrDefault(x => x.Key.Equals("TrackingId")).Value.ToString(), response.TrackingId.ToString());
+			Assert.Equal(input.FirstOrDefault(x => x.Key.Equals("ProductCode")).Value.ToString(), response.ProductCode.ToString());
         }
 
         private QuotationDto Convert(List<InterContextDataDto> data)
@@ -21,31 +43,35 @@ namespace MetadataConvertion
             var quotationDto = new QuotationDto();
 			quotationDto.QuotationFields ??= new List<QuotationField>();
 
-			quotationDto.ValidDays = GetValueFromGeneric<int>(nameof(quotationDto.ValidDays), data);
-            quotationDto.State = GetValueFromGeneric<string>(nameof(quotationDto.State), data);
-            quotationDto.PartialPrice = GetValueFromGeneric<decimal>(nameof(quotationDto.PartialPrice), data);
-            quotationDto.Tax = GetValueFromGeneric<decimal>(nameof(quotationDto.Tax), data);
-            quotationDto.FinalPrice = GetValueFromGeneric<decimal>(nameof(quotationDto.FinalPrice), data);
-            quotationDto.ProductId = GetValueFromGeneric<Guid>(nameof(quotationDto.ProductId), data);
-            quotationDto.PlanId = GetValueFromGeneric<Guid>(nameof(quotationDto.PlanId), data);
-            quotationDto.CurrencyId = GetValueFromGeneric<Guid>(nameof(quotationDto.CurrencyId), data);
-            quotationDto.PeriodId = GetValueFromGeneric<Guid>(nameof(quotationDto.PeriodId), data);
-            quotationDto.WayId = GetValueFromGeneric<Guid>(nameof(quotationDto.WayId), data);
-            quotationDto.TrackingId = GetValueFromGeneric<Guid>(nameof(quotationDto.TrackingId), data);
-            quotationDto.ProductCode = GetValueFromGeneric<string>(nameof(quotationDto.ProductCode), data);
+			quotationDto.ValidDays = GetValueByKey<int>(nameof(quotationDto.ValidDays), data);
+            quotationDto.State = GetValueByKey<string>(nameof(quotationDto.State), data);
+            quotationDto.PartialPrice = GetValueByKey<decimal>(nameof(quotationDto.PartialPrice), data);
+            quotationDto.Tax = GetValueByKey<decimal>(nameof(quotationDto.Tax), data);
+            quotationDto.FinalPrice = GetValueByKey<decimal>(nameof(quotationDto.FinalPrice), data);
+            quotationDto.ProductId = GetValueByKey<Guid>(nameof(quotationDto.ProductId), data);
+            quotationDto.PlanId = GetValueByKey<Guid>(nameof(quotationDto.PlanId), data);
+            quotationDto.CurrencyId = GetValueByKey<Guid>(nameof(quotationDto.CurrencyId), data);
+            quotationDto.PeriodId = GetValueByKey<Guid>(nameof(quotationDto.PeriodId), data);
+            quotationDto.WayId = GetValueByKey<Guid>(nameof(quotationDto.WayId), data);
+            quotationDto.TrackingId = GetValueByKey<Guid>(nameof(quotationDto.TrackingId), data);
+            quotationDto.ProductCode = GetValueByKey<string>(nameof(quotationDto.ProductCode), data);
             List<InterContextDataDto> inputFields = (List<InterContextDataDto>)data.FirstOrDefault(x => x.IsComplex).Value;
 
             GetInnerProperties(quotationDto, inputFields, 2);
 
-            return quotationDto;
+			output.WriteLine(JsonConvert.SerializeObject(data));
+			output.WriteLine("\n");
+			output.WriteLine(JsonConvert.SerializeObject(quotationDto));
+
+			return quotationDto;
         }
 
         private void GetInnerProperties(QuotationDto quotationDto, List<InterContextDataDto> inputFields, int fields)
         {
             for (int i = 1; i <= inputFields.Count / fields; i++)
             {
-				var key = GetValueFromGenericSubCollection<Guid>("FieldId", $"{i}", inputFields);
-				var value = GetValueFromGenericSubCollection<string>("Value", $"{i}", inputFields);
+				var key = GetValueByKeyAndCode<Guid>("FieldId", $"FieldId{i}", inputFields);
+				var value = GetValueByKeyAndCode<string>("Value", $"Value{i}", inputFields);
 
 				quotationDto.QuotationFields.Add(new QuotationField()
                 {
@@ -55,13 +81,13 @@ namespace MetadataConvertion
             }
         }
 
-        private T GetValueFromGeneric<T>(string field, List<InterContextDataDto> genericData)
+        private T GetValueByKey<T>(string field, List<InterContextDataDto> genericData)
         {
 			var value = genericData.FirstOrDefault(x => x.Key.Equals(field)).Value.ToString();
 			return ConvertFrom<T>(value);
 		}
 
-        private T GetValueFromGenericSubCollection<T>(string field, string code, List<InterContextDataDto> genericData)
+        private T GetValueByKeyAndCode<T>(string field, string code, List<InterContextDataDto> genericData)
         {
 			var value = genericData.FirstOrDefault(x => x.Key.Equals(field) && x.Code.Equals(code)).Value.ToString();
 			return ConvertFrom<T>(value);
@@ -79,12 +105,42 @@ namespace MetadataConvertion
             var data = new List<InterContextDataDto>();
 			data.Add(new InterContextDataDto()
 			{
+				Key = "ValidOneDays",
+				Code = "ValidOneDays",
+				Updatable = false,
+				IsRequired = true,
+				ValueType = TypeValue.Number,
+				Value = 90,
+				IsComplex = false
+			});
+			data.Add(new InterContextDataDto()
+			{
+				Key = "ValidTwoDays",
+				Code = "ValidTwoDays",
+				Updatable = false,
+				IsRequired = true,
+				ValueType = TypeValue.Number,
+				Value = 90,
+				IsComplex = false
+			});
+			data.Add(new InterContextDataDto()
+			{
+				Key = "ValidThreeDays",
+				Code = "ValidThreeDays",
+				Updatable = false,
+				IsRequired = true,
+				ValueType = TypeValue.Number,
+				Value = 90,
+				IsComplex = false
+			});
+			data.Add(new InterContextDataDto()
+			{
 				Key = "ValidDays",
 				Code = "ValidDays",
 				Updatable = false,
 				IsRequired = true,
 				ValueType = TypeValue.Number,
-				Value = "90",
+				Value = 90,
 				IsComplex = false
 			});
 			data.Add(new InterContextDataDto()
@@ -202,7 +258,7 @@ namespace MetadataConvertion
 			inputs.Add(new InterContextDataDto()
 			{
 				Key = "FieldId",
-				Code = "1",
+				Code = "FieldId1",
 				Updatable = false,
 				IsRequired = true,
 				ValueType = TypeValue.String,
@@ -212,7 +268,7 @@ namespace MetadataConvertion
 			inputs.Add(new InterContextDataDto()
 			{
 				Key = "Value",
-				Code = "1",
+				Code = "Value1",
 				Updatable = false,
 				IsRequired = true,
 				ValueType = TypeValue.String,
@@ -222,7 +278,7 @@ namespace MetadataConvertion
 			inputs.Add(new InterContextDataDto()
 			{
 				Key = "FieldId",
-				Code = "2",
+				Code = "FieldId2",
 				Updatable = false,
 				IsRequired = true,
 				ValueType = TypeValue.String,
@@ -232,7 +288,7 @@ namespace MetadataConvertion
 			inputs.Add(new InterContextDataDto()
 			{
 				Key = "Value",
-				Code = "2",
+				Code = "Value2",
 				Updatable = false,
 				IsRequired = true,
 				ValueType = TypeValue.String,
