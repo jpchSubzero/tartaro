@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net.Http;
 using System.Text.RegularExpressions;
+using System.Web;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -43,9 +44,9 @@ namespace SanitizeStringForJson
             {
                 FailureLogDto failureLogDto = new();
 
-                failureLogDto.Method = "<Transfer>gfasdfasdf";
-                failureLogDto.Error = ex.Message;
-                failureLogDto.Detail = ex.StackTrace;
+                failureLogDto.Method = "<Transfer>gfasdfasdf" + "´";
+                failureLogDto.Error = ex.Message + "''´";
+                failureLogDto.Detail = ex.StackTrace + "'''´";
                 failureLogDto.StateId = Guid.Parse("613aa4ed-5d7d-486d-7f0d-08d9d476ef02");
 
                 _output.WriteLine(JsonConvert.SerializeObject(CustomSanitize(failureLogDto)));
@@ -89,11 +90,15 @@ namespace SanitizeStringForJson
             var textFromObject = JsonConvert.SerializeObject(objectToSanitize);
 
             Dictionary<string, string> restricteds = new();
-            restricteds.Add("(", "[");
-            restricteds.Add(")", "]");
-            restricteds.Add("<", "[");
-            restricteds.Add(">", "]");
-            restricteds.Add("`", "'");
+            restricteds.Add("(", " ");
+            restricteds.Add(")", " ");
+            restricteds.Add("[", " ");
+            restricteds.Add("]", " ");
+            restricteds.Add("<", " ");
+            restricteds.Add(">", " ");
+            restricteds.Add("`", " ");
+            restricteds.Add("'", " ");
+            restricteds.Add("\\", "/");
 
             foreach (KeyValuePair<string, string> restricted in restricteds)
             {
@@ -102,6 +107,7 @@ namespace SanitizeStringForJson
 
             return JsonConvert.DeserializeObject<T>(textFromObject);
         }
+
     }
 
     public class FailureLogDto
