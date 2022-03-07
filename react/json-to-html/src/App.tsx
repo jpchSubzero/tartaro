@@ -13,11 +13,11 @@ function App() {
   htmlConverted = parseJsonStructureToHtml(htmlOnJson);
   textConverted = parseJsonStructureToText(htmlOnJson);
 
-  console.warn('htmlConverted');
-  console.log(htmlConverted);
+  // console.warn('htmlConverted');
+  // console.log(htmlConverted);
 
-  console.warn('textConverted');
-  console.log(textConverted);
+  // console.warn('textConverted');
+  // console.log(textConverted);
 
   return (
     <div className="App">
@@ -30,8 +30,25 @@ function App() {
       <h2>HTML</h2>
       <hr></hr>
       <span dangerouslySetInnerHTML={{ __html: htmlConverted }} />
+      <h2>HTML Table</h2>
+      <hr></hr>
+      <span dangerouslySetInnerHTML={{ __html: extractTableAndTitle(htmlConverted, '<h4>') }} />
+      <h2>HTML sin Table</h2>
+      <hr></hr>
+      <span dangerouslySetInnerHTML={{ __html: extractWithoutTableAndTitle(htmlConverted, extractTableAndTitle(htmlConverted, '<h4>')) }} />
     </div>
   );
+}
+
+function extractTableAndTitle(htmlText:string, title:string):string {
+  let startTable = htmlText.indexOf('<table');
+  let endTable = htmlText.indexOf('/table>');
+  let startTitle = htmlText.lastIndexOf(title, startTable);
+  return htmlText.substring(startTitle, endTable + '/table>'.length);
+}
+
+function extractWithoutTableAndTitle(htmlText:string, table:string):string {
+  return htmlText.replace(table, '');
 }
 
 function parseJsonStructureToHtml(node: JSONFromHTML):string {
