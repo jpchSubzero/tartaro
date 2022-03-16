@@ -183,7 +183,7 @@ namespace HtmlToJson
 
         private string GetRealHtml()
         {
-            return @"<p>Cuentas con un chofer para regresar a tu domicilio desde eventos o reuniones sociales.</p><p>L&iacute;mite de movilizaci&oacute;n: 50 kil&oacute;metros o 2 horas de distancia. Aplica para m&aacute;ximo 5 eventos al a&ntilde;o.</p>";
+            return @"<p>Recibe un auto sustituto por 10 d&iacute;as en p&eacute;rdidas parciales y 20 d&iacute;as en p&eacute;rdidas totales, cuando el valor del siniestro sea mayor a $1.000 y la reparaci&oacute;n de tu auto supere los 3 d&iacute;as. La gama del auto sustituto depender&aacute; del valor asegurado de tu veh&iacute;culo:</p><ul><li>Veh&iacute;culos con un valor asegurado de $0 a $20.000: Gama baja.</li><li>Veh&iacute;culos con un valor asegurado de $20.001 a $40.000: Gama media.</li><li>Veh&iacute;culos con un valor asegurado de $40.001 en adelante: Gama alta.</li></ul>";
         }
     }
 }

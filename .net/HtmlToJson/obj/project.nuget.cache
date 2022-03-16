@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vTfBl/tMEt2568mLN2FHXLIMmnGVNmKh/Us93uiCiv73qmwG0gdgEE5AQi4sgzaPJ0yyXSdwyjdv2vGsoD4+/w==",
+  "dgSpecHash": "G+3PmG6ebkF+Siah9vwb/H2xMFMKpndjeP2S26d5FtV7anHXnvLcfPHb+rl12GFCG57aSr6yWCbLsL5Baf7Hyw==",
   "success": true,
-  "projectFilePath": "d:\\Estudio\\Ejercicios\\tartaro\\.net\\HtmlToJson\\HtmlToJson.csproj",
+  "projectFilePath": "D:\\Estudio\\Ejercicios\\tartaro\\.net\\HtmlToJson\\HtmlToJson.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jpch_\\.nuget\\packages\\anglesharp\\1.0.0-alpha-844\\anglesharp.1.0.0-alpha-844.nupkg.sha512",
     "C:\\Users\\jpch_\\.nuget\\packages\\anglesharp.css\\0.15.0\\anglesharp.css.0.15.0.nupkg.sha512",
