@@ -16,7 +16,7 @@ export const Thanks = () => {
     if (!integration.documentName || !integration.documentUrl || !person.fullName || !person.email) {
       navigate(TypesRoutes.ROUTE_HOME);
     }
-  }, [integration, person]);
+  }, [integration, person]);  // eslint-disable-line react-hooks/exhaustive-deps
 
   const renderComponent = () => {
     return (

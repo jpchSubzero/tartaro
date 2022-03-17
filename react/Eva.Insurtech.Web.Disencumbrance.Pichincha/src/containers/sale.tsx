@@ -47,7 +47,7 @@ export const Sale = ({ trackingId }:Props) => {
     if (!subscription.trackingId || !person.identification) {
       navigate(TypesRoutes.ROUTE_HOME);
     }
-  }, [subscription, person]);
+  }, [subscription, person]);  // eslint-disable-line react-hooks/exhaustive-deps
   
   const onSubmit = async (formValues:ISaleRegisterInput) => {
     setLoading(true);

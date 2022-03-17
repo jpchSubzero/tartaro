@@ -34,7 +34,7 @@ export const Otp = () => {
     if (!subscription.trackingId || !person.identification || !otp.referenceId) {
       navigate(TypesRoutes.ROUTE_HOME);
     }
-  }, [otp, person, subscription]);
+  }, [otp, person, subscription]);  // eslint-disable-line react-hooks/exhaustive-deps
 
   const onSubmit = async (formValues:ICheckOtpInput) => {
     setLoading(true);
