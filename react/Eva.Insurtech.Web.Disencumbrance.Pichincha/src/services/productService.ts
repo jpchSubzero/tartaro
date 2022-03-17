@@ -36,11 +36,11 @@ async function getProductByConfiguredFiltersCodeAsync() {
     if (responseProducts.result) {
         response = responseProducts;
     } else {
-    response.error = {
-        code: `${responseProducts.error?.code}`,
-        message: `${responseProducts.error?.message}`,
-        details: `${responseProducts.error?.details}`,
-    };
+        response.error = {
+            code: `${responseProducts.error?.code}`,
+            message: `${responseProducts.error?.message}`,
+            details: `${responseProducts.error?.details}`,
+        };
     }
     return response;    
 }

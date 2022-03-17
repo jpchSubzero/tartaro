@@ -74,7 +74,7 @@ export const Sale = ({ trackingId }:Props) => {
     );
   }
 
-  const renderDefault = () => { 
+  const renderComponent = () => { 
     return (
       <>
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -91,14 +91,6 @@ export const Sale = ({ trackingId }:Props) => {
         </form>
 
         <hr />      
-      </>
-    );
-  }
-
-  const renderComponent = () => { 
-    return (
-      <>
-        {renderDefault()}
       </>
     );
   }
