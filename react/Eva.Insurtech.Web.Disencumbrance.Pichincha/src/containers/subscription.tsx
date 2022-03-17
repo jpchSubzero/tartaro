@@ -1,10 +1,18 @@
-import { useSubscription } from '../hooks/useSubscription';
-import { ISubscriptionInput } from '../hooks/useIntegration';
 import { Controller, FieldError } from 'react-hook-form';
 import { GetValidatorSubscription } from './validations/subscription.validation';
+import { ISubscriptionInput } from '../interfaces/subscription/subscription.input.interface';
+import { SubscriptionService } from '../services/subscriptionService';
+import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { createSubscriptionAction } from '../actions/create.subscription.action';
+import { TypesRoutes } from '../types/types.routes';
+import configuration from "../api/data/configuration.json";
+import { findPersonAction } from '../actions/person.find.action';
+import { IntegrationService } from '../services/integrationService';
+import { errorRegisterAction } from '../actions/error.register.action';
 
-export const SubscriptionPage = () => {
-  const { subscription, loading: loadingSubscription, createSubscription } = useSubscription();
+export const Subscription = () => {
   let defaultValues:ISubscriptionInput = {
     identification: "1103533095",
     identificationType: "CEDULA",
@@ -17,12 +25,29 @@ export const SubscriptionPage = () => {
     email: "email"    
   };
 
-  const onSubmit = (formValues:ISubscriptionInput) => {
-    createSubscription(formValues);
+  const onSubmit = async (formValues:ISubscriptionInput) => {
+    setLoading(true);
+    const person = await IntegrationService.getPersonAsync(formValues.identification);
+    if (!person.result) {
+      dispatch(errorRegisterAction(person.error));
+      setLoading(false);
+      navigate(TypesRoutes.ROUTE_ERROR);      
+    } else {
+      dispatch(findPersonAction(person.result));
+      const response = await SubscriptionService.createSubscriptionAsync({...formValues});
+      console.log(response.result?.trackingId);
+      dispatch(createSubscriptionAction(response.result));
+      setLoading(false);
+      navigate(TypesRoutes.ROUTE_SALE);
+    }
   };
 
   const { control, handleSubmit } = GetValidatorSubscription(defaultValues);
-
+  const [ loading, setLoading ] = useState(false);
+  const localStorageKeys = configuration.localStorageKeys;
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+  
   const getDataField = (field:any, error:FieldError | undefined) => {
     return (
       <>
@@ -72,7 +97,7 @@ export const SubscriptionPage = () => {
     return (
       <>
         {renderDefault()}
-        <h3><pre>{JSON.stringify(subscription?.result, null, 2)}</pre></h3>
+        {/* <h3><pre>{JSON.stringify(subscription?.result, null, 2)}</pre></h3> */}
       </>
     );
   }
@@ -80,15 +105,16 @@ export const SubscriptionPage = () => {
   const renderLoading = () => { 
     return (
       <>
-        {loadingSubscription ? <h1>Cargando...</h1> : <h3><pre>{JSON.stringify(subscription?.result, null, 2)}</pre></h3>}
+        {loading ? <h1>Creando suscripción...</h1> : <h3>{localStorage.getItem(localStorageKeys.trackingId)}</h3>}
       </>
     );
   }
 
-  if (loadingSubscription) {
+  if (loading) {
     return renderLoading();    
   } else {
     return renderComponent();        
   }
 }
+
 
