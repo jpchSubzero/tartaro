@@ -1,0 +1,277 @@
+@import "../../scss/_variables.module.scss";
+
+/*
+	Filled (version normal, cuadrado y circular): fondo del boton
+	outlined (version normal, cuadrado y circular): color de letras y filo de boton
+	text: color de letras, no aplica a iconos
+*/
+$primary-button-color: $primary-color-400;
+
+/*
+	Filled: color de texto
+*/
+$primary-button-color-text: $neutral-color-white;
+
+/*Color de efecto hover (con el raton sobre el elemento)
+	Filled (version normal, cuadrado y circular): fondo del boton
+	outlined (version normal, cuadrado y circular): color de letras y filo de boton
+	text: color de letras, no aplica a iconos
+*/
+$hover-button-color: $primary-color-300;
+
+/*Color de efecto en active (cuando se hace clic sobre el elemento)
+	Filled (version normal, cuadrado y circular): fondo del boton
+	outlined (version normal, cuadrado y circular): color de letras y filo de boton,
+	(no aplica a la version extra large del boton)
+	text: color de letras, no aplica a iconos
+*/
+$active-button-color: $primary-color-500;
+
+/*Color de efecto en active (cuando se hace clic sobre el elemento)
+	outlined (version extra large del boton normal, cuadrado y circular):
+	color de letras y filo de boton
+*/
+$active-extra-large-button-color: $primary-color-600;
+
+/*Color secundario, Filled (todas las versiones): fondo del boton*/
+$secondary-button-color: $primary-color-100;
+
+/*Color secundario, Filled (todas las versiones): color de texto*/
+$secondary-button-color-text: $primary-color-500;
+
+/*Color secundario, Filled (todas las versiones):colore en hover */
+$secondary-button-color-hover: $primary-color-200;
+
+/*Color secundario, Filled (todas las versiones):colore en activo */
+$secondary-button-color-active: $primary-color-300;
+
+/* Color usado cuando el boton se encuentra deshabilitado*/
+$disabled-button-color:  $primary-color-300;
+
+// font butons
+$font-button-semibold: Poppins-SemiBold, Arial, Helvetica, sans-serif;
+
+
+/* button eva primary generic style */
+button.button-eva{
+	min-width: 212px;
+	border-radius: 8px;
+	padding-left: 16px;
+	padding-right: 16px;
+	box-shadow:none ;
+	text-transform: none;
+	&:hover{
+		box-shadow:none;
+	}
+	&:active{
+		box-shadow:none;
+	}
+	span span > *:first-child{
+		font-size: 24px ;
+	}
+}
+
+.button-eva {
+	&--disabled {
+		opacity: 0.2;
+	}
+
+	//size buttons
+	&--extra-large{
+		height: 64px;
+	}
+	&--large{
+		height: 56px;
+	}
+	&--medium{
+		height: 48px;
+	}
+	&--small{
+		height: 40px;
+	}
+
+	/* only icon square*/
+	&--only-icon{
+		&.button-eva--large{
+			padding: 14px !important;
+			min-width: 52px !important;
+			height: 52px;
+			width: 52px;
+		}
+		&.button-eva--medium{
+			min-width: 48px !important;
+			height: 48px;
+			width: 48px;
+		}
+		&.button-eva--small{
+			min-width: 40px !important;
+			height: 40px;
+			width: 40px;
+		}
+		& span{
+			margin-right: 0px !important;
+			margin-left: 0px !important;
+		}
+	}
+
+	/* only icon rounded */
+	&--rounded{
+		border-radius: 50px !important;
+	}
+}
+
+/* Contained/filled buttons */
+button.button-eva--contained{
+	background-color: $primary-button-color;
+	span {
+		color: $primary-button-color-text;
+	}
+	&:hover{
+		background-color:  $hover-button-color;
+	}
+	&.button-eva__tipography--contained{
+		color: $primary-button-color-text;
+	}
+	&:active{
+		background-color:  $active-button-color;
+	}
+	&.button-eva--disabled{
+		background-color: $disabled-button-color;
+	}
+}
+
+
+/* outlined buttons */
+button.button-eva--outlined{
+	border: 2px solid ;
+	border-color: $primary-button-color ;
+	span {
+		color: $primary-button-color;
+	}
+	&:hover{
+		background-color:  transparent ;
+		border-color: $hover-button-color ;
+		.button-eva__tipography--outlined{
+			color:$hover-button-color;
+		}
+		span {
+			color: $hover-button-color;
+		}
+	}
+	&:active{
+		border-color: $active-button-color ;
+		&.button-eva--extra-large{
+			border-color: $active-extra-large-button-color ;
+			.button-eva__tipography--outlined{
+				color: $active-extra-large-button-color;
+			}
+		}
+		.button-eva__tipography--outlined{
+			color:$active-button-color;
+		}
+		span {
+			color: $active-button-color;
+		}
+	}
+	&.button-eva--disabled{
+		border-color: $disabled-button-color;
+		color:$disabled-button-color;
+		border: 2px solid ;
+		.button-eva__tipography--outlined{
+			color:$disabled-button-color;
+		}
+		span {
+			color: $disabled-button-color;
+		}
+	}
+}
+
+/* text buttons*/
+button.button-eva--text{
+	span {
+		color: $primary-button-color;
+	}
+	&.button-eva--extra-large {
+		.button-eva__tipography--text{
+			text-decoration: none;
+		}
+	}
+	&:hover{
+		background-color:  transparent;
+		.button-eva__tipography--text{
+			color:$hover-button-color;
+		}
+		span {
+			color: $hover-button-color;
+		}
+	}
+	&:active{
+		color: $active-button-color;
+		&.button-eva--extra-large{
+			.button-eva__tipography--text{
+				color: $active-extra-large-button-color;
+			}
+		}
+		.button-eva__tipography--text{
+			color:$active-button-color;
+		}
+		span {
+			color: $active-button-color;
+		}
+	}
+	&.button-eva--disabled{
+		color:$disabled-button-color;
+		.button-eva__tipography--text{
+			color:$disabled-button-color;
+		}
+		span {
+			color: $disabled-button-color;
+		}
+	}
+}
+
+/* secondary style button */
+button.button-eva.button-eva--secondary {
+	span {
+		color: $secondary-button-color-text;
+	}
+	&.button-eva--contained{
+		background-color: $secondary-button-color ;
+		.button-eva__tipography{
+			color: $secondary-button-color-text;
+		}
+		&:hover{
+			background-color:  $secondary-button-color-hover;
+		}
+		&:active{
+			background-color:  $secondary-button-color-active;
+		}
+	}
+	&.button-eva--disabled{
+		background-color: $disabled-button-color;
+	}
+}
+
+/* Default Style typography */
+span .button-eva__tipography{
+	font-family: $font-button-semibold;
+	background-color:  transparent !important;
+	&:hover{
+		background-color:  transparent !important;
+	}
+	&:active{
+		background-color:  transparent !important;
+	}
+
+	&--contained{
+		color: $primary-button-color-text;
+	}
+	&--outlined{
+		color: $primary-button-color;
+	}
+	&--text{
+		color: $primary-button-color;
+		text-decoration: underline;
+	}
+}
+

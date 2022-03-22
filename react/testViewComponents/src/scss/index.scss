@@ -1,0 +1,18 @@
+@import "_variables.module.scss";
+
+
+body {
+	margin: 0;
+	font-family: $font-body;
+	font-size: 16px;
+	-webkit-text-size-adjust: 100%; //fix for iOS
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	/*  color: $primary-color; */
+}
+
+/* || NUKA-CARRUCEL COLOCLAR ELEMENTOS(IMG) EN CENTRO */
+.slider-slide {
+    display: flex!important;
+}
+

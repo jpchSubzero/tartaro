@@ -1,0 +1,54 @@
+{
+    "progressBar": {
+        "progress": 23,
+        "suffix": "Completo"
+    },
+    "buttons": {
+        "next": "Continuar",
+        "back": "Regresar"
+    },
+    "title": {
+        "normalTitle": "Ingresa los siguientes datos",
+        "highlightTitle": "",
+        "endLine": ""
+    },
+    "form": {
+        "labels": {
+            "identification": "Ingresa tu número",
+            "identificationPlaceHolder": "Ej: 1724012186",
+            "email": "Ingresa tu correo",
+            "emailPlaceHolder": "nombre@correo.com",
+            "identificationType": "Seleccione el tipo de identificación",
+            "termsAndConditions": "Acepto términos y condiciones, para el tratamiento de mis datos.",
+            "identificationType1": "Cédula",
+            "identificationType2": "Pasaporte"
+        },
+        "rules": {
+            "identificationMaxlength": 15,
+            "emailMaxlength": 50
+        },
+        "rulesText": {
+            "identificationRequired": "Cédula requerida",
+            "identificationInvalid": "Por favor ingresar una cédula válida",
+            "identificationNotFound": "Lo sentimos no hemos podido encontrar tu identificación",
+            "emailRequired": "E-mail requerido",
+            "emailInvalid": "Favor ingresar un e-mail válido",
+            "requieredTermsAndConditions": "Acepta los términos y condiciones",
+            "termsAndConditions": "Acepta los términos y condiciones",
+            "minIdentification": "Mínimo {0} caracteres",
+            "maxIdentification": "Máximo {0} caracteres"
+        },
+        "values": {
+            "identificationType1": "CEDULA",
+            "identificationType2": "PASAPORTE"
+        },
+        "variables": {
+            "identificationType": "identificationType",
+            "identification": "identification",
+            "email": "email"
+        },
+        "loader": {
+            "title": "Estamos procesando tu compra..."
+        }
+    }
+}

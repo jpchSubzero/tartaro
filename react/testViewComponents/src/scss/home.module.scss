@@ -1,0 +1,195 @@
+@import "../scss/_variables.module.scss";
+
+/* || Hero Section   */
+.section-hero {
+	background: $background-degraded-1;
+	&__container{
+		border-bottom:0px solid $primary-color-400;
+		position: relative;
+	}
+}
+
+/* || Sponsor Section   */
+.section-sponsor{
+	margin-bottom: 81px;
+	&-container{
+		position: relative;
+		&__title{
+			z-index: 1;
+			margin-top: -13px;
+			margin-left: 142px;
+			max-width: fit-content;
+			padding-right: 24px;
+			padding-left: 24px;
+			background-color: $neutral-color-white;
+			div{
+				color: $primary-color-400
+			}
+		}
+		&__button--mobil{
+			display: none;
+		}
+		&__grid--body div{
+			margin-left: 15px;
+		}
+	}
+}
+
+/* || Coverage Section   */
+.section-coverage{
+	margin-bottom: 100px;
+	&-container{
+		&__title{
+			padding-bottom: 41px;
+		}
+	}
+}
+
+/* || Benefits Section   */
+.section-benefits{
+	margin-bottom: 50px;
+	&-container{
+		position: relative;
+		&__title{
+			padding-bottom: 16px;
+		}
+		&__list{
+			justify-content: center;
+			margin-bottom: 36px;
+			> div:first-child{
+				margin-left: 0px;
+			}
+		}
+		&__action{
+			justify-content: center;
+			align-items: center;
+			height: 85px;
+			&--button{
+				width: 400px;
+				min-width: 400px;
+			}
+			&--img-cloud img{
+				width: 100%;
+			}
+		}
+	}
+}
+
+/* || FAq Section   */
+.section-faq{
+	padding-bottom: 48px;
+	background: $background-degraded-2;
+	&-container{
+		&__text{
+			text-align: center;
+			margin-bottom: 50px;
+			&--subtitle{
+				margin-top: 16px;
+			}
+		}
+		&__acordeon div{
+			background-color: transparent
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/* || Hero Section   */
+	.section-hero {
+		margin-bottom: 24px;
+	}
+
+	/* || Sponsor Section   */
+	.section-sponsor{
+		margin-bottom: 48px;
+		&-container{
+			position: relative;
+			&__title{
+				z-index: 1;
+				margin: 48px 0px 0px 0px;
+				max-width: fit-content;
+				padding-right: 0px;
+				padding-left: 0px;
+				background-color: $neutral-color-white;
+				div{
+					color: $primary-color-400;
+					font-size: 12px;
+					line-height: 16px;
+				}
+			}
+			&__grid--body div{
+				margin-left: 8px;
+				font-size: 10px;
+				line-height: 13px;
+			}
+			&__button--mobil{
+				display: initial;
+			}
+		}
+	}
+
+	/* || Coverage Section   */
+	.section-coverage{
+		margin-bottom: 100px;
+		&-container{
+			&__title{
+				padding-bottom: 8px;
+				div{
+					font-size: 20px;
+					line-height: 27px;
+				}
+			}
+		}
+	}
+
+	/* || Benefits Section   */
+	.section-benefits{
+		&-container{
+			&__title div{
+				font-size: 20px;
+				line-height: 27px;
+			}
+			&__list{
+				overflow-y: auto;
+				justify-content: initial;
+				margin-bottom: 8px;
+				> div:first-child{
+					margin-left: 0px;
+				}
+				> div:last-child{
+					margin-right: 0px;
+				}
+			}
+			&__action{
+				justify-content: center;
+				align-items: center;
+				height: 85px;
+				&--button{
+					width: 100%;
+					min-width: initial;
+				}
+				&--img-cloud img{
+					display: none;
+				}
+			}
+		}
+	}
+
+	/* || FAq Section   */
+	.section-faq{
+		&-container{
+			&__text{
+				&--title{
+					font-size: 24px;
+					line-height: 32px;
+				}
+				&--subtitle{
+					font-size: 12px;
+					line-height: 16px;
+				}
+			}
+		}
+	}
+
+
+}

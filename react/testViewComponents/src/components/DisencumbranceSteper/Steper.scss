@@ -1,0 +1,62 @@
+/* Custom style color*/
+
+@import "../../scss/_variables.module.scss";
+.MuiStepIcon-root.MuiStepIcon-active,
+.MuiStepIcon-root.MuiStepIcon-completed {
+    color: $primary-color-400 !important;
+}
+
+.MuiStepIcon-active .MuiStepIcon-text {
+    fill: $neutral-color-100 !important;
+    font-family: $font-sub-headings-semibold !important;
+    font-size: 12px !important;
+    line-height: 20px !important;
+    letter-spacing: 0px !important;
+}
+
+.MuiStepLabel-label.MuiStepLabel-alternativeLabel.MuiStepLabel-active,
+.MuiStepLabel-alternativeLabel.MuiStepLabel-completed {
+    color: $primary-color-400 !important;
+    font-family: $font-sub-headings-semibold !important;
+    font-size: 10px !important;
+    line-height: 12px !important;
+    text-align: center !important;
+}
+
+.MuiStepIcon-text {
+    fill: $neutral-color-600 !important;
+    font-family: $font-sub-headings !important;
+    font-size: 12px !important;
+    line-height: 20px !important;
+}
+
+.MuiStepIcon-root {
+    color: $neutral-color-200 !important;
+}
+
+.MuiStepLabel-label.MuiStepLabel-alternativeLabel {
+    color: $neutral-color-600;
+    font-family: $font-sub-headings;
+    font-size: 10px;
+    line-height: 12px;
+    margin: 8px 0 24px 0 !important;
+    height: 13px;
+}
+
+
+/*
+Styles of the horizontal line of the Stepper
+*/
+
+.MuiStepConnector-line {
+    border-color: $neutral-color-500 !important;
+}
+
+.MuiStepConnector-lineHorizontal {
+    border-top-style: solid !important;
+    border-top-width: 0.5px !important;
+}
+
+.text-label-hide.MuiStep-alternativeLabel span.MuiStepLabel-labelContainer {
+    display: none !important;
+}

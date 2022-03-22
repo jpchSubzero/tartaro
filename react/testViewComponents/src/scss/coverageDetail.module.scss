@@ -1,0 +1,102 @@
+@import "../scss/_variables.module.scss";
+
+
+.section-coverage-detail{
+	margin-top: 64px;
+	&-container{
+		&__text{
+			margin-bottom: 48px;
+			text-align: center;
+			&--title{
+				margin-bottom: 16px;
+			}
+		}
+		&__tabs{
+			&-panel{
+				&--cards{
+					display: grid;
+					grid-template-columns: repeat(3, 250px);
+					justify-content: center;
+					margin-bottom: 32px;
+				}
+				&--notification{
+					display: grid;
+					grid-template-columns: repeat(1, 448px);
+					justify-content: center;
+					> div {
+						margin-left: auto;
+						margin-right: auto;
+						background-color: transparent;
+					}
+					> div > div > div {
+						> p {
+							margin: 0px;
+						}
+						> p:first-child {
+							margin-bottom: 8px;
+						}
+						> ul {
+							margin: 0px;
+							padding-inline-start: 24px;
+						}
+					}
+					margin-bottom: 48px;
+				}
+				&--button{
+					display: grid;
+					grid-template-columns: repeat(1, 448px);
+					justify-content: center;
+					margin-bottom: 136px;
+				}
+			}
+		}
+	}
+}
+
+.email-contact-section{
+	background: $primary-color-100;
+    border-radius: 8px;
+    padding: 12px 23px;
+    word-break: break-all;
+}
+
+@media screen and (max-width: 600px) {
+	.section-coverage-detail{
+		&-container{
+			&__text{
+				margin-bottom: 48px;
+				&--title{
+					font-size: 24px;
+					line-height: 32px;
+					margin-bottom: 8px;
+				}
+				&--sub-title{
+					font-size: 14px;
+					line-height: 19px;
+				}
+			}
+			&__tabs{
+				&-panel{
+					&--cards{
+						grid-template-columns: repeat(2, 168px);
+						margin-bottom: 16px;
+					}
+					&--notification{
+						grid-template-columns: repeat(1, 336px);
+						> div{
+							width: 291px;
+						}
+					}
+					&--button{
+						grid-template-columns: repeat(1, 327px);
+						button{
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+}

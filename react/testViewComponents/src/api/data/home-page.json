@@ -1,0 +1,249 @@
+{
+    "heroSection": {
+        "title": {
+            "normalTitle": "Revoluciona la manera en la",
+            "secondLineTitle": "que ves los seguros",
+            "highlightTitle": " médicos",
+            "endTitle": "."
+        },
+        "images": {
+            "cornerTop": {
+                "icon": "/icons/hero/hero_cloud.svg",
+                "altIcon": "cloud_image"
+            },
+            "cornerBottom": {
+                "icon": "/icons/hero/hero_family.png",
+                "altIcon": "family_image"
+            }
+        },
+        "bodyText": "Asegura a tu familia en menos de 5 minutos sin trámites complejos.",
+        "buttonText": "Cotizar seguro médico"
+    },
+    "sponsorSection": {
+        "title": {
+            "normalTitle": "Con la red de prestadores médicos más grande del país"
+        },
+        "bodyText": "¡Y más de 200 prestadores a nivel nacional!",
+        "slidesToShowDesk": 6,
+        "slidesToShowMobil": 3,
+        "sliceSpaceDesk": 60,
+        "sliceSpaceMobil": 30,
+        "sponsorImagList": [{
+                "id": 0,
+                "alt": "Axxis",
+                "src": "/icons/carruselSponsor/Axxis.svg"
+            },
+            {
+                "id": 1,
+                "alt": "Biodimed",
+                "src": "/icons/carruselSponsor/Biodimed.svg"
+            },
+            {
+                "id": 2,
+                "alt": "Hospital_de_los_Valles",
+                "src": "/icons/carruselSponsor/Hospital_de_los_Valles.svg"
+            },
+            {
+                "id": 3,
+                "alt": "Hospital_del_Rio",
+                "src": "/icons/carruselSponsor/Hospital_del_Rio.svg"
+            },
+            {
+                "id": 4,
+                "alt": "Hospital_Metropolitano",
+                "src": "/icons/carruselSponsor/Hospital_Metropolitano.svg"
+            },
+            {
+                "id": 5,
+                "alt": "Metrored",
+                "src": "/icons/carruselSponsor/Metrored.svg"
+            },
+            {
+                "id": 6,
+                "alt": "Veris",
+                "src": "/icons/carruselSponsor/Veris.svg"
+            }
+        ]
+    },
+    "coverageSection": {
+        "title": {
+            "normalTitle": "Te protegemos junto a tu familia con",
+            "highlightTitle": "total transparencia"
+        },
+        "coverageAccepted": {
+            "title": {
+                "normalTitle": "Te cubrimos"
+            },
+            "variant": "accepted",
+            "coverageNotification": {
+                "variant": "info",
+                "body": "{\"NodeType\":\"Element\",\"Tag\":\"body\",\"Text\":null,\"Attr\":{},\"Children\":[{\"NodeType\":\"Element\",\"Tag\":\"p\",\"Text\":\"El valor de cobertura <strong>dependerá del plan</strong> que contrates.\",\"Attr\":{},\"Children\":[]}]}"
+            },
+            "itemsList": [{
+                    "id": 0,
+                    "icon": "/icons/coverages/coverage-1.svg",
+                    "altIcon": "Texto de prueba",
+                    "body": "{\"NodeType\":\"Element\",\"Tag\":\"body\",\"Text\":null,\"Attr\":{},\"Children\":[{\"NodeType\":\"Element\",\"Tag\":\"p\",\"Text\":\"En caso de emergencia por <strong>accidentes</strong> al 100%.\",\"Attr\":{},\"Children\":[]}]}"
+                },
+                {
+                    "id": 1,
+                    "icon": "/icons/coverages/coverage-2.svg",
+                    "altIcon": "Texto de prueba",
+                    "body": "{\"NodeType\":\"Element\",\"Tag\":\"body\",\"Text\":null,\"Attr\":{},\"Children\":[{\"NodeType\":\"Element\",\"Tag\":\"p\",\"Text\":\"En <strong>consultas médicas</strong> dentro de la red, solo pagas de $6 a $15.\",\"Attr\":{},\"Children\":[]}]}"
+                },
+                {
+                    "id": 2,
+                    "icon": "/icons/coverages/coverage-3.svg",
+                    "altIcon": "Texto de prueba",
+                    "body": "{\"NodeType\":\"Element\",\"Tag\":\"body\",\"Text\":null,\"Attr\":{},\"Children\":[{\"NodeType\":\"Element\",\"Tag\":\"p\",\"Text\":\"En caso de <strong>hospitalización</strong>, cuarto y alimento, hasta $350 diarios (Valor depende del plan)\",\"Attr\":{},\"Children\":[]}]}"
+                },
+                {
+                    "id": 3,
+                    "icon": "/icons/coverages/coverage-4.svg",
+                    "altIcon": "Texto de prueba",
+                    "body": "{\"NodeType\":\"Element\",\"Tag\":\"body\",\"Text\":null,\"Attr\":{},\"Children\":[{\"NodeType\":\"Element\",\"Tag\":\"p\",\"Text\":\"Todos los gastos de <strong>maternidad</strong> al 100%\",\"Attr\":{},\"Children\":[]}]}"
+                },
+                {
+                    "id": 4,
+                    "icon": "/icons/coverages/coverage-5.svg",
+                    "altIcon": "Texto de prueba",
+                    "body": "{\"NodeType\":\"Element\",\"Tag\":\"body\",\"Text\":null,\"Attr\":{},\"Children\":[{\"NodeType\":\"Element\",\"Tag\":\"p\",\"Text\":\"<strong>Enfermedades preexistentes</strong> después del mes 24 y hasta 20 S.B.U por todas tus enfermedades declaradas.\",\"Attr\":{},\"Children\":[]}]}"
+                }
+            ]
+        },
+        "coverageRejected": {
+            "variant": "rejected",
+            "title": {
+                "normalTitle": "No te cubrimos"
+            },
+            "itemsList": [{
+                    "id": 0,
+                    "icon": "/icons/Add.svg",
+                    "altIcon": "Texto de prueba",
+                    "body": "{\"NodeType\":\"Element\",\"Tag\":\"body\",\"Text\":null,\"Attr\":{},\"Children\":[{\"NodeType\":\"Element\",\"Tag\":\"p\",\"Text\":\"Chequeos o <strong>exámenes</strong> no solicitados por un médico.\",\"Attr\":{},\"Children\":[]}]}"
+                },
+                {
+                    "id": 1,
+                    "icon": "/icons/Add.svg",
+                    "altIcon": "Texto de prueba",
+                    "body": "{\"NodeType\":\"Element\",\"Tag\":\"body\",\"Text\":null,\"Attr\":{},\"Children\":[{\"NodeType\":\"Element\",\"Tag\":\"p\",\"Text\":\"Enfermedades preexistentes <strong>no declaradas</strong> al momento de la compra.\",\"Attr\":{},\"Children\":[]}]}"
+                },
+                {
+                    "id": 2,
+                    "icon": "/icons/Add.svg",
+                    "altIcon": "Texto de prueba",
+                    "body": "{\"NodeType\":\"Element\",\"Tag\":\"body\",\"Text\":null,\"Attr\":{},\"Children\":[{\"NodeType\":\"Element\",\"Tag\":\"p\",\"Text\":\"<strong>Medicinas</strong> y/o servicios que no hayan sido recetados por un médico.\",\"Attr\":{},\"Children\":[]}]}"
+                },
+                {
+                    "id": 3,
+                    "icon": "/icons/Add.svg",
+                    "altIcon": "Texto de prueba",
+                    "body": "{\"NodeType\":\"Element\",\"Tag\":\"body\",\"Text\":null,\"Attr\":{},\"Children\":[{\"NodeType\":\"Element\",\"Tag\":\"p\",\"Text\":\"<strong>Cirugía plástica</strong> con fines estéticos.\",\"Attr\":{},\"Children\":[]}]}"
+                },
+                {
+                    "id": 4,
+                    "icon": "/icons/Add.svg",
+                    "altIcon": "Texto de prueba",
+                    "body": "{\"NodeType\":\"Element\",\"Tag\":\"body\",\"Text\":null,\"Attr\":{},\"Children\":[{\"NodeType\":\"Element\",\"Tag\":\"p\",\"Text\":\"Tratamientos especializados de <strong>infertilidad</strong>.\",\"Attr\":{},\"Children\":[]}]}"
+                },
+                {
+                    "id": 5,
+                    "icon": "/icons/Add.svg",
+                    "altIcon": "Texto de prueba",
+                    "body": "{\"NodeType\":\"Element\",\"Tag\":\"body\",\"Text\":null,\"Attr\":{},\"Children\":[{\"NodeType\":\"Element\",\"Tag\":\"p\",\"Text\":\"<strong>Terapias</strong> de estimulación temprana (en niños).\",\"Attr\":{},\"Children\":[]}]}"
+                }
+            ]
+        }
+    },
+    "benefitsSection": {
+        "buttonText": "Leer más",
+        "title": {
+            "normalTitle": "Adicional a las coberturas, recibes estos",
+            "highlightTitle": " beneficios únicos",
+            "endTitle": "."
+        },
+        "itemsList": [{
+                "id": 0,
+                "icon": "/icons/carrucelBenefits/benefits-1.svg",
+                "altIcon": "Texto de prueba",
+                "title": "Servicio dental",
+                "body": "En caso de emergencia"
+            },
+            {
+                "id": 1,
+                "icon": "/icons/carrucelBenefits/benefits-2.svg",
+                "altIcon": "Texto de prueba",
+                "title": "Confionline",
+                "body": "Médico Online a nivel nacional"
+            },
+            {
+                "id": 2,
+                "icon": "/icons/carrucelBenefits/benefits-3.svg",
+                "altIcon": "Texto de prueba",
+                "title": "Médico a domicilio",
+                "body": "Dotores de prestigio a tu casa"
+            },
+            {
+                "id": 3,
+                "icon": "/icons/carrucelBenefits/benefits-4.svg",
+                "altIcon": "Texto de prueba",
+                "title": "Confitravel",
+                "body": "Seguro de viajes"
+            },
+            {
+                "id": 4,
+                "icon": "/icons/carrucelBenefits/benefits-5.svg",
+                "altIcon": "Texto de prueba",
+                "title": "Plan exequial",
+                "body": "Asistencia en caso de muerte"
+            }
+        ]
+    },
+    "faqSection": {
+        "title": {
+            "normalTitle": "¿Tienes ",
+            "highlightTitle": "dudas ",
+            "secondLineTitle": "sobre nuestro seguro médico?"
+        },
+        "subTitle": {
+            "normalSubTitle": "Entender los beneficios de los seguros puede ser complicado, nosotros te ayudamos a comprenderlos."
+        },
+        "itemsList1": [{
+                "id": 0,
+                "questionText": "¿Cuánto tiempo debo esperar en caso de requerir cirugías?",
+                "answer": "{\"NodeType\":\"Element\",\"Tag\":\"body\",\"Text\":null,\"Attr\":{},\"Children\":[{\"NodeType\":\"Element\",\"Tag\":\"p\",\"Text\":\"En caso de requerir cirugía, debes esperar un tiempo de 90 días, una vez adquirido el seguro.\",\"Attr\":{},\"Children\":[]}]}",
+                "multiLine": false
+            },
+            {
+                "id": 1,
+                "questionText": "¿Qué especialidades me cubre el seguro médico?",
+                "answer": "{\"NodeType\":\"Element\",\"Tag\":\"body\",\"Text\":null,\"Attr\":{},\"Children\":[{\"NodeType\":\"Element\",\"Tag\":\"p\",\"Text\":\"Te cubrimos cualquier especialidad médica, dentro y fuera de la red, una vez que se ha diagnosticado la enfermedad.\",\"Attr\":{},\"Children\":[]}]}",
+                "multiLine": false
+            },
+            {
+                "id": 2,
+                "questionText": "¿El monto de cobertura aplica por cada enfermedad?",
+                "answer": "{\"NodeType\":\"Element\",\"Tag\":\"body\",\"Text\":null,\"Attr\":{},\"Children\":[{\"NodeType\":\"Element\",\"Tag\":\"p\",\"Text\":\"El monto de cobertura es por cada enfermedad o accidente que te pueda ocurrir durante el año que mantengas activo el seguro. Ej: Si contratas un plan con una cobertura de $10.000 al año y te diagnostican una enfermedad y sufres un accidente ese mismo año, nosotros te cubrimos $10.000 para tratar tu enfermedad y $10.000 para tratar el accidente.\",\"Attr\":{},\"Children\":[]}]}",
+                "multiLine": false
+            },
+            {
+                "id": 3,
+                "questionText": "¿Cuál es el monto máximo que me cubre por consulta médica?",
+                "answer": "{\"NodeType\":\"Element\",\"Tag\":\"body\",\"Text\":null,\"Attr\":{},\"Children\":[{\"NodeType\":\"Element\",\"Tag\":\"p\",\"Text\":\"Si te atiendes dentro de nuestra red de prestadores médicos, pagarás solamente de $6 a $15. Si te atiendes con tu médico de confianza que no está dentro de nuestra red, te cubrimos el 80% del valor de tu consulta, dependiendo del valor de cobertura de tu plan.\",\"Attr\":{},\"Children\":[]}]}",
+                "multiLine": false
+            },
+            {
+                "id": 4,
+                "questionText": "¿Cuál es la diferencia entre deducible y copago?",
+                "answer": "{\"NodeType\":\"Element\",\"Tag\":\"body\",\"Text\":null,\"Attr\":{},\"Children\":[{\"NodeType\":\"Element\",\"Tag\":\"p\",\"Text\":\"<strong>Deducible:</strong> Es la cantidad de dinero que tendrás que pagar de tu bolsillo en tus primeros gastos médicos, en el caso de solicitar un reembolso cuando te haces atender fuera de la red de prestadores médicos.\",\"Attr\":{},\"Children\":[]},{\"NodeType\":\"Element\",\"Tag\":\"p\",\"Text\":\"<strong>Copago:</strong> Es una cantidad de dinero mínima que tienes que pagar por cada atención médica dentro de la red de prestadores médicos.\",\"Attr\":{},\"Children\":[]}]}",
+                "multiLine": true
+            }
+        ]
+    },
+    "defaultItem": {
+        "id": 0,
+        "icon": "/icons/Add.svg",
+        "altIcon": "Texto de prueba",
+        "body": "{\"NodeType\":\"Element\",\"Tag\":\"body\",\"Text\":null,\"Attr\":{},\"Children\":[{\"NodeType\":\"Element\",\"Tag\":\"p\",\"Text\":\"Estamos preparando las <strong>mejores opciones para ti.</strong>\",\"Attr\":{},\"Children\":[]}]}"
+    }
+}

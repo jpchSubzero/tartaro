@@ -1,0 +1,12 @@
+@import "../scss/_variables.module.scss";
+
+.section-brief-facts{
+	&-container{
+		&-form-container{
+			> form{
+				width: 592px;
+			}
+		}
+	}
+
+}

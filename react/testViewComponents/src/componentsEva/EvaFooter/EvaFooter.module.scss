@@ -1,0 +1,43 @@
+@import "../../scss/_variables.module.scss";
+
+/* Defaul style color*/
+$footer-background-color: $neutral-color-100;
+
+.footer-eva {
+	background: $footer-background-color;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+.footer-eva-container{
+	max-width: 1440px !important;
+	padding-left: 142px !important;
+	padding-right: 142px !important;
+}
+
+.footer-eva-container-grid__item br {
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+	.footer-eva {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+	.footer-eva-container-grid-item__paragraph {
+		text-align: center;
+	}
+
+	.footer-eva-container-grid__item br {
+		display: block;
+	}
+
+	.footer-eva-container{
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+		padding-left: 48px !important;
+		padding-right: 48px !important;
+		max-width: 100% !important;
+	}
+}

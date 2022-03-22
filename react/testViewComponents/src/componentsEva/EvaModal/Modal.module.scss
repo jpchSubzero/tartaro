@@ -1,0 +1,66 @@
+@import "../../scss/_variables.module.scss";
+
+$icon-close--color: $primary-color-400;
+
+.modal-eva{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-eva__body{
+	background-color: white;
+	border-radius: 8px;
+	&--normal{
+		width: 580px;
+	}
+	&--large{
+		width: 750px;
+	}
+}
+
+.modal-eva__footer{
+	padding-bottom: 48px;
+}
+
+.modal-eva__body-container{
+	padding: 32px 48px 0px 48px;
+	max-height: 350px;
+    overflow-y:auto;
+}
+
+.modal-eva_close{
+	justify-content: flex-end;
+	display: flex;
+	padding: 32px 32px 0px 48px;
+	color: $icon-close--color;
+	&__button{
+		padding: 0px !important;
+		min-width: 26px !important;
+		height: 26px;
+		width: 26px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+
+	.modal-eva__body{
+		margin-left: 15px;
+		margin-right: 15px;
+		&--normal{
+			width: 580px;
+		}
+		&--large{
+			width: 580px;
+		}
+	}
+
+	.modal-eva_close{
+		padding: 24px 24px 0px 16px;
+	}
+
+	.modal-eva__body-container{
+		padding: 24px 16px 0px 16px;
+		max-height: 320px;
+	}
+}

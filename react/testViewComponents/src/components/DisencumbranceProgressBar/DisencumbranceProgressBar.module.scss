@@ -1,0 +1,20 @@
+@import "../../scss/_variables.module.scss";
+
+.progress-bar{
+	&__text{
+		div{
+			color:$primary-color-400;
+		}
+	}
+	&__linear-progress{
+		div {
+			height: 14px;
+			background-color: $neutral-color-400;
+			border-radius: 100px;
+			div{
+			background-color:$primary-color-400;
+			border-radius: 100px;
+		}}
+	}
+
+}

@@ -1,0 +1,224 @@
+/* Custom style color*/
+@import "../../scss/_variables.module.scss";
+ 
+.MuiContainer-maxWidthLg {
+    max-width: 1440px !important;
+}
+ 
+ 
+ 
+.MuiContainer-root.container-home-wrap {
+    padding: 0px;
+    margin: 0px;
+}
+ 
+.header-main-container {
+    background-color: #fff;
+    box-shadow: 0px 8px 8px -7px rgba(7, 7, 7, 0.16);
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    z-index: 2;
+    width: 100%;
+    justify-content:  center;
+}
+ 
+.header-home-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    align-items: center;
+}
+ 
+.header-home-wrapper-menu-items {
+    display: flex;
+    align-items: center;
+    padding-right: 142px;
+}
+ 
+img.img-logo-header {
+    padding-left: 142px;
+    width: 150px;
+    height: 43px;
+}
+ 
+ 
+a.alink-menu-header  {
+//styleName: Poppins/Buttons/Small/Normal/14 (Semibold);
+color: $primary-color-400;
+text-decoration: none;
+min-width: 50px;  
+flex-shrink: 0;
+flex-grow: 1;
+margin-left: 20px;
+margin-right: 20px;
+font-family: $font-sub-headings-semibold;
+font-size: 14px;
+line-height: 22px;
+text-align: center;
+&:hover{
+    color: $primary-color-300;
+    text-decoration: underline;
+    min-width: 50px;  
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+&:active{
+    color: $primary-color-500;
+    text-decoration: underline;
+    min-width: 50px;  
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+ 
+}
+ 
+.header-home-wrapper-menu-items ul li:last-of-type a {
+    margin-right: 0px;
+}
+
+ 
+.header-list-links{
+   width: auto !important;
+   padding-left: 0px !important;
+   padding-right: 0px !important;
+}
+               
+
+button.button-header-width {
+    min-width: 160px !important;
+    margin-left: 40px;
+}
+ 
+.button-header-width.MuiButton-fullWidth {
+    width: 0px !important;
+}
+ 
+.lista-menu-wrapper {
+display:inline-flex
+}
+ 
+
+ 
+//Mobile Menu styles
+ 
+.menu-mobile-wrapper {
+    display: none;
+}
+ 
+.MuiSvgIcon-root.hamburger-menu-style {
+ 
+    fill: $primary-color-400;
+}
+ 
+ 
+ 
+button.hamburger-button-size {
+    padding: 0px;
+    width: 18px;
+    height: 12px;
+ 
+}
+ 
+.drawer-mobile-size > .MuiDrawer-paper {
+width: 260px;
+height: 428px;
+}
+ 
+svg.icon-close-specs {
+color: $primary-color-400;
+}
+ 
+.MuiButtonBase-root.MuiIconButton-root.button-close-align {
+    justify-content: right;
+}
+ 
+.drawer-mobile-size > .MuiBackdrop-root {
+    background: #323232;
+    opacity: 0.7 !important;
+}
+ 
+hr.underline-test {
+ 
+        width: 212px;
+        margin: 0px 24px;
+        height: 1px;
+        border-width:0;
+        background-color:  #AFAFAF;
+ 
+}
+ 
+a.header-mobile-links {
+    //styleName: Poppins/Buttons/Small/Normal/12 (Semibold);
+    color: $primary-color-400;
+    font-family: $font-sub-headings-semibold;
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+    padding-left: 16px;
+    &:hover{
+        color: $primary-color-300;
+        text-decoration: underline;
+	}
+	&:active{
+	    color: $primary-color-500;
+    text-decoration: underline;
+	}
+}
+ 
+ 
+button.button-close-align {
+    padding: 16px 16px 0px 0px;
+}
+.MuiIconButton-root.button-close-align:hover {
+    background-color: #fff !important;
+}
+
+li.list-mobile-menu {
+    padding: 16px 0px;
+    width: 212px;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+ 
+@media(max-width: 995px) {
+ 
+    img.img-logo-header {
+        padding-left: 24px;
+    }
+ 
+    .header-home-wrapper-menu-items {
+        padding-right: 24px;
+    }
+ 
+}
+ 
+@media(max-width: 800px) {
+ 
+    .menu-mobile-wrapper {
+        display: block;
+        padding-right: 24px;
+    }
+    img.img-logo-header {
+        padding-left: 24px;
+        width: 87px;
+        height: 25px;
+ 
+    }
+    .header-home-wrapper-menu-items {
+        display: none;
+       
+    }
+ 
+    .header-main-container {
+        background-color: #fff;
+        box-shadow: 0px 8px 8px -7px rgba(7, 7, 7, 0.16);
+        display: flex;
+        align-items: center;
+        min-height: 60px;
+ 
+    }
+   
+   
+}

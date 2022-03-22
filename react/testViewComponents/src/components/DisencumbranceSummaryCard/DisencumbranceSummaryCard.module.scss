@@ -1,0 +1,43 @@
+@import "../../scss/_variables.module.scss";
+
+
+
+.summary-card-container{
+	margin-left: 27px;
+	margin-right: 27px;
+	text-align: center;
+	max-width: 200px;
+	&__image{
+		padding-top: 8px;
+		padding-bottom: 8px;
+		img{
+			height: 60px;
+			width: 60px;
+		}
+	}
+	&__title{
+		padding-bottom: 8px;
+		&--color{
+			color: $primary-color-400;
+		}
+	}
+	&__body{
+		padding-bottom: 10px;
+	}
+}
+
+
+div.summary-container__image--avatar{
+	background-color: $primary-color-100;
+	margin: auto;
+	height: 112px;
+	width: 112px;
+}
+
+@media screen and (max-width: 600px) {
+
+	.summary-card-container{
+		margin-left: 24px;
+		margin-right: 24px;
+	}
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>2BE05177-9EC0-495D-9083-409493A2FD18</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.850980 0 0 0 0 0.650980 0 0 0 0 0.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+        <path d="M8,8 L8,13.009222 C8,13.5564136 7.55613518,14 7,14 L7,14 C6.44771525,14 6,13.5490248 6,13.009222 L6,8 L0.990777969,8 C0.443586406,8 0,7.55613518 0,7 L0,7 C0,6.44771525 0.45097518,6 0.990777969,6 L6,6 L6,0.990777969 C6,0.443586406 6.44386482,0 7,0 L7,0 C7.55228475,0 8,0.45097518 8,0.990777969 L8,6 L13.009222,6 C13.5564136,6 14,6.44386482 14,7 L14,7 C14,7.55228475 13.5490248,8 13.009222,8 L8,8 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-" transform="translate(-183.000000, -2046.000000)">
+            <g id="Group-2" transform="translate(0.000000, 1881.000000)">
+                <g id="icon---plus" transform="translate(151.000000, 134.000000)" filter="url(#filter-1)">
+                    <g transform="translate(32.000000, 31.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="Mask" fill-opacity="0.7" fill="#000000" xlink:href="#path-2"></use>
+                        <g id="↪🎨" mask="url(#mask-3)" fill="#C2D1D9">
+                            <g transform="translate(-5.000000, -5.000000)" id="Atoms-/-Colors-/-Black">
+                                <rect x="0" y="0" width="24" height="24"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

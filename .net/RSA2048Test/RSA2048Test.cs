@@ -436,7 +436,7 @@ namespace RSA2048Test
 
             var compressedString = Compress(plainTextData);
 
-            var bytesPlainTextData = System.Text.Encoding.Unicode.GetBytes(compressedString);
+            var bytesPlainTextData = Encoding.Unicode.GetBytes(compressedString);
 
             var bytesCypherText = csp.Encrypt(bytesPlainTextData, false);
 
@@ -445,7 +445,7 @@ namespace RSA2048Test
             csp = new RSACryptoServiceProvider();
             csp.ImportParameters(privKey);
             bytesPlainTextData = csp.Decrypt(bytesCypherText, false);
-            var plainTextDataDecrypted = System.Text.Encoding.Unicode.GetString(bytesPlainTextData);
+            var plainTextDataDecrypted = Encoding.Unicode.GetString(bytesPlainTextData);
 
             var decompressedString = Decompress(plainTextDataDecrypted);
 

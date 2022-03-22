@@ -1,0 +1,15 @@
+[{
+        "id": 1,
+        "description": "Datos"
+    },
+
+    {
+        "id": 2,
+        "description": "Resumen"
+    },
+
+    {
+        "id": 3,
+        "description": "Pago"
+    }
+]

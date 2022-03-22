@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>5A3BFA74-5967-4FE6-9B1F-703467C0E48F</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01-Home-expanded" transform="translate(-1133.000000, -1453.000000)">
+            <rect fill="#FFFFFF" x="0" y="0" width="1440" height="3400"></rect>
+            <rect id="Rectangle" fill="#F9F8F8" x="0" y="1182" width="1440" height="1230"></rect>
+            <g id="molecules-/-card-with-icon-/-desktop-copy-16" transform="translate(735.000000, 1418.000000)">
+                <rect id="Rectangle" stroke="#979797" stroke-width="0.5" fill="#FFFFFF" x="0.25" y="0.25" width="457.5" height="223.5" rx="10"></rect>
+                <g id="Group-11-Copy-5" transform="translate(108.000000, 30.000000)" fill="#001333" font-family="Poppins-SemiBold, Poppins" font-size="18" font-weight="500" line-spacing="20">
+                    <g id="Group-5-Copy-4">
+                        <text id="Title">
+                            <tspan x="0" y="19">Si quedas incapacitado </tspan>
+                            <tspan x="0" y="39">temporalmente.</tspan>
+                        </text>
+                    </g>
+                </g>
+                <g id="icon/dropdown" transform="translate(418.000000, 55.000000) rotate(-180.000000) translate(-418.000000, -55.000000) translate(398.000000, 35.000000)" fill="#004DA6" fill-rule="nonzero">
+                    <polygon id="" transform="translate(20.000000, 20.090000) rotate(-90.000000) translate(-20.000000, -20.090000) " points="23.7087379 30.09 26 27.73 18.5436893 20.09 26 12.45 23.7087379 10.09 14 20.09"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

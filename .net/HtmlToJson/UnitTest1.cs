@@ -112,7 +112,7 @@ namespace HtmlToJson
 
             var jsonString = JsonConvert.SerializeObject(jsonClean);
 
-            output.WriteLine($"{htmlEntities(jsonString, true)}");
+            output.WriteLine($"[{htmlEntities(jsonString, true)}]");
 
             Assert.NotNull(jsonClean);
             Assert.NotEmpty(jsonString);
@@ -183,7 +183,7 @@ namespace HtmlToJson
 
         private string GetRealHtml()
         {
-            return @"<p>Recibe un auto sustituto por 10 d&iacute;as en p&eacute;rdidas parciales y 20 d&iacute;as en p&eacute;rdidas totales, cuando el valor del siniestro sea mayor a $1.000 y la reparaci&oacute;n de tu auto supere los 3 d&iacute;as. La gama del auto sustituto depender&aacute; del valor asegurado de tu veh&iacute;culo:</p><ul><li>Veh&iacute;culos con un valor asegurado de $0 a $20.000: Gama baja.</li><li>Veh&iacute;culos con un valor asegurado de $20.001 a $40.000: Gama media.</li><li>Veh&iacute;culos con un valor asegurado de $40.001 en adelante: Gama alta.</li></ul>";
+            return @"<p>Asistencia McAfee:</p><ul><li>Herramientas de control parental m&oacute;vil o asistencia cibern&eacute;tica.</li><li>Buscar, bloquear y borrar el dispositivo perdido</li><li>Navegaci&oacute;n segura</li><li>Gesti&oacute;n de contrase&ntilde;as clave con tecnolog&iacute;a biom&eacute;trica</li><li>Optimizador de bater&iacute;a</li></ul>";
         }
     }
 }

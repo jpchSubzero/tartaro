@@ -1,0 +1,24 @@
+@import "../../scss/_variables.module.scss";
+
+.container {
+    flex: 1;
+    border-bottom: 1px dashed $neutral-color-500;
+    padding: 16px 8px 16px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container__content {
+    display: flex;
+    align-items: center;
+
+    &-icon {
+        margin-right: 8px;
+        color: $primary-color-400;
+    }
+}
+
+.container__price {
+    margin-left: 8px;
+}

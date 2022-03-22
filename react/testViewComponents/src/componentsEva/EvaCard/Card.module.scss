@@ -1,0 +1,160 @@
+
+@import "../../scss/_variables.module.scss";
+
+$card-border-color: $neutral-color-500;
+$button-font-color: $neutral-color-white;
+$font-button-semibold: Poppins-SemiBold, Arial, Helvetica, sans-serif;
+
+
+.card-eva{
+	border: 0.5px solid $card-border-color !important;
+    box-sizing: border-box;
+    border-radius: 8px !important;
+    width: 236px;
+    max-height: 306px;
+    &--shadow{
+        box-shadow: 0px 0px 20px rgba(7, 7, 7, 0.05);
+        &:not(.disabled):hover{
+            border: 0.5px solid $primary-color-300 !important;
+        }
+        &:not(.disabled):active{
+            border: 0.5px solid $primary-color-400 !important;
+            box-shadow: 0px 0px 20px rgba(115, 59, 230, 0.15);
+        }
+    }
+
+    &--disabled {
+        .card-eva__content,
+        .card-eva__media,
+        .card-eva__action{
+            opacity: 0.6;
+        }
+	}
+}
+
+.card-eva__media{
+    height: 80px;
+    width: 80px;
+    margin: auto;
+    padding-top: 24px;
+    &-image{
+        max-width: 100%;
+        max-height: 100%;
+        &--large{
+            height: 122px;
+            width: 122px;
+            margin: auto;
+        }
+    }
+}
+
+div.card-eva__content{
+    text-align: center;
+    padding-left: 24px ;
+    padding-right: 24px ;
+    padding-bottom: 24px;
+    &--title{
+        margin-bottom: 0px;
+    }
+    &--subtitle{
+        font-family: $font-button-semibold;
+    }
+    &--body{
+        padding-top: 16px;
+    }
+}
+
+.card-eva__action{
+    padding: 0px 24px !important;
+    &--filled{
+        background-color: $primary-color-400;
+        &:not(.disabled):hover {
+            background-color: $primary-color-300;
+        }
+        &:not(.disabled):active {
+            background-color: $primary-color-500;
+        }
+    }
+
+    &--text{
+        &:not(.disabled):hover{
+            .card-eva__action-button--text{
+                color: $primary-color-300;
+            }
+        }
+        &:not(.disabled):active{
+            .card-eva__action-button--text{
+                color: $primary-color-500;
+            }
+        }
+    }
+
+    &-button{
+        min-width: 137px !important;
+        &--filled{
+            color: $button-font-color !important;
+            text-decoration: none !important;
+        }
+        &--disabled{
+            opacity: 1 !important;
+        }
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+	.card-eva{
+        width: 210px;
+        height: 269px;
+        &--shadow{
+            border: 0.5px solid $neutral-color-400 !important;
+            display: flex;
+            width: 363px;
+            height: 136px;
+            div.card-eva__content{
+                text-align: left;
+                padding: 24px ;
+                margin: auto;
+                &--body{
+                    padding-top: 8px;
+                    font-size: 14px;
+                    line-height: 19px;
+                }
+            }
+            .card-eva__media{
+                padding-bottom: 24px;
+            }
+        }
+
+    }
+
+    div.card-eva__content{
+        &--subtitle{
+            font-size: 14px;
+            line-height: 19px;
+        }
+        &--body{
+            font-family: $font-helpers;
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    .card-eva__media{
+        height: 64px;
+        width: 64px;
+        margin: auto;
+        padding-top: 24px;
+        &-image{
+            max-width: 100%;
+            max-height: 100%;
+            &--large{
+                min-height: 88px;
+                min-width: 88px;
+                padding-left: 24px;
+                margin: 0px;
+            }
+        }
+    }
+
+}

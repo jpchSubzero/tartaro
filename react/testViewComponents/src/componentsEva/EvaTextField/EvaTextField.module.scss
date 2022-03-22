@@ -1,0 +1,26 @@
+@import "../../scss/_variables.module.scss";
+// add Eva prefix on classes
+
+.EvaTextField-fieldlabel {
+	margin-bottom: 8px;
+}
+
+.EvaTextField-StartAdorment {
+	padding: 12px 0px 12px 8px;
+	width: 24px;
+	height: 24px;
+	color: $neutral-color-700;
+}
+
+.EvaTextField-EndAdorment {
+	height: 24px;
+	width: 24px;
+	margin-right: 12px;
+	color: $neutral-color-700;
+	&--error {
+		height: 24px;
+		width: 24px;
+		margin-right: 12px;
+		color: $error-color-400;
+	}
+}

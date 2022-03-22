@@ -1,0 +1,45 @@
+@import "../../scss/_variables.module.scss";
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.container__image {
+    margin-bottom: 32px;
+}
+
+.container__description {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 40px;
+
+    &--accent {
+        color: $primary-color-400;
+    }
+}
+
+.container__button {
+    width: 212px !important;
+}
+
+@media (max-width: 600px) {
+    .container__button {
+        width: 288px !important;
+    }
+
+    .container__image{
+        & > svg {
+            width: 100%;
+        }
+    }
+
+    .custom-typography{
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
