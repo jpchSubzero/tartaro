@@ -28,7 +28,7 @@
         "dompurify": "^2.3.4",
         "file-saver": "^2.0.5",
         "html-react-parser": "^1.4.4",
-        "moment": "^2.29.1",
+        "moment": "^2.29.2",
         "nuka-carousel": "^4.8.4",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
